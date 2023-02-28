@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="Papers">
+    <file name="Papers/A Survey on Visual Analysis Approaches for Financial Data (2016).pdf" size="1415202"></file>
+    <file name="Papers/A Visualization Approach for Frauds Detection in Financial Market (2009).pdf" size="626639"></file>
+    <file name="Papers/Links.odt" size="10592"></file>
+    <directory name="Papers/NFT" size="1156">
+      <file name="Papers/NFT/A Survey on Blockchain Interoperability - Past, Present, and Future Trends.pdf" size="836716"></file>
+      <file name="Papers/NFT/Alternative Investments in the Fintech Era - The Risk and Return of Non-fungible Token (NFT).pdf" size="1431567"></file>
+      <file name="Papers/NFT/Applications of Blockchain Technology in Marketing - Systematic Review of Marketing Technology Companies.pdf" size="2056143"></file>
+      <file name="Papers/NFT/Asimov’s Foundation – turning a data story into an NFT artwork.pdf" size="8498675"></file>
+      <file name="Papers/NFT/Behavioural clusters of cryptocurrency users - Frequencies of non-speculative application domains.pdf" size="661042"></file>
+      <file name="Papers/NFT/Bitcoin's energy consumption and social costs in relation to its capacity as a settlement layer.pdf" size="311154"></file>
+      <file name="Papers/NFT/Blockchain Based Transaction System with Fungible and Non-Fungible Tokens for a Community-Based Energy Infrastructure.pdf" size="4662821"></file>
+      <file name="Papers/NFT/Design of Extensible Non-Fungible Token Model in Hyperledger Fabric.pdf" size="237160"></file>
+      <file name="Papers/NFT/Distributed Ownership Model for Non-Fungible Tokens.pdf" size="1221338"></file>
+      <file name="Papers/NFT/Effect of bitcoin and Etherium on non-fungible token (NFT).pdf" size="583073"></file>
+      <file name="Papers/NFT/Ethereum Data Analytics - Exploring the Ethereum Blockchain.pdf" size="3318160"></file>
+      <file name="Papers/NFT/Future tourism trends - Utilizing non-fungible tokens to aid wildlife conservation.pdf" size="479332"></file>
+      <file name="Papers/NFT/Hierarchical interactions between Ethereum smart contracts across Testnets.pdf" size="676736"></file>
+      <file name="Papers/NFT/How Blockchain, Virtual Reality, and Augmented Reality are Converging, and Why.pdf" size="747025"></file>
+      <file name="Papers/NFT/Is non-fungible token pricing driven by cryptocurrencies?.pdf" size="1942114"></file>
+      <file name="Papers/NFT/Mapping the NFT revolution - market trends, trade networks, and visual features.pdf" size="12308813"></file>
+      <file name="Papers/NFT/Market Microstructure of Non Fungible Tokens.pdf" size="400483"></file>
+      <file name="Papers/NFT/NFTRACER - A NON-FUNGIBLE TOKEN TRACKING PROOF-OF-CONCEPT USING HYPERLEDGER FABRIC.pdf" size="644161"></file>
+      <file name="Papers/NFT/NFTs in Practice – Non-Fungible Tokens as Core Component of a Blockchain-based Event Ticketing Application.pdf" size="360892"></file>
+      <file name="Papers/NFT/NON-FUNGIBLE TOKENS - WHAT EVERY ESTATE PLANNER NEEDS TO KNOW.pdf" size="197540"></file>
+      <file name="Papers/NFT/Non-Fungible Token (NFT) - Overview, Evaluation, Opportunities and Challenges.pdf" size="747511"></file>
+      <file name="Papers/NFT/Non-Fungible Tokens - Blockchains, Scarcity, and Value.pdf" size="277696"></file>
+      <file name="Papers/NFT/Non-fungible token (NFT) markets on the Ethereum blockchain - Temporal development, cointegration and interrelations.pdf" size="5716052"></file>
+      <file name="Papers/NFT/Secure Combination of IoT and Blockchain by Physically Binding IoT Devices to Smart Non-Fungible Tokens Using PUFs.pdf" size="5126900"></file>
+      <file name="Papers/NFT/The Sentiment of Crypto Art.pdf" size="237313"></file>
+      <file name="Papers/NFT/The non-fungible token (NFT) market and its relationship with Bitcoin and Ethereum.pdf" size="489742"></file>
+      <file name="Papers/NFT/Through the Looking Glass - Non-Fungible Tokens &amp; Libraries.pdf" size="172616"></file>
+      <file name="Papers/NFT/Towards the Comparison of Blockchain-based Applications Using Enterprise Modeling.pdf" size="1171227"></file>
+      <file name="Papers/NFT/Tracing manufacturing processes using blockchain-based token compositions.pdf" size="1062230"></file>
+      <file name="Papers/NFT/VIRTUAL ART AND NON-FUNGIBLE TOKENS.pdf" size="952641"></file>
+      <file name="Papers/NFT/Visualization for Villainy.pdf" size="10530538"></file>
+    </directory>
+    <directory name="Papers/Other" size="952">
+      <file name="Papers/Other/A Detailed and Real-time Performance Monitoring Framework for Blockchain Systems.pdf" size="805066"></file>
+      <file name="Papers/Other/A Survey on Analyzing Bitcoin Transactions.pdf" size="322975"></file>
+      <file name="Papers/Other/A general framework for blockchain analytics.pdf" size="301141"></file>
+      <file name="Papers/Other/Ad-hoc Analytical Framework of Bitcoin Investigations for Law Enforcement.pdf" size="2423120"></file>
+      <file name="Papers/Other/BITCOIN REGULATIONS AND INVESTIGATIONS - A PROPOSAL FOR U.S. POLICIES.pdf" size="3728017"></file>
+      <file name="Papers/Other/BTCSpark - Scalable Analysis of the Bitcoin Blockchain using Spark.pdf" size="275030"></file>
+      <file name="Papers/Other/Behavior pattern clustering in blockchain networks.pdf" size="1133968"></file>
+      <file name="Papers/Other/Big data analytics for logistics and distributions using Blockchain.pdf" size="318793"></file>
+      <file name="Papers/Other/Bitcoin Modelling Using Data Mining Techniques.pdf" size="1514958"></file>
+      <file name="Papers/Other/Blockchain - A Graph Primer.pdf" size="723498"></file>
+      <file name="Papers/Other/Blockchain Consensus - An analysis of Proof-of-Work and its applications..pdf" size="333697"></file>
+      <file name="Papers/Other/Blockchain and IoT Integration - A Systematic Survey.pdf" size="506049"></file>
+      <file name="Papers/Other/Blockchain for Enterprise - Overview, Opportunities and Challenges.pdf" size="292494"></file>
+      <file name="Papers/Other/Blockchain for Trustful Collaborations between Immigrants and Governments.pdf" size="1336691"></file>
+      <file name="Papers/Other/Correlation between Blockchain Search Volume and Bitcoin Exchange Rate.pdf" size="225503"></file>
+      <file name="Papers/Other/Decentralized Voting Platform Based on Ethereum Blockchain.pdf" size="987015"></file>
+      <file name="Papers/Other/Distributed Ledger Technologies:Blockchain - Challenges, opportunities and the prospects for standards.pdf" size="448866"></file>
+      <file name="Papers/Other/DyCREM - Dynamic Credit Risk Management Using Edge-based Blockchain.pdf" size="161470"></file>
+      <file name="Papers/Other/Ethereum  Query Language.pdf" size="832406"></file>
+      <file name="Papers/Other/Link Before You Share - Managing Privacy Policies through Blockchain.pdf" size="637719"></file>
+      <file name="Papers/Other/SAPIENS CHAIN - A BLOCKCHAIN-BASED CYBERSECURITY FRAMEWORK.pdf" size="582944"></file>
+      <file name="Papers/Other/Short Paper - An Analysis of Non-standard Bitcoin Transactions.pdf" size="336705"></file>
+      <file name="Papers/Other/Using the Bitcoin Transaction Graph to Predict the Price of Bitcoin.pdf" size="697557"></file>
+      <file name="Papers/Other/Viability analysis of a decentralized energy market based on blockchain.pdf" size="304789"></file>
+      <file name="Papers/Other/ZombieCoin - Powering Next-Generation Botnets with Bitcoin.pdf" size="758193"></file>
+    </directory>
+    <file name="Papers/VISUAL TOOLS AND NARRATIVES - NEW WAYS TO IMPROVE FINANCIAL LITERACY (2014).pdf" size="1242381"></file>
+    <file name="Papers/Visual Signatures for Financial Time Series (2011).pdf" size="805822"></file>
+    <directory name="Papers/Visualization" size="1088">
+      <file name="Papers/Visualization/An Analysis of Anonymity in the Bitcoin System.pdf" size="2604357"></file>
+      <file name="Papers/Visualization/Analyzing the Bitcoin Network - The First Four Years.pdf" size="22346126"></file>
+      <file name="Papers/Visualization/Anomaly Detection in Bitcoin Network Using Unsupervised Learning Methods.pdf" size="273399"></file>
+      <file name="Papers/Visualization/BiVA - Bitcoin Network Visualization &amp; Analysis.pdf" size="705457"></file>
+      <file name="Papers/Visualization/Blockchain Explorer - An Analytical Process and Investigation Environment for Bitcoin.pdf" size="1587125"></file>
+      <file name="Papers/Visualization/Crypto-Ricardian Rent &amp; the Crytpo-Coase Theorem - The Economics of Blockchains and Bitcoin.pdf" size="4587534"></file>
+      <file name="Papers/Visualization/Detecting artificial behaviours in the Bitcoin users graph.pdf" size="1501276"></file>
+      <directory name="Papers/Visualization/Ethereum" size="102">
+        <file name="Papers/Visualization/Ethereum/Hunting the Ethereum Smart Contract - Color-inspired Inspection of Potential Attacks.pdf" size="916742"></file>
+      </directory>
+      <file name="Papers/Visualization/Exploratory Analysis of Bitcoin Data.pdf" size="2588391"></file>
+      <file name="Papers/Visualization/Exploring the Bitcoin Network.pdf" size="958233"></file>
+      <file name="Papers/Visualization/Global Drivers of the Adoption of Bitcoin Infrastructure.pdf" size="1069755"></file>
+      <file name="Papers/Visualization/IDENTIFYING AND INVESTIGATING INTRUSIVE SCANNING PATTERNS BY VISUALIZING NETWORK TELESCOPE TRAFFIC IN A 3-D SCATTER-PLOT.pdf" size="306140"></file>
+      <file name="Papers/Visualization/Microtransactions in Bitcoin - How expensive are they really?.pdf" size="15799334"></file>
+      <file name="Papers/Visualization/Network and Conversation Analyses of Bitcoin.pdf" size="998333"></file>
+      <file name="Papers/Visualization/PAKDD - Forecasting Bitcoin Price with Graph Chainlets.pdf" size="1814159"></file>
+      <file name="Papers/Visualization/Passive Visual Fingerprinting of Network Attack Tools.pdf" size="421947"></file>
+      <directory name="Papers/Visualization/Problems - Economy, Crime" size="170">
+        <file name="Papers/Visualization/Problems - Economy, Crime/COINHOARDER - Tracking a Ukrainian Bitcoin Phishing Ring DNS Style.pdf" size="1286630"></file>
+        <file name="Papers/Visualization/Problems - Economy, Crime/Tendrils of Crime - Visualizing the Diffusion of Stolen Bitcoins.pdf" size="3336450"></file>
+        <file name="Papers/Visualization/Problems - Economy, Crime/The Hacker’s Code - Finding Bitcoin Thieves Through the Similarity and Status Claims Between Users.pdf" size="1538928"></file>
+      </directory>
+      <directory name="Papers/Visualization/Pure Visualization" size="340">
+        <file name="Papers/Visualization/Pure Visualization/BitConduite - Exploratory Visual Analysis of Entity Activity on the Bitcoin Network (2021).pdf" size="6800815"></file>
+        <file name="Papers/Visualization/Pure Visualization/BitConduite - Visualizing and Analyzing Activity on the Bitcoin Network 2.pdf" size="479827"></file>
+        <file name="Papers/Visualization/Pure Visualization/BitConduite - Visualizing and Analyzing Activity on the Bitcoin Network.pdf" size="317454"></file>
+        <file name="Papers/Visualization/Pure Visualization/BitConeView - Visualization of Flows in the Bitcoin Transaction Graph.pdf" size="776343"></file>
+        <file name="Papers/Visualization/Pure Visualization/BitExTract - Interactive Visualization for Extracting Bitcoin Exchange Intelligence.pdf" size="1648786"></file>
+        <file name="Papers/Visualization/Pure Visualization/Go with the -Bitcoin- Flow, with Visual Analytics.pdf" size="3005519"></file>
+        <file name="Papers/Visualization/Pure Visualization/Visualizing Dynamic Bitcoin Transaction Patterns 1.pdf" size="636417"></file>
+        <file name="Papers/Visualization/Pure Visualization/Visualizing Dynamic Bitcoin Transaction Patterns 2.pdf" size="1502709"></file>
+      </directory>
+      <file name="Papers/Visualization/Social signals and algorithmic trading of Bitcoin.pdf" size="725244"></file>
+      <directory name="Papers/Visualization/Surveys" size="102">
+        <file name="Papers/Visualization/Surveys/Study on Blockchain Visualization.pdf" size="1476287"></file>
+      </directory>
+      <file name="Papers/Visualization/The Evolution of the Bitcoin Economy - Extracting and Analyzing the Network of Payment Relationships.pdf" size="3764948"></file>
+      <file name="Papers/Visualization/Towards open data blockchain analytics - a Bitcoin perspective.pdf" size="2325303"></file>
+      <file name="Papers/Visualization/Tracking bitcoin users activity using community detection on a network of weak signals.pdf" size="500724"></file>
+      <file name="Papers/Visualization/Trend Prediction Classification for High Frequency Bitcoin Time Series with Deep Learning.pdf" size="1119525"></file>
+      <file name="Papers/Visualization/Visual Analytics for Detecting Anomalous Activity in Mobile Money Transfer Services.pdf" size="3754588"></file>
+      <file name="Papers/Visualization/Visual Analytics for Monitoring and Exploration of Blockchain Data With a Focus on the Bitcoin Blockchain.pdf" size="524034"></file>
+      <directory name="Papers/Visualization/slides" size="170">
+        <file name="Papers/Visualization/slides/ BitConeView -  Visualization of Flows in the Bitcoin Transaction Graph.pdf" size="1433084"></file>
+        <file name="Papers/Visualization/slides/A Suite of Tools for the Forensic Analysis of Bitcoin Transactions - Preliminary Report.pdf" size="2723463"></file>
+        <file name="Papers/Visualization/slides/Analysis of Bitcoin Transaction Flows_Bissesar_Shiva.pdf" size="2558704"></file>
+      </directory>
+      <directory name="Papers/Visualization/thesis" size="136">
+        <file name="Papers/Visualization/thesis/Bitcoin Network Simulator data explotation.pdf" size="2466388"></file>
+        <file name="Papers/Visualization/thesis/Bitcoin Visualization.pdf" size="6660910"></file>
+      </directory>
+      <file name="Papers/Visualization/thesis - BitIodine - Extracting Intelligence from the Bitcoin Network.pdf" size="4830039"></file>
+    </directory>
+  </directory>
+</tree>

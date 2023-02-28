@@ -1,0 +1,488 @@
+[
+  {"type":"directory","name":"Papers","contents":[
+    {"type":"directory","name":"Explainable AI _ Visualization Research","size":306,"contents":[
+      {"type":"directory","name":"1. Books","size":136,"contents":[
+        {"type":"directory","name":"AI","size":204,"contents":[
+          {"type":"file","name":"Deep Learning - Methods and Applications (2014).pdf","size":9054810},
+          {"type":"file","name":"Goodfellow - Deep Learning (2016).pdf","size":23718763},
+          {"type":"directory","name":"Graph Neural Networks","size":204,"contents":[
+            {"type":"file","name":"Graph-Based Semi-Supervised Learning (2014).pdf","size":1469697},
+            {"type":"file","name":"Introduction to Graph Neural Networks (2020).pdf","size":24168118},
+            {"type":"file","name":"PhD - Graph Neural Networks for Multimodal Learning and Representation (2019).pdf","size":53044950},
+            {"type":"file","name":"PhD - Meta Learning for Graph Neural Networks (2018).pdf","size":1850459}
+          ]},
+          {"type":"directory","name":"Knihy v SK","size":204,"contents":[
+            {"type":"file","name":"Machova_SU.pdf","size":1809252},
+            {"type":"file","name":"Sincak_Andrejkova_vol_1.pdf","size":637703},
+            {"type":"file","name":"Sincak_Andrejkova_vol_2.pdf","size":513983},
+            {"type":"directory","name":"UvodDoTeorieNS","size":408,"contents":[
+              {"type":"file","name":"Chapter_00.pdf","size":177952},
+              {"type":"file","name":"Chapter_01.pdf","size":918582},
+              {"type":"file","name":"Chapter_02.pdf","size":198025},
+              {"type":"file","name":"Chapter_03.pdf","size":230282},
+              {"type":"file","name":"Chapter_04.pdf","size":231854},
+              {"type":"file","name":"Chapter_05.pdf","size":834897},
+              {"type":"file","name":"Chapter_06.pdf","size":477951},
+              {"type":"file","name":"Chapter_07.pdf","size":2301113},
+              {"type":"file","name":"Chapter_08.pdf","size":570145},
+              {"type":"file","name":"Chapter_09.pdf","size":872551}
+            ]}
+          ]}
+        ]},
+        {"type":"directory","name":"Visualization","size":136,"contents":[
+          {"type":"file","name":"Interactive Data Visualization - Foundations, Techniques, and Applications, Second Edition (2015).pdf","size":24888824},
+          {"type":"file","name":"Introduction to Information Visualization (2009).pdf","size":4030894}
+        ]}
+      ]},
+      {"type":"directory","name":"AI","size":136,"contents":[
+        {"type":"directory","name":"Deep Learning","size":136,"contents":[
+          {"type":"file","name":"Deep learning in neural networks - An overview (2014).pdf","size":859787},
+          {"type":"file","name":"State-of-the-Art Deep Learning - Evolving Machine Intelligence Toward Tomorrow’s Intelligent Network Traffic Control Systems.pdf","size":2092386}
+        ]},
+        {"type":"directory","name":"Graph Neural Networks","size":748,"contents":[
+          {"type":"directory","name":"1. Surveys","size":102,"contents":[
+            {"type":"file","name":"Graph Neural Networks - A Review of Methods and Applications (2019).pdf","size":2741447}
+          ]},
+          {"type":"directory","name":"2. IMPORTANT","size":238,"contents":[
+            {"type":"file","name":"A Comprehensive Survey of Graph Embedding - Problems, Techniques and Applications (2018).pdf","size":3034025},
+            {"type":"file","name":"A Review of Relational Machine Learning for Knowledge Graphs (2015).pdf","size":1600847},
+            {"type":"file","name":"Interactive Visual Graph Mining and Learning (2018).pdf","size":12747544},
+            {"type":"file","name":"Learning Convolutional Neural Networks for Graphs (2016).pdf","size":655207},
+            {"type":"file","name":"Sequence-to-sequence modeling for graph representation learning (2019).pdf","size":2817112}
+          ]},
+          {"type":"file","name":"An End-to-End Deep Learning Architecture for Graph Classification (2018).pdf","size":722327},
+          {"type":"directory","name":"Application Domains","size":170,"contents":[
+            {"type":"file","name":"Graph Convolutional Networks for Text Classification (2019).pdf","size":1892570},
+            {"type":"file","name":"The More You Know - Using Knowledge Graphs for Image Classification (2017).pdf","size":2418472},
+            {"type":"file","name":"Unsupervised Construction of Knowledge Graphs From Text and Code.pdf","size":1244594}
+          ]},
+          {"type":"file","name":"Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering (2016).pdf","size":470470},
+          {"type":"file","name":"Deep Convolutional Networks on Graph-Structured Data.pdf","size":4796447},
+          {"type":"file","name":"Graph Attention Networks (2018).pdf","size":1637828},
+          {"type":"directory","name":"Hypergraphs","size":204,"contents":[
+            {"type":"file","name":"HyperGCN - A New Method of Training Graph Convolutional Networks on Hypergraphs (2019).pdf","size":2336798},
+            {"type":"file","name":"Hypergraph Convolution and Hypergraph Attention (2019).pdf","size":463304},
+            {"type":"file","name":"Knowledge Hypergraphs - Prediction Beyond Binary Relations (2019).pdf","size":791988},
+            {"type":"file","name":"LINK PREDICTION IN HYPERGRAPHS USING GRAPH CONVOLUTIONAL NETWORKS (2019).pdf","size":427361}
+          ]},
+          {"type":"file","name":"Knowledge Transfer for Out-of-Knowledge-Base Entities - A Graph Neural Network Approach (2018).pdf","size":363746},
+          {"type":"file","name":"Link Prediction Based on Graph Neural Networks (2016).pdf","size":448931},
+          {"type":"file","name":"Modeling Relational Data with Graph Convolutional Networks (2017).pdf","size":331387},
+          {"type":"file","name":"Neural Graph Learning - Training Neural Networks Using Graphs (2018).pdf","size":649330},
+          {"type":"file","name":"Neural Network for Graphs - A Contextual Constructive Approach (2009).pdf","size":498657},
+          {"type":"file","name":"Representation Learning of Knowledge Graphs with Entity Descriptions (2016).pdf","size":683781},
+          {"type":"file","name":"Representation Learning on Graphs - Methods and Applications (2018).pdf","size":2076058},
+          {"type":"file","name":"Semi-Supervised Classification with Graph Convolutional Networks (2017).pdf","size":873897},
+          {"type":"file","name":"The Graph Neural Network Model (2009).pdf","size":568582},
+          {"type":"file","name":"Typed Graph Networks (2019).pdf","size":861630},
+          {"type":"file","name":"Weisfeiler and Leman Go Neural - Higher-Order Graph Neural Networks (2019).pdf","size":341978},
+          {"type":"file","name":"thesis - Graph Neural Networks and its applications (2019).pdf","size":2179800}
+        ]}
+      ]},
+      {"type":"directory","name":"Artificial Intuition","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Deep Learning in Software Engineering","size":340,"contents":[
+        {"type":"directory","name":"2. Surveys","size":136,"contents":[
+          {"type":"file","name":"A Survey of Machine Learning for Big Code and Naturalness.pdf","size":529788},
+          {"type":"file","name":"A Survey of Software Quality for Machine Learning Applications.pdf","size":586534}
+        ]},
+        {"type":"directory","name":"Application Domains","size":612,"contents":[
+          {"type":"directory","name":"Clones _ Similarity","size":238,"contents":[
+            {"type":"file","name":"CCLearner A Deep Learning-Based Clone Detection Approach (2017).pdf","size":625306},
+            {"type":"file","name":"Code Clone Detection and Analysis Using Software Metrics and Neural Network (2015).pdf","size":334102},
+            {"type":"file","name":"Deep Learning Code Fragments for Code Clone Detection (2016).pdf","size":306626},
+            {"type":"file","name":"Deep Learning Similarities from Different Representations of Source Code (2018).pdf","size":434293},
+            {"type":"file","name":"DeepSim - Deep Learning Code Functional Similarity (2018).pdf","size":1328353}
+          ]},
+          {"type":"directory","name":"Code Classification","size":170,"contents":[
+            {"type":"file","name":"Deep Learning Source Code Analyzer and Repairer (2017).pdf","size":2734581},
+            {"type":"file","name":"Source Code Classification Using Neural Networks (2017).pdf","size":302752},
+            {"type":"file","name":"Whats the Code Automatic Classification of Source Code Archives (2002).pdf","size":759112}
+          ]},
+          {"type":"directory","name":"Coding Conventions","size":102,"contents":[
+            {"type":"file","name":"Learning Natural Coding Conventions.pdf","size":754860}
+          ]},
+          {"type":"directory","name":"Comments","size":136,"contents":[
+            {"type":"file","name":"A Survey of Automatic Generation of Source Code Comments - Algorithms and Techniques.pdf","size":5414391},
+            {"type":"file","name":"Deep Code Comment Generation.pdf","size":1112831}
+          ]},
+          {"type":"directory","name":"Defects _ Bugs","size":238,"contents":[
+            {"type":"file","name":"Automatically Learning Semantic Features for Defect Prediction.pdf","size":1837397},
+            {"type":"file","name":"Convolutional Neural Networks over Control Flow Graphs for Software Defect Prediction.pdf","size":643843},
+            {"type":"file","name":"Deep Learning to Find Bugs.pdf","size":753805},
+            {"type":"file","name":"Deep neural network based hybrid approach for software defect prediction using software metrics (2018).pdf","size":2287714},
+            {"type":"file","name":"Software Defect Prediction via Convolutional Neural Network (2017).pdf","size":694923}
+          ]},
+          {"type":"directory","name":"Misc","size":102,"contents":[
+            {"type":"file","name":"A Deep Learning Approach to Identifying Source Code in Images and Video.pdf","size":894687}
+          ]},
+          {"type":"directory","name":"Natural description of Code","size":136,"contents":[
+            {"type":"file","name":"Automatically Generating Commit Messages from Diffs using Neural Machine Translation.pdf","size":1464657},
+            {"type":"file","name":"Context2Name - A Deep Learning-Based Approach to Infer Natural Variable Names from Usage Contexts.pdf","size":1842055}
+          ]},
+          {"type":"directory","name":"Semantics","size":102,"contents":[
+            {"type":"file","name":"Neural Code Comprehension -  A Learnable Representation of Code Semantics.pdf","size":1834865}
+          ]},
+          {"type":"directory","name":"Smells","size":136,"contents":[
+            {"type":"file","name":"Detecting Code Smells using Machine Learning Techniques - Are We There Yet_.pdf","size":419484},
+            {"type":"file","name":"PhD - CODE SMELLS - RELEVANCE OF THE PROBLEM AND NOVEL DETECTION TECHNIQUES.pdf","size":5074615}
+          ]},
+          {"type":"directory","name":"Source Code Search","size":136,"contents":[
+            {"type":"file","name":"Deep Code Search.pdf","size":737780},
+            {"type":"file","name":"When Deep Learning Met Code Search (2019).pdf","size":1425504}
+          ]},
+          {"type":"directory","name":"Specification","size":102,"contents":[
+            {"type":"file","name":"Deep specification mining.pdf","size":1259110}
+          ]},
+          {"type":"directory","name":"Suggestion","size":102,"contents":[
+            {"type":"file","name":"Toward Deep Learning Software Repositories.pdf","size":261427}
+          ]},
+          {"type":"directory","name":"Summarization","size":102,"contents":[
+            {"type":"file","name":"A Convolutional Attention Network for Extreme Summarization of Source Code (2016).pdf","size":376983}
+          ]},
+          {"type":"directory","name":"Visual Attention _ Eye-tracking","size":102,"contents":[
+            {"type":"file","name":"Towards Generation of Visual Attention Map for Source Code (2019).pdf","size":592013}
+          ]},
+          {"type":"directory","name":"Vulnerability","size":102,"contents":[
+            {"type":"file","name":"VulDeePecker - A Deep Learning-Based System for Vulnerability Detection.pdf","size":2175360}
+          ]},
+          {"type":"directory","name":"blockchain","size":102,"contents":[
+            {"type":"file","name":"A Study of Blockchain based on Graph Database for Software Quality Measurement Integrity.pdf","size":620707}
+          ]}
+        ]},
+        {"type":"file","name":"Deep Learning for Source Code Modeling and Generation - Models, Applications and Challenges (2020).pdf","size":1116277},
+        {"type":"file","name":"DeepSoft - A vision for a deep model of software.pdf","size":345578},
+        {"type":"file","name":"Explainable Software Analytics (2018).pdf","size":525004},
+        {"type":"directory","name":"Source Code Analysis","size":238,"contents":[
+          {"type":"file","name":"Abstract Syntax Networks for Code Generation and Semantic Parsing.pdf","size":1163115},
+          {"type":"directory","name":"Graphs","size":136,"contents":[
+            {"type":"file","name":"LEARNING TO REPRESENT PROGRAMS WITH GRAPHS.pdf","size":432024},
+            {"type":"file","name":"Neural Network-based Graph Embedding for Cross-Platform Binary Code Similarity Detection.pdf","size":6108617}
+          ]},
+          {"type":"directory","name":"Source Code Embeddings","size":374,"contents":[
+            {"type":"file","name":"A LITERATURE STUDY OF EMBEDDINGS ON SOURCE CODE (2019).pdf","size":1557910},
+            {"type":"file","name":"Assessing the Generalizability of code2vec Token Embeddings (2019).pdf","size":196855},
+            {"type":"file","name":"CODE2SEQ - GENERATING SEQUENCES FROM STRUCTURED REPRESENTATIONS OF CODE (2019).pdf","size":7043431},
+            {"type":"file","name":"Commit2Vec - Learning Distributed Representations of Code Changes (2019).pdf","size":4254225},
+            {"type":"file","name":"Distributed Training of Embeddings using Graph Analytics (2020).pdf","size":1108138},
+            {"type":"file","name":"Equivalence of Dataflow Graphs via Rewrite Rules Using a Graph-to-Sequence Neural Model (2020).pdf","size":1022974},
+            {"type":"file","name":"GRAPH2SEQ - GRAPH TO SEQUENCE LEARNING WITH ATTENTION-BASED NEURAL NETWORKS (2018).pdf","size":744204},
+            {"type":"file","name":"Import2vec - Learning Embeddings for Software Libraries (2019).pdf","size":6098683},
+            {"type":"file","name":"code2vec - Learning Distributed Representations of Code (2018).pdf","size":3296501}
+          ]},
+          {"type":"file","name":"Structural Language Models of Code (2020).pdf","size":1465649},
+          {"type":"directory","name":"Trees","size":170,"contents":[
+            {"type":"file","name":"Automatically classifying source code using tree-based approaches.pdf","size":968254},
+            {"type":"file","name":"Convolutional Neural Networks over Tree Structures for Programming Language Processing.pdf","size":820490},
+            {"type":"file","name":"TBCNN - A Tree-Based Convolutional Neural Network for Programming Language Processing.pdf","size":613929}
+          ]}
+        ]},
+        {"type":"file","name":"What You See is What it Means - Semantic Representation Learning of Code based on Visualization and Transfer Learning (2020).docx","size":458485},
+        {"type":"file","name":"What You See is What it Means - Semantic Representation Learning of Code based on Visualization and Transfer Learning (2020).pdf","size":1549893}
+      ]},
+      {"type":"directory","name":"Explainable AI","size":272,"contents":[
+        {"type":"directory","name":"0. Bible","size":102,"contents":[
+          {"type":"file","name":"slides - DARPA - Explainable Artificial Intelligence (XAI) - Program Update (2017).pdf","size":2669629}
+        ]},
+        {"type":"directory","name":"1. Books","size":68,"contents":[
+        ]},
+        {"type":"directory","name":"2. Surveys","size":136,"contents":[
+          {"type":"file","name":"Explainable Artificial Inteligence - A Survey.pdf","size":3097567},
+          {"type":"file","name":"Explainable artificial intelligence A survey (2018).pdf","size":4888911}
+        ]},
+        {"type":"directory","name":"Discussions","size":510,"contents":[
+          {"type":"file","name":"Automated Reasoning for Explainable Artificial Intelligence.pdf","size":93231},
+          {"type":"file","name":"Building Explainable Artificial Intelligence Systems.pdf","size":2185446},
+          {"type":"file","name":"Building More Explainable Artificial Intelligence with Argumentation.pdf","size":603955},
+          {"type":"file","name":"EXPLAINABLE ARTIFICIAL INTELLIGENCE – THE NEW FRONTIER IN LEGAL INFORMATICS.pdf","size":212065},
+          {"type":"file","name":"Explainable AI - Beware of Inmates Running the Asylum.pdf","size":142691},
+          {"type":"file","name":"Explainable AI - the new 42_.pdf","size":5061480},
+          {"type":"file","name":"Explainable Artificial Intelligence - Understanding, Visualizing and Interpreting Deep Learning Models (2017).pdf","size":1716638},
+          {"type":"file","name":"Explanation in Artificial Intelligence - Insights from the Social Sciences.pdf","size":852884},
+          {"type":"file","name":"Should We Trust (X)AI - Design Dimensions for Structured Experimental Evaluations (2020).pdf","size":478155},
+          {"type":"file","name":"Towards XAI -  Structuring the Processes of Explanations (2019).pdf","size":864814},
+          {"type":"file","name":"Visual Analytics for Explainable Deep Learning.pdf","size":1559764},
+          {"type":"file","name":"What Does Explainable AI Really Mean - A New Conceptualization of Perspectives (2017).pdf","size":1926855},
+          {"type":"file","name":"What do we need to build explainable AI systems for the medical domain_.pdf","size":1868519}
+        ]},
+        {"type":"file","name":"Explainable Neural Networks based on Additive Index Models (2018).pdf","size":1065502},
+        {"type":"file","name":"Explainable Reasoning over Knowledge Graphs for Recommendation (2019).pdf","size":2133328}
+      ]},
+      {"type":"directory","name":"Interpretable AI","size":442,"contents":[
+        {"type":"file","name":"An Introduction to Deep Visual Explanation (2018).pdf","size":4914012},
+        {"type":"file","name":"INTERPRETATIONS ARE USEFUL -  PENALIZING EXPLANATIONS TO ALIGN NEURAL NETWORKS WITH PRIOR KNOWLEDGE.pdf","size":1354366},
+        {"type":"file","name":"Interpretable CNNs (2019).pdf","size":6483249},
+        {"type":"file","name":"Interpretable Convolutional Neural Networks (2018).pdf","size":1742197},
+        {"type":"file","name":"Interpretable Deep Models for ICU Outcome Prediction.pdf","size":758519},
+        {"type":"file","name":"Interpretable Deep Neural Networks for Single-Trial EEG Classification (2016).pdf","size":5091157},
+        {"type":"file","name":"Interpretable Explanations of Black Boxes by Meaningful Perturbation (2017).pdf","size":1065108},
+        {"type":"file","name":"Interpreting CNNs Via Decision Trees.pdf","size":4282904},
+        {"type":"file","name":"The Mythos of Model Interpretability (2017).pdf","size":367847},
+        {"type":"file","name":"Towards Robust Interpretability with Self-Explaining Neural Networks (2018) - SUPPLEMENTARY.pdf","size":6516734},
+        {"type":"file","name":"Towards Robust Interpretability with Self-Explaining Neural Networks (2018).pdf","size":2253484}
+      ]},
+      {"type":"directory","name":"Visualizing AI","size":408,"contents":[
+        {"type":"directory","name":"1. Books","size":102,"contents":[
+          {"type":"file","name":"Towards better understanding of deep learning visualizaion (2016).pdf","size":26413427}
+        ]},
+        {"type":"directory","name":"2. Surveys","size":204,"contents":[
+          {"type":"file","name":"HOW CONVOLUTIONAL NEURAL NETWORKS SEE THE WORLD - A SURVEY OF CONVOLUTIONAL NEURAL NETWORK VISUALIZATION METHODS.pdf","size":5191334},
+          {"type":"file","name":"Visual Interpretability for Deep Learning - a Survey 2.pdf","size":8465995},
+          {"type":"file","name":"Visual interpretability for deep learning - a survey.pdf","size":2085928},
+          {"type":"file","name":"Visualizations of Deep Neural Networks in Computer Vision - A Survey.pdf","size":1500525}
+        ]},
+        {"type":"directory","name":"Application Domains","size":136,"contents":[
+          {"type":"file","name":"Uncertainty and Interpretability in Convolutional Neural Networks for Semantic Segmentation of Colorectal Polyps (2018).pdf","size":777784},
+          {"type":"file","name":"XFake - Explainable Fake News Detector with Visualizations (2019).pdf","size":1039030}
+        ]},
+        {"type":"file","name":"Attentive Explanations - Justifying Decisions and Pointing to the Evidence.pdf","size":7001814},
+        {"type":"file","name":"Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics (2019).docx","size":505766},
+        {"type":"file","name":"Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics (2019).pdf","size":8905674},
+        {"type":"file","name":"Methods for interpreting and understanding deep neural networks (2018).pdf","size":2735231},
+        {"type":"file","name":"Multimodal Explanations - Justifying Decisions and Pointing to the Evidence.pdf","size":2464751},
+        {"type":"file","name":"Techniques for Interpretable Machine Learning.pdf","size":1003496},
+        {"type":"directory","name":"What is visualized","size":272,"contents":[
+          {"type":"directory","name":"Activity","size":170,"contents":[
+            {"type":"file","name":"Improving the interpretability of deep neural networks with stimulated learning (2015).pdf","size":473878},
+            {"type":"file","name":"Interacting with Predictions - Visual Inspection of Black-box Machine Learning Models (2016).pdf","size":1585255},
+            {"type":"file","name":"Visualizing the Hidden Activity of artificial Neural Networks (2016).pdf","size":46372634}
+          ]},
+          {"type":"directory","name":"Architecture","size":238,"contents":[
+            {"type":"file","name":"Ablate, Variate, and Contemplate - Visual Analytics for Discovering Neural Architectures (2019).pdf","size":1515553},
+            {"type":"file","name":"An Interactive Node-Link Visualization of Convolutional Neural Networks.pdf","size":880192},
+            {"type":"file","name":"Direct-Manipulation Visualization of Deep Networks (2017).pdf","size":5270332},
+            {"type":"file","name":"N2VIS An Interactive Visualization Tool for Neural Networks.pdf","size":217301},
+            {"type":"file","name":"Visualizing Dataflow Graphs of Deep Learning Models in TensorFlow (2018).pdf","size":1769907}
+          ]},
+          {"type":"directory","name":"Datasets","size":238,"contents":[
+            {"type":"file","name":"DeepEyes - Progressive Visual Analytics for Designing Deep Neural Networks.pdf","size":5948959},
+            {"type":"file","name":"In situ Visualization of Convoluional Neural Networks.pdf","size":1764214},
+            {"type":"file","name":"Undersatnding Neural Networks Through Deep Visualization.pdf","size":9406533},
+            {"type":"file","name":"Visual exploration of machine learning results using data cube analysis (2016).pdf","size":484682},
+            {"type":"file","name":"Visualizing Deep Neural Networks for Text Analytics (2018).pdf","size":1477436}
+          ]},
+          {"type":"file","name":"GAN Lab - Understanding Complex Deep Generative Models using Interactive Visual Experimentation (2018).pdf","size":2711931},
+          {"type":"directory","name":"Network _ Data","size":170,"contents":[
+            {"type":"directory","name":"Convolutional NN","size":170,"contents":[
+              {"type":"file","name":"Towards Better Analysis of Deep Convolutional Neural Networks.pdf","size":9886186},
+              {"type":"file","name":"Towards Visual Explanations for Convolutional Neural Networks via Input Resampling.pdf","size":1204212},
+              {"type":"file","name":"Visualizing and Understanding Convolutional Networks.pdf","size":36235279}
+            ]},
+            {"type":"directory","name":"Deep NN","size":238,"contents":[
+              {"type":"file","name":"A New Method to Visualize Deep Neural Networks.pdf","size":6164832},
+              {"type":"file","name":"ACTIVIS - Visual Exploration of Industry-Scale Deep Neural Network Models.pdf","size":2855477},
+              {"type":"file","name":"DeepEyes - Progressive Visual Analytics for Designing Deep Neural Networks.pdf","size":3424865},
+              {"type":"file","name":"Methods for interpreting and understanding deep neural networks.pdf","size":2735231},
+              {"type":"file","name":"VISUALIZING DEEP NEURAL NETWORK DECISIONS - PREDICTION DIFFERENCE ANALYSIS.pdf","size":8866581}
+            ]},
+            {"type":"directory","name":"Recurrent NN","size":170,"contents":[
+              {"type":"file","name":"Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks (2016).pdf","size":3385289},
+              {"type":"file","name":"Visual Analytics with Interpretable and Interactive Recurrent Neural Networks on Electronic Medical Records.pdf","size":1445024},
+              {"type":"file","name":"Visualizing and Understanding Recurrent Networks (2015).pdf","size":2986762}
+            ]}
+          ]},
+          {"type":"file","name":"RuleMatrix - Visualizing and Understanding Classifiers with Rules (2019).pdf","size":8562545}
+        ]}
+      ]}
+    ]},
+    {"type":"directory","name":"Visual Saliency Research","size":374,"contents":[
+      {"type":"directory","name":"1. FIIT publications","size":170,"contents":[
+        {"type":"file","name":"Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf","size":4264306},
+        {"type":"file","name":"Laco - Effects of individual’s emotions on saliency and visual search (2020).pdf","size":2255112},
+        {"type":"file","name":"Laco-Kulbak - Comparative Study on the Egocentric Depth Perception under Various Environment Conditions (IIT.SRC_2020).pdf","size":3565381}
+      ]},
+      {"type":"file","name":"A Salience-based Quality Metric for Visualization (2010).pdf","size":3285156},
+      {"type":"file","name":"Cognitive Biases in Visualizations (2018).pdf","size":4876922},
+      {"type":"directory","name":"Gestalt principles","size":136,"contents":[
+        {"type":"file","name":"Exploring the use of Gestalt’s principles in improving the visualization, user experience and comprehension of COBie data extension (2018).pdf","size":643300},
+        {"type":"file","name":"Gestalt Theory in Visual Screen Design – A New Look at an Old Subject.pdf","size":1091819}
+      ]},
+      {"type":"directory","name":"Preattentive Processing","size":170,"contents":[
+        {"type":"file","name":"Attention and Visual Memory in Visualization and Computer Graphics.pdf","size":1722735},
+        {"type":"file","name":"Deadeye - A Novel Preattentive Visualization Technique Based on Dichoptic Presentation.pdf","size":1492307},
+        {"type":"file","name":"Perceptual Dependencies in Information Visualization Assessed by Complex Visual Search.pdf","size":1023055}
+      ]},
+      {"type":"file","name":"Scenes, saliency maps and scanpaths (2019).pdf","size":8036934},
+      {"type":"file","name":"The Visual Expression Process - bridging Vision and Data Visualization.pdf","size":191445},
+      {"type":"directory","name":"Visual Mapping","size":204,"contents":[
+        {"type":"file","name":"Cuttlefish - Color Mapping for Dynamic Multi-Scale Visualizations.pdf","size":17865891},
+        {"type":"file","name":"Deadeye A Novel Preattentive Visualization Technique Based on Dichoptic Presentation.pdf","size":1492307},
+        {"type":"file","name":"Evaluating the Effectiveness and Efficiency of Visual Variables for Geographic Information Visualization (2009).pdf","size":538897},
+        {"type":"file","name":"Saliency Deficit and Motion Outlier Detection in Animated Scatterplots (2019).pdf","size":2855461}
+      ]},
+      {"type":"directory","name":"Visual Saliency","size":714,"contents":[
+        {"type":"directory","name":"3D","size":102,"contents":[
+          {"type":"file","name":"A unified information-theoretic framework for viewpoint selection and mesh saliency (2009).pdf","size":7873306}
+        ]},
+        {"type":"directory","name":"AR_VR_MixedReality","size":272,"contents":[
+          {"type":"file","name":" Where to Place A Real-Time Visual Saliency Based Label Placement for Aug Reality Applications (2018).pdf","size":1998198},
+          {"type":"file","name":"A saliency-based method of simulating visual attention in virtual scenes (2009).pdf","size":1839405},
+          {"type":"file","name":"Cognitive Ability Evaluation using Virtual Reality and Eye Tracking (2018).pdf","size":3980516},
+          {"type":"directory","name":"IMPORTANT","size":102,"contents":[
+            {"type":"file","name":"Deep into visual saliency for immersive VR environments rendered in real-time (2020).pdf","size":4120357}
+          ]},
+          {"type":"file","name":"Real-time adjustment of contrast saliency for improved information visibility in mobile augmented reality (2018).pdf","size":4307817},
+          {"type":"directory","name":"Related to DP","size":544,"contents":[
+            {"type":"file","name":"Analyzing Visual Attention via Virtual Environments (2016).pdf","size":2874438},
+            {"type":"file","name":"Fixation Prediction for 360° Video Streaming in Head-Mounted Virtual Reality (2017).pdf","size":1886341},
+            {"type":"file","name":"GBVS360, BMS360, ProSal Extending existing saliency prediction models from 2D to omnidirectional images (2018).pdf","size":2027094},
+            {"type":"directory","name":"Head-Gaze-Relation","size":170,"contents":[
+              {"type":"file","name":"Saliency-based gaze prediction based on head direction (2015).pdf","size":1194715},
+              {"type":"file","name":"The vestibulo‐ocular reflex during human saccadic eye movements (1986).pdf","size":3028748},
+              {"type":"file","name":"Visual search - how head-mounted displays affect eye movements, head movements and target detection (2010).pdf","size":339720}
+            ]},
+            {"type":"file","name":"How do people explore virtual environments (2017).pdf","size":8356325},
+            {"type":"file","name":"Look around you Saliency maps for omnidirectional images in VR applications (2017).pdf","size":1377915},
+            {"type":"file","name":"Modeling Visual Attention in VR - Measuring the Accuracy of Predicted Scanpaths (2002).pdf","size":1105082},
+            {"type":"file","name":"SalNet360 Saliency maps for omni-directional images with CNN (2018).pdf","size":2517540},
+            {"type":"file","name":"Saliency Prediction for Omnidirectional Images Considering Optimization On Sphere Domain (2019).pdf","size":545436},
+            {"type":"file","name":"Transferability of Spatial Maps Augmented Versus Virtual Reality Training (2018).pdf","size":2721403},
+            {"type":"directory","name":"Viewing-Behavior","size":136,"contents":[
+              {"type":"file","name":"A Review of Eye Gaze in Virtual Agents, Social Robotics and HCI (2015).pdf","size":5645585},
+              {"type":"file","name":"Coordination of the eyes and head during visual orienting (2008).pdf","size":805438}
+            ]},
+            {"type":"file","name":"Visual Attention in Omnidirectional Video for Virtual Reality Applications (2018).pdf","size":13971622},
+            {"type":"file","name":"Visual Saliency Detection Framework for 3D Environment using Virtual Reality Devices (2018).pdf","size":1455420},
+            {"type":"file","name":"What do you think youre doing Measuring perception in fish tank virtual reality (2001).pdf","size":352599}
+          ]}
+        ]},
+        {"type":"directory","name":"Applications","size":204,"contents":[
+          {"type":"file","name":"An Element Sensitive Saliency Model with Position Prior Learning for Web Pages (2019).pdf","size":3450164},
+          {"type":"file","name":"Combining Top-down and Bottom-up Visual Saliency for Firearms Localization.pdf","size":2541775},
+          {"type":"file","name":"Layout-Driven Top-Down Saliency Detection for Webpage (2018).pdf","size":2520098},
+          {"type":"file","name":"Saliency-driven system models for cell analysis with deep learning (2019).pdf","size":3436263}
+        ]},
+        {"type":"file","name":"Do Saliency Models Detect Odd-One-Out Targets - New Datasets and Evaluations (2020).pdf","size":1679382},
+        {"type":"file","name":"Evaluating 2D Flow Visualization Using Eye Tracking.pdf","size":3817611},
+        {"type":"file","name":"Intelligent Visual Media Processing - When Graphics Meets Vision.pdf","size":1832873},
+        {"type":"file","name":"Predicting Eye Fixations using Convolutional Neural Networks.pdf","size":1064840},
+        {"type":"file","name":"Predicting Gaze in Egocentric Video by Learning Task-Dependent Attention Transition (2018).pdf","size":2949587},
+        {"type":"file","name":"Quaternion-based Spectral Saliency Detection for Eye Fixation Prediction.pdf","size":557714},
+        {"type":"file","name":"Rapid visual categorization is not guided by early salience-based selection (2019).pdf","size":2713755},
+        {"type":"file","name":"Rapid visual categorization is not guided by early salience-based selection - Correction(2019).pdf","size":1060115},
+        {"type":"file","name":"Research on Visual Saliency Model Based on CovSal Algorithm and Histogram Contrast (2018).pdf","size":679695},
+        {"type":"file","name":"Rethinking RGB-D Salient Object Detection - Models, Datasets, and Large-Scale Benchmarks (2019).pdf","size":5099839},
+        {"type":"file","name":"Saliency detection based on structural dissimilarity induced by image quality assessment model.pdf","size":2505757},
+        {"type":"file","name":"Salient Object Detection in the Deep Learning Era - An In-Depth Survey.pdf","size":4667399},
+        {"type":"directory","name":"Salliency models","size":850,"contents":[
+          {"type":"directory","name":"360 panorama","size":272,"contents":[
+            {"type":"file","name":"360-aware saliency estimation with conventional image saliency predictors (2018).pdf","size":2307211},
+            {"type":"file","name":"Attention Prediction in Egocentric Video Using Motion and Visual Saliency (2010_).pdf","size":1553680},
+            {"type":"file","name":"GBVS360, BMS360, ProSal Extending existing saliency prediction models from 2D to omnidirectional images (2018).pdf","size":1758253},
+            {"type":"file","name":"Predicting head trajectories in 360° virtual reality videos (2017).pdf","size":1257171},
+            {"type":"file","name":"Scanpath and saliency prediction on 360 degree images (2018).pdf","size":1807135},
+            {"type":"file","name":"V-BMS360 A Video Extention to the BMS360 Image Saliency Model (2018).pdf","size":3063667}
+          ]},
+          {"type":"file","name":"A Benchmark Dataset and Saliency-Guided Stacked Autoencoders for Video-Based Salient Object Detection (2016).pdf","size":4523607},
+          {"type":"file","name":"A Multi-scale colour and Keypoint Density-based Approach for Visual Saliency Detection (2016).pdf","size":1817530},
+          {"type":"file","name":"A Two-Stage Clustering Based 3D Visual Saliency Model for Dynamic Scenarios (2019).pdf","size":4016149},
+          {"type":"file","name":"A simple saliency model predicts a number of motion popoutphenomena (1999).pdf","size":108477},
+          {"type":"directory","name":"Basic Algos","size":204,"contents":[
+            {"type":"file","name":"BMS - Exploiting surroundedness for saliency detection - A boolean map approach (2016).pdf","size":1966639},
+            {"type":"file","name":"Do Deep-Learning Saliency Models Really Model Saliency (2018) D.pdf","size":654418},
+            {"type":"file","name":"Itti Koch Niebur - A model of saliency-based visual attention for rapid scene analysis (1998) D.pdf","size":1986965},
+            {"type":"file","name":"eDN - Large-scale optimization of hierarchical features for saliency prediction in natural images (2014).pdf","size":919833}
+          ]},
+          {"type":"file","name":"Context-Aware Saliency Detection (2012).pdf","size":2780606},
+          {"type":"directory","name":"DVS","size":102,"contents":[
+            {"type":"file","name":"Data Visualization Saliency Model - A Tool for Evaluating Abstract Data Visualizations (2018).pdf","size":751843}
+          ]},
+          {"type":"directory","name":"Deep Saliency Models","size":374,"contents":[
+            {"type":"file","name":"A novel fully convolutional network for visual saliency prediction (2020).pdf","size":4596935},
+            {"type":"file","name":"Contextual encoder-decoder network for visual saliency prediction (2020).pdf","size":10432235},
+            {"type":"file","name":"DISC - Deep Image Saliency Computing via Progressive Representation Learning (2015).pdf","size":2991624},
+            {"type":"file","name":"Deep Saliency Models - The Quest For The Loss Function (2019).pdf","size":2866152},
+            {"type":"file","name":"DeepSaliency - Multi-Task Deep Neural Network Model for Salient Object Detection (2016).pdf","size":2213638},
+            {"type":"file","name":"Learning to infer human attention in daily activities (2020).pdf","size":991267},
+            {"type":"file","name":"Saliency Detection by Multi-Context Deep Learning (2015).pdf","size":3584775},
+            {"type":"file","name":"Understanding and Visualizing Deep Visual Saliency Models.pdf","size":4122873},
+            {"type":"file","name":"Visual Saliency Prediction using Deep learning Techniques.pdf","size":1650697}
+          ]},
+          {"type":"directory","name":"Depth","size":170,"contents":[
+            {"type":"file","name":"3D Attention_ Measurement of Visual Saliency Using Eye Tracking Glasses (2013).pdf","size":651458},
+            {"type":"file","name":"Depth Matters Influence of Depth Cues on Visual Saliency (2012).pdf","size":2154306},
+            {"type":"file","name":"Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion (2016).pdf","size":1310147}
+          ]},
+          {"type":"directory","name":"Evaluation","size":102,"contents":[
+            {"type":"file","name":"What Do Different Evaluation Metrics Tell Us About Saliency Models (2019).pdf","size":1739109}
+          ]},
+          {"type":"file","name":"Judd - Learning to predict where humans look (2009).pdf","size":3786044},
+          {"type":"file","name":"Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf","size":1086107},
+          {"type":"file","name":"Polatsek et al. - Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf","size":5804450},
+          {"type":"file","name":"RARE a new bottom-up saliency model.pdf","size":1799611},
+          {"type":"file","name":"SID4VAM - A Benchmark Dataset with Synthetic Images for Visual Attention Modeling.pdf","size":8827495},
+          {"type":"file","name":"Salience Models - A Computational Cognitive Neuroscience Review (2019).pdf","size":750005},
+          {"type":"file","name":"Semantic and Contrast-Aware Saliency (2018).pdf","size":3605525},
+          {"type":"directory","name":"Stereoscopic","size":102,"contents":[
+            {"type":"file","name":"A Computational Model for Stereoscopic Visual Saliency Prediction (2019).pdf","size":3800279}
+          ]},
+          {"type":"file","name":"Visual Attention in Objective Image Quality Assessment_ Based on Eye-Tracking Data (2011).pdf","size":917301},
+          {"type":"file","name":"Visual Saliency Detection Based On Bayesian Model (2011).pdf","size":1303898},
+          {"type":"file","name":"Visual saliency estimation by nonlinearly integrating features using region covariances (2013).pdf","size":1289906},
+          {"type":"file","name":"introducing a Bayesian model of selective attention based on active inference (2019).pdf","size":8011346}
+        ]},
+        {"type":"directory","name":"Visualization","size":136,"contents":[
+          {"type":"directory","name":"InfoVis","size":170,"contents":[
+            {"type":"file","name":"Analyzing the effect of different partial overlap sizes in perceiving visual variables (2019).pdf","size":4283553},
+            {"type":"file","name":"Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf","size":1544101},
+            {"type":"file","name":"THEMATIC RELEVANCE AND PERCEPTUAL SALIENCE OF DYNAMIC GEOVISUALIZATION DISPLAYS.pdf","size":709520}
+          ]},
+          {"type":"directory","name":"SciVis","size":170,"contents":[
+            {"type":"file","name":"An Information-Theoretic Observation Channel for Volume Visualization.pdf","size":4124616},
+            {"type":"directory","name":"Important","size":102,"contents":[
+              {"type":"file","name":"Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design.pdf","size":3787065}
+            ]},
+            {"type":"file","name":"Visibility-Weighted Saliency for Volume Visualization.pdf","size":1502681}
+          ]}
+        ]},
+        {"type":"file","name":"What do different evaluation metrics tell us about saliency models.pdf","size":3460370},
+        {"type":"file","name":"Where should saliency models look next (2016).pdf","size":8301355}
+      ]}
+    ]},
+    {"type":"directory","name":"Visualisation and Interaction in Mixed Reality","size":1530,"contents":[
+      {"type":"file","name":"A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization.pdf","size":15764429},
+      {"type":"file","name":"A gesture system for graph visualization in virtual reality environments (2017).pdf","size":1949418},
+      {"type":"file","name":"A modern approach to supporting program visualization - from a 2D notation to 3D representations using augmented reality (2020).pdf","size":4239489},
+      {"type":"file","name":"CityVR - Gameful Software Visualization (2017).pdf","size":6150447},
+      {"type":"file","name":"Collaborative Augmented Reality Application for Information Visualization Support (2012).pdf","size":602369},
+      {"type":"file","name":"Collaborative Magic Lens Graph Exploration (2015).pdf","size":1481272},
+      {"type":"file","name":"DXR A Toolkit for Building Immersive Data Visualizations.pdf","size":31495948},
+      {"type":"file","name":"DebugAR - Mixed Dimensional Displays for Immersive Debugging of Distributed Systems (2018).pdf","size":4329875},
+      {"type":"file","name":"Exploring Data in Virtual Reality- Comparisons with 2D Data Visualizations.pdf","size":4511884},
+      {"type":"file","name":"Exploring Software Cities in Virtual Reality.pdf","size":2116936},
+      {"type":"file","name":"Exploring the Effects of Scale in Augmented Reality-Empowered Visual Analytics (2018).pdf","size":1264438},
+      {"type":"file","name":"Grasp-Shell vs gesture-speech - A comparison of direct and indirect natural interaction techniques in augmented reality (2014).pdf","size":1232418},
+      {"type":"file","name":"HoloDesk - direct 3d interactions with a situated see-through display (2012).pdf","size":11603360},
+      {"type":"file","name":"How Effective is Interactive Exploration of 3D Visualizations(2018).pdf","size":3266623},
+      {"type":"file","name":"Immersive Pedigree Graph Visualisations (2021).pdf","size":146309},
+      {"type":"file","name":"Immersive Visualization of Abstract Information - An Evaluation on Dimensionally-Reduced Data Scatterplots (2018).pdf","size":3488034},
+      {"type":"file","name":"Intelligent visualization of holographic biological networks using HoloLens.pdf","size":2077416},
+      {"type":"file","name":"Interaction Modes for Augmented Reality Visualization.pdf","size":460895},
+      {"type":"file","name":"Interactive Visualization of Software Components with Virtual Reality Headsets (2017) copy.pdf","size":730267},
+      {"type":"file","name":"Menus on the Desk - System Control in DeskVR (2019).pdf","size":12136016},
+      {"type":"file","name":"Mining_the_human_genome_using_virtual_re.pdf","size":4241342},
+      {"type":"file","name":"Multidimensional Information Visualization Using Augmented Reality copy.pdf","size":215938},
+      {"type":"file","name":"Multidimensional Information Visualization Using Augmented Reality.pdf","size":6183601},
+      {"type":"file","name":"On the use of virtual reality in software visualization - The case of the city metaphor (2019).pdf","size":5941258},
+      {"type":"file","name":"Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality (2018).pdf","size":12684325},
+      {"type":"file","name":"PerfVis - Pervasive Visualization in Immersive Augmented Reality for Performance Awareness (2019).pdf","size":5347040},
+      {"type":"file","name":"Spatial Analytic Interfaces - Spatial User Interfaces for In Situ Visual Analytics.pdf","size":3411566},
+      {"type":"file","name":"Speak to your Software Visualization - Exploring Component-based Software Architectures in Augmented Reality with a Conversational Interface (2019).pdf","size":628387},
+      {"type":"file","name":"Take a Walk - Evaluating Movement Types for Data Visualization in Immersive Virtual Reality.pdf","size":737404},
+      {"type":"file","name":"The Hologram in My Hand - How Effective is Interactive Exploration of 3D Visualizations in Immersive Tangible Augmented Reality (2018).pdf","size":9886382},
+      {"type":"file","name":"Towards Visualization of Evolution of Component-Based So ware Architectures in VR (2020).pdf","size":2065845},
+      {"type":"file","name":"Towards the Holodeck Fully Immersive Virtual Reality Visualisation of Scientific and Engineering Data.pdf","size":674834},
+      {"type":"file","name":"Using Augmente Reality for Visualizing Complex Graphs in Three Dimensions (2003).pdf","size":504528},
+      {"type":"file","name":"VRige - Exploring Social Network Interactions In Immersive Virtual Environments.pdf","size":1314265},
+      {"type":"file","name":"Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs(2019).pdf","size":2154975},
+      {"type":"file","name":"Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.pdf","size":2154975},
+      {"type":"file","name":"VirtualDesk - A Comfortable and Efficient Immersive Information Visualization Approach (2018).pdf","size":6845229},
+      {"type":"file","name":"Visualising a Software System as a City Through Virtual Reality (2017).pdf","size":28802523},
+      {"type":"file","name":"WeARHand - Head-Worn, RGB-D Camera-Based, Bare-Hand User Interface with Visually Enhanced Depth Perception (2014).pdf","size":5786060},
+      {"type":"file","name":"WebVR based Interactive Visualization of Open Health Data (2018).pdf","size":802921},
+      {"type":"file","name":"XRaSE - Towards Virtually Tangible Software using Augmented Reality (2019).pdf","size":267721},
+      {"type":"file","name":"Yea Big, Yea High - A 3D User Interface for Surface Selection by progressive Refinement in Virtual Environments (2018).pdf","size":6766803},
+      {"type":"file","name":"lmmersive Graph Navigation Using Direct Manipulation and Gestures (2000).pdf","size":2036059}
+    ]}
+  ]}
+]

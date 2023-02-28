@@ -1,0 +1,403 @@
+"Papers"
+[        306]  "Papers/Explainable AI _ Visualization Research"/
+[        136]  "Papers/Explainable AI _ Visualization Research/1. Books"/
+[        204]  "Papers/Explainable AI _ Visualization Research/1. Books/AI"/
+[    9054810]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Deep Learning - Methods and Applications (2014).pdf"*
+[   23718763]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Goodfellow - Deep Learning (2016).pdf"*
+[        204]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Graph Neural Networks"/
+[    1469697]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Graph Neural Networks/Graph-Based Semi-Supervised Learning (2014).pdf"*
+[   24168118]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Graph Neural Networks/Introduction to Graph Neural Networks (2020).pdf"*
+[   53044950]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Graph Neural Networks/PhD - Graph Neural Networks for Multimodal Learning and Representation (2019).pdf"*
+[    1850459]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Graph Neural Networks/PhD - Meta Learning for Graph Neural Networks (2018).pdf"*
+[        204]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK"/
+[    1809252]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/Machova_SU.pdf"*
+[     637703]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/Sincak_Andrejkova_vol_1.pdf"*
+[     513983]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/Sincak_Andrejkova_vol_2.pdf"*
+[        408]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS"/
+[     177952]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_00.pdf"*
+[     918582]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_01.pdf"*
+[     198025]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_02.pdf"*
+[     230282]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_03.pdf"*
+[     231854]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_04.pdf"*
+[     834897]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_05.pdf"*
+[     477951]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_06.pdf"*
+[    2301113]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_07.pdf"*
+[     570145]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_08.pdf"*
+[     872551]  "Papers/Explainable AI _ Visualization Research/1. Books/AI/Knihy v SK/UvodDoTeorieNS/Chapter_09.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/1. Books/Visualization"/
+[   24888824]  "Papers/Explainable AI _ Visualization Research/1. Books/Visualization/Interactive Data Visualization - Foundations, Techniques, and Applications, Second Edition (2015).pdf"*
+[    4030894]  "Papers/Explainable AI _ Visualization Research/1. Books/Visualization/Introduction to Information Visualization (2009).pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/AI"/
+[        136]  "Papers/Explainable AI _ Visualization Research/AI/Deep Learning"/
+[     859787]  "Papers/Explainable AI _ Visualization Research/AI/Deep Learning/Deep learning in neural networks - An overview (2014).pdf"*
+[    2092386]  "Papers/Explainable AI _ Visualization Research/AI/Deep Learning/State-of-the-Art Deep Learning - Evolving Machine Intelligence Toward Tomorrow’s Intelligent Network Traffic Control Systems.pdf"*
+[        748]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks"/
+[        102]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/1. Surveys"/
+[    2741447]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/1. Surveys/Graph Neural Networks - A Review of Methods and Applications (2019).pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT"/
+[    3034025]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT/A Comprehensive Survey of Graph Embedding - Problems, Techniques and Applications (2018).pdf"*
+[    1600847]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT/A Review of Relational Machine Learning for Knowledge Graphs (2015).pdf"*
+[   12747544]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT/Interactive Visual Graph Mining and Learning (2018).pdf"*
+[     655207]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT/Learning Convolutional Neural Networks for Graphs (2016).pdf"*
+[    2817112]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/2. IMPORTANT/Sequence-to-sequence modeling for graph representation learning (2019).pdf"*
+[     722327]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/An End-to-End Deep Learning Architecture for Graph Classification (2018).pdf"*
+[        170]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Application Domains"/
+[    1892570]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Application Domains/Graph Convolutional Networks for Text Classification (2019).pdf"*
+[    2418472]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Application Domains/The More You Know - Using Knowledge Graphs for Image Classification (2017).pdf"*
+[    1244594]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Application Domains/Unsupervised Construction of Knowledge Graphs From Text and Code.pdf"*
+[     470470]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering (2016).pdf"*
+[    4796447]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Deep Convolutional Networks on Graph-Structured Data.pdf"*
+[    1637828]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Graph Attention Networks (2018).pdf"*
+[        204]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Hypergraphs"/
+[    2336798]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Hypergraphs/HyperGCN - A New Method of Training Graph Convolutional Networks on Hypergraphs (2019).pdf"*
+[     463304]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Hypergraphs/Hypergraph Convolution and Hypergraph Attention (2019).pdf"*
+[     791988]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Hypergraphs/Knowledge Hypergraphs - Prediction Beyond Binary Relations (2019).pdf"*
+[     427361]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Hypergraphs/LINK PREDICTION IN HYPERGRAPHS USING GRAPH CONVOLUTIONAL NETWORKS (2019).pdf"*
+[     363746]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Knowledge Transfer for Out-of-Knowledge-Base Entities - A Graph Neural Network Approach (2018).pdf"*
+[     448931]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Link Prediction Based on Graph Neural Networks (2016).pdf"*
+[     331387]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Modeling Relational Data with Graph Convolutional Networks (2017).pdf"*
+[     649330]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Neural Graph Learning - Training Neural Networks Using Graphs (2018).pdf"*
+[     498657]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Neural Network for Graphs - A Contextual Constructive Approach (2009).pdf"*
+[     683781]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Representation Learning of Knowledge Graphs with Entity Descriptions (2016).pdf"*
+[    2076058]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Representation Learning on Graphs - Methods and Applications (2018).pdf"*
+[     873897]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Semi-Supervised Classification with Graph Convolutional Networks (2017).pdf"*
+[     568582]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/The Graph Neural Network Model (2009).pdf"*
+[     861630]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Typed Graph Networks (2019).pdf"*
+[     341978]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/Weisfeiler and Leman Go Neural - Higher-Order Graph Neural Networks (2019).pdf"*
+[    2179800]  "Papers/Explainable AI _ Visualization Research/AI/Graph Neural Networks/thesis - Graph Neural Networks and its applications (2019).pdf"*
+[         68]  "Papers/Explainable AI _ Visualization Research/Artificial Intuition"/
+[        340]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering"/
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/2. Surveys"/
+[     529788]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/2. Surveys/A Survey of Machine Learning for Big Code and Naturalness.pdf"*
+[     586534]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/2. Surveys/A Survey of Software Quality for Machine Learning Applications.pdf"*
+[        612]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains"/
+[        238]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity"/
+[     625306]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity/CCLearner A Deep Learning-Based Clone Detection Approach (2017).pdf"*
+[     334102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity/Code Clone Detection and Analysis Using Software Metrics and Neural Network (2015).pdf"*
+[     306626]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity/Deep Learning Code Fragments for Code Clone Detection (2016).pdf"*
+[     434293]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity/Deep Learning Similarities from Different Representations of Source Code (2018).pdf"*
+[    1328353]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Clones _ Similarity/DeepSim - Deep Learning Code Functional Similarity (2018).pdf"*
+[        170]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Code Classification"/
+[    2734581]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Code Classification/Deep Learning Source Code Analyzer and Repairer (2017).pdf"*
+[     302752]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Code Classification/Source Code Classification Using Neural Networks (2017).pdf"*
+[     759112]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Code Classification/Whats the Code Automatic Classification of Source Code Archives (2002).pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Coding Conventions"/
+[     754860]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Coding Conventions/Learning Natural Coding Conventions.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Comments"/
+[    5414391]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Comments/A Survey of Automatic Generation of Source Code Comments - Algorithms and Techniques.pdf"*
+[    1112831]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Comments/Deep Code Comment Generation.pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs"/
+[    1837397]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs/Automatically Learning Semantic Features for Defect Prediction.pdf"*
+[     643843]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs/Convolutional Neural Networks over Control Flow Graphs for Software Defect Prediction.pdf"*
+[     753805]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs/Deep Learning to Find Bugs.pdf"*
+[    2287714]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs/Deep neural network based hybrid approach for software defect prediction using software metrics (2018).pdf"*
+[     694923]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Defects _ Bugs/Software Defect Prediction via Convolutional Neural Network (2017).pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Misc"/
+[     894687]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Misc/A Deep Learning Approach to Identifying Source Code in Images and Video.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Natural description of Code"/
+[    1464657]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Natural description of Code/Automatically Generating Commit Messages from Diffs using Neural Machine Translation.pdf"*
+[    1842055]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Natural description of Code/Context2Name - A Deep Learning-Based Approach to Infer Natural Variable Names from Usage Contexts.pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Semantics"/
+[    1834865]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Semantics/Neural Code Comprehension -  A Learnable Representation of Code Semantics.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Smells"/
+[     419484]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Smells/Detecting Code Smells using Machine Learning Techniques - Are We There Yet_.pdf"*
+[    5074615]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Smells/PhD - CODE SMELLS - RELEVANCE OF THE PROBLEM AND NOVEL DETECTION TECHNIQUES.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Source Code Search"/
+[     737780]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Source Code Search/Deep Code Search.pdf"*
+[    1425504]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Source Code Search/When Deep Learning Met Code Search (2019).pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Specification"/
+[    1259110]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Specification/Deep specification mining.pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Suggestion"/
+[     261427]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Suggestion/Toward Deep Learning Software Repositories.pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Summarization"/
+[     376983]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Summarization/A Convolutional Attention Network for Extreme Summarization of Source Code (2016).pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Visual Attention _ Eye-tracking"/
+[     592013]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Visual Attention _ Eye-tracking/Towards Generation of Visual Attention Map for Source Code (2019).pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Vulnerability"/
+[    2175360]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/Vulnerability/VulDeePecker - A Deep Learning-Based System for Vulnerability Detection.pdf"*
+[        102]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/blockchain"/
+[     620707]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Application Domains/blockchain/A Study of Blockchain based on Graph Database for Software Quality Measurement Integrity.pdf"*
+[    1116277]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Deep Learning for Source Code Modeling and Generation - Models, Applications and Challenges (2020).pdf"*
+[     345578]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/DeepSoft - A vision for a deep model of software.pdf"*
+[     525004]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Explainable Software Analytics (2018).pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis"/
+[    1163115]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Abstract Syntax Networks for Code Generation and Semantic Parsing.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Graphs"/
+[     432024]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Graphs/LEARNING TO REPRESENT PROGRAMS WITH GRAPHS.pdf"*
+[    6108617]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Graphs/Neural Network-based Graph Embedding for Cross-Platform Binary Code Similarity Detection.pdf"*
+[        374]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings"/
+[    1557910]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/A LITERATURE STUDY OF EMBEDDINGS ON SOURCE CODE (2019).pdf"*
+[     196855]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/Assessing the Generalizability of code2vec Token Embeddings (2019).pdf"*
+[    7043431]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/CODE2SEQ - GENERATING SEQUENCES FROM STRUCTURED REPRESENTATIONS OF CODE (2019).pdf"*
+[    4254225]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/Commit2Vec - Learning Distributed Representations of Code Changes (2019).pdf"*
+[    1108138]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/Distributed Training of Embeddings using Graph Analytics (2020).pdf"*
+[    1022974]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/Equivalence of Dataflow Graphs via Rewrite Rules Using a Graph-to-Sequence Neural Model (2020).pdf"*
+[     744204]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/GRAPH2SEQ - GRAPH TO SEQUENCE LEARNING WITH ATTENTION-BASED NEURAL NETWORKS (2018).pdf"*
+[    6098683]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/Import2vec - Learning Embeddings for Software Libraries (2019).pdf"*
+[    3296501]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Source Code Embeddings/code2vec - Learning Distributed Representations of Code (2018).pdf"*
+[    1465649]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Structural Language Models of Code (2020).pdf"*
+[        170]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Trees"/
+[     968254]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Trees/Automatically classifying source code using tree-based approaches.pdf"*
+[     820490]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Trees/Convolutional Neural Networks over Tree Structures for Programming Language Processing.pdf"*
+[     613929]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/Source Code Analysis/Trees/TBCNN - A Tree-Based Convolutional Neural Network for Programming Language Processing.pdf"*
+[     458485]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/What You See is What it Means - Semantic Representation Learning of Code based on Visualization and Transfer Learning (2020).docx"*
+[    1549893]  "Papers/Explainable AI _ Visualization Research/Deep Learning in Software Engineering/What You See is What it Means - Semantic Representation Learning of Code based on Visualization and Transfer Learning (2020).pdf"*
+[        272]  "Papers/Explainable AI _ Visualization Research/Explainable AI"/
+[        102]  "Papers/Explainable AI _ Visualization Research/Explainable AI/0. Bible"/
+[    2669629]  "Papers/Explainable AI _ Visualization Research/Explainable AI/0. Bible/slides - DARPA - Explainable Artificial Intelligence (XAI) - Program Update (2017).pdf"*
+[         68]  "Papers/Explainable AI _ Visualization Research/Explainable AI/1. Books"/
+[        136]  "Papers/Explainable AI _ Visualization Research/Explainable AI/2. Surveys"/
+[    3097567]  "Papers/Explainable AI _ Visualization Research/Explainable AI/2. Surveys/Explainable Artificial Inteligence - A Survey.pdf"*
+[    4888911]  "Papers/Explainable AI _ Visualization Research/Explainable AI/2. Surveys/Explainable artificial intelligence A survey (2018).pdf"*
+[        510]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions"/
+[      93231]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Automated Reasoning for Explainable Artificial Intelligence.pdf"*
+[    2185446]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Building Explainable Artificial Intelligence Systems.pdf"*
+[     603955]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Building More Explainable Artificial Intelligence with Argumentation.pdf"*
+[     212065]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/EXPLAINABLE ARTIFICIAL INTELLIGENCE – THE NEW FRONTIER IN LEGAL INFORMATICS.pdf"*
+[     142691]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Explainable AI - Beware of Inmates Running the Asylum.pdf"*
+[    5061480]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Explainable AI - the new 42_.pdf"*
+[    1716638]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Explainable Artificial Intelligence - Understanding, Visualizing and Interpreting Deep Learning Models (2017).pdf"*
+[     852884]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Explanation in Artificial Intelligence - Insights from the Social Sciences.pdf"*
+[     478155]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Should We Trust (X)AI - Design Dimensions for Structured Experimental Evaluations (2020).pdf"*
+[     864814]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Towards XAI -  Structuring the Processes of Explanations (2019).pdf"*
+[    1559764]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/Visual Analytics for Explainable Deep Learning.pdf"*
+[    1926855]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/What Does Explainable AI Really Mean - A New Conceptualization of Perspectives (2017).pdf"*
+[    1868519]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Discussions/What do we need to build explainable AI systems for the medical domain_.pdf"*
+[    1065502]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Explainable Neural Networks based on Additive Index Models (2018).pdf"*
+[    2133328]  "Papers/Explainable AI _ Visualization Research/Explainable AI/Explainable Reasoning over Knowledge Graphs for Recommendation (2019).pdf"*
+[        442]  "Papers/Explainable AI _ Visualization Research/Interpretable AI"/
+[    4914012]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/An Introduction to Deep Visual Explanation (2018).pdf"*
+[    1354366]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/INTERPRETATIONS ARE USEFUL -  PENALIZING EXPLANATIONS TO ALIGN NEURAL NETWORKS WITH PRIOR KNOWLEDGE.pdf"*
+[    6483249]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpretable CNNs (2019).pdf"*
+[    1742197]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpretable Convolutional Neural Networks (2018).pdf"*
+[     758519]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpretable Deep Models for ICU Outcome Prediction.pdf"*
+[    5091157]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpretable Deep Neural Networks for Single-Trial EEG Classification (2016).pdf"*
+[    1065108]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpretable Explanations of Black Boxes by Meaningful Perturbation (2017).pdf"*
+[    4282904]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Interpreting CNNs Via Decision Trees.pdf"*
+[     367847]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/The Mythos of Model Interpretability (2017).pdf"*
+[    6516734]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Towards Robust Interpretability with Self-Explaining Neural Networks (2018) - SUPPLEMENTARY.pdf"*
+[    2253484]  "Papers/Explainable AI _ Visualization Research/Interpretable AI/Towards Robust Interpretability with Self-Explaining Neural Networks (2018).pdf"*
+[        408]  "Papers/Explainable AI _ Visualization Research/Visualizing AI"/
+[        102]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/1. Books"/
+[   26413427]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/1. Books/Towards better understanding of deep learning visualizaion (2016).pdf"*
+[        204]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/2. Surveys"/
+[    5191334]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/2. Surveys/HOW CONVOLUTIONAL NEURAL NETWORKS SEE THE WORLD - A SURVEY OF CONVOLUTIONAL NEURAL NETWORK VISUALIZATION METHODS.pdf"*
+[    8465995]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/2. Surveys/Visual Interpretability for Deep Learning - a Survey 2.pdf"*
+[    2085928]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/2. Surveys/Visual interpretability for deep learning - a survey.pdf"*
+[    1500525]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/2. Surveys/Visualizations of Deep Neural Networks in Computer Vision - A Survey.pdf"*
+[        136]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Application Domains"/
+[     777784]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Application Domains/Uncertainty and Interpretability in Convolutional Neural Networks for Semantic Segmentation of Colorectal Polyps (2018).pdf"*
+[    1039030]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Application Domains/XFake - Explainable Fake News Detector with Visualizations (2019).pdf"*
+[    7001814]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Attentive Explanations - Justifying Decisions and Pointing to the Evidence.pdf"*
+[     505766]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics (2019).docx"*
+[    8905674]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Explaining Vulnerabilities to Adversarial Machine Learning through Visual Analytics (2019).pdf"*
+[    2735231]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Methods for interpreting and understanding deep neural networks (2018).pdf"*
+[    2464751]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Multimodal Explanations - Justifying Decisions and Pointing to the Evidence.pdf"*
+[    1003496]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/Techniques for Interpretable Machine Learning.pdf"*
+[        272]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized"/
+[        170]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Activity"/
+[     473878]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Activity/Improving the interpretability of deep neural networks with stimulated learning (2015).pdf"*
+[    1585255]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Activity/Interacting with Predictions - Visual Inspection of Black-box Machine Learning Models (2016).pdf"*
+[   46372634]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Activity/Visualizing the Hidden Activity of artificial Neural Networks (2016).pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture"/
+[    1515553]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture/Ablate, Variate, and Contemplate - Visual Analytics for Discovering Neural Architectures (2019).pdf"*
+[     880192]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture/An Interactive Node-Link Visualization of Convolutional Neural Networks.pdf"*
+[    5270332]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture/Direct-Manipulation Visualization of Deep Networks (2017).pdf"*
+[     217301]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture/N2VIS An Interactive Visualization Tool for Neural Networks.pdf"*
+[    1769907]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Architecture/Visualizing Dataflow Graphs of Deep Learning Models in TensorFlow (2018).pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets"/
+[    5948959]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets/DeepEyes - Progressive Visual Analytics for Designing Deep Neural Networks.pdf"*
+[    1764214]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets/In situ Visualization of Convoluional Neural Networks.pdf"*
+[    9406533]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets/Undersatnding Neural Networks Through Deep Visualization.pdf"*
+[     484682]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets/Visual exploration of machine learning results using data cube analysis (2016).pdf"*
+[    1477436]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Datasets/Visualizing Deep Neural Networks for Text Analytics (2018).pdf"*
+[    2711931]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/GAN Lab - Understanding Complex Deep Generative Models using Interactive Visual Experimentation (2018).pdf"*
+[        170]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data"/
+[        170]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Convolutional NN"/
+[    9886186]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Convolutional NN/Towards Better Analysis of Deep Convolutional Neural Networks.pdf"*
+[    1204212]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Convolutional NN/Towards Visual Explanations for Convolutional Neural Networks via Input Resampling.pdf"*
+[   36235279]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Convolutional NN/Visualizing and Understanding Convolutional Networks.pdf"*
+[        238]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN"/
+[    6164832]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN/A New Method to Visualize Deep Neural Networks.pdf"*
+[    2855477]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN/ACTIVIS - Visual Exploration of Industry-Scale Deep Neural Network Models.pdf"*
+[    3424865]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN/DeepEyes - Progressive Visual Analytics for Designing Deep Neural Networks.pdf"*
+[    2735231]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN/Methods for interpreting and understanding deep neural networks.pdf"*
+[    8866581]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Deep NN/VISUALIZING DEEP NEURAL NETWORK DECISIONS - PREDICTION DIFFERENCE ANALYSIS.pdf"*
+[        170]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Recurrent NN"/
+[    3385289]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Recurrent NN/Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks (2016).pdf"*
+[    1445024]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Recurrent NN/Visual Analytics with Interpretable and Interactive Recurrent Neural Networks on Electronic Medical Records.pdf"*
+[    2986762]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/Network _ Data/Recurrent NN/Visualizing and Understanding Recurrent Networks (2015).pdf"*
+[    8562545]  "Papers/Explainable AI _ Visualization Research/Visualizing AI/What is visualized/RuleMatrix - Visualizing and Understanding Classifiers with Rules (2019).pdf"*
+[        374]  "Papers/Visual Saliency Research"/
+[        170]  "Papers/Visual Saliency Research/1. FIIT publications"/
+[    4264306]  "Papers/Visual Saliency Research/1. FIIT publications/Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf"*
+[    2255112]  "Papers/Visual Saliency Research/1. FIIT publications/Laco - Effects of individual’s emotions on saliency and visual search (2020).pdf"*
+[    3565381]  "Papers/Visual Saliency Research/1. FIIT publications/Laco-Kulbak - Comparative Study on the Egocentric Depth Perception under Various Environment Conditions (IIT.SRC_2020).pdf"*
+[    3285156]  "Papers/Visual Saliency Research/A Salience-based Quality Metric for Visualization (2010).pdf"*
+[    4876922]  "Papers/Visual Saliency Research/Cognitive Biases in Visualizations (2018).pdf"*
+[        136]  "Papers/Visual Saliency Research/Gestalt principles"/
+[     643300]  "Papers/Visual Saliency Research/Gestalt principles/Exploring the use of Gestalt’s principles in improving the visualization, user experience and comprehension of COBie data extension (2018).pdf"*
+[    1091819]  "Papers/Visual Saliency Research/Gestalt principles/Gestalt Theory in Visual Screen Design – A New Look at an Old Subject.pdf"*
+[        170]  "Papers/Visual Saliency Research/Preattentive Processing"/
+[    1722735]  "Papers/Visual Saliency Research/Preattentive Processing/Attention and Visual Memory in Visualization and Computer Graphics.pdf"*
+[    1492307]  "Papers/Visual Saliency Research/Preattentive Processing/Deadeye - A Novel Preattentive Visualization Technique Based on Dichoptic Presentation.pdf"*
+[    1023055]  "Papers/Visual Saliency Research/Preattentive Processing/Perceptual Dependencies in Information Visualization Assessed by Complex Visual Search.pdf"*
+[    8036934]  "Papers/Visual Saliency Research/Scenes, saliency maps and scanpaths (2019).pdf"*
+[     191445]  "Papers/Visual Saliency Research/The Visual Expression Process - bridging Vision and Data Visualization.pdf"*
+[        204]  "Papers/Visual Saliency Research/Visual Mapping"/
+[   17865891]  "Papers/Visual Saliency Research/Visual Mapping/Cuttlefish - Color Mapping for Dynamic Multi-Scale Visualizations.pdf"*
+[    1492307]  "Papers/Visual Saliency Research/Visual Mapping/Deadeye A Novel Preattentive Visualization Technique Based on Dichoptic Presentation.pdf"*
+[     538897]  "Papers/Visual Saliency Research/Visual Mapping/Evaluating the Effectiveness and Efficiency of Visual Variables for Geographic Information Visualization (2009).pdf"*
+[    2855461]  "Papers/Visual Saliency Research/Visual Mapping/Saliency Deficit and Motion Outlier Detection in Animated Scatterplots (2019).pdf"*
+[        714]  "Papers/Visual Saliency Research/Visual Saliency"/
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/3D"/
+[    7873306]  "Papers/Visual Saliency Research/Visual Saliency/3D/A unified information-theoretic framework for viewpoint selection and mesh saliency (2009).pdf"*
+[        272]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality"/
+[    1998198]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/ Where to Place A Real-Time Visual Saliency Based Label Placement for Aug Reality Applications (2018).pdf"*
+[    1839405]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/A saliency-based method of simulating visual attention in virtual scenes (2009).pdf"*
+[    3980516]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Cognitive Ability Evaluation using Virtual Reality and Eye Tracking (2018).pdf"*
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/IMPORTANT"/
+[    4120357]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/IMPORTANT/Deep into visual saliency for immersive VR environments rendered in real-time (2020).pdf"*
+[    4307817]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Real-time adjustment of contrast saliency for improved information visibility in mobile augmented reality (2018).pdf"*
+[        544]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP"/
+[    2874438]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Analyzing Visual Attention via Virtual Environments (2016).pdf"*
+[    1886341]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Fixation Prediction for 360° Video Streaming in Head-Mounted Virtual Reality (2017).pdf"*
+[    2027094]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/GBVS360, BMS360, ProSal Extending existing saliency prediction models from 2D to omnidirectional images (2018).pdf"*
+[        170]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Head-Gaze-Relation"/
+[    1194715]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Head-Gaze-Relation/Saliency-based gaze prediction based on head direction (2015).pdf"*
+[    3028748]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Head-Gaze-Relation/The vestibulo‐ocular reflex during human saccadic eye movements (1986).pdf"*
+[     339720]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Head-Gaze-Relation/Visual search - how head-mounted displays affect eye movements, head movements and target detection (2010).pdf"*
+[    8356325]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/How do people explore virtual environments (2017).pdf"*
+[    1377915]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Look around you Saliency maps for omnidirectional images in VR applications (2017).pdf"*
+[    1105082]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Modeling Visual Attention in VR - Measuring the Accuracy of Predicted Scanpaths (2002).pdf"*
+[    2517540]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/SalNet360 Saliency maps for omni-directional images with CNN (2018).pdf"*
+[     545436]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Saliency Prediction for Omnidirectional Images Considering Optimization On Sphere Domain (2019).pdf"*
+[    2721403]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Transferability of Spatial Maps Augmented Versus Virtual Reality Training (2018).pdf"*
+[        136]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Viewing-Behavior"/
+[    5645585]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Viewing-Behavior/A Review of Eye Gaze in Virtual Agents, Social Robotics and HCI (2015).pdf"*
+[     805438]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Viewing-Behavior/Coordination of the eyes and head during visual orienting (2008).pdf"*
+[   13971622]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Visual Attention in Omnidirectional Video for Virtual Reality Applications (2018).pdf"*
+[    1455420]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/Visual Saliency Detection Framework for 3D Environment using Virtual Reality Devices (2018).pdf"*
+[     352599]  "Papers/Visual Saliency Research/Visual Saliency/AR_VR_MixedReality/Related to DP/What do you think youre doing Measuring perception in fish tank virtual reality (2001).pdf"*
+[        204]  "Papers/Visual Saliency Research/Visual Saliency/Applications"/
+[    3450164]  "Papers/Visual Saliency Research/Visual Saliency/Applications/An Element Sensitive Saliency Model with Position Prior Learning for Web Pages (2019).pdf"*
+[    2541775]  "Papers/Visual Saliency Research/Visual Saliency/Applications/Combining Top-down and Bottom-up Visual Saliency for Firearms Localization.pdf"*
+[    2520098]  "Papers/Visual Saliency Research/Visual Saliency/Applications/Layout-Driven Top-Down Saliency Detection for Webpage (2018).pdf"*
+[    3436263]  "Papers/Visual Saliency Research/Visual Saliency/Applications/Saliency-driven system models for cell analysis with deep learning (2019).pdf"*
+[    1679382]  "Papers/Visual Saliency Research/Visual Saliency/Do Saliency Models Detect Odd-One-Out Targets - New Datasets and Evaluations (2020).pdf"*
+[    3817611]  "Papers/Visual Saliency Research/Visual Saliency/Evaluating 2D Flow Visualization Using Eye Tracking.pdf"*
+[    1832873]  "Papers/Visual Saliency Research/Visual Saliency/Intelligent Visual Media Processing - When Graphics Meets Vision.pdf"*
+[    1064840]  "Papers/Visual Saliency Research/Visual Saliency/Predicting Eye Fixations using Convolutional Neural Networks.pdf"*
+[    2949587]  "Papers/Visual Saliency Research/Visual Saliency/Predicting Gaze in Egocentric Video by Learning Task-Dependent Attention Transition (2018).pdf"*
+[     557714]  "Papers/Visual Saliency Research/Visual Saliency/Quaternion-based Spectral Saliency Detection for Eye Fixation Prediction.pdf"*
+[    2713755]  "Papers/Visual Saliency Research/Visual Saliency/Rapid visual categorization is not guided by early salience-based selection (2019).pdf"*
+[    1060115]  "Papers/Visual Saliency Research/Visual Saliency/Rapid visual categorization is not guided by early salience-based selection - Correction(2019).pdf"*
+[     679695]  "Papers/Visual Saliency Research/Visual Saliency/Research on Visual Saliency Model Based on CovSal Algorithm and Histogram Contrast (2018).pdf"*
+[    5099839]  "Papers/Visual Saliency Research/Visual Saliency/Rethinking RGB-D Salient Object Detection - Models, Datasets, and Large-Scale Benchmarks (2019).pdf"*
+[    2505757]  "Papers/Visual Saliency Research/Visual Saliency/Saliency detection based on structural dissimilarity induced by image quality assessment model.pdf"*
+[    4667399]  "Papers/Visual Saliency Research/Visual Saliency/Salient Object Detection in the Deep Learning Era - An In-Depth Survey.pdf"*
+[        850]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models"/
+[        272]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama"/
+[    2307211]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/360-aware saliency estimation with conventional image saliency predictors (2018).pdf"*
+[    1553680]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/Attention Prediction in Egocentric Video Using Motion and Visual Saliency (2010_).pdf"*
+[    1758253]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/GBVS360, BMS360, ProSal Extending existing saliency prediction models from 2D to omnidirectional images (2018).pdf"*
+[    1257171]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/Predicting head trajectories in 360° virtual reality videos (2017).pdf"*
+[    1807135]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/Scanpath and saliency prediction on 360 degree images (2018).pdf"*
+[    3063667]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/360 panorama/V-BMS360 A Video Extention to the BMS360 Image Saliency Model (2018).pdf"*
+[    4523607]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A Benchmark Dataset and Saliency-Guided Stacked Autoencoders for Video-Based Salient Object Detection (2016).pdf"*
+[    1817530]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A Multi-scale colour and Keypoint Density-based Approach for Visual Saliency Detection (2016).pdf"*
+[    4016149]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A Two-Stage Clustering Based 3D Visual Saliency Model for Dynamic Scenarios (2019).pdf"*
+[     108477]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A simple saliency model predicts a number of motion popoutphenomena (1999).pdf"*
+[        204]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos"/
+[    1966639]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/BMS - Exploiting surroundedness for saliency detection - A boolean map approach (2016).pdf"*
+[     654418]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/Do Deep-Learning Saliency Models Really Model Saliency (2018) D.pdf"*
+[    1986965]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/Itti Koch Niebur - A model of saliency-based visual attention for rapid scene analysis (1998) D.pdf"*
+[     919833]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/eDN - Large-scale optimization of hierarchical features for saliency prediction in natural images (2014).pdf"*
+[    2780606]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Context-Aware Saliency Detection (2012).pdf"*
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/DVS"/
+[     751843]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/DVS/Data Visualization Saliency Model - A Tool for Evaluating Abstract Data Visualizations (2018).pdf"*
+[        374]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models"/
+[    4596935]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/A novel fully convolutional network for visual saliency prediction (2020).pdf"*
+[   10432235]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Contextual encoder-decoder network for visual saliency prediction (2020).pdf"*
+[    2991624]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/DISC - Deep Image Saliency Computing via Progressive Representation Learning (2015).pdf"*
+[    2866152]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Deep Saliency Models - The Quest For The Loss Function (2019).pdf"*
+[    2213638]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/DeepSaliency - Multi-Task Deep Neural Network Model for Salient Object Detection (2016).pdf"*
+[     991267]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Learning to infer human attention in daily activities (2020).pdf"*
+[    3584775]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Saliency Detection by Multi-Context Deep Learning (2015).pdf"*
+[    4122873]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Understanding and Visualizing Deep Visual Saliency Models.pdf"*
+[    1650697]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Visual Saliency Prediction using Deep learning Techniques.pdf"*
+[        170]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth"/
+[     651458]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/3D Attention_ Measurement of Visual Saliency Using Eye Tracking Glasses (2013).pdf"*
+[    2154306]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/Depth Matters Influence of Depth Cues on Visual Saliency (2012).pdf"*
+[    1310147]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion (2016).pdf"*
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Evaluation"/
+[    1739109]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Evaluation/What Do Different Evaluation Metrics Tell Us About Saliency Models (2019).pdf"*
+[    3786044]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Judd - Learning to predict where humans look (2009).pdf"*
+[    1086107]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf"*
+[    5804450]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Polatsek et al. - Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf"*
+[    1799611]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/RARE a new bottom-up saliency model.pdf"*
+[    8827495]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/SID4VAM - A Benchmark Dataset with Synthetic Images for Visual Attention Modeling.pdf"*
+[     750005]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Salience Models - A Computational Cognitive Neuroscience Review (2019).pdf"*
+[    3605525]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Semantic and Contrast-Aware Saliency (2018).pdf"*
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Stereoscopic"/
+[    3800279]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Stereoscopic/A Computational Model for Stereoscopic Visual Saliency Prediction (2019).pdf"*
+[     917301]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual Attention in Objective Image Quality Assessment_ Based on Eye-Tracking Data (2011).pdf"*
+[    1303898]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual Saliency Detection Based On Bayesian Model (2011).pdf"*
+[    1289906]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual saliency estimation by nonlinearly integrating features using region covariances (2013).pdf"*
+[    8011346]  "Papers/Visual Saliency Research/Visual Saliency/Salliency models/introducing a Bayesian model of selective attention based on active inference (2019).pdf"*
+[        136]  "Papers/Visual Saliency Research/Visual Saliency/Visualization"/
+[        170]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis"/
+[    4283553]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/Analyzing the effect of different partial overlap sizes in perceiving visual variables (2019).pdf"*
+[    1544101]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf"*
+[     709520]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/THEMATIC RELEVANCE AND PERCEPTUAL SALIENCE OF DYNAMIC GEOVISUALIZATION DISPLAYS.pdf"*
+[        170]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis"/
+[    4124616]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/An Information-Theoretic Observation Channel for Volume Visualization.pdf"*
+[        102]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Important"/
+[    3787065]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Important/Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design.pdf"*
+[    1502681]  "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Visibility-Weighted Saliency for Volume Visualization.pdf"*
+[    3460370]  "Papers/Visual Saliency Research/Visual Saliency/What do different evaluation metrics tell us about saliency models.pdf"*
+[    8301355]  "Papers/Visual Saliency Research/Visual Saliency/Where should saliency models look next (2016).pdf"*
+[       1530]  "Papers/Visualisation and Interaction in Mixed Reality"/
+[   15764429]  "Papers/Visualisation and Interaction in Mixed Reality/A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization.pdf"*
+[    1949418]  "Papers/Visualisation and Interaction in Mixed Reality/A gesture system for graph visualization in virtual reality environments (2017).pdf"*
+[    4239489]  "Papers/Visualisation and Interaction in Mixed Reality/A modern approach to supporting program visualization - from a 2D notation to 3D representations using augmented reality (2020).pdf"*
+[    6150447]  "Papers/Visualisation and Interaction in Mixed Reality/CityVR - Gameful Software Visualization (2017).pdf"*
+[     602369]  "Papers/Visualisation and Interaction in Mixed Reality/Collaborative Augmented Reality Application for Information Visualization Support (2012).pdf"*
+[    1481272]  "Papers/Visualisation and Interaction in Mixed Reality/Collaborative Magic Lens Graph Exploration (2015).pdf"*
+[   31495948]  "Papers/Visualisation and Interaction in Mixed Reality/DXR A Toolkit for Building Immersive Data Visualizations.pdf"*
+[    4329875]  "Papers/Visualisation and Interaction in Mixed Reality/DebugAR - Mixed Dimensional Displays for Immersive Debugging of Distributed Systems (2018).pdf"*
+[    4511884]  "Papers/Visualisation and Interaction in Mixed Reality/Exploring Data in Virtual Reality- Comparisons with 2D Data Visualizations.pdf"*
+[    2116936]  "Papers/Visualisation and Interaction in Mixed Reality/Exploring Software Cities in Virtual Reality.pdf"*
+[    1264438]  "Papers/Visualisation and Interaction in Mixed Reality/Exploring the Effects of Scale in Augmented Reality-Empowered Visual Analytics (2018).pdf"*
+[    1232418]  "Papers/Visualisation and Interaction in Mixed Reality/Grasp-Shell vs gesture-speech - A comparison of direct and indirect natural interaction techniques in augmented reality (2014).pdf"*
+[   11603360]  "Papers/Visualisation and Interaction in Mixed Reality/HoloDesk - direct 3d interactions with a situated see-through display (2012).pdf"*
+[    3266623]  "Papers/Visualisation and Interaction in Mixed Reality/How Effective is Interactive Exploration of 3D Visualizations(2018).pdf"*
+[     146309]  "Papers/Visualisation and Interaction in Mixed Reality/Immersive Pedigree Graph Visualisations (2021).pdf"*
+[    3488034]  "Papers/Visualisation and Interaction in Mixed Reality/Immersive Visualization of Abstract Information - An Evaluation on Dimensionally-Reduced Data Scatterplots (2018).pdf"*
+[    2077416]  "Papers/Visualisation and Interaction in Mixed Reality/Intelligent visualization of holographic biological networks using HoloLens.pdf"*
+[     460895]  "Papers/Visualisation and Interaction in Mixed Reality/Interaction Modes for Augmented Reality Visualization.pdf"*
+[     730267]  "Papers/Visualisation and Interaction in Mixed Reality/Interactive Visualization of Software Components with Virtual Reality Headsets (2017) copy.pdf"*
+[   12136016]  "Papers/Visualisation and Interaction in Mixed Reality/Menus on the Desk - System Control in DeskVR (2019).pdf"*
+[    4241342]  "Papers/Visualisation and Interaction in Mixed Reality/Mining_the_human_genome_using_virtual_re.pdf"*
+[     215938]  "Papers/Visualisation and Interaction in Mixed Reality/Multidimensional Information Visualization Using Augmented Reality copy.pdf"*
+[    6183601]  "Papers/Visualisation and Interaction in Mixed Reality/Multidimensional Information Visualization Using Augmented Reality.pdf"*
+[    5941258]  "Papers/Visualisation and Interaction in Mixed Reality/On the use of virtual reality in software visualization - The case of the city metaphor (2019).pdf"*
+[   12684325]  "Papers/Visualisation and Interaction in Mixed Reality/Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality (2018).pdf"*
+[    5347040]  "Papers/Visualisation and Interaction in Mixed Reality/PerfVis - Pervasive Visualization in Immersive Augmented Reality for Performance Awareness (2019).pdf"*
+[    3411566]  "Papers/Visualisation and Interaction in Mixed Reality/Spatial Analytic Interfaces - Spatial User Interfaces for In Situ Visual Analytics.pdf"*
+[     628387]  "Papers/Visualisation and Interaction in Mixed Reality/Speak to your Software Visualization - Exploring Component-based Software Architectures in Augmented Reality with a Conversational Interface (2019).pdf"*
+[     737404]  "Papers/Visualisation and Interaction in Mixed Reality/Take a Walk - Evaluating Movement Types for Data Visualization in Immersive Virtual Reality.pdf"*
+[    9886382]  "Papers/Visualisation and Interaction in Mixed Reality/The Hologram in My Hand - How Effective is Interactive Exploration of 3D Visualizations in Immersive Tangible Augmented Reality (2018).pdf"*
+[    2065845]  "Papers/Visualisation and Interaction in Mixed Reality/Towards Visualization of Evolution of Component-Based So ware Architectures in VR (2020).pdf"*
+[     674834]  "Papers/Visualisation and Interaction in Mixed Reality/Towards the Holodeck Fully Immersive Virtual Reality Visualisation of Scientific and Engineering Data.pdf"*
+[     504528]  "Papers/Visualisation and Interaction in Mixed Reality/Using Augmente Reality for Visualizing Complex Graphs in Three Dimensions (2003).pdf"*
+[    1314265]  "Papers/Visualisation and Interaction in Mixed Reality/VRige - Exploring Social Network Interactions In Immersive Virtual Environments.pdf"*
+[    2154975]  "Papers/Visualisation and Interaction in Mixed Reality/Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs(2019).pdf"*
+[    2154975]  "Papers/Visualisation and Interaction in Mixed Reality/Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.pdf"*
+[    6845229]  "Papers/Visualisation and Interaction in Mixed Reality/VirtualDesk - A Comfortable and Efficient Immersive Information Visualization Approach (2018).pdf"*
+[   28802523]  "Papers/Visualisation and Interaction in Mixed Reality/Visualising a Software System as a City Through Virtual Reality (2017).pdf"*
+[    5786060]  "Papers/Visualisation and Interaction in Mixed Reality/WeARHand - Head-Worn, RGB-D Camera-Based, Bare-Hand User Interface with Visually Enhanced Depth Perception (2014).pdf"*
+[     802921]  "Papers/Visualisation and Interaction in Mixed Reality/WebVR based Interactive Visualization of Open Health Data (2018).pdf"*
+[     267721]  "Papers/Visualisation and Interaction in Mixed Reality/XRaSE - Towards Virtually Tangible Software using Augmented Reality (2019).pdf"*
+[    6766803]  "Papers/Visualisation and Interaction in Mixed Reality/Yea Big, Yea High - A 3D User Interface for Surface Selection by progressive Refinement in Virtual Environments (2018).pdf"*
+[    2036059]  "Papers/Visualisation and Interaction in Mixed Reality/lmmersive Graph Navigation Using Direct Manipulation and Gestures (2000).pdf"*

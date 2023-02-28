@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="Books">
+    <directory name="1. TODO" size="1258">
+      <file name="97 Things Every Programmer Should Know (2010).pdf" size="2111426"></file>
+      <file name="Advances in Intelligent Networking and Collaborative Systems (2020).pdf" size="53536246"></file>
+      <file name="Advances in Self-Organizing Maps, Learning Vector Quantization, Clustering and Data Visualization (2019).pdf" size="47324107"></file>
+      <file name="Algorithmic Thinking for Adventurous Minds - Quest for Fundamental Algorithms with Visualization and Python (2021).epub" size="63990993"></file>
+      <file name="Bio-inspired Algorithms for Data Streaming and Visualization, Big Data Management, and Fog Computing (2021).pdf" size="5301127"></file>
+      <file name="Christopher Alexander - A Pattern Language_ Towns, Buildings, Construction (1977).pdf" size="44935229"></file>
+      <file name="Complex Networks &amp; Their Applications IX - Volume 1.pdf" size="70205640"></file>
+      <file name="Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).epub" size="8419042"></file>
+      <file name="Data Sketches - A journey of imagination, exploration, and beautiful data visualizations (2021).pdf" size="168821567"></file>
+      <file name="Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).epub" size="2740013"></file>
+      <file name="Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).pdf" size="841683"></file>
+      <directory name="Design" size="102">
+        <file name="Visual Design Solutions (2015).pdf" size="27703118"></file>
+      </directory>
+      <directory name="Distributed computing" size="204">
+        <file name="Distributed Computing - Fundamentals, Simulations, and Advanced Topics (2004).pdf" size="8192948"></file>
+        <file name="Distributed and Cloud Computing - From Parallel Processing to the Internet of Things  (2011).pdf" size="10452111"></file>
+        <file name="Fog computing breakthroughs in research and practice (2018).pdf" size="22476695"></file>
+        <file name="The Cloud Computing Book - The Future of Computing Explained (2021).pdf" size="5418858"></file>
+      </directory>
+      <directory name="Encyclopedias" size="272">
+        <file name="Space Visual Encyclopedia (2016).pdf" size="79827930"></file>
+        <file name="Timelines of History The Ultimate Visual Guide To The Events That Shaped The World (2011).pdf" size="151062075"></file>
+        <file name="Visualizing Earth History, 1st ed. (2009).pdf" size="134616261"></file>
+        <file name="Visualizing Elementary and Middle School Mathematics Methods (2012).pdf" size="70913256"></file>
+        <file name="Visualizing Environmental Science, 4th Edition (2011).pdf" size="99028096"></file>
+      </directory>
+      <file name="Fluid Mechanics Applied to Medicine - Cardiac Flow Visualization Techniques (2021).pdf" size="3452518"></file>
+      <file name="Hands-On Data Analysis with Pandas - A Python data science handbook for data collection, wrangling, analysis, and visualization (2021).pdf" size="74277657"></file>
+      <file name="How to Start Your Own Business - The Facts Visually Explained (2021).pdf" size="102373745"></file>
+      <file name="Immersive 3D Design Visualization - With Autodesk Maya and Unreal Engine 4 (2021).pdf" size="20420601"></file>
+      <directory name="Information is Beautiful" size="136">
+        <file name="Information is Beautiful (2000).azw3" size="21757432"></file>
+        <file name="Information is Beautiful (2012_2013).epub" size="8653422"></file>
+      </directory>
+      <file name="Knowledge Discovery from Temporal Social Networks (2018).pdf" size="5917044"></file>
+      <file name="LTE Cellular Narrowband Internet of Things (NB-IoT) - Practical Projects for the Cloud and Data Visualization (2021).pdf" size="74140211"></file>
+      <file name="Metadata by Jeffrey Pomerantz (2015).pdf" size="10763152"></file>
+      <directory name="Misc" size="170">
+        <file name="How Management Works - The Concepts Visually Explained by DK (2020).pdf" size="90908256"></file>
+        <file name="How the Brain Works - The Facts Visually Explained by DK (2020).pdf" size="32451773"></file>
+        <file name="Smart Thinking - Skills for Critical Understanding and Writing by Matthew Allen (2004).pdf" size="3747034"></file>
+      </directory>
+      <file name="Semiotics, Law &amp; Art - Between Theory of Justice and Theory of Law (2021).pdf" size="5278248"></file>
+      <directory name="Unity3D" size="204">
+        <file name="Jeff  W. Murray - C# Game Programming Cookbook for Unity 3D-CRC Press (2021).epub" size="7083354"></file>
+        <file name="Jeff W. Murray - C# Game Programming Cookbook for Unity 3D.pdf" size="6857936"></file>
+        <file name="Jonathan Linowes - Unity 2020 Virtual Reality Projects-Packt Publishing (2020).pdf" size="57882118"></file>
+        <file name="Joseph Hocking - Unity in Action_ Multiplatform game development in C#-Manning Publications (2022).pdf" size="31939798"></file>
+      </directory>
+      <file name="Visual Alchemy - The Fine Art of Digital Montage (2014).epub" size="19804160"></file>
+      <file name="Visual Miscellaneum - The Bestselling Classic, Revised and Updated - A Colorful Guide to the World’s Most Consequential Trivia (2009).epub" size="23929948"></file>
+      <file name="Visual Miscellaneum - The Bestselling Classic, Revised and Updated -A Colorful Guide to the World's Most Consequential Trivia (2012).djvu" size="19420165"></file>
+      <file name="Visual Storytelling (Screenwriting Blue Books) - Martell, William C_.mobi" size="301508"></file>
+      <file name="Visual Tools for Transforming Information Into Knowledge (2009).pdf" size="4661040"></file>
+      <file name="Visualising Powerful Knowledge to Develop the Expert Student (2016).pdf" size="9286426"></file>
+      <file name="Visuality and Spatiality in Virginia Woolf's Fiction (2012).pdf" size="13208614"></file>
+      <file name="Visualizing Argumentation Software for Collaborative and Educational Sense-Making.pdf" size="9181824"></file>
+      <file name="Visualizing Mathematics with 3D Printing (2016).pdf" size="12155416"></file>
+    </directory>
+    <directory name="2. Work" size="204">
+      <directory name="Books" size="136">
+        <directory name="Bible" size="68">
+        </directory>
+      </directory>
+      <directory name="Compilations" size="68">
+      </directory>
+      <directory name="Conferences" size="68">
+      </directory>
+    </directory>
+    <directory name="AI" size="510">
+      <directory name="Bible" size="136">
+        <file name="Deep Learning - Methods and Applications (2014).pdf" size="9054810"></file>
+        <file name="Goodfellow - Deep Learning (2016).pdf" size="23718763"></file>
+      </directory>
+      <file name="Deep Learning - A Visual Approach (2021).epub" size="65284050"></file>
+      <file name="Deep Learning Illustrated - A Visual, Interactive Guide to Artificial Intelligence  (2019).pdf" size="12496405"></file>
+      <file name="Deep learning illustrated - a visual, interactive guide to artificial intelligence.azw3" size="24287614"></file>
+      <file name="Encyclopedia of Machine Learning (2011).pdf" size="44207869"></file>
+      <file name="Generative Deep Learning - Teaching Machines to Paint, Write, Compose, and Play (2019).pdf" size="30607603"></file>
+      <directory name="Graph Neural Networks" size="272">
+        <directory name="Graph Representation Learning" size="136">
+          <file name="Graph Representation Learning (2020).pdf" size="7436374"></file>
+          <file name="Graph Representation Learning - preprint (2020).pdf" size="810338"></file>
+        </directory>
+        <file name="Graph-Based Semi-Supervised Learning (2014).pdf" size="1469697"></file>
+        <file name="Introduction to Graph Neural Networks (2020).pdf" size="24168118"></file>
+        <file name="PhD - Graph Neural Networks for Multimodal Learning and Representation (2019).pdf" size="53044950"></file>
+        <file name="PhD - Meta Learning for Graph Neural Networks (2018).pdf" size="1850459"></file>
+      </directory>
+      <file name="Machine Learning Refined - Foundations, Algorithms, and Applications (2016).pdf" size="29212229"></file>
+      <file name="Mathematics For Machine Learning (2019).pdf" size="17083974"></file>
+      <file name="Rebooting AI - Building Artificial Intelligence We Can Trust (2019).epub" size="13516904"></file>
+      <directory name="_Compilations_" size="68">
+      </directory>
+      <directory name="_Conferences_" size="170">
+        <file name="Advances in Artificial Intelligence (2001).pdf" size="4051709"></file>
+        <file name="Explainable AI - Interpreting, Explaining and Visualizing Deep Learning (2019).pdf" size="60999235"></file>
+        <file name="Graph Structures for Knowledge Representation and Reasoning (2011).pdf" size="11297273"></file>
+      </directory>
+    </directory>
+    <directory name="Augmented Cognition" size="102">
+      <file name="Augmented Cognition. Neurocognition and Machine Learning (2017).pdf" size="55336389"></file>
+    </directory>
+    <directory name="Augmented Reality" size="204">
+      <directory name="Books" size="408">
+        <file name="Augmented Reality with Kinect (2013).pdf" size="11872168"></file>
+        <file name="Interactive Environments with Open-Source Software - 3D Walkthroughs and Augmented Reality for Architects  (2008).pdf" size="38284122"></file>
+        <file name="Multiple View Geometry in Computer Vision, 2nd Edition (2004).pdf" size="10734979"></file>
+        <file name="Pro Android Augmented Reality.pdf" size="4109970"></file>
+        <file name="TR - Human-Computer Interaction with Augmented Reality (2014).pdf" size="965296"></file>
+        <file name="Theory and applications of marker-based augmented reality (2012).pdf" size="6049747"></file>
+        <file name="Time of Flight Cameras - Principles, Methods, and Applications (2012).pdf" size="4623115"></file>
+        <file name="Understanding Augmented Reality. Concepts and Applications (2013).pdf" size="46187098"></file>
+        <file name="Virtual und Augmented Reality (2013).pdf" size="16825828"></file>
+      </directory>
+      <directory name="Compilations" size="68">
+      </directory>
+      <directory name="Conferences" size="272">
+        <file name="Augmented reality (2010).pdf" size="28098072"></file>
+        <file name="Fundamentals of Wearable Computers and Augmented Reality, 2nd Ed. (2015).pdf" size="28326455"></file>
+        <file name="HCI International – Posters’ Extended Abstracts (2017).pdf" size="76644084"></file>
+        <file name="Human Factors in Augmented Reality Environments (2013).pdf" size="5222669"></file>
+        <file name="Virtual Reality &amp; Augmented Reality in Industry (2011).pdf" size="5960482"></file>
+        <file name="Visual Computing - Scientific Visualization and Imaging Systems (2014).pdf" size="11266655"></file>
+      </directory>
+    </directory>
+    <directory name="Cambridge Books" size="850">
+      <file name="An_Introduction_to_Reservoir_Simulation_Using_MATLABGNU_Octave.pdf" size="59845937"></file>
+      <file name="Buddhist_Ethics.pdf" size="1970904"></file>
+      <file name="Debating_Humanity.pdf" size="3099213"></file>
+      <file name="Deep_Carbon.pdf" size="30461222"></file>
+      <file name="Drugs_Politics.pdf" size="7531346"></file>
+      <file name="German_Operetta_on_Broadway_and_in_the_West_End_19001940.pdf" size="11536919"></file>
+      <file name="Global_Governance_and_the_Emergence_of_Global_Institutions_for_the_21st_Century.pdf" size="6708725"></file>
+      <file name="Language_and_the_Making_of_Modern_India.pdf" size="5215299"></file>
+      <file name="Mechanisms_in_Molecular_Biology.pdf" size="2865352"></file>
+      <file name="Mental_Causation.pdf" size="12638432"></file>
+      <file name="Nietzsches_Ethics.pdf" size="2027450"></file>
+      <file name="Philosophy_of_Immunology.pdf" size="3224531"></file>
+      <file name="Pirates_of_Empire.pdf" size="6118719"></file>
+      <file name="Social_Sustainability_Past_and_Future.pdf" size="16857996"></file>
+      <file name="Stand_out_of_our_Light.pdf" size="2123911"></file>
+      <file name="Sustainable_Development_Goals_Their_Impacts_on_Forests_and_People.pdf" size="112046739"></file>
+      <file name="The_Citizens_Guide_to_Climate_Success.pdf" size="4073118"></file>
+      <file name="The_Making_of_Japanese_Settler_Colonialism.pdf" size="10959158"></file>
+      <file name="The_Making_of_an_Imperial_Polity.pdf" size="5289609"></file>
+      <file name="The_Power_of_Standards.pdf" size="3568829"></file>
+      <file name="Utilitarianism.pdf" size="1986998"></file>
+      <directory name="work" size="136">
+        <file name="cambridge-computer-science-602-courses.7z" size="513198177"></file>
+      </directory>
+    </directory>
+    <directory name="Computer Graphics" size="272">
+      <file name="Advanced animation and rendering techniques (1992).pdf" size="35707734"></file>
+      <file name="Foundations of Geometric Algebra Computing (2013).pdf" size="3657846"></file>
+      <file name="Ray Tracing Gems - High-Quality and Real-Time Rendering with DXR and Other APIs (2019).pdf" size="36068022"></file>
+      <file name="Real-Time Rendering (2018).pdf" size="35499380"></file>
+      <file name="Smart Graphics (2006).pdf" size="6177017"></file>
+      <file name="WebGL.Insights.-.Patrick.Cozzi.pdf" size="78543717"></file>
+    </directory>
+    <directory name="Computer Vision" size="170">
+      <directory name="Books" size="204">
+        <file name="Computer Vision Metrics - Textbook Edition (2016).pdf" size="27447149"></file>
+        <file name="Making Things See - 3D vision with Kinect, Processing, Arduino, and MakerBot (2012).pdf" size="12940589"></file>
+        <file name="Model-based Visual Tracking - The OpenTL Framework (2011).pdf" size="7532543"></file>
+        <file name="Reconstruction and Analysis of 3D Scenes - From Irregularly Distributed 3D Points to Object Classes (2016).pdf" size="9543180"></file>
+      </directory>
+      <directory name="Conferences" size="102">
+        <file name="Consumer Depth Cameras for Computer Vision (2013).pdf" size="7776892"></file>
+      </directory>
+    </directory>
+    <directory name="Data Science" size="204">
+      <file name="Data Mining - Concepts and Techniques, 3rd Edition (2011).pdf" size="13134332"></file>
+      <file name="Data Mining - Practical Machine Learning Tools and Techniques (2017).pdf" size="6613030"></file>
+      <file name="Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).epub" size="8419042"></file>
+      <file name="Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).pdf" size="9344653"></file>
+    </directory>
+    <directory name="GIS" size="102">
+      <file name="Encyclopedia of GIS (2008).pdf" size="34894243"></file>
+    </directory>
+    <directory name="GameDev" size="340">
+      <file name="Deep Learning in Gaming and Animations - Principles and Applications (Explainable AI (XAI) for Engineering Applications) (2021).pdf" size="10221149"></file>
+      <directory name="Game Design" size="170">
+        <file name="The Art of Game Design - A Book of Lenses, 2nd Ed. (2014).pdf" size="15531690"></file>
+        <file name="The Art of Game Design - A Book of Lenses, Third Edition (2019).epub" size="65400241"></file>
+      </directory>
+      <file name="Game Programming Patterns - Composed (2014).pdf" size="6843589"></file>
+      <file name="Interactive stories and video game art - a storytelling framework for game design (2017).pdf" size="15532964"></file>
+      <file name="Pixel Art for Game Developers (2015).pdf" size="45537634"></file>
+      <file name="Procedural Content Generation in Games (2016).pdf" size="12117556"></file>
+      <file name="The Digital Gaming Handbook (2020).pdf" size="67026043"></file>
+    </directory>
+    <directory name="Gamification" size="102">
+      <file name="Gamification in Learning and Education - Enjoy Learning Like Gaming (2018).pdf" size="8507542"></file>
+    </directory>
+    <directory name="Graph Databases" size="204">
+      <directory name="Books" size="204">
+        <directory name="Bible" size="68">
+        </directory>
+        <file name="Graph Databases - New Opportunities for Connected Data (2015).epub" size="5684208"></file>
+        <file name="Graph Databases - O'Reilly Media (2013).pdf" size="22058090"></file>
+      </directory>
+      <directory name="_Compilations_" size="68">
+      </directory>
+      <directory name="_Conferences_" size="170">
+        <file name="Graph Data Management Techniques and Applications (2012).pdf" size="12327979"></file>
+        <file name="Graph Transformations and Model-Driven Engineering (2010).pdf" size="16944773"></file>
+        <file name="Web-Age Information Management.pdf" size="5728899"></file>
+      </directory>
+    </directory>
+    <directory name="HCI" size="306">
+      <directory name="Books" size="170">
+        <file name="Developer to Designer - GUI Design for the Busy Developer (2005).pdf" size="11664646"></file>
+        <file name="Jakob Nielsen - Usability Engineering (1993).pdf" size="104285378"></file>
+      </directory>
+      <directory name="Compilations" size="204">
+        <file name="HCI Models, Theories, and Frameworks - Toward a Multidisciplinary Science.pdf" size="7651369"></file>
+        <file name="Handbook of HCI, 2nd completely revised ed. 1997.pdf" size="131293629"></file>
+        <file name="Human-Computer Interaction, by Ioannis Pavlidis.pdf" size="42078651"></file>
+        <file name="Intelligent Interactive Multimedia Systems and Services in Practice (2015).pdf" size="4761347"></file>
+      </directory>
+      <directory name="Conferences" size="442">
+        <file name="Distributed-User-Interfaces-Designing-Interfaces-for-the-Distributed-Ecosystem.pdf" size="5140740"></file>
+        <file name="End User Development (2006).pdf" size="6270895"></file>
+        <file name="Human Aspects of Visualization.pdf" size="5213142"></file>
+        <file name="Human Interface and the Management of Information.. Methods, Techniques and Tools in Information Design 2007(LNCS4557, Springer, 2007)(ISBN 9783540733447)(1045s).pdf" size="18530811"></file>
+        <file name="Human-Centered Software Engineering - Integrating Usability in the Software Development Lifecycle.pdf" size="2934322"></file>
+        <file name="Human-Computer Interaction - Development Process-CRC Press (2009).pdf" size="7872447"></file>
+        <file name="Human-Computer Interaction - Fundamentals.pdf" size="10855062"></file>
+        <file name="Human-Computer Interaction - Interaction Platforms and Techniques .pdf" size="201466536"></file>
+        <file name="Human-Computer Interaction – INTERACT 2019.pdf" size="60549196"></file>
+        <file name="New perspectives in end-user development (2017).pdf" size="16122040"></file>
+      </directory>
+      <file name="Human-Centred Web Adaptation and Personalization - From Theory to Practice (2016).pdf" size="8579279"></file>
+      <file name="Human-Computer Interaction - Theory and Practice (part 2), Volume 2  (2003).pdf" size="103141624"></file>
+      <file name="Human-Computer interaction - theory and practice part 1 (2003).pdf" size="92779749"></file>
+    </directory>
+    <directory name="Information processing" size="170">
+      <directory name="Conferences" size="136">
+        <file name="Clustering Methods for Big Data Analytics Techniques, Toolboxes and Applications (2019).pdf" size="6648382"></file>
+        <file name="Computational Intelligence in Data Mining (2019).pdf" size="29585400"></file>
+      </directory>
+      <file name="Modern information retrieval (1999).pdf" size="25475836"></file>
+    </directory>
+    <directory name="Math" size="102">
+      <file name="Complex Valued Graphs  for Soft Computing.pdf" size="4162903"></file>
+    </directory>
+    <directory name="Mathematics" size="102">
+      <file name="Handbook of Linear Algebra (2007).pdf" size="15104101"></file>
+    </directory>
+    <directory name="Misc" size="510">
+      <file name="(For Dummies) Creative Visualization For Dummies (2011).pdf" size="5130756"></file>
+      <file name="101 Design Methods - A Structured Approach for Driving Innovation in Your Organization (2013).pdf" size="23183140"></file>
+      <file name="Barabasi A. Linked-the new science of networks (Perseus Publ., 2002)(T)(279s)_Cs_.djvu" size="2720108"></file>
+      <file name="Cracking the Code to a Successful Interview - 15 Insider Secrets from a Top-Level Recruiter 2016).epub" size="488032"></file>
+      <file name="Creative Visualization - Use the Power of Your Imagination to Create What You Want in Your Life (1995).pdf" size="2433303"></file>
+      <file name="Experimental Design for Behavioral and Social Sciences.pdf" size="4363407"></file>
+      <file name="Innovation and Visualization - Trajectories, Strategies, and Myths (2005).pdf" size="4743578"></file>
+      <directory name="Modeling &amp; Engineering" size="136">
+        <file name="Computer Visualization for the Theatre - 3D Modelling for Designers (2003).pdf" size="3325798"></file>
+        <file name="Visualization, Modeling, and Graphics for Engineering Design (2008).pdf" size="64282211"></file>
+      </directory>
+      <file name="Practical Guide to Creative Visualization - Manifest Your Desires (2001).pdf" size="873454"></file>
+      <file name="The Linux programming interface - a Linux and UNIX system programming handbook (2010).pdf" size="7260882"></file>
+      <file name="Thinking, Fast and Slow.pdf" size="3675247"></file>
+      <file name="Toward the Visualization of History - The Past as Image (2010).pdf" size="870455"></file>
+    </directory>
+    <directory name="Multimedia" size="238">
+      <file name="A_Guide_to_Computer_Animation_for_TV_Games_Multimedia_and_Web (2002).pdf" size="12160135"></file>
+      <directory name="Books" size="510">
+        <file name="3D Visual Content Creation, Coding and Delivery (2019).pdf" size="9988592"></file>
+        <file name="AN INTRODUCTION TO DIGITAL MEDIA (1997).pdf" size="1297404"></file>
+        <file name="Borko Furht - Encyclopedia of Multimedia (2008).pdf" size="17752575"></file>
+        <file name="Digital Signal Processing for Multimedia Systems (1999).pdf" size="47597967"></file>
+        <file name="Digital Storytelling - A Creator’s Guide to Interactive Entertainment (2004).pdf" size="7057734"></file>
+        <file name="Encyclopedia of multimedia (2006).pdf" size="163906947"></file>
+        <file name="Essentials of Digital Signal Processing (2014).pdf" size="9202068"></file>
+        <directory name="Hypermedia" size="204">
+          <file name="Designing User Interfaces for Hypermedia (1995).pdf" size="10460036"></file>
+          <file name="From Web to Workplace - Designing Open Hypermedia Systems (1999).pdf" size="19524914"></file>
+          <file name="Hypermedia Systems and Applications - World Wide Web and Beyond  (1997).pdf" size="17968257"></file>
+          <file name="Rethinking Hypermedia - The Microcosm Approach (1996).pdf" size="5011616"></file>
+        </directory>
+        <file name="Introduction to MPEG 7 (2003).pdf" size="21339738"></file>
+        <file name="Multimedia Database Management Systems (1999).pdf" size="12824750"></file>
+        <file name="Multimedia_2013_SK.pdf" size="8551059"></file>
+        <file name="Principles of Multimedia Database Systems (1998).djvu" size="8100763"></file>
+      </directory>
+      <directory name="Compilations" size="238">
+        <file name="Foundations of Large-Scale Multimedia Information. Mgmt and Retrieval (2011).pdf" size="7194650"></file>
+        <file name="Handbook of Digital and Multimedia Forensic Evidence.pdf" size="3585232"></file>
+        <file name="Multimedia semantics metadata, analysis and interaction.pdf" size="2358367"></file>
+        <file name="Semantic Mining Technologies for Multimedia Databases.pdf" size="16495704"></file>
+        <file name="The Digital Signal Processing Handbook - Digital Signal Processing Fundamentals.pdf" size="11031913"></file>
+      </directory>
+      <directory name="Conferences" size="238">
+        <file name="Adaptable and Adaptive Hypermedia Systems (2005).pdf" size="61780981"></file>
+        <file name="Advanced Topics in Multimedia Research.pdf" size="14798846"></file>
+        <file name="Advances in Multimedia Modeling (LNCS).pdf" size="35171076"></file>
+        <file name="Computer Graphics and Multimedia - Applications, Problems and Solutions.pdf" size="4765380"></file>
+        <file name="Knowledge-Driven_Multimedia_Information_Extraction_(3642207944).pdf" size="11567266"></file>
+      </directory>
+    </directory>
+    <directory name="Ontologies &amp; Knowledge" size="204">
+      <directory name="Books" size="136">
+        <directory name="Bible" size="68">
+        </directory>
+      </directory>
+      <directory name="Compilations" size="102">
+        <file name="Handbook of Graphs and Networks - From the Genome to the Internet (2003).pdf" size="6387919"></file>
+      </directory>
+      <directory name="Conferences" size="238">
+        <file name="Graph Structures for Knowledge Representation and Reasoning.pdf" size="5423539"></file>
+        <file name="Handbook on Ontologies (2009).pdf" size="7443380"></file>
+        <file name="Information Modelling and Knowledge Bases XVII.pdf" size="8156421"></file>
+        <file name="Knowledge Discovery and Data Mining - Challenges and Realities (2007).pdf" size="3961321"></file>
+        <file name="Ontologies - A Handbook of Principles, Concepts and Applications in Information Systems.pdf" size="13541847"></file>
+      </directory>
+    </directory>
+    <directory name="Programming" size="408">
+      <file name="Agile Principles, Patterns, and Practices in C# (2007).pdf" size="13594880"></file>
+      <file name="Agile Project Management with Azure DevOps_ Concepts, Templates, and Metrics (2019).pdf" size="9278328"></file>
+      <file name="Antipatterns - Refactoring Software, Archtectures and Projects (1998).pdf" size="3309256"></file>
+      <file name="Code - The Hidden Language of Computer Hardware and Software (2000).pdf" size="6370852"></file>
+      <file name="Introduction to Algorithms (2001).pdf" size="13119033"></file>
+      <file name="Learning C# Programming with Unity 3D (2014).pdf" size="14989295"></file>
+      <file name="Mastering CMake.pdf" size="51544779"></file>
+      <file name="Pattern Oriented Software Architecture - On Patterns and Pattern Languages. Volume 5 (2007).pdf" size="9625267"></file>
+      <file name="Pattern-Oriented Software Architecture - A Pattern Language for Distributed Computing (Vol. 4) (2007).pdf" size="5471855"></file>
+      <file name="Pattern-oriented software architecture for dummies (2013).pdf" size="32940837"></file>
+    </directory>
+    <directory name="Psychology" size="170">
+      <file name="Consciousness - An Introduction (2018).pdf" size="47939250"></file>
+      <file name="Theories of Consciousness - An Introduction and Assessment (2016).pdf" size="2257003"></file>
+      <file name="Visualizing Psychology, 2nd Edition (2010).pdf" size="79493066"></file>
+    </directory>
+    <directory name="Semiotics" size="136">
+      <file name="Introduction to Peircean Visual Semiotics (2013).pdf" size="4305755"></file>
+      <file name="Semiotics and Visual Communication - Concepts and Practices (2014).pdf" size="2500273"></file>
+    </directory>
+    <directory name="Software Engineering" size="238">
+      <file name="Domain-Driven Design - Tackling Complexity in the Heart of Software (2003).pdf" size="7028392"></file>
+      <file name="Introduction to Software Testing (2017).pdf" size="8024578"></file>
+      <directory name="_Compilations_" size="102">
+      </directory>
+      <directory name="_Conferences_" size="272">
+        <file name="Enterprise Information Systems (2012).pdf" size="21891140"></file>
+        <file name="Evaluation of Novel Approaches to Software Engineering (2019).pdf" size="31583889"></file>
+        <file name="Handbook Of Software Engineering And Knowledge Engineering (2001).pdf" size="16697109"></file>
+        <file name="Handbook of Software Engineering and Knowledge Engineering - Recent Advances (2005).pdf" size="32629180"></file>
+        <file name="Requirements Engineerin - Foundation for Software Quality (2020).pdf" size="19485558"></file>
+        <file name="Software Evolution.pdf" size="7130503"></file>
+      </directory>
+    </directory>
+    <directory name="Statistics" size="204">
+      <file name="Advanced R Statistical Programming and Data Models - Analysis, Machine Learning, and Visualization (2019).pdf" size="73540583"></file>
+      <file name="Interpreting statistical findings - a guide for health professionals and students (2010).pdf" size="6802808"></file>
+      <file name="Testing Statistical Assumptions in Research (2019).pdf" size="8653428"></file>
+      <file name="The Practically Cheating Statistics Handbook (2010).pdf" size="2419444"></file>
+    </directory>
+    <directory name="Teaching" size="102">
+      <file name="Reflections on the Teaching of Programming Methods and Implementations (2008).pdf" size="4604641"></file>
+    </directory>
+    <directory name="UX" size="136">
+      <directory name="Bible" size="102">
+        <file name="Measuring the user experience - collecting, analyzing, and presenting usability metrics (2013).pdf" size="24079207"></file>
+      </directory>
+    </directory>
+    <directory name="Virtual Reality" size="204">
+      <directory name="Books" size="68">
+      </directory>
+      <directory name="_Compilations_" size="68">
+      </directory>
+      <directory name="_Conferences_" size="102">
+        <file name="VIRTUAL AND ADAPTIVE ENVIRONMENTS - Applications, Implications, and Human, Performance Issues (2003).pdf" size="5647897"></file>
+      </directory>
+    </directory>
+    <directory name="Visualization" size="204">
+      <directory name="Books" size="1802">
+        <directory name="Architecture &amp; GIS" size="102">
+          <file name="Visualizing Venice Mapping and Modeling Time and Change in a City (2018).pdf" size="2750739"></file>
+        </directory>
+        <file name="Avoiding Data Pitfalls (2020).pdf" size="14474341"></file>
+        <file name="Avoiding Data Pitfalls - How To Steer Clear Of Common Blunders When Working With Data And Presenting Analysis And Visualizations (2020).pdf" size="14331998"></file>
+        <file name="Better Data Visualizations - A Guide for Scholars, Researchers, and Wonks (2021).pdf" size="29037522"></file>
+        <directory name="Bible" size="136">
+          <file name="Interactive Visual Data Analysis (2020).pdf" size="97348647"></file>
+          <file name="Visualization Analysis and Design - Munzner, Tamara.pdf" size="11144069"></file>
+        </directory>
+        <file name="Colin Ware - Information Visualization - Perception for Design - 4th ed. (2020).pdf" size="14096803"></file>
+        <file name="Data Analysis and Visualization Using Python - Analyze Data to Create Visualizations for BI Systems (2019).epub" size="12726430"></file>
+        <file name="Data Analysis and Visualization.epub" size="12725424"></file>
+        <file name="Data Mining and Analysis - Fundamental Concepts and Algorithms (2014).pdf" size="10588392"></file>
+        <file name="Data Visualisation - A Handbook for Data Driven Design (2016).pdf" size="28550180"></file>
+        <file name="Data Visualization - A Practical Introduction (2019).pdf" size="12742006"></file>
+        <file name="Data Visualization - Charts, Maps, and Interactive Graphics (2019).pdf" size="66878528"></file>
+        <file name="Data visualization made simple - insights into becoming visual (2019).pdf" size="34545280"></file>
+        <file name="Dear Data (2016).pdf" size="80092162"></file>
+        <file name="Designing Science Presentations - A Visual Guide to Figures, Papers, Slides, Posters, and More (2021).pdf" size="30813422"></file>
+        <file name="Earth Systems Data Processing and Visualization Using MATLAB (2020).pdf" size="19499265"></file>
+        <file name="Fundamentals of Data Visualization - A Primer on Making Informative and Compelling Figures (2019).pdf" size="44170144"></file>
+        <file name="Good Charts Workbook - Tips, Tools, and Exercises for Making Better Data Visualizations (2019).pdf" size="18543141"></file>
+        <file name="Hands-On Data Visualization (2021).epub" size="73677948"></file>
+        <file name="Hybrid Imaging and Visualization - Employing Machine Learning with Mathematica - Python (2020).pdf" size="21300762"></file>
+        <directory name="Infographics" size="306">
+          <file name="Cool Infographics - Effective Communication with Data Visualization and Design (2013).pdf" size="168959845"></file>
+          <file name="Cool Infographics - Effective Communication with Data Visualization and Design (2014).pdf" size="169018690"></file>
+          <file name="Infographics (2012).pdf" size="37763738"></file>
+          <file name="Infographics - The Power of Visual Storytelling (2012).pdf" size="18955651"></file>
+          <file name="Interactive Visual Data Analysis (2020).epub" size="24877921"></file>
+          <file name="Knowledge is Beautiful (2012).azw3" size="26718372"></file>
+          <file name="Knowledge is Beautiful (2014).pdf" size="40986569"></file>
+        </directory>
+        <file name="Information Design Workbook - Graphic approaches, solutions, and inspiration plus 30 case studies (2008).pdf" size="109262483"></file>
+        <file name="Information Foraging Theory - Adaptive Interaction with Information (2007).pdf" size="3661904"></file>
+        <file name="Introduction To Information Visualization - Transforming Data Into Meaningful Information (2019).pdf" size="10246317"></file>
+        <file name="Knowledge Visualization Currents - From Text to Art to Culture (2013).pdf" size="7513863"></file>
+        <file name="Making Sense of Data (2016).pdf" size="3987405"></file>
+        <file name="Non-Designer's Design Book, The 3rd Edition (2008).pdf" size="14671988"></file>
+        <file name="Painting with Numbers - Presenting Financials and Other Numbers So People Will Understand You (2012).pdf" size="29593119"></file>
+        <directory name="Practical" size="476">
+          <file name="Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).epub" size="2740212"></file>
+          <file name="Data Visualization with Python and JavaScript (2016).pdf" size="39743318"></file>
+          <file name="Effective data visualization - the right chart for the right data (2020).azw3" size="14599888"></file>
+          <file name="Interactive Data Visualization (2013).epub" size="5054673"></file>
+          <file name="Interactive Web-Based Data Visualization with R, Plotly, and Shiny (2020).pdf" size="109098973"></file>
+          <directory name="JavaScript" size="170">
+            <file name="Data Visualization with JavaScript (2015).pdf" size="19906083"></file>
+            <file name="Stephen A. Thomas - Data Visualization with JavaScript.epub" size="7345712"></file>
+            <file name="Stephen A. Thomas - Data Visualization with JavaScript.mobi" size="14178476"></file>
+          </directory>
+          <directory name="Python" size="204">
+            <file name="Interactive Data Visualization With Python - Present your data as an effective and compelling story - 2nd. ed. (2020).pdf" size="21022589"></file>
+            <file name="Practical Python Data Visualization - A Fast Track Approach To Learning Data Visualization With Python (2021).pdf" size="5039681"></file>
+            <file name="Python Crash Course - A Complete Beginner's Guide for Python Coding and Data Visualization..epub" size="1742064"></file>
+            <file name="The Data Visualization Workshop (2020).pdf" size="36176967"></file>
+          </directory>
+          <directory name="R" size="102">
+            <file name="Spatial Analysis with R - Statistics, Visualization, and Computational Methods (2021).pdf" size="8710125"></file>
+          </directory>
+          <file name="SAS Programming and Data Visualization Techniques.epub" size="5578809"></file>
+          <directory name="Tableau" size="238">
+            <file name="Tableau - Which Chart is Right for You - WhitePaper .pdf" size="11347071"></file>
+            <file name="Tableau for Beginner Data Analysis and Visualization 101 (2020).pdf" size="57611893"></file>
+            <file name="Tableau your data (2016).pdf" size="99713740"></file>
+            <file name="Visual Analytics with Tableau (2019).pdf" size="18090054"></file>
+            <file name="Visual Data Storytelling with Tableau.epub" size="26313023"></file>
+          </directory>
+          <file name="The Data Visualization Workshop - A self-paced, practical approach to transforming your complex data into compelling, captivating graphics (2020).epub" size="42994848"></file>
+        </directory>
+        <file name="Presenting Data - How to Communicate Your Message Effectively (2014).pdf" size="14281726"></file>
+        <directory name="R" size="102">
+          <file name="Data Visualization and Analysis in Second Language Research (2021).pdf" size="5986876"></file>
+        </directory>
+        <file name="Scientific Visualization - Uncertainty, Multifield, Biomedical, and Scalable Visualization (2014).epub" size="8221534"></file>
+        <file name="Stories That Move Mountains - Storytelling and Visual Design for PERSUASIVE PRESENTATIONS (2013).pdf" size="115182453"></file>
+        <file name="The Big Book of Dashboards - Visualizing Your Data Using Real-World Business Scenarios (2017).epub" size="22753844"></file>
+        <file name="The Big Book of Dashboards - Visualizing Your Data Using Real-World Business Scenarios (2017).pdf" size="101069229"></file>
+        <file name="The Big Picture - How to Use Data Visualization to Make Better Decisions (2021).pdf" size="13686646"></file>
+        <file name="The Data Visualization Workshop - A self-paced, practical approach to transforming your complex data into compelling, captivating graphics (2020).pdf" size="37765700"></file>
+        <file name="The Visual Imperative. Creating a Visual Culture of Data Discovery (2016).pdf" size="16994996"></file>
+        <file name="The Visual Organization - Data Visualization, Big Data, and the Quest for Better Decisions (2014).pdf" size="36489731"></file>
+        <file name="The Visualization Toolkit - An Object Oriented Approach to 3D Graphics 3rd Edition (2003).pdf" size="80181986"></file>
+        <file name="VISUAL INSIGHTS - A Practical Guide to Making Sense of Data (2014).pdf" size="34813799"></file>
+        <file name="Visual Analytics for Data Scientists (2020).pdf" size="86388512"></file>
+        <file name="Visual Complexity - Mapping Patterns of Information (2011).pdf" size="112618265"></file>
+        <directory name="Visual Perception" size="272">
+          <file name="Handbook Of Visual Communication - Theory, Methods, And Media (2020).pdf" size="17002745"></file>
+          <directory name="Visual Attention" size="136">
+            <file name="The Oxford Handbook of Attention (2014).pdf" size="32495101"></file>
+          </directory>
+          <file name="Visual Perception - An Introduction - 2nd ed. (2001).pdf" size="9996118"></file>
+          <file name="Visual Perception - An Introduction - 3rd ed. (2013).pdf" size="10849833"></file>
+          <directory name="Visual System" size="102">
+            <file name="Models of the Visual System (2002).pdf" size="64726578"></file>
+          </directory>
+        </directory>
+        <file name="Visual Revelations - Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot (1997).pdf" size="9126201"></file>
+        <file name="Visual data mining - The VisMiner approach (2012).pdf" size="4155957"></file>
+        <file name="Visualize This - The Flowing Data Guide to Design, Visualization, and Statistics (2011).epub" size="20917927"></file>
+        <file name="Visualize This - The FlowingData Guide to Design, Visualization, and Statistics (2011).pdf" size="722052601"></file>
+        <file name="Visualizing Streaming Data - Interactive Analysis Beyond Static Limits (2018).epub" size="6728950"></file>
+        <file name="storytelling with data excerpt.pdf" size="3693166"></file>
+      </directory>
+      <directory name="Compilations" size="578">
+        <file name="Aesthetic Computing (2006).pdf" size="8097022"></file>
+        <file name="Brain-Inspired Intelligence and Visual Perception - The Brain and Machine Eyes (2020).pdf" size="9729946"></file>
+        <file name="Data Science and Visual Computing (2019).pdf" size="2924929"></file>
+        <file name="Exploring Geovisualization (2005).pdf" size="14645880"></file>
+        <file name="Handbook of Visual Analysis (2008).pdf" size="6266382"></file>
+        <file name="High Performance Visualization - Enabling Extreme-Scale Scientific Insight (2012).pdf" size="8989153"></file>
+        <file name="Landscape analysis and visualisation (2008).pdf" size="9314192"></file>
+        <file name="Learning Analytics Cookbook - How to Support Learning Processes Through Data Analytics and Visualization (2020).pdf" size="4362813"></file>
+        <file name="Mining Graph Data (2007).pdf" size="7355914"></file>
+        <file name="Scientific Visualization - The Visual Extraction of Knowledge from Data.pdf" size="9399253"></file>
+        <file name="Scientific Visualization - Uncertainty, Multifield, Biomedical, and Scalable Visualization (2014).pdf" size="13526580"></file>
+        <file name="Semiotics as a Tool for Learning Mathematics (2016).pdf" size="8373500"></file>
+        <file name="Text mining and visualization - case studies using open-source tools (2016).pdf" size="20213769"></file>
+        <file name="Visualization and processing of tensor fields (2006).pdf" size="21930319"></file>
+      </directory>
+      <directory name="Conferences" size="1632">
+        <file name="Advances in Visualization and Optimization Techniques for Multidisciplinary Research - Trends in Modelling and Simulations for Engineering Applications (2020).pdf" size="18413449"></file>
+        <file name="Big Data and Visual Analytics (2017).pdf" size="8786856"></file>
+        <file name="Big Data for Remote Sensing - Visualization, Analysis and Interpretation (2019).pdf" size="6619456"></file>
+        <file name="Big Data of Complex Networks (2016).pdf" size="34895968"></file>
+        <file name="Bio-Imaging and Visualization for Patient-Customized Simulations.pdf" size="7518513"></file>
+        <file name="Cognitive Biases in Visualizations (2018).pdf" size="4876922"></file>
+        <file name="Computing and Visualization in Science (2005).pdf" size="1643588"></file>
+        <file name="Cooperative Design, Visualization, and Engineering (2006).pdf" size="10632751"></file>
+        <file name="Cooperative Design, Visualization, and Engineering (2011).pdf" size="10375778"></file>
+        <file name="Cooperative Design, Visualization, and Engineering, 1 conf., CDVE 2004 (2004).pdf" size="11687616"></file>
+        <file name="DATA VISUALIZATION - The State of the Art (2003).pdf" size="35851992"></file>
+        <file name="Data Analytics and Decision Support for Cybersecurity - Trends, Methodologies and Applications (2017).pdf" size="6690144"></file>
+        <file name="Data Visualization and Knowledge Engineering - Spotting Data Points with Artificial Intelligence (2020).pdf" size="15600818"></file>
+        <file name="Eye Tracking and Visualization Foundations, Techniques, and Applications (2015).pdf" size="10438291"></file>
+        <file name="Foundations of Data Visualization (2020).pdf" size="13874679"></file>
+        <file name="From Analysis to Visualization - A Celebration of the Life and Legacy of Jonathan M. Borwein (2017).pdf" size="6003657"></file>
+        <file name="Geographical Information Processing and Visual Analytics for Environmental Security.pdf" size="19538756"></file>
+        <file name="Handbook of Human Centric Visualization.pdf" size="16538033"></file>
+        <file name="Hierarchical and Geometrical Methods in Scientific Visualization.pdf" size="18798093"></file>
+        <file name="Human Interface and the Management of Information. Interaction, Visualization, and Analytics (2018).pdf" size="105544087"></file>
+        <file name="Information Access Evaluation Multilinguality, Multimodality, and Visual Analytics.pdf" size="4620574"></file>
+        <file name="Knowledge and Information Visualization (2005).pdf" size="10579488"></file>
+        <file name="Learning from Dynamic Visualization - Innovations in Research and Application (2017).pdf" size="9964334"></file>
+        <file name="Mathematical foundations of scientific visualization, computer graphics, and massive data exploration (2009).pdf" size="8578957"></file>
+        <directory name="MedicineVis" size="204">
+          <file name="Visualization in Medicine and Life Sciences I (2007).pdf" size="9038469"></file>
+          <file name="Visualization in Medicine and Life Sciences II (2012).pdf" size="7871966"></file>
+          <file name="Visualization in Medicine and Life Sciences II - Progress and New Challenges (2012).pdf" size="8857931"></file>
+          <file name="Visualization in Medicine and Life Sciences III (2016).pdf" size="13781316"></file>
+        </directory>
+        <file name="Online Social Media Analysis and Visualization(2014).pdf" size="11663142"></file>
+        <file name="Scientific Visualization - The Visual Extraction of Knowledge from Data (2016).pdf" size="10671304"></file>
+        <file name="Social Networking - Mining, Visualization, and Security (2014).pdf" size="12010409"></file>
+        <file name="Software Visualization (2002).pdf" size="8148308"></file>
+        <file name="The Visualization Handbook (2005).pdf" size="15024700"></file>
+        <file name="Topological Methods in Data Analysis and Visualization.pdf" size="5003929"></file>
+        <file name="Topological and Statistical Methods for Complex Data - Tackling Large-Scale, High-Dimensional, and Multivariate Data Set.pdf" size="7718343"></file>
+        <file name="Topological and Statistical Methods for Complex Data - Tackling Large-Scale, High-Dimensional, and Multivariate.pdf" size="10236485"></file>
+        <file name="Topology-based Methods in Visualization.pdf" size="9956114"></file>
+        <file name="Visual Data Mining - Theory, Techniques and Tools for Visual Analytics.pdf" size="3785658"></file>
+        <file name="Visual Information Communication (2010).pdf" size="27639327"></file>
+        <file name="Visual Information Systems (1997).pdf" size="21754997"></file>
+        <file name="Visual Language Theory (1998).pdf" size="12079350"></file>
+        <file name="Visualization and Simulation of Complex Flows in Biomedical Engineering.pdf" size="6861529"></file>
+        <file name="Visualization in Medicine and Life Sciences (2007).pdf" size="10262201"></file>
+        <file name="Visualization in Programming, 5 conf., in Informatics and Psychology (1987).djvu" size="2789779"></file>
+        <file name="Visualizing the Semantic Web - XML-Based Internet and Information Visualization (2004).pdf" size="6698381"></file>
+        <file name="VizSEC 2007 - Proc of the Workshop on Visualization for Computer Security.pdf" size="6649478"></file>
+        <directory name="scientific" size="136">
+          <file name="Scientific Visualization - The Visual Extraction of Knowledge from Data-Springer (2005).pdf" size="8910901"></file>
+          <file name="Scientific Visualization - The visual extraction of knowledge from data (2005).pdf" size="7253843"></file>
+        </directory>
+        <directory name="visual analytics" size="136">
+          <file name="Expanding the Frontiers of Visual Analytics and Visualization (2012).pdf" size="17065815"></file>
+          <file name="Visual Analytics and Interactive Technologies - Data, Text and Web Mining Applications.pdf" size="5761008"></file>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="WebDev" size="170">
+      <directory name="Books" size="374">
+        <directory name="Bible" size="68">
+        </directory>
+        <file name="Fundamentals of Web Development (2014).pdf" size="108751877"></file>
+        <file name="Fundamentals of Web Development, Global Edition (2015).pdf" size="153739780"></file>
+        <file name="Web Application Architecture - Principles, Protocols and Practices (2009).epub" size="7921647"></file>
+        <file name="Web Application Architecture - Principles, Protocols and Practices (2009).mobi" size="10531514"></file>
+        <file name="Web Application Design Handbook - Best Practices for Web-Based Software (2004).pdf" size="53516827"></file>
+        <file name="Web Engineering - A Practitioner's Approach (2009).pdf" size="45453778"></file>
+        <file name="Web-Application - Architecture Principles Protocols and Practices (2003).pdf" size="3933559"></file>
+      </directory>
+      <directory name="Technologies" size="238">
+        <directory name="HTML5" size="272">
+          <directory name="HTML5 - Step by Step" size="136">
+            <file name="HTML5 - Step by Step.pdf" size="14181181"></file>
+            <file name="HTML5 Step by Step - Practice Files - .zip" size="62105629"></file>
+          </directory>
+          <directory name="HTML5 Books Collection" size="1530">
+            <file name="A Book Apart Publishing HTML5 for Web Designers (2010).pdf" size="14187288"></file>
+            <file name="Addison-Wesley HTML5 Guidelines for Web Developers (2011).pdf" size="7374952"></file>
+            <directory name="Apps &amp; Tools" size="136">
+              <file name="Adobe Press Dreamweaver CS5.5, Designing and Developing for Mobile with jQuery HTML5 and CSS3 (2011).pdf" size="8688004"></file>
+              <file name="Packt Publishing Dreamweaver CS5.5 Mobile and Web Development with HTML5, CSS3 and jQuery (2011).pdf" size="11975637"></file>
+            </directory>
+            <file name="Apress Foundation HTML5 Canvas (2011).pdf" size="19448754"></file>
+            <file name="Apress HTML5 Mastery, Semantics Standards and Styling (2011).pdf" size="6705142"></file>
+            <file name="Apress HTML5 Solutions, Essential Techniques for HTML5 Developers (2011).pdf" size="17562614"></file>
+            <file name="Apress HTML5 and JavaScript Projects (2011).pdf" size="8201448"></file>
+            <file name="Apress Pro HTML5 Programming 2nd (2011).pdf" size="8837771"></file>
+            <file name="Apress Pro HTML5 Programming, Powerful APIs for Richer Internet Application Development (2010).pdf" size="4990304"></file>
+            <file name="Apress Pro HTML5 and CSS3 Design Patterns (2011).pdf" size="12251449"></file>
+            <file name="Apress The Definitive Guide to HTML5 (2011).pdf" size="18511547"></file>
+            <file name="Apress The Definitive Guide to HTML5 Video (2010).pdf" size="11678937"></file>
+            <file name="Focal Press HTML5, Designing Rich Internet Applications (2010).pdf" size="16994749"></file>
+            <file name="Focal Press Rendering HTML5 Illustration (2010).pdf" size="956736"></file>
+            <directory name="GameDev" size="272">
+              <file name="Addison-Wesley Learning HTML5 Game Programming, A Hands-on Guide to Building Online Games Using Canvas SVG and WebGL (2012).pdf" size="5213519"></file>
+              <file name="Apress Foundation HTML5 Animation with JavaScript (2011).pdf" size="8375991"></file>
+              <file name="Apress The Essential Guide to HTML5, Using Games to Learn HTML5 and JavaScript (2010).pdf" size="12039020"></file>
+              <file name="OReilly Introducing HTML5 Game Development (2012).pdf" size="6871334"></file>
+              <file name="OReilly Making Isometric Social Real-Time Games with HTML5 CSS3 and Javascript (2011).pdf" size="8969493"></file>
+              <file name="Packt Publishing HTML5 Games Development by Example, Beginner's Guide (2011).pdf" size="9829813"></file>
+            </directory>
+            <file name="Microsoft Press HTML5, Step by Step (2011).pdf" size="9734506"></file>
+            <directory name="Mobile" size="272">
+              <file name="Apress Beginning Nokia Apps Development, Qt and HTML5 for Symbian and MeeGo (2010).pdf" size="9105670"></file>
+              <file name="Apress Beginning PhoneGap, Mobile Web Framework for JavaScript and HTML5 (2012).pdf" size="28280753"></file>
+              <file name="Apress Beginning iPhone and iPad Web Apps, Scripting with HTML5 CSS3 and JavaScript (2010).pdf" size="15875284"></file>
+              <file name="Apress Pro Android Web Apps, Develop for Android Using HTML5 CSS3 and JavaScript (2011).pdf" size="13773507"></file>
+              <file name="Apress Pro iOS Web Design and Development, HTML5 CSS3 and JavaScript with Safari (2011).pdf" size="11933004"></file>
+              <file name="Focal Press Building Websites with HTML5 to Work with Mobile Phones (2011).pdf" size="2003037"></file>
+            </directory>
+            <file name="New Riders Publishing Introducing HTML5 (2011).pdf" size="5711716"></file>
+            <file name="New Riders Publishing Introducing HTML5 2nd (2012).pdf" size="20614829"></file>
+            <file name="OReilly Building Hypermedia APIs with HTML5 and Node (2012).pdf" size="7226808"></file>
+            <file name="OReilly Creating HTML5 Animations with Flash and Wallaby (2011).pdf" size="6248007"></file>
+            <file name="OReilly HTML5 Canvas, Native Interactivity and Animation for the Web (2011).pdf" size="15776863"></file>
+            <file name="OReilly HTML5 Cookbook (2011).pdf" size="6716767"></file>
+            <file name="OReilly HTML5 Geolocation (2011).pdf" size="1805839"></file>
+            <file name="OReilly HTML5 Media (2011).pdf" size="11666305"></file>
+            <file name="OReilly HTML5 for Publishers (2011).pdf" size="2138854"></file>
+            <file name="OReilly HTML5, The Missing Manual (2011).pdf" size="20971178"></file>
+            <file name="OReilly HTML5, Up and Running (2010).pdf" size="2902032"></file>
+            <file name="OReilly Head First HTML5 Programming (2011).pdf" size="88961705"></file>
+            <file name="OReilly Programming HTML5 Applications (2011).pdf" size="1448836"></file>
+            <file name="OReilly Using the HTML5 Filesystem API (2011).pdf" size="5491830"></file>
+            <file name="OReilly What Is HTML5 (2011).pdf" size="3586982"></file>
+            <file name="Packt Publishing HTML5 Canvas Cookbook (2011).pdf" size="19129387"></file>
+            <file name="Packt Publishing HTML5 Multimedia Development Cookbook (2011).pdf" size="10962714"></file>
+            <file name="Peachpit Press HTML5 Multimedia, Develop and Design (2012).pdf" size="7901720"></file>
+            <file name="Pragmatic Bookshelf Publishing HTML5 and CSS3, Develop with Tomorrow's Standards Today (2010).pdf" size="1764137"></file>
+            <file name="SAMS Teach Yourself HTML5 in 10 Minutes (2011).pdf" size="3147223"></file>
+            <file name="SitePoint HTML5 and CSS3 for the Real World (2011).pdf" size="4467054"></file>
+            <file name="Wiley HTML5 for Dummies Quick Reference (2011).pdf" size="2449045"></file>
+            <file name="Wiley HTML5, Your Visual Blueprint for Designing Rich Web Pages and Applications (2012).pdf" size="20170172"></file>
+            <file name="Wiley Smashing HTML5 (2011).pdf" size="6472520"></file>
+            <file name="Wrox Press HTML5 24-Hour Trainer (2011).pdf" size="15754468"></file>
+          </directory>
+          <file name="HTML5 Designing Rich Internet Applications.pdf" size="20051617"></file>
+          <file name="HTML5 Multimedia - Develop and Design.pdf" size="7901719"></file>
+          <file name="HTML5 Multimedia Development Cookbook.pdf" size="10946042"></file>
+        </directory>
+        <file name="RESTful Web Clients - Enabling Reuse Through Hypermedia (2016).pdf" size="5096932"></file>
+        <directory name="XML For Dummies 4th  E-Book 1981CamaroZ28 H33T" size="102">
+          <file name="XML For Dummies 4th Ed.pdf" size="7340553"></file>
+        </directory>
+        <directory name="XML, XSLT, XPath, SOAP, UML Books" size="612">
+          <file name="Cerami - Web Services Essentials (O'Reilly, 2002).pdf" size="1800308"></file>
+          <file name="Coyle - XML, Web Services, and the Data Revolution (AW, 2003).chm" size="3133898"></file>
+          <file name="Fitzgerald - Learning XSLT (O'Reilly, 2003).chm" size="1166243"></file>
+          <file name="Hamilton - Learning UML 2.0 (O'Reilly, 2006).chm" size="4212160"></file>
+          <file name="Holzner - Inside XML (New Riders, 2000).chm" size="4882376"></file>
+          <file name="Holzner - Inside XSLT (New Riders, 2001).chm" size="829068"></file>
+          <file name="Holzner - Teach Yourself XML in 21 Days 3e (Sams, 2003).chm" size="5821309"></file>
+          <file name="Jacobs - Beginning XML with DOM and Ajax - From Novice to Pro (Apress, 2006).pdf" size="9505551"></file>
+          <file name="O'Reilly - The XML CD Bookshelf v1.0 (O'Reilly, 2002).chm" size="10075203"></file>
+          <file name="Simpson - XPath and XPointer (O'Reilly, 2002).pdf" size="2833134"></file>
+          <file name="Snell,Tidwell - Programming Web Services with SOAP (O'Reilly, 2001).pdf" size="1160728"></file>
+          <file name="Tennison - Beginning XSLT 2.0 - From Novice to Pro (Apress, 2005).pdf" size="10878983"></file>
+          <file name="Tidwell - XSLT - Mastering XML Transformations (O'Reilly, 2001).pdf" size="2318165"></file>
+          <file name="Vlist - XML Schema (O'Reilly, 2002).pdf" size="4469013"></file>
+          <file name="Walmsley - XQuery (O'Reilly, 2007).pdf" size="2783970"></file>
+          <file name="Watt - XPath Essentials (Wiley, 2002).pdf" size="5535391"></file>
+        </directory>
+      </directory>
+    </directory>
+  </directory>
+</tree>

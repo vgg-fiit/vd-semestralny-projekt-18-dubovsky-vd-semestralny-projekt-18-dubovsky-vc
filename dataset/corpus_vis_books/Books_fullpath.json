@@ -1,0 +1,672 @@
+[
+  {"type":"directory","name":"Books","contents":[
+    {"type":"directory","name":"Books/1. TODO","size":1258,"contents":[
+      {"type":"file","name":"Books/1. TODO/97 Things Every Programmer Should Know (2010).pdf","size":2111426},
+      {"type":"file","name":"Books/1. TODO/Advances in Intelligent Networking and Collaborative Systems (2020).pdf","size":53536246},
+      {"type":"file","name":"Books/1. TODO/Advances in Self-Organizing Maps, Learning Vector Quantization, Clustering and Data Visualization (2019).pdf","size":47324107},
+      {"type":"file","name":"Books/1. TODO/Algorithmic Thinking for Adventurous Minds - Quest for Fundamental Algorithms with Visualization and Python (2021).epub","size":63990993},
+      {"type":"file","name":"Books/1. TODO/Bio-inspired Algorithms for Data Streaming and Visualization, Big Data Management, and Fog Computing (2021).pdf","size":5301127},
+      {"type":"file","name":"Books/1. TODO/Christopher Alexander - A Pattern Language_ Towns, Buildings, Construction (1977).pdf","size":44935229},
+      {"type":"file","name":"Books/1. TODO/Complex Networks &amp; Their Applications IX - Volume 1.pdf","size":70205640},
+      {"type":"file","name":"Books/1. TODO/Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).epub","size":8419042},
+      {"type":"file","name":"Books/1. TODO/Data Sketches - A journey of imagination, exploration, and beautiful data visualizations (2021).pdf","size":168821567},
+      {"type":"file","name":"Books/1. TODO/Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).epub","size":2740013},
+      {"type":"file","name":"Books/1. TODO/Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).pdf","size":841683},
+      {"type":"directory","name":"Books/1. TODO/Design","size":102,"contents":[
+        {"type":"file","name":"Books/1. TODO/Design/Visual Design Solutions (2015).pdf","size":27703118}
+      ]},
+      {"type":"directory","name":"Books/1. TODO/Distributed computing","size":204,"contents":[
+        {"type":"file","name":"Books/1. TODO/Distributed computing/Distributed Computing - Fundamentals, Simulations, and Advanced Topics (2004).pdf","size":8192948},
+        {"type":"file","name":"Books/1. TODO/Distributed computing/Distributed and Cloud Computing - From Parallel Processing to the Internet of Things  (2011).pdf","size":10452111},
+        {"type":"file","name":"Books/1. TODO/Distributed computing/Fog computing breakthroughs in research and practice (2018).pdf","size":22476695},
+        {"type":"file","name":"Books/1. TODO/Distributed computing/The Cloud Computing Book - The Future of Computing Explained (2021).pdf","size":5418858}
+      ]},
+      {"type":"directory","name":"Books/1. TODO/Encyclopedias","size":272,"contents":[
+        {"type":"file","name":"Books/1. TODO/Encyclopedias/Space Visual Encyclopedia (2016).pdf","size":79827930},
+        {"type":"file","name":"Books/1. TODO/Encyclopedias/Timelines of History The Ultimate Visual Guide To The Events That Shaped The World (2011).pdf","size":151062075},
+        {"type":"file","name":"Books/1. TODO/Encyclopedias/Visualizing Earth History, 1st ed. (2009).pdf","size":134616261},
+        {"type":"file","name":"Books/1. TODO/Encyclopedias/Visualizing Elementary and Middle School Mathematics Methods (2012).pdf","size":70913256},
+        {"type":"file","name":"Books/1. TODO/Encyclopedias/Visualizing Environmental Science, 4th Edition (2011).pdf","size":99028096}
+      ]},
+      {"type":"file","name":"Books/1. TODO/Fluid Mechanics Applied to Medicine - Cardiac Flow Visualization Techniques (2021).pdf","size":3452518},
+      {"type":"file","name":"Books/1. TODO/Hands-On Data Analysis with Pandas - A Python data science handbook for data collection, wrangling, analysis, and visualization (2021).pdf","size":74277657},
+      {"type":"file","name":"Books/1. TODO/How to Start Your Own Business - The Facts Visually Explained (2021).pdf","size":102373745},
+      {"type":"file","name":"Books/1. TODO/Immersive 3D Design Visualization - With Autodesk Maya and Unreal Engine 4 (2021).pdf","size":20420601},
+      {"type":"directory","name":"Books/1. TODO/Information is Beautiful","size":136,"contents":[
+        {"type":"file","name":"Books/1. TODO/Information is Beautiful/Information is Beautiful (2000).azw3","size":21757432},
+        {"type":"file","name":"Books/1. TODO/Information is Beautiful/Information is Beautiful (2012_2013).epub","size":8653422}
+      ]},
+      {"type":"file","name":"Books/1. TODO/Knowledge Discovery from Temporal Social Networks (2018).pdf","size":5917044},
+      {"type":"file","name":"Books/1. TODO/LTE Cellular Narrowband Internet of Things (NB-IoT) - Practical Projects for the Cloud and Data Visualization (2021).pdf","size":74140211},
+      {"type":"file","name":"Books/1. TODO/Metadata by Jeffrey Pomerantz (2015).pdf","size":10763152},
+      {"type":"directory","name":"Books/1. TODO/Misc","size":170,"contents":[
+        {"type":"file","name":"Books/1. TODO/Misc/How Management Works - The Concepts Visually Explained by DK (2020).pdf","size":90908256},
+        {"type":"file","name":"Books/1. TODO/Misc/How the Brain Works - The Facts Visually Explained by DK (2020).pdf","size":32451773},
+        {"type":"file","name":"Books/1. TODO/Misc/Smart Thinking - Skills for Critical Understanding and Writing by Matthew Allen (2004).pdf","size":3747034}
+      ]},
+      {"type":"file","name":"Books/1. TODO/Semiotics, Law &amp; Art - Between Theory of Justice and Theory of Law (2021).pdf","size":5278248},
+      {"type":"directory","name":"Books/1. TODO/Unity3D","size":204,"contents":[
+        {"type":"file","name":"Books/1. TODO/Unity3D/Jeff  W. Murray - C# Game Programming Cookbook for Unity 3D-CRC Press (2021).epub","size":7083354},
+        {"type":"file","name":"Books/1. TODO/Unity3D/Jeff W. Murray - C# Game Programming Cookbook for Unity 3D.pdf","size":6857936},
+        {"type":"file","name":"Books/1. TODO/Unity3D/Jonathan Linowes - Unity 2020 Virtual Reality Projects-Packt Publishing (2020).pdf","size":57882118},
+        {"type":"file","name":"Books/1. TODO/Unity3D/Joseph Hocking - Unity in Action_ Multiplatform game development in C#-Manning Publications (2022).pdf","size":31939798}
+      ]},
+      {"type":"file","name":"Books/1. TODO/Visual Alchemy - The Fine Art of Digital Montage (2014).epub","size":19804160},
+      {"type":"file","name":"Books/1. TODO/Visual Miscellaneum - The Bestselling Classic, Revised and Updated - A Colorful Guide to the World’s Most Consequential Trivia (2009).epub","size":23929948},
+      {"type":"file","name":"Books/1. TODO/Visual Miscellaneum - The Bestselling Classic, Revised and Updated -A Colorful Guide to the World's Most Consequential Trivia (2012).djvu","size":19420165},
+      {"type":"file","name":"Books/1. TODO/Visual Storytelling (Screenwriting Blue Books) - Martell, William C_.mobi","size":301508},
+      {"type":"file","name":"Books/1. TODO/Visual Tools for Transforming Information Into Knowledge (2009).pdf","size":4661040},
+      {"type":"file","name":"Books/1. TODO/Visualising Powerful Knowledge to Develop the Expert Student (2016).pdf","size":9286426},
+      {"type":"file","name":"Books/1. TODO/Visuality and Spatiality in Virginia Woolf's Fiction (2012).pdf","size":13208614},
+      {"type":"file","name":"Books/1. TODO/Visualizing Argumentation Software for Collaborative and Educational Sense-Making.pdf","size":9181824},
+      {"type":"file","name":"Books/1. TODO/Visualizing Mathematics with 3D Printing (2016).pdf","size":12155416}
+    ]},
+    {"type":"directory","name":"Books/2. Work","size":204,"contents":[
+      {"type":"directory","name":"Books/2. Work/Books","size":136,"contents":[
+        {"type":"directory","name":"Books/2. Work/Books/Bible","size":68,"contents":[
+        ]}
+      ]},
+      {"type":"directory","name":"Books/2. Work/Compilations","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/2. Work/Conferences","size":68,"contents":[
+      ]}
+    ]},
+    {"type":"directory","name":"Books/AI","size":510,"contents":[
+      {"type":"directory","name":"Books/AI/Bible","size":136,"contents":[
+        {"type":"file","name":"Books/AI/Bible/Deep Learning - Methods and Applications (2014).pdf","size":9054810},
+        {"type":"file","name":"Books/AI/Bible/Goodfellow - Deep Learning (2016).pdf","size":23718763}
+      ]},
+      {"type":"file","name":"Books/AI/Deep Learning - A Visual Approach (2021).epub","size":65284050},
+      {"type":"file","name":"Books/AI/Deep Learning Illustrated - A Visual, Interactive Guide to Artificial Intelligence  (2019).pdf","size":12496405},
+      {"type":"file","name":"Books/AI/Deep learning illustrated - a visual, interactive guide to artificial intelligence.azw3","size":24287614},
+      {"type":"file","name":"Books/AI/Encyclopedia of Machine Learning (2011).pdf","size":44207869},
+      {"type":"file","name":"Books/AI/Generative Deep Learning - Teaching Machines to Paint, Write, Compose, and Play (2019).pdf","size":30607603},
+      {"type":"directory","name":"Books/AI/Graph Neural Networks","size":272,"contents":[
+        {"type":"directory","name":"Books/AI/Graph Neural Networks/Graph Representation Learning","size":136,"contents":[
+          {"type":"file","name":"Books/AI/Graph Neural Networks/Graph Representation Learning/Graph Representation Learning (2020).pdf","size":7436374},
+          {"type":"file","name":"Books/AI/Graph Neural Networks/Graph Representation Learning/Graph Representation Learning - preprint (2020).pdf","size":810338}
+        ]},
+        {"type":"file","name":"Books/AI/Graph Neural Networks/Graph-Based Semi-Supervised Learning (2014).pdf","size":1469697},
+        {"type":"file","name":"Books/AI/Graph Neural Networks/Introduction to Graph Neural Networks (2020).pdf","size":24168118},
+        {"type":"file","name":"Books/AI/Graph Neural Networks/PhD - Graph Neural Networks for Multimodal Learning and Representation (2019).pdf","size":53044950},
+        {"type":"file","name":"Books/AI/Graph Neural Networks/PhD - Meta Learning for Graph Neural Networks (2018).pdf","size":1850459}
+      ]},
+      {"type":"file","name":"Books/AI/Machine Learning Refined - Foundations, Algorithms, and Applications (2016).pdf","size":29212229},
+      {"type":"file","name":"Books/AI/Mathematics For Machine Learning (2019).pdf","size":17083974},
+      {"type":"file","name":"Books/AI/Rebooting AI - Building Artificial Intelligence We Can Trust (2019).epub","size":13516904},
+      {"type":"directory","name":"Books/AI/_Compilations_","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/AI/_Conferences_","size":170,"contents":[
+        {"type":"file","name":"Books/AI/_Conferences_/Advances in Artificial Intelligence (2001).pdf","size":4051709},
+        {"type":"file","name":"Books/AI/_Conferences_/Explainable AI - Interpreting, Explaining and Visualizing Deep Learning (2019).pdf","size":60999235},
+        {"type":"file","name":"Books/AI/_Conferences_/Graph Structures for Knowledge Representation and Reasoning (2011).pdf","size":11297273}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Augmented Cognition","size":102,"contents":[
+      {"type":"file","name":"Books/Augmented Cognition/Augmented Cognition. Neurocognition and Machine Learning (2017).pdf","size":55336389}
+    ]},
+    {"type":"directory","name":"Books/Augmented Reality","size":204,"contents":[
+      {"type":"directory","name":"Books/Augmented Reality/Books","size":408,"contents":[
+        {"type":"file","name":"Books/Augmented Reality/Books/Augmented Reality with Kinect (2013).pdf","size":11872168},
+        {"type":"file","name":"Books/Augmented Reality/Books/Interactive Environments with Open-Source Software - 3D Walkthroughs and Augmented Reality for Architects  (2008).pdf","size":38284122},
+        {"type":"file","name":"Books/Augmented Reality/Books/Multiple View Geometry in Computer Vision, 2nd Edition (2004).pdf","size":10734979},
+        {"type":"file","name":"Books/Augmented Reality/Books/Pro Android Augmented Reality.pdf","size":4109970},
+        {"type":"file","name":"Books/Augmented Reality/Books/TR - Human-Computer Interaction with Augmented Reality (2014).pdf","size":965296},
+        {"type":"file","name":"Books/Augmented Reality/Books/Theory and applications of marker-based augmented reality (2012).pdf","size":6049747},
+        {"type":"file","name":"Books/Augmented Reality/Books/Time of Flight Cameras - Principles, Methods, and Applications (2012).pdf","size":4623115},
+        {"type":"file","name":"Books/Augmented Reality/Books/Understanding Augmented Reality. Concepts and Applications (2013).pdf","size":46187098},
+        {"type":"file","name":"Books/Augmented Reality/Books/Virtual und Augmented Reality (2013).pdf","size":16825828}
+      ]},
+      {"type":"directory","name":"Books/Augmented Reality/Compilations","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/Augmented Reality/Conferences","size":272,"contents":[
+        {"type":"file","name":"Books/Augmented Reality/Conferences/Augmented reality (2010).pdf","size":28098072},
+        {"type":"file","name":"Books/Augmented Reality/Conferences/Fundamentals of Wearable Computers and Augmented Reality, 2nd Ed. (2015).pdf","size":28326455},
+        {"type":"file","name":"Books/Augmented Reality/Conferences/HCI International – Posters’ Extended Abstracts (2017).pdf","size":76644084},
+        {"type":"file","name":"Books/Augmented Reality/Conferences/Human Factors in Augmented Reality Environments (2013).pdf","size":5222669},
+        {"type":"file","name":"Books/Augmented Reality/Conferences/Virtual Reality &amp; Augmented Reality in Industry (2011).pdf","size":5960482},
+        {"type":"file","name":"Books/Augmented Reality/Conferences/Visual Computing - Scientific Visualization and Imaging Systems (2014).pdf","size":11266655}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Cambridge Books","size":850,"contents":[
+      {"type":"file","name":"Books/Cambridge Books/An_Introduction_to_Reservoir_Simulation_Using_MATLABGNU_Octave.pdf","size":59845937},
+      {"type":"file","name":"Books/Cambridge Books/Buddhist_Ethics.pdf","size":1970904},
+      {"type":"file","name":"Books/Cambridge Books/Debating_Humanity.pdf","size":3099213},
+      {"type":"file","name":"Books/Cambridge Books/Deep_Carbon.pdf","size":30461222},
+      {"type":"file","name":"Books/Cambridge Books/Drugs_Politics.pdf","size":7531346},
+      {"type":"file","name":"Books/Cambridge Books/German_Operetta_on_Broadway_and_in_the_West_End_19001940.pdf","size":11536919},
+      {"type":"file","name":"Books/Cambridge Books/Global_Governance_and_the_Emergence_of_Global_Institutions_for_the_21st_Century.pdf","size":6708725},
+      {"type":"file","name":"Books/Cambridge Books/Language_and_the_Making_of_Modern_India.pdf","size":5215299},
+      {"type":"file","name":"Books/Cambridge Books/Mechanisms_in_Molecular_Biology.pdf","size":2865352},
+      {"type":"file","name":"Books/Cambridge Books/Mental_Causation.pdf","size":12638432},
+      {"type":"file","name":"Books/Cambridge Books/Nietzsches_Ethics.pdf","size":2027450},
+      {"type":"file","name":"Books/Cambridge Books/Philosophy_of_Immunology.pdf","size":3224531},
+      {"type":"file","name":"Books/Cambridge Books/Pirates_of_Empire.pdf","size":6118719},
+      {"type":"file","name":"Books/Cambridge Books/Social_Sustainability_Past_and_Future.pdf","size":16857996},
+      {"type":"file","name":"Books/Cambridge Books/Stand_out_of_our_Light.pdf","size":2123911},
+      {"type":"file","name":"Books/Cambridge Books/Sustainable_Development_Goals_Their_Impacts_on_Forests_and_People.pdf","size":112046739},
+      {"type":"file","name":"Books/Cambridge Books/The_Citizens_Guide_to_Climate_Success.pdf","size":4073118},
+      {"type":"file","name":"Books/Cambridge Books/The_Making_of_Japanese_Settler_Colonialism.pdf","size":10959158},
+      {"type":"file","name":"Books/Cambridge Books/The_Making_of_an_Imperial_Polity.pdf","size":5289609},
+      {"type":"file","name":"Books/Cambridge Books/The_Power_of_Standards.pdf","size":3568829},
+      {"type":"file","name":"Books/Cambridge Books/Utilitarianism.pdf","size":1986998},
+      {"type":"directory","name":"Books/Cambridge Books/work","size":136,"contents":[
+        {"type":"file","name":"Books/Cambridge Books/work/cambridge-computer-science-602-courses.7z","size":513198177}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Computer Graphics","size":272,"contents":[
+      {"type":"file","name":"Books/Computer Graphics/Advanced animation and rendering techniques (1992).pdf","size":35707734},
+      {"type":"file","name":"Books/Computer Graphics/Foundations of Geometric Algebra Computing (2013).pdf","size":3657846},
+      {"type":"file","name":"Books/Computer Graphics/Ray Tracing Gems - High-Quality and Real-Time Rendering with DXR and Other APIs (2019).pdf","size":36068022},
+      {"type":"file","name":"Books/Computer Graphics/Real-Time Rendering (2018).pdf","size":35499380},
+      {"type":"file","name":"Books/Computer Graphics/Smart Graphics (2006).pdf","size":6177017},
+      {"type":"file","name":"Books/Computer Graphics/WebGL.Insights.-.Patrick.Cozzi.pdf","size":78543717}
+    ]},
+    {"type":"directory","name":"Books/Computer Vision","size":170,"contents":[
+      {"type":"directory","name":"Books/Computer Vision/Books","size":204,"contents":[
+        {"type":"file","name":"Books/Computer Vision/Books/Computer Vision Metrics - Textbook Edition (2016).pdf","size":27447149},
+        {"type":"file","name":"Books/Computer Vision/Books/Making Things See - 3D vision with Kinect, Processing, Arduino, and MakerBot (2012).pdf","size":12940589},
+        {"type":"file","name":"Books/Computer Vision/Books/Model-based Visual Tracking - The OpenTL Framework (2011).pdf","size":7532543},
+        {"type":"file","name":"Books/Computer Vision/Books/Reconstruction and Analysis of 3D Scenes - From Irregularly Distributed 3D Points to Object Classes (2016).pdf","size":9543180}
+      ]},
+      {"type":"directory","name":"Books/Computer Vision/Conferences","size":102,"contents":[
+        {"type":"file","name":"Books/Computer Vision/Conferences/Consumer Depth Cameras for Computer Vision (2013).pdf","size":7776892}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Data Science","size":204,"contents":[
+      {"type":"file","name":"Books/Data Science/Data Mining - Concepts and Techniques, 3rd Edition (2011).pdf","size":13134332},
+      {"type":"file","name":"Books/Data Science/Data Mining - Practical Machine Learning Tools and Techniques (2017).pdf","size":6613030},
+      {"type":"file","name":"Books/Data Science/Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).epub","size":8419042},
+      {"type":"file","name":"Books/Data Science/Data Science Revealed - With Feature Engineering, Data Visualization, Pipeline Development, and Hyperparameter Tuning (2021).pdf","size":9344653}
+    ]},
+    {"type":"directory","name":"Books/GIS","size":102,"contents":[
+      {"type":"file","name":"Books/GIS/Encyclopedia of GIS (2008).pdf","size":34894243}
+    ]},
+    {"type":"directory","name":"Books/GameDev","size":340,"contents":[
+      {"type":"file","name":"Books/GameDev/Deep Learning in Gaming and Animations - Principles and Applications (Explainable AI (XAI) for Engineering Applications) (2021).pdf","size":10221149},
+      {"type":"directory","name":"Books/GameDev/Game Design","size":170,"contents":[
+        {"type":"file","name":"Books/GameDev/Game Design/The Art of Game Design - A Book of Lenses, 2nd Ed. (2014).pdf","size":15531690},
+        {"type":"file","name":"Books/GameDev/Game Design/The Art of Game Design - A Book of Lenses, Third Edition (2019).epub","size":65400241}
+      ]},
+      {"type":"file","name":"Books/GameDev/Game Programming Patterns - Composed (2014).pdf","size":6843589},
+      {"type":"file","name":"Books/GameDev/Interactive stories and video game art - a storytelling framework for game design (2017).pdf","size":15532964},
+      {"type":"file","name":"Books/GameDev/Pixel Art for Game Developers (2015).pdf","size":45537634},
+      {"type":"file","name":"Books/GameDev/Procedural Content Generation in Games (2016).pdf","size":12117556},
+      {"type":"file","name":"Books/GameDev/The Digital Gaming Handbook (2020).pdf","size":67026043}
+    ]},
+    {"type":"directory","name":"Books/Gamification","size":102,"contents":[
+      {"type":"file","name":"Books/Gamification/Gamification in Learning and Education - Enjoy Learning Like Gaming (2018).pdf","size":8507542}
+    ]},
+    {"type":"directory","name":"Books/Graph Databases","size":204,"contents":[
+      {"type":"directory","name":"Books/Graph Databases/Books","size":204,"contents":[
+        {"type":"directory","name":"Books/Graph Databases/Books/Bible","size":68,"contents":[
+        ]},
+        {"type":"file","name":"Books/Graph Databases/Books/Graph Databases - New Opportunities for Connected Data (2015).epub","size":5684208},
+        {"type":"file","name":"Books/Graph Databases/Books/Graph Databases - O'Reilly Media (2013).pdf","size":22058090}
+      ]},
+      {"type":"directory","name":"Books/Graph Databases/_Compilations_","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/Graph Databases/_Conferences_","size":170,"contents":[
+        {"type":"file","name":"Books/Graph Databases/_Conferences_/Graph Data Management Techniques and Applications (2012).pdf","size":12327979},
+        {"type":"file","name":"Books/Graph Databases/_Conferences_/Graph Transformations and Model-Driven Engineering (2010).pdf","size":16944773},
+        {"type":"file","name":"Books/Graph Databases/_Conferences_/Web-Age Information Management.pdf","size":5728899}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/HCI","size":306,"contents":[
+      {"type":"directory","name":"Books/HCI/Books","size":170,"contents":[
+        {"type":"file","name":"Books/HCI/Books/Developer to Designer - GUI Design for the Busy Developer (2005).pdf","size":11664646},
+        {"type":"file","name":"Books/HCI/Books/Jakob Nielsen - Usability Engineering (1993).pdf","size":104285378}
+      ]},
+      {"type":"directory","name":"Books/HCI/Compilations","size":204,"contents":[
+        {"type":"file","name":"Books/HCI/Compilations/HCI Models, Theories, and Frameworks - Toward a Multidisciplinary Science.pdf","size":7651369},
+        {"type":"file","name":"Books/HCI/Compilations/Handbook of HCI, 2nd completely revised ed. 1997.pdf","size":131293629},
+        {"type":"file","name":"Books/HCI/Compilations/Human-Computer Interaction, by Ioannis Pavlidis.pdf","size":42078651},
+        {"type":"file","name":"Books/HCI/Compilations/Intelligent Interactive Multimedia Systems and Services in Practice (2015).pdf","size":4761347}
+      ]},
+      {"type":"directory","name":"Books/HCI/Conferences","size":442,"contents":[
+        {"type":"file","name":"Books/HCI/Conferences/Distributed-User-Interfaces-Designing-Interfaces-for-the-Distributed-Ecosystem.pdf","size":5140740},
+        {"type":"file","name":"Books/HCI/Conferences/End User Development (2006).pdf","size":6270895},
+        {"type":"file","name":"Books/HCI/Conferences/Human Aspects of Visualization.pdf","size":5213142},
+        {"type":"file","name":"Books/HCI/Conferences/Human Interface and the Management of Information.. Methods, Techniques and Tools in Information Design 2007(LNCS4557, Springer, 2007)(ISBN 9783540733447)(1045s).pdf","size":18530811},
+        {"type":"file","name":"Books/HCI/Conferences/Human-Centered Software Engineering - Integrating Usability in the Software Development Lifecycle.pdf","size":2934322},
+        {"type":"file","name":"Books/HCI/Conferences/Human-Computer Interaction - Development Process-CRC Press (2009).pdf","size":7872447},
+        {"type":"file","name":"Books/HCI/Conferences/Human-Computer Interaction - Fundamentals.pdf","size":10855062},
+        {"type":"file","name":"Books/HCI/Conferences/Human-Computer Interaction - Interaction Platforms and Techniques .pdf","size":201466536},
+        {"type":"file","name":"Books/HCI/Conferences/Human-Computer Interaction – INTERACT 2019.pdf","size":60549196},
+        {"type":"file","name":"Books/HCI/Conferences/New perspectives in end-user development (2017).pdf","size":16122040}
+      ]},
+      {"type":"file","name":"Books/HCI/Human-Centred Web Adaptation and Personalization - From Theory to Practice (2016).pdf","size":8579279},
+      {"type":"file","name":"Books/HCI/Human-Computer Interaction - Theory and Practice (part 2), Volume 2  (2003).pdf","size":103141624},
+      {"type":"file","name":"Books/HCI/Human-Computer interaction - theory and practice part 1 (2003).pdf","size":92779749}
+    ]},
+    {"type":"directory","name":"Books/Information processing","size":170,"contents":[
+      {"type":"directory","name":"Books/Information processing/Conferences","size":136,"contents":[
+        {"type":"file","name":"Books/Information processing/Conferences/Clustering Methods for Big Data Analytics Techniques, Toolboxes and Applications (2019).pdf","size":6648382},
+        {"type":"file","name":"Books/Information processing/Conferences/Computational Intelligence in Data Mining (2019).pdf","size":29585400}
+      ]},
+      {"type":"file","name":"Books/Information processing/Modern information retrieval (1999).pdf","size":25475836}
+    ]},
+    {"type":"directory","name":"Books/Math","size":102,"contents":[
+      {"type":"file","name":"Books/Math/Complex Valued Graphs  for Soft Computing.pdf","size":4162903}
+    ]},
+    {"type":"directory","name":"Books/Mathematics","size":102,"contents":[
+      {"type":"file","name":"Books/Mathematics/Handbook of Linear Algebra (2007).pdf","size":15104101}
+    ]},
+    {"type":"directory","name":"Books/Misc","size":510,"contents":[
+      {"type":"file","name":"Books/Misc/(For Dummies) Creative Visualization For Dummies (2011).pdf","size":5130756},
+      {"type":"file","name":"Books/Misc/101 Design Methods - A Structured Approach for Driving Innovation in Your Organization (2013).pdf","size":23183140},
+      {"type":"file","name":"Books/Misc/Barabasi A. Linked-the new science of networks (Perseus Publ., 2002)(T)(279s)_Cs_.djvu","size":2720108},
+      {"type":"file","name":"Books/Misc/Cracking the Code to a Successful Interview - 15 Insider Secrets from a Top-Level Recruiter 2016).epub","size":488032},
+      {"type":"file","name":"Books/Misc/Creative Visualization - Use the Power of Your Imagination to Create What You Want in Your Life (1995).pdf","size":2433303},
+      {"type":"file","name":"Books/Misc/Experimental Design for Behavioral and Social Sciences.pdf","size":4363407},
+      {"type":"file","name":"Books/Misc/Innovation and Visualization - Trajectories, Strategies, and Myths (2005).pdf","size":4743578},
+      {"type":"directory","name":"Books/Misc/Modeling &amp; Engineering","size":136,"contents":[
+        {"type":"file","name":"Books/Misc/Modeling &amp; Engineering/Computer Visualization for the Theatre - 3D Modelling for Designers (2003).pdf","size":3325798},
+        {"type":"file","name":"Books/Misc/Modeling &amp; Engineering/Visualization, Modeling, and Graphics for Engineering Design (2008).pdf","size":64282211}
+      ]},
+      {"type":"file","name":"Books/Misc/Practical Guide to Creative Visualization - Manifest Your Desires (2001).pdf","size":873454},
+      {"type":"file","name":"Books/Misc/The Linux programming interface - a Linux and UNIX system programming handbook (2010).pdf","size":7260882},
+      {"type":"file","name":"Books/Misc/Thinking, Fast and Slow.pdf","size":3675247},
+      {"type":"file","name":"Books/Misc/Toward the Visualization of History - The Past as Image (2010).pdf","size":870455}
+    ]},
+    {"type":"directory","name":"Books/Multimedia","size":238,"contents":[
+      {"type":"file","name":"Books/Multimedia/A_Guide_to_Computer_Animation_for_TV_Games_Multimedia_and_Web (2002).pdf","size":12160135},
+      {"type":"directory","name":"Books/Multimedia/Books","size":510,"contents":[
+        {"type":"file","name":"Books/Multimedia/Books/3D Visual Content Creation, Coding and Delivery (2019).pdf","size":9988592},
+        {"type":"file","name":"Books/Multimedia/Books/AN INTRODUCTION TO DIGITAL MEDIA (1997).pdf","size":1297404},
+        {"type":"file","name":"Books/Multimedia/Books/Borko Furht - Encyclopedia of Multimedia (2008).pdf","size":17752575},
+        {"type":"file","name":"Books/Multimedia/Books/Digital Signal Processing for Multimedia Systems (1999).pdf","size":47597967},
+        {"type":"file","name":"Books/Multimedia/Books/Digital Storytelling - A Creator’s Guide to Interactive Entertainment (2004).pdf","size":7057734},
+        {"type":"file","name":"Books/Multimedia/Books/Encyclopedia of multimedia (2006).pdf","size":163906947},
+        {"type":"file","name":"Books/Multimedia/Books/Essentials of Digital Signal Processing (2014).pdf","size":9202068},
+        {"type":"directory","name":"Books/Multimedia/Books/Hypermedia","size":204,"contents":[
+          {"type":"file","name":"Books/Multimedia/Books/Hypermedia/Designing User Interfaces for Hypermedia (1995).pdf","size":10460036},
+          {"type":"file","name":"Books/Multimedia/Books/Hypermedia/From Web to Workplace - Designing Open Hypermedia Systems (1999).pdf","size":19524914},
+          {"type":"file","name":"Books/Multimedia/Books/Hypermedia/Hypermedia Systems and Applications - World Wide Web and Beyond  (1997).pdf","size":17968257},
+          {"type":"file","name":"Books/Multimedia/Books/Hypermedia/Rethinking Hypermedia - The Microcosm Approach (1996).pdf","size":5011616}
+        ]},
+        {"type":"file","name":"Books/Multimedia/Books/Introduction to MPEG 7 (2003).pdf","size":21339738},
+        {"type":"file","name":"Books/Multimedia/Books/Multimedia Database Management Systems (1999).pdf","size":12824750},
+        {"type":"file","name":"Books/Multimedia/Books/Multimedia_2013_SK.pdf","size":8551059},
+        {"type":"file","name":"Books/Multimedia/Books/Principles of Multimedia Database Systems (1998).djvu","size":8100763}
+      ]},
+      {"type":"directory","name":"Books/Multimedia/Compilations","size":238,"contents":[
+        {"type":"file","name":"Books/Multimedia/Compilations/Foundations of Large-Scale Multimedia Information. Mgmt and Retrieval (2011).pdf","size":7194650},
+        {"type":"file","name":"Books/Multimedia/Compilations/Handbook of Digital and Multimedia Forensic Evidence.pdf","size":3585232},
+        {"type":"file","name":"Books/Multimedia/Compilations/Multimedia semantics metadata, analysis and interaction.pdf","size":2358367},
+        {"type":"file","name":"Books/Multimedia/Compilations/Semantic Mining Technologies for Multimedia Databases.pdf","size":16495704},
+        {"type":"file","name":"Books/Multimedia/Compilations/The Digital Signal Processing Handbook - Digital Signal Processing Fundamentals.pdf","size":11031913}
+      ]},
+      {"type":"directory","name":"Books/Multimedia/Conferences","size":238,"contents":[
+        {"type":"file","name":"Books/Multimedia/Conferences/Adaptable and Adaptive Hypermedia Systems (2005).pdf","size":61780981},
+        {"type":"file","name":"Books/Multimedia/Conferences/Advanced Topics in Multimedia Research.pdf","size":14798846},
+        {"type":"file","name":"Books/Multimedia/Conferences/Advances in Multimedia Modeling (LNCS).pdf","size":35171076},
+        {"type":"file","name":"Books/Multimedia/Conferences/Computer Graphics and Multimedia - Applications, Problems and Solutions.pdf","size":4765380},
+        {"type":"file","name":"Books/Multimedia/Conferences/Knowledge-Driven_Multimedia_Information_Extraction_(3642207944).pdf","size":11567266}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Ontologies &amp; Knowledge","size":204,"contents":[
+      {"type":"directory","name":"Books/Ontologies &amp; Knowledge/Books","size":136,"contents":[
+        {"type":"directory","name":"Books/Ontologies &amp; Knowledge/Books/Bible","size":68,"contents":[
+        ]}
+      ]},
+      {"type":"directory","name":"Books/Ontologies &amp; Knowledge/Compilations","size":102,"contents":[
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Compilations/Handbook of Graphs and Networks - From the Genome to the Internet (2003).pdf","size":6387919}
+      ]},
+      {"type":"directory","name":"Books/Ontologies &amp; Knowledge/Conferences","size":238,"contents":[
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Conferences/Graph Structures for Knowledge Representation and Reasoning.pdf","size":5423539},
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Conferences/Handbook on Ontologies (2009).pdf","size":7443380},
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Conferences/Information Modelling and Knowledge Bases XVII.pdf","size":8156421},
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Conferences/Knowledge Discovery and Data Mining - Challenges and Realities (2007).pdf","size":3961321},
+        {"type":"file","name":"Books/Ontologies &amp; Knowledge/Conferences/Ontologies - A Handbook of Principles, Concepts and Applications in Information Systems.pdf","size":13541847}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Programming","size":408,"contents":[
+      {"type":"file","name":"Books/Programming/Agile Principles, Patterns, and Practices in C# (2007).pdf","size":13594880},
+      {"type":"file","name":"Books/Programming/Agile Project Management with Azure DevOps_ Concepts, Templates, and Metrics (2019).pdf","size":9278328},
+      {"type":"file","name":"Books/Programming/Antipatterns - Refactoring Software, Archtectures and Projects (1998).pdf","size":3309256},
+      {"type":"file","name":"Books/Programming/Code - The Hidden Language of Computer Hardware and Software (2000).pdf","size":6370852},
+      {"type":"file","name":"Books/Programming/Introduction to Algorithms (2001).pdf","size":13119033},
+      {"type":"file","name":"Books/Programming/Learning C# Programming with Unity 3D (2014).pdf","size":14989295},
+      {"type":"file","name":"Books/Programming/Mastering CMake.pdf","size":51544779},
+      {"type":"file","name":"Books/Programming/Pattern Oriented Software Architecture - On Patterns and Pattern Languages. Volume 5 (2007).pdf","size":9625267},
+      {"type":"file","name":"Books/Programming/Pattern-Oriented Software Architecture - A Pattern Language for Distributed Computing (Vol. 4) (2007).pdf","size":5471855},
+      {"type":"file","name":"Books/Programming/Pattern-oriented software architecture for dummies (2013).pdf","size":32940837}
+    ]},
+    {"type":"directory","name":"Books/Psychology","size":170,"contents":[
+      {"type":"file","name":"Books/Psychology/Consciousness - An Introduction (2018).pdf","size":47939250},
+      {"type":"file","name":"Books/Psychology/Theories of Consciousness - An Introduction and Assessment (2016).pdf","size":2257003},
+      {"type":"file","name":"Books/Psychology/Visualizing Psychology, 2nd Edition (2010).pdf","size":79493066}
+    ]},
+    {"type":"directory","name":"Books/Semiotics","size":136,"contents":[
+      {"type":"file","name":"Books/Semiotics/Introduction to Peircean Visual Semiotics (2013).pdf","size":4305755},
+      {"type":"file","name":"Books/Semiotics/Semiotics and Visual Communication - Concepts and Practices (2014).pdf","size":2500273}
+    ]},
+    {"type":"directory","name":"Books/Software Engineering","size":238,"contents":[
+      {"type":"file","name":"Books/Software Engineering/Domain-Driven Design - Tackling Complexity in the Heart of Software (2003).pdf","size":7028392},
+      {"type":"file","name":"Books/Software Engineering/Introduction to Software Testing (2017).pdf","size":8024578},
+      {"type":"directory","name":"Books/Software Engineering/_Compilations_","size":102,"contents":[
+      ]},
+      {"type":"directory","name":"Books/Software Engineering/_Conferences_","size":272,"contents":[
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Enterprise Information Systems (2012).pdf","size":21891140},
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Evaluation of Novel Approaches to Software Engineering (2019).pdf","size":31583889},
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Handbook Of Software Engineering And Knowledge Engineering (2001).pdf","size":16697109},
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Handbook of Software Engineering and Knowledge Engineering - Recent Advances (2005).pdf","size":32629180},
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Requirements Engineerin - Foundation for Software Quality (2020).pdf","size":19485558},
+        {"type":"file","name":"Books/Software Engineering/_Conferences_/Software Evolution.pdf","size":7130503}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Statistics","size":204,"contents":[
+      {"type":"file","name":"Books/Statistics/Advanced R Statistical Programming and Data Models - Analysis, Machine Learning, and Visualization (2019).pdf","size":73540583},
+      {"type":"file","name":"Books/Statistics/Interpreting statistical findings - a guide for health professionals and students (2010).pdf","size":6802808},
+      {"type":"file","name":"Books/Statistics/Testing Statistical Assumptions in Research (2019).pdf","size":8653428},
+      {"type":"file","name":"Books/Statistics/The Practically Cheating Statistics Handbook (2010).pdf","size":2419444}
+    ]},
+    {"type":"directory","name":"Books/Teaching","size":102,"contents":[
+      {"type":"file","name":"Books/Teaching/Reflections on the Teaching of Programming Methods and Implementations (2008).pdf","size":4604641}
+    ]},
+    {"type":"directory","name":"Books/UX","size":136,"contents":[
+      {"type":"directory","name":"Books/UX/Bible","size":102,"contents":[
+        {"type":"file","name":"Books/UX/Bible/Measuring the user experience - collecting, analyzing, and presenting usability metrics (2013).pdf","size":24079207}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Virtual Reality","size":204,"contents":[
+      {"type":"directory","name":"Books/Virtual Reality/Books","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/Virtual Reality/_Compilations_","size":68,"contents":[
+      ]},
+      {"type":"directory","name":"Books/Virtual Reality/_Conferences_","size":102,"contents":[
+        {"type":"file","name":"Books/Virtual Reality/_Conferences_/VIRTUAL AND ADAPTIVE ENVIRONMENTS - Applications, Implications, and Human, Performance Issues (2003).pdf","size":5647897}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/Visualization","size":204,"contents":[
+      {"type":"directory","name":"Books/Visualization/Books","size":1802,"contents":[
+        {"type":"directory","name":"Books/Visualization/Books/Architecture &amp; GIS","size":102,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/Architecture &amp; GIS/Visualizing Venice Mapping and Modeling Time and Change in a City (2018).pdf","size":2750739}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Avoiding Data Pitfalls (2020).pdf","size":14474341},
+        {"type":"file","name":"Books/Visualization/Books/Avoiding Data Pitfalls - How To Steer Clear Of Common Blunders When Working With Data And Presenting Analysis And Visualizations (2020).pdf","size":14331998},
+        {"type":"file","name":"Books/Visualization/Books/Better Data Visualizations - A Guide for Scholars, Researchers, and Wonks (2021).pdf","size":29037522},
+        {"type":"directory","name":"Books/Visualization/Books/Bible","size":136,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/Bible/Interactive Visual Data Analysis (2020).pdf","size":97348647},
+          {"type":"file","name":"Books/Visualization/Books/Bible/Visualization Analysis and Design - Munzner, Tamara.pdf","size":11144069}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Colin Ware - Information Visualization - Perception for Design - 4th ed. (2020).pdf","size":14096803},
+        {"type":"file","name":"Books/Visualization/Books/Data Analysis and Visualization Using Python - Analyze Data to Create Visualizations for BI Systems (2019).epub","size":12726430},
+        {"type":"file","name":"Books/Visualization/Books/Data Analysis and Visualization.epub","size":12725424},
+        {"type":"file","name":"Books/Visualization/Books/Data Mining and Analysis - Fundamental Concepts and Algorithms (2014).pdf","size":10588392},
+        {"type":"file","name":"Books/Visualization/Books/Data Visualisation - A Handbook for Data Driven Design (2016).pdf","size":28550180},
+        {"type":"file","name":"Books/Visualization/Books/Data Visualization - A Practical Introduction (2019).pdf","size":12742006},
+        {"type":"file","name":"Books/Visualization/Books/Data Visualization - Charts, Maps, and Interactive Graphics (2019).pdf","size":66878528},
+        {"type":"file","name":"Books/Visualization/Books/Data visualization made simple - insights into becoming visual (2019).pdf","size":34545280},
+        {"type":"file","name":"Books/Visualization/Books/Dear Data (2016).pdf","size":80092162},
+        {"type":"file","name":"Books/Visualization/Books/Designing Science Presentations - A Visual Guide to Figures, Papers, Slides, Posters, and More (2021).pdf","size":30813422},
+        {"type":"file","name":"Books/Visualization/Books/Earth Systems Data Processing and Visualization Using MATLAB (2020).pdf","size":19499265},
+        {"type":"file","name":"Books/Visualization/Books/Fundamentals of Data Visualization - A Primer on Making Informative and Compelling Figures (2019).pdf","size":44170144},
+        {"type":"file","name":"Books/Visualization/Books/Good Charts Workbook - Tips, Tools, and Exercises for Making Better Data Visualizations (2019).pdf","size":18543141},
+        {"type":"file","name":"Books/Visualization/Books/Hands-On Data Visualization (2021).epub","size":73677948},
+        {"type":"file","name":"Books/Visualization/Books/Hybrid Imaging and Visualization - Employing Machine Learning with Mathematica - Python (2020).pdf","size":21300762},
+        {"type":"directory","name":"Books/Visualization/Books/Infographics","size":306,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Cool Infographics - Effective Communication with Data Visualization and Design (2013).pdf","size":168959845},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Cool Infographics - Effective Communication with Data Visualization and Design (2014).pdf","size":169018690},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Infographics (2012).pdf","size":37763738},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Infographics - The Power of Visual Storytelling (2012).pdf","size":18955651},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Interactive Visual Data Analysis (2020).epub","size":24877921},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Knowledge is Beautiful (2012).azw3","size":26718372},
+          {"type":"file","name":"Books/Visualization/Books/Infographics/Knowledge is Beautiful (2014).pdf","size":40986569}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Information Design Workbook - Graphic approaches, solutions, and inspiration plus 30 case studies (2008).pdf","size":109262483},
+        {"type":"file","name":"Books/Visualization/Books/Information Foraging Theory - Adaptive Interaction with Information (2007).pdf","size":3661904},
+        {"type":"file","name":"Books/Visualization/Books/Introduction To Information Visualization - Transforming Data Into Meaningful Information (2019).pdf","size":10246317},
+        {"type":"file","name":"Books/Visualization/Books/Knowledge Visualization Currents - From Text to Art to Culture (2013).pdf","size":7513863},
+        {"type":"file","name":"Books/Visualization/Books/Making Sense of Data (2016).pdf","size":3987405},
+        {"type":"file","name":"Books/Visualization/Books/Non-Designer's Design Book, The 3rd Edition (2008).pdf","size":14671988},
+        {"type":"file","name":"Books/Visualization/Books/Painting with Numbers - Presenting Financials and Other Numbers So People Will Understand You (2012).pdf","size":29593119},
+        {"type":"directory","name":"Books/Visualization/Books/Practical","size":476,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/Practical/Data Visualization Guide - Clear Introduction to Data Mining, Analysis, and Visualization (2021).epub","size":2740212},
+          {"type":"file","name":"Books/Visualization/Books/Practical/Data Visualization with Python and JavaScript (2016).pdf","size":39743318},
+          {"type":"file","name":"Books/Visualization/Books/Practical/Effective data visualization - the right chart for the right data (2020).azw3","size":14599888},
+          {"type":"file","name":"Books/Visualization/Books/Practical/Interactive Data Visualization (2013).epub","size":5054673},
+          {"type":"file","name":"Books/Visualization/Books/Practical/Interactive Web-Based Data Visualization with R, Plotly, and Shiny (2020).pdf","size":109098973},
+          {"type":"directory","name":"Books/Visualization/Books/Practical/JavaScript","size":170,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Practical/JavaScript/Data Visualization with JavaScript (2015).pdf","size":19906083},
+            {"type":"file","name":"Books/Visualization/Books/Practical/JavaScript/Stephen A. Thomas - Data Visualization with JavaScript.epub","size":7345712},
+            {"type":"file","name":"Books/Visualization/Books/Practical/JavaScript/Stephen A. Thomas - Data Visualization with JavaScript.mobi","size":14178476}
+          ]},
+          {"type":"directory","name":"Books/Visualization/Books/Practical/Python","size":204,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Practical/Python/Interactive Data Visualization With Python - Present your data as an effective and compelling story - 2nd. ed. (2020).pdf","size":21022589},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Python/Practical Python Data Visualization - A Fast Track Approach To Learning Data Visualization With Python (2021).pdf","size":5039681},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Python/Python Crash Course - A Complete Beginner's Guide for Python Coding and Data Visualization..epub","size":1742064},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Python/The Data Visualization Workshop (2020).pdf","size":36176967}
+          ]},
+          {"type":"directory","name":"Books/Visualization/Books/Practical/R","size":102,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Practical/R/Spatial Analysis with R - Statistics, Visualization, and Computational Methods (2021).pdf","size":8710125}
+          ]},
+          {"type":"file","name":"Books/Visualization/Books/Practical/SAS Programming and Data Visualization Techniques.epub","size":5578809},
+          {"type":"directory","name":"Books/Visualization/Books/Practical/Tableau","size":238,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Practical/Tableau/Tableau - Which Chart is Right for You - WhitePaper .pdf","size":11347071},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Tableau/Tableau for Beginner Data Analysis and Visualization 101 (2020).pdf","size":57611893},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Tableau/Tableau your data (2016).pdf","size":99713740},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Tableau/Visual Analytics with Tableau (2019).pdf","size":18090054},
+            {"type":"file","name":"Books/Visualization/Books/Practical/Tableau/Visual Data Storytelling with Tableau.epub","size":26313023}
+          ]},
+          {"type":"file","name":"Books/Visualization/Books/Practical/The Data Visualization Workshop - A self-paced, practical approach to transforming your complex data into compelling, captivating graphics (2020).epub","size":42994848}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Presenting Data - How to Communicate Your Message Effectively (2014).pdf","size":14281726},
+        {"type":"directory","name":"Books/Visualization/Books/R","size":102,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/R/Data Visualization and Analysis in Second Language Research (2021).pdf","size":5986876}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Scientific Visualization - Uncertainty, Multifield, Biomedical, and Scalable Visualization (2014).epub","size":8221534},
+        {"type":"file","name":"Books/Visualization/Books/Stories That Move Mountains - Storytelling and Visual Design for PERSUASIVE PRESENTATIONS (2013).pdf","size":115182453},
+        {"type":"file","name":"Books/Visualization/Books/The Big Book of Dashboards - Visualizing Your Data Using Real-World Business Scenarios (2017).epub","size":22753844},
+        {"type":"file","name":"Books/Visualization/Books/The Big Book of Dashboards - Visualizing Your Data Using Real-World Business Scenarios (2017).pdf","size":101069229},
+        {"type":"file","name":"Books/Visualization/Books/The Big Picture - How to Use Data Visualization to Make Better Decisions (2021).pdf","size":13686646},
+        {"type":"file","name":"Books/Visualization/Books/The Data Visualization Workshop - A self-paced, practical approach to transforming your complex data into compelling, captivating graphics (2020).pdf","size":37765700},
+        {"type":"file","name":"Books/Visualization/Books/The Visual Imperative. Creating a Visual Culture of Data Discovery (2016).pdf","size":16994996},
+        {"type":"file","name":"Books/Visualization/Books/The Visual Organization - Data Visualization, Big Data, and the Quest for Better Decisions (2014).pdf","size":36489731},
+        {"type":"file","name":"Books/Visualization/Books/The Visualization Toolkit - An Object Oriented Approach to 3D Graphics 3rd Edition (2003).pdf","size":80181986},
+        {"type":"file","name":"Books/Visualization/Books/VISUAL INSIGHTS - A Practical Guide to Making Sense of Data (2014).pdf","size":34813799},
+        {"type":"file","name":"Books/Visualization/Books/Visual Analytics for Data Scientists (2020).pdf","size":86388512},
+        {"type":"file","name":"Books/Visualization/Books/Visual Complexity - Mapping Patterns of Information (2011).pdf","size":112618265},
+        {"type":"directory","name":"Books/Visualization/Books/Visual Perception","size":272,"contents":[
+          {"type":"file","name":"Books/Visualization/Books/Visual Perception/Handbook Of Visual Communication - Theory, Methods, And Media (2020).pdf","size":17002745},
+          {"type":"directory","name":"Books/Visualization/Books/Visual Perception/Visual Attention","size":136,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Visual Perception/Visual Attention/The Oxford Handbook of Attention (2014).pdf","size":32495101}
+          ]},
+          {"type":"file","name":"Books/Visualization/Books/Visual Perception/Visual Perception - An Introduction - 2nd ed. (2001).pdf","size":9996118},
+          {"type":"file","name":"Books/Visualization/Books/Visual Perception/Visual Perception - An Introduction - 3rd ed. (2013).pdf","size":10849833},
+          {"type":"directory","name":"Books/Visualization/Books/Visual Perception/Visual System","size":102,"contents":[
+            {"type":"file","name":"Books/Visualization/Books/Visual Perception/Visual System/Models of the Visual System (2002).pdf","size":64726578}
+          ]}
+        ]},
+        {"type":"file","name":"Books/Visualization/Books/Visual Revelations - Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot (1997).pdf","size":9126201},
+        {"type":"file","name":"Books/Visualization/Books/Visual data mining - The VisMiner approach (2012).pdf","size":4155957},
+        {"type":"file","name":"Books/Visualization/Books/Visualize This - The Flowing Data Guide to Design, Visualization, and Statistics (2011).epub","size":20917927},
+        {"type":"file","name":"Books/Visualization/Books/Visualize This - The FlowingData Guide to Design, Visualization, and Statistics (2011).pdf","size":722052601},
+        {"type":"file","name":"Books/Visualization/Books/Visualizing Streaming Data - Interactive Analysis Beyond Static Limits (2018).epub","size":6728950},
+        {"type":"file","name":"Books/Visualization/Books/storytelling with data excerpt.pdf","size":3693166}
+      ]},
+      {"type":"directory","name":"Books/Visualization/Compilations","size":578,"contents":[
+        {"type":"file","name":"Books/Visualization/Compilations/Aesthetic Computing (2006).pdf","size":8097022},
+        {"type":"file","name":"Books/Visualization/Compilations/Brain-Inspired Intelligence and Visual Perception - The Brain and Machine Eyes (2020).pdf","size":9729946},
+        {"type":"file","name":"Books/Visualization/Compilations/Data Science and Visual Computing (2019).pdf","size":2924929},
+        {"type":"file","name":"Books/Visualization/Compilations/Exploring Geovisualization (2005).pdf","size":14645880},
+        {"type":"file","name":"Books/Visualization/Compilations/Handbook of Visual Analysis (2008).pdf","size":6266382},
+        {"type":"file","name":"Books/Visualization/Compilations/High Performance Visualization - Enabling Extreme-Scale Scientific Insight (2012).pdf","size":8989153},
+        {"type":"file","name":"Books/Visualization/Compilations/Landscape analysis and visualisation (2008).pdf","size":9314192},
+        {"type":"file","name":"Books/Visualization/Compilations/Learning Analytics Cookbook - How to Support Learning Processes Through Data Analytics and Visualization (2020).pdf","size":4362813},
+        {"type":"file","name":"Books/Visualization/Compilations/Mining Graph Data (2007).pdf","size":7355914},
+        {"type":"file","name":"Books/Visualization/Compilations/Scientific Visualization - The Visual Extraction of Knowledge from Data.pdf","size":9399253},
+        {"type":"file","name":"Books/Visualization/Compilations/Scientific Visualization - Uncertainty, Multifield, Biomedical, and Scalable Visualization (2014).pdf","size":13526580},
+        {"type":"file","name":"Books/Visualization/Compilations/Semiotics as a Tool for Learning Mathematics (2016).pdf","size":8373500},
+        {"type":"file","name":"Books/Visualization/Compilations/Text mining and visualization - case studies using open-source tools (2016).pdf","size":20213769},
+        {"type":"file","name":"Books/Visualization/Compilations/Visualization and processing of tensor fields (2006).pdf","size":21930319}
+      ]},
+      {"type":"directory","name":"Books/Visualization/Conferences","size":1632,"contents":[
+        {"type":"file","name":"Books/Visualization/Conferences/Advances in Visualization and Optimization Techniques for Multidisciplinary Research - Trends in Modelling and Simulations for Engineering Applications (2020).pdf","size":18413449},
+        {"type":"file","name":"Books/Visualization/Conferences/Big Data and Visual Analytics (2017).pdf","size":8786856},
+        {"type":"file","name":"Books/Visualization/Conferences/Big Data for Remote Sensing - Visualization, Analysis and Interpretation (2019).pdf","size":6619456},
+        {"type":"file","name":"Books/Visualization/Conferences/Big Data of Complex Networks (2016).pdf","size":34895968},
+        {"type":"file","name":"Books/Visualization/Conferences/Bio-Imaging and Visualization for Patient-Customized Simulations.pdf","size":7518513},
+        {"type":"file","name":"Books/Visualization/Conferences/Cognitive Biases in Visualizations (2018).pdf","size":4876922},
+        {"type":"file","name":"Books/Visualization/Conferences/Computing and Visualization in Science (2005).pdf","size":1643588},
+        {"type":"file","name":"Books/Visualization/Conferences/Cooperative Design, Visualization, and Engineering (2006).pdf","size":10632751},
+        {"type":"file","name":"Books/Visualization/Conferences/Cooperative Design, Visualization, and Engineering (2011).pdf","size":10375778},
+        {"type":"file","name":"Books/Visualization/Conferences/Cooperative Design, Visualization, and Engineering, 1 conf., CDVE 2004 (2004).pdf","size":11687616},
+        {"type":"file","name":"Books/Visualization/Conferences/DATA VISUALIZATION - The State of the Art (2003).pdf","size":35851992},
+        {"type":"file","name":"Books/Visualization/Conferences/Data Analytics and Decision Support for Cybersecurity - Trends, Methodologies and Applications (2017).pdf","size":6690144},
+        {"type":"file","name":"Books/Visualization/Conferences/Data Visualization and Knowledge Engineering - Spotting Data Points with Artificial Intelligence (2020).pdf","size":15600818},
+        {"type":"file","name":"Books/Visualization/Conferences/Eye Tracking and Visualization Foundations, Techniques, and Applications (2015).pdf","size":10438291},
+        {"type":"file","name":"Books/Visualization/Conferences/Foundations of Data Visualization (2020).pdf","size":13874679},
+        {"type":"file","name":"Books/Visualization/Conferences/From Analysis to Visualization - A Celebration of the Life and Legacy of Jonathan M. Borwein (2017).pdf","size":6003657},
+        {"type":"file","name":"Books/Visualization/Conferences/Geographical Information Processing and Visual Analytics for Environmental Security.pdf","size":19538756},
+        {"type":"file","name":"Books/Visualization/Conferences/Handbook of Human Centric Visualization.pdf","size":16538033},
+        {"type":"file","name":"Books/Visualization/Conferences/Hierarchical and Geometrical Methods in Scientific Visualization.pdf","size":18798093},
+        {"type":"file","name":"Books/Visualization/Conferences/Human Interface and the Management of Information. Interaction, Visualization, and Analytics (2018).pdf","size":105544087},
+        {"type":"file","name":"Books/Visualization/Conferences/Information Access Evaluation Multilinguality, Multimodality, and Visual Analytics.pdf","size":4620574},
+        {"type":"file","name":"Books/Visualization/Conferences/Knowledge and Information Visualization (2005).pdf","size":10579488},
+        {"type":"file","name":"Books/Visualization/Conferences/Learning from Dynamic Visualization - Innovations in Research and Application (2017).pdf","size":9964334},
+        {"type":"file","name":"Books/Visualization/Conferences/Mathematical foundations of scientific visualization, computer graphics, and massive data exploration (2009).pdf","size":8578957},
+        {"type":"directory","name":"Books/Visualization/Conferences/MedicineVis","size":204,"contents":[
+          {"type":"file","name":"Books/Visualization/Conferences/MedicineVis/Visualization in Medicine and Life Sciences I (2007).pdf","size":9038469},
+          {"type":"file","name":"Books/Visualization/Conferences/MedicineVis/Visualization in Medicine and Life Sciences II (2012).pdf","size":7871966},
+          {"type":"file","name":"Books/Visualization/Conferences/MedicineVis/Visualization in Medicine and Life Sciences II - Progress and New Challenges (2012).pdf","size":8857931},
+          {"type":"file","name":"Books/Visualization/Conferences/MedicineVis/Visualization in Medicine and Life Sciences III (2016).pdf","size":13781316}
+        ]},
+        {"type":"file","name":"Books/Visualization/Conferences/Online Social Media Analysis and Visualization(2014).pdf","size":11663142},
+        {"type":"file","name":"Books/Visualization/Conferences/Scientific Visualization - The Visual Extraction of Knowledge from Data (2016).pdf","size":10671304},
+        {"type":"file","name":"Books/Visualization/Conferences/Social Networking - Mining, Visualization, and Security (2014).pdf","size":12010409},
+        {"type":"file","name":"Books/Visualization/Conferences/Software Visualization (2002).pdf","size":8148308},
+        {"type":"file","name":"Books/Visualization/Conferences/The Visualization Handbook (2005).pdf","size":15024700},
+        {"type":"file","name":"Books/Visualization/Conferences/Topological Methods in Data Analysis and Visualization.pdf","size":5003929},
+        {"type":"file","name":"Books/Visualization/Conferences/Topological and Statistical Methods for Complex Data - Tackling Large-Scale, High-Dimensional, and Multivariate Data Set.pdf","size":7718343},
+        {"type":"file","name":"Books/Visualization/Conferences/Topological and Statistical Methods for Complex Data - Tackling Large-Scale, High-Dimensional, and Multivariate.pdf","size":10236485},
+        {"type":"file","name":"Books/Visualization/Conferences/Topology-based Methods in Visualization.pdf","size":9956114},
+        {"type":"file","name":"Books/Visualization/Conferences/Visual Data Mining - Theory, Techniques and Tools for Visual Analytics.pdf","size":3785658},
+        {"type":"file","name":"Books/Visualization/Conferences/Visual Information Communication (2010).pdf","size":27639327},
+        {"type":"file","name":"Books/Visualization/Conferences/Visual Information Systems (1997).pdf","size":21754997},
+        {"type":"file","name":"Books/Visualization/Conferences/Visual Language Theory (1998).pdf","size":12079350},
+        {"type":"file","name":"Books/Visualization/Conferences/Visualization and Simulation of Complex Flows in Biomedical Engineering.pdf","size":6861529},
+        {"type":"file","name":"Books/Visualization/Conferences/Visualization in Medicine and Life Sciences (2007).pdf","size":10262201},
+        {"type":"file","name":"Books/Visualization/Conferences/Visualization in Programming, 5 conf., in Informatics and Psychology (1987).djvu","size":2789779},
+        {"type":"file","name":"Books/Visualization/Conferences/Visualizing the Semantic Web - XML-Based Internet and Information Visualization (2004).pdf","size":6698381},
+        {"type":"file","name":"Books/Visualization/Conferences/VizSEC 2007 - Proc of the Workshop on Visualization for Computer Security.pdf","size":6649478},
+        {"type":"directory","name":"Books/Visualization/Conferences/scientific","size":136,"contents":[
+          {"type":"file","name":"Books/Visualization/Conferences/scientific/Scientific Visualization - The Visual Extraction of Knowledge from Data-Springer (2005).pdf","size":8910901},
+          {"type":"file","name":"Books/Visualization/Conferences/scientific/Scientific Visualization - The visual extraction of knowledge from data (2005).pdf","size":7253843}
+        ]},
+        {"type":"directory","name":"Books/Visualization/Conferences/visual analytics","size":136,"contents":[
+          {"type":"file","name":"Books/Visualization/Conferences/visual analytics/Expanding the Frontiers of Visual Analytics and Visualization (2012).pdf","size":17065815},
+          {"type":"file","name":"Books/Visualization/Conferences/visual analytics/Visual Analytics and Interactive Technologies - Data, Text and Web Mining Applications.pdf","size":5761008}
+        ]}
+      ]}
+    ]},
+    {"type":"directory","name":"Books/WebDev","size":170,"contents":[
+      {"type":"directory","name":"Books/WebDev/Books","size":374,"contents":[
+        {"type":"directory","name":"Books/WebDev/Books/Bible","size":68,"contents":[
+        ]},
+        {"type":"file","name":"Books/WebDev/Books/Fundamentals of Web Development (2014).pdf","size":108751877},
+        {"type":"file","name":"Books/WebDev/Books/Fundamentals of Web Development, Global Edition (2015).pdf","size":153739780},
+        {"type":"file","name":"Books/WebDev/Books/Web Application Architecture - Principles, Protocols and Practices (2009).epub","size":7921647},
+        {"type":"file","name":"Books/WebDev/Books/Web Application Architecture - Principles, Protocols and Practices (2009).mobi","size":10531514},
+        {"type":"file","name":"Books/WebDev/Books/Web Application Design Handbook - Best Practices for Web-Based Software (2004).pdf","size":53516827},
+        {"type":"file","name":"Books/WebDev/Books/Web Engineering - A Practitioner's Approach (2009).pdf","size":45453778},
+        {"type":"file","name":"Books/WebDev/Books/Web-Application - Architecture Principles Protocols and Practices (2003).pdf","size":3933559}
+      ]},
+      {"type":"directory","name":"Books/WebDev/Technologies","size":238,"contents":[
+        {"type":"directory","name":"Books/WebDev/Technologies/HTML5","size":272,"contents":[
+          {"type":"directory","name":"Books/WebDev/Technologies/HTML5/HTML5 - Step by Step","size":136,"contents":[
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 - Step by Step/HTML5 - Step by Step.pdf","size":14181181},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 - Step by Step/HTML5 Step by Step - Practice Files - .zip","size":62105629}
+          ]},
+          {"type":"directory","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection","size":1530,"contents":[
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/A Book Apart Publishing HTML5 for Web Designers (2010).pdf","size":14187288},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Addison-Wesley HTML5 Guidelines for Web Developers (2011).pdf","size":7374952},
+            {"type":"directory","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apps &amp; Tools","size":136,"contents":[
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apps &amp; Tools/Adobe Press Dreamweaver CS5.5, Designing and Developing for Mobile with jQuery HTML5 and CSS3 (2011).pdf","size":8688004},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apps &amp; Tools/Packt Publishing Dreamweaver CS5.5 Mobile and Web Development with HTML5, CSS3 and jQuery (2011).pdf","size":11975637}
+            ]},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress Foundation HTML5 Canvas (2011).pdf","size":19448754},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress HTML5 Mastery, Semantics Standards and Styling (2011).pdf","size":6705142},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress HTML5 Solutions, Essential Techniques for HTML5 Developers (2011).pdf","size":17562614},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress HTML5 and JavaScript Projects (2011).pdf","size":8201448},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress Pro HTML5 Programming 2nd (2011).pdf","size":8837771},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress Pro HTML5 Programming, Powerful APIs for Richer Internet Application Development (2010).pdf","size":4990304},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress Pro HTML5 and CSS3 Design Patterns (2011).pdf","size":12251449},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress The Definitive Guide to HTML5 (2011).pdf","size":18511547},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Apress The Definitive Guide to HTML5 Video (2010).pdf","size":11678937},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Focal Press HTML5, Designing Rich Internet Applications (2010).pdf","size":16994749},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Focal Press Rendering HTML5 Illustration (2010).pdf","size":956736},
+            {"type":"directory","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev","size":272,"contents":[
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/Addison-Wesley Learning HTML5 Game Programming, A Hands-on Guide to Building Online Games Using Canvas SVG and WebGL (2012).pdf","size":5213519},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/Apress Foundation HTML5 Animation with JavaScript (2011).pdf","size":8375991},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/Apress The Essential Guide to HTML5, Using Games to Learn HTML5 and JavaScript (2010).pdf","size":12039020},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/OReilly Introducing HTML5 Game Development (2012).pdf","size":6871334},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/OReilly Making Isometric Social Real-Time Games with HTML5 CSS3 and Javascript (2011).pdf","size":8969493},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/GameDev/Packt Publishing HTML5 Games Development by Example, Beginner's Guide (2011).pdf","size":9829813}
+            ]},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Microsoft Press HTML5, Step by Step (2011).pdf","size":9734506},
+            {"type":"directory","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile","size":272,"contents":[
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Apress Beginning Nokia Apps Development, Qt and HTML5 for Symbian and MeeGo (2010).pdf","size":9105670},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Apress Beginning PhoneGap, Mobile Web Framework for JavaScript and HTML5 (2012).pdf","size":28280753},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Apress Beginning iPhone and iPad Web Apps, Scripting with HTML5 CSS3 and JavaScript (2010).pdf","size":15875284},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Apress Pro Android Web Apps, Develop for Android Using HTML5 CSS3 and JavaScript (2011).pdf","size":13773507},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Apress Pro iOS Web Design and Development, HTML5 CSS3 and JavaScript with Safari (2011).pdf","size":11933004},
+              {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Mobile/Focal Press Building Websites with HTML5 to Work with Mobile Phones (2011).pdf","size":2003037}
+            ]},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/New Riders Publishing Introducing HTML5 (2011).pdf","size":5711716},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/New Riders Publishing Introducing HTML5 2nd (2012).pdf","size":20614829},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly Building Hypermedia APIs with HTML5 and Node (2012).pdf","size":7226808},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly Creating HTML5 Animations with Flash and Wallaby (2011).pdf","size":6248007},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5 Canvas, Native Interactivity and Animation for the Web (2011).pdf","size":15776863},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5 Cookbook (2011).pdf","size":6716767},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5 Geolocation (2011).pdf","size":1805839},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5 Media (2011).pdf","size":11666305},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5 for Publishers (2011).pdf","size":2138854},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5, The Missing Manual (2011).pdf","size":20971178},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly HTML5, Up and Running (2010).pdf","size":2902032},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly Head First HTML5 Programming (2011).pdf","size":88961705},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly Programming HTML5 Applications (2011).pdf","size":1448836},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly Using the HTML5 Filesystem API (2011).pdf","size":5491830},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/OReilly What Is HTML5 (2011).pdf","size":3586982},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Packt Publishing HTML5 Canvas Cookbook (2011).pdf","size":19129387},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Packt Publishing HTML5 Multimedia Development Cookbook (2011).pdf","size":10962714},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Peachpit Press HTML5 Multimedia, Develop and Design (2012).pdf","size":7901720},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Pragmatic Bookshelf Publishing HTML5 and CSS3, Develop with Tomorrow's Standards Today (2010).pdf","size":1764137},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/SAMS Teach Yourself HTML5 in 10 Minutes (2011).pdf","size":3147223},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/SitePoint HTML5 and CSS3 for the Real World (2011).pdf","size":4467054},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Wiley HTML5 for Dummies Quick Reference (2011).pdf","size":2449045},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Wiley HTML5, Your Visual Blueprint for Designing Rich Web Pages and Applications (2012).pdf","size":20170172},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Wiley Smashing HTML5 (2011).pdf","size":6472520},
+            {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Books Collection/Wrox Press HTML5 24-Hour Trainer (2011).pdf","size":15754468}
+          ]},
+          {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Designing Rich Internet Applications.pdf","size":20051617},
+          {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Multimedia - Develop and Design.pdf","size":7901719},
+          {"type":"file","name":"Books/WebDev/Technologies/HTML5/HTML5 Multimedia Development Cookbook.pdf","size":10946042}
+        ]},
+        {"type":"file","name":"Books/WebDev/Technologies/RESTful Web Clients - Enabling Reuse Through Hypermedia (2016).pdf","size":5096932},
+        {"type":"directory","name":"Books/WebDev/Technologies/XML For Dummies 4th  E-Book 1981CamaroZ28 H33T","size":102,"contents":[
+          {"type":"file","name":"Books/WebDev/Technologies/XML For Dummies 4th  E-Book 1981CamaroZ28 H33T/XML For Dummies 4th Ed.pdf","size":7340553}
+        ]},
+        {"type":"directory","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books","size":612,"contents":[
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Cerami - Web Services Essentials (O'Reilly, 2002).pdf","size":1800308},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Coyle - XML, Web Services, and the Data Revolution (AW, 2003).chm","size":3133898},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Fitzgerald - Learning XSLT (O'Reilly, 2003).chm","size":1166243},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Hamilton - Learning UML 2.0 (O'Reilly, 2006).chm","size":4212160},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Holzner - Inside XML (New Riders, 2000).chm","size":4882376},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Holzner - Inside XSLT (New Riders, 2001).chm","size":829068},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Holzner - Teach Yourself XML in 21 Days 3e (Sams, 2003).chm","size":5821309},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Jacobs - Beginning XML with DOM and Ajax - From Novice to Pro (Apress, 2006).pdf","size":9505551},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/O'Reilly - The XML CD Bookshelf v1.0 (O'Reilly, 2002).chm","size":10075203},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Simpson - XPath and XPointer (O'Reilly, 2002).pdf","size":2833134},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Snell,Tidwell - Programming Web Services with SOAP (O'Reilly, 2001).pdf","size":1160728},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Tennison - Beginning XSLT 2.0 - From Novice to Pro (Apress, 2005).pdf","size":10878983},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Tidwell - XSLT - Mastering XML Transformations (O'Reilly, 2001).pdf","size":2318165},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Vlist - XML Schema (O'Reilly, 2002).pdf","size":4469013},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Walmsley - XQuery (O'Reilly, 2007).pdf","size":2783970},
+          {"type":"file","name":"Books/WebDev/Technologies/XML, XSLT, XPath, SOAP, UML Books/Watt - XPath Essentials (Wiley, 2002).pdf","size":5535391}
+        ]}
+      ]}
+    ]}
+  ]}
+]

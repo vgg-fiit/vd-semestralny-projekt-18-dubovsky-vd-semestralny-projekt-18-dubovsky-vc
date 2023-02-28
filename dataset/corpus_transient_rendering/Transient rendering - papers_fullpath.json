@@ -1,0 +1,64 @@
+[
+  {"type":"directory","name":"Transient rendering - papers","contents":[
+    {"type":"file","name":"Transient rendering - papers/A Differential Theory of Radiative Transfer.pdf","size":13444262},
+    {"type":"file","name":"Transient rendering - papers/A Path-tracing Monte Carlo Library for 3D Radiative Transfer in Highly Resolved Cloudy Atmospheres.pdf","size":14427758},
+    {"type":"file","name":"Transient rendering - papers/A Radiative Transfer Framework for Spatially-Correlated Materials.pdf","size":18871876},
+    {"type":"file","name":"Transient rendering - papers/A null-scattering path integral formulation of light transport.pdf","size":5781913},
+    {"type":"file","name":"Transient rendering - papers/A radiative transfer framework for non-exponential media.pdf","size":18933955},
+    {"type":"file","name":"Transient rendering - papers/Adaptive Temporal Sampling for Volumetric Path Tracing of Medical Data.pdf","size":8722050},
+    {"type":"file","name":"Transient rendering - papers/An Evaluation of Computational Imaging Techniques for Heterogeneous Inverse Scattering.pdf","size":6278686},
+    {"type":"file","name":"Transient rendering - papers/Bidirectional Rendering of Vector Light Transport.pdf","size":7729749},
+    {"type":"file","name":"Transient rendering - papers/CPPM - Chi-squared Progressive Photon Mapping.pdf","size":17256192},
+    {"type":"file","name":"Transient rendering - papers/Compression and denoising of time-resolved light transport.pdf","size":14405689},
+    {"type":"file","name":"Transient rendering - papers/Computational 4D imaging of light-in-flight with relativistic effects.pdf","size":1341801},
+    {"type":"file","name":"Transient rendering - papers/Ellipsoidal Path Connections for Time-Gated Rendering.pdf","size":4762434},
+    {"type":"file","name":"Transient rendering - papers/Femto-Photography - Capturing and Visualizing the Propagation of Light.pdf","size":14987990},
+    {"type":"file","name":"Transient rendering - papers/Integral formulations of volumetric transmittance.pdf","size":11784915},
+    {"type":"file","name":"Transient rendering - papers/Mitsuba 2 - A Retargetable Forward and Inverse Renderer.pdf","size":49688601},
+    {"type":"file","name":"Transient rendering - papers/Monte Carlo Methods for Volumetric Light Transport Simulation.pdf","size":27847455},
+    {"type":"file","name":"Transient rendering - papers/Neural Reflectance Fields for Appearance Acquisition.pdf","size":3982943},
+    {"type":"directory","name":"Transient rendering - papers/Non-line-of-sight Imaging","size":170,"contents":[
+      {"type":"file","name":"Transient rendering - papers/Non-line-of-sight Imaging/A Dataset for Benchmarking Time-Resolved Non-Line-of-Sight Imaging.pdf","size":4244554},
+      {"type":"file","name":"Transient rendering - papers/Non-line-of-sight Imaging/Non-line-of-sight Imaging with Partial Occluders and Surface Normals.pdf","size":5045757},
+      {"type":"file","name":"Transient rendering - papers/Non-line-of-sight Imaging/Non-line-of-sight Imaging.pdf","size":3715355}
+    ]},
+    {"type":"file","name":"Transient rendering - papers/Path Tracing Estimators for Refractive Radiative Transfer.pdf","size":8329616},
+    {"type":"file","name":"Transient rendering - papers/Path tracing in Production.pdf","size":70580582},
+    {"type":"file","name":"Transient rendering - papers/PhD - EFFICIENT METHODS FOR COMPUTATIONAL LIGHT TRANSPORT (2018).pdf","size":82164969},
+    {"type":"file","name":"Transient rendering - papers/Recent Advances in Adaptive Sampling and Reconstruction for Monte Carlo Rendering.pdf","size":11374859},
+    {"type":"file","name":"Transient rendering - papers/Refractive Radiative Transfer Equation.pdf","size":15661368},
+    {"type":"file","name":"Transient rendering - papers/Relativistic Effects for Time-Resolved Light Transport.pdf","size":539521},
+    {"type":"file","name":"Transient rendering - papers/Spectral Mollification for Bidirectional Fluorescence.pdf","size":34180021},
+    {"type":"file","name":"Transient rendering - papers/State-of-the-art active optical techniques for three-dimensional surface metrology - a review.pdf","size":727222},
+    {"type":"file","name":"Transient rendering - papers/Survey of Models for Acquiring the Optical Properties of Translucent Materials.pdf","size":4196781},
+    {"type":"directory","name":"Transient rendering - papers/TOF","size":136,"contents":[
+      {"type":"file","name":"Transient rendering - papers/TOF/Bayesian Time-of-Flight for Realtime Shape, Illumination and Albedo.pdf","size":2017710},
+      {"type":"file","name":"Transient rendering - papers/TOF/Multipath Ray-Tracing-Based Modelling of Time-of-Flight Cameras - Method and Application to Semi-Transparent and Scattering Media.pdf","size":2525301}
+    ]},
+    {"type":"directory","name":"Transient rendering - papers/Transient","size":612,"contents":[
+      {"type":"file","name":"Transient rendering - papers/Transient/A Data-Driven Compression Method for Transient Rendering.pdf","size":4668609},
+      {"type":"file","name":"Transient rendering - papers/Transient/A Framework for Transient Rendering.pdf","size":5940268},
+      {"type":"file","name":"Transient rendering - papers/Transient/Model Study of Transient Imaging with Multi-Frequency Time-of-Flight Sensors.pdf","size":6906039},
+      {"type":"file","name":"Transient rendering - papers/Transient/PhD - Rendering and Imaging with Transients - A Study of Computational Photography with Scattered Photons.pdf","size":10341245},
+      {"type":"file","name":"Transient rendering - papers/Transient/Progressive Transient Photon Beams.pdf","size":973408},
+      {"type":"file","name":"Transient rendering - papers/Transient/Recent advances in transient imaging - A computer graphics and vision perspective (2017).pdf","size":2406913},
+      {"type":"file","name":"Transient rendering - papers/Transient/Recent advances in transient imaging - A computer graphics and vision perspective.pdf","size":2412545},
+      {"type":"file","name":"Transient rendering - papers/Transient/Reconstructing Transient Images from Single-Photon Sensors.pdf","size":848950},
+      {"type":"file","name":"Transient rendering - papers/Transient/Rendering Relativistic Effects in Transient Imaging.pdf","size":1846224},
+      {"type":"file","name":"Transient rendering - papers/Transient/Solving Trigonometric Moment Problems for Fast Transient Imaging.pdf","size":6749116},
+      {"type":"file","name":"Transient rendering - papers/Transient/Temporal Frequency Probing for 5D Transient Analysis of Global Light Transport.pdf","size":10627902},
+      {"type":"file","name":"Transient rendering - papers/Transient/Theory and Analysis of Transient Rendering.pdf","size":1331854},
+      {"type":"file","name":"Transient rendering - papers/Transient/Towards Transient Imaging at Interactive Rates with Single-Photon Detectors.pdf","size":1208607},
+      {"type":"file","name":"Transient rendering - papers/Transient/Transient Photon Beams.pdf","size":1610561},
+      {"type":"file","name":"Transient rendering - papers/Transient/Transient Rendering.pdf","size":118194},
+      {"type":"file","name":"Transient rendering - papers/Transient/Transient instant radiosity for efficient time-resolved global illumination.pdf","size":1829941}
+    ]},
+    {"type":"file","name":"Transient rendering - papers/Uses of Mathematics in Computer Animation and 3D Rendering Software.pdf","size":18421545},
+    {"type":"file","name":"Transient rendering - papers/Virtual light transport matrices for non-line-of-sight imaging.pdf","size":29835531},
+    {"type":"file","name":"Transient rendering - papers/Volume Path Guiding Based on Zero-Variance Random Walk Theory.pdf","size":16458854},
+    {"type":"directory","name":"Transient rendering - papers/book","size":136,"contents":[
+      {"type":"file","name":"Transient rendering - papers/book/Biomedical Visualisation Volume 6.pdf","size":6080662},
+      {"type":"file","name":"Transient rendering - papers/book/Sensor Systems - Simulations From Concept to Solution.pdf","size":16675311}
+    ]}
+  ]}
+]

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="Transient rendering - papers">
+    <file name="A Differential Theory of Radiative Transfer.pdf" size="13444262"></file>
+    <file name="A Path-tracing Monte Carlo Library for 3D Radiative Transfer in Highly Resolved Cloudy Atmospheres.pdf" size="14427758"></file>
+    <file name="A Radiative Transfer Framework for Spatially-Correlated Materials.pdf" size="18871876"></file>
+    <file name="A null-scattering path integral formulation of light transport.pdf" size="5781913"></file>
+    <file name="A radiative transfer framework for non-exponential media.pdf" size="18933955"></file>
+    <file name="Adaptive Temporal Sampling for Volumetric Path Tracing of Medical Data.pdf" size="8722050"></file>
+    <file name="An Evaluation of Computational Imaging Techniques for Heterogeneous Inverse Scattering.pdf" size="6278686"></file>
+    <file name="Bidirectional Rendering of Vector Light Transport.pdf" size="7729749"></file>
+    <file name="CPPM - Chi-squared Progressive Photon Mapping.pdf" size="17256192"></file>
+    <file name="Compression and denoising of time-resolved light transport.pdf" size="14405689"></file>
+    <file name="Computational 4D imaging of light-in-flight with relativistic effects.pdf" size="1341801"></file>
+    <file name="Ellipsoidal Path Connections for Time-Gated Rendering.pdf" size="4762434"></file>
+    <file name="Femto-Photography - Capturing and Visualizing the Propagation of Light.pdf" size="14987990"></file>
+    <file name="Integral formulations of volumetric transmittance.pdf" size="11784915"></file>
+    <file name="Mitsuba 2 - A Retargetable Forward and Inverse Renderer.pdf" size="49688601"></file>
+    <file name="Monte Carlo Methods for Volumetric Light Transport Simulation.pdf" size="27847455"></file>
+    <file name="Neural Reflectance Fields for Appearance Acquisition.pdf" size="3982943"></file>
+    <directory name="Non-line-of-sight Imaging" size="170">
+      <file name="A Dataset for Benchmarking Time-Resolved Non-Line-of-Sight Imaging.pdf" size="4244554"></file>
+      <file name="Non-line-of-sight Imaging with Partial Occluders and Surface Normals.pdf" size="5045757"></file>
+      <file name="Non-line-of-sight Imaging.pdf" size="3715355"></file>
+    </directory>
+    <file name="Path Tracing Estimators for Refractive Radiative Transfer.pdf" size="8329616"></file>
+    <file name="Path tracing in Production.pdf" size="70580582"></file>
+    <file name="PhD - EFFICIENT METHODS FOR COMPUTATIONAL LIGHT TRANSPORT (2018).pdf" size="82164969"></file>
+    <file name="Recent Advances in Adaptive Sampling and Reconstruction for Monte Carlo Rendering.pdf" size="11374859"></file>
+    <file name="Refractive Radiative Transfer Equation.pdf" size="15661368"></file>
+    <file name="Relativistic Effects for Time-Resolved Light Transport.pdf" size="539521"></file>
+    <file name="Spectral Mollification for Bidirectional Fluorescence.pdf" size="34180021"></file>
+    <file name="State-of-the-art active optical techniques for three-dimensional surface metrology - a review.pdf" size="727222"></file>
+    <file name="Survey of Models for Acquiring the Optical Properties of Translucent Materials.pdf" size="4196781"></file>
+    <directory name="TOF" size="136">
+      <file name="Bayesian Time-of-Flight for Realtime Shape, Illumination and Albedo.pdf" size="2017710"></file>
+      <file name="Multipath Ray-Tracing-Based Modelling of Time-of-Flight Cameras - Method and Application to Semi-Transparent and Scattering Media.pdf" size="2525301"></file>
+    </directory>
+    <directory name="Transient" size="612">
+      <file name="A Data-Driven Compression Method for Transient Rendering.pdf" size="4668609"></file>
+      <file name="A Framework for Transient Rendering.pdf" size="5940268"></file>
+      <file name="Model Study of Transient Imaging with Multi-Frequency Time-of-Flight Sensors.pdf" size="6906039"></file>
+      <file name="PhD - Rendering and Imaging with Transients - A Study of Computational Photography with Scattered Photons.pdf" size="10341245"></file>
+      <file name="Progressive Transient Photon Beams.pdf" size="973408"></file>
+      <file name="Recent advances in transient imaging - A computer graphics and vision perspective (2017).pdf" size="2406913"></file>
+      <file name="Recent advances in transient imaging - A computer graphics and vision perspective.pdf" size="2412545"></file>
+      <file name="Reconstructing Transient Images from Single-Photon Sensors.pdf" size="848950"></file>
+      <file name="Rendering Relativistic Effects in Transient Imaging.pdf" size="1846224"></file>
+      <file name="Solving Trigonometric Moment Problems for Fast Transient Imaging.pdf" size="6749116"></file>
+      <file name="Temporal Frequency Probing for 5D Transient Analysis of Global Light Transport.pdf" size="10627902"></file>
+      <file name="Theory and Analysis of Transient Rendering.pdf" size="1331854"></file>
+      <file name="Towards Transient Imaging at Interactive Rates with Single-Photon Detectors.pdf" size="1208607"></file>
+      <file name="Transient Photon Beams.pdf" size="1610561"></file>
+      <file name="Transient Rendering.pdf" size="118194"></file>
+      <file name="Transient instant radiosity for efficient time-resolved global illumination.pdf" size="1829941"></file>
+    </directory>
+    <file name="Uses of Mathematics in Computer Animation and 3D Rendering Software.pdf" size="18421545"></file>
+    <file name="Virtual light transport matrices for non-line-of-sight imaging.pdf" size="29835531"></file>
+    <file name="Volume Path Guiding Based on Zero-Variance Random Walk Theory.pdf" size="16458854"></file>
+    <directory name="book" size="136">
+      <file name="Biomedical Visualisation Volume 6.pdf" size="6080662"></file>
+      <file name="Sensor Systems - Simulations From Concept to Solution.pdf" size="16675311"></file>
+    </directory>
+  </directory>
+</tree>
