@@ -6,7 +6,9 @@
   "scripts": {
     "test": "test",
     "build": "npx tsc",
-    "start": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "start": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
