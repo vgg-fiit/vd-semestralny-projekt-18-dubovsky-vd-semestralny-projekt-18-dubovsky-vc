@@ -9,6 +9,7 @@
 		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
+		"strictNullChecks": true,
 		"typeRoots": [
 			"node_modules/@types"
 		],
