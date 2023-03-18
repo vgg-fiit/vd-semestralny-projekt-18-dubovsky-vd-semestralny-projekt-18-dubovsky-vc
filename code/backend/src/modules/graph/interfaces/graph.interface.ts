@@ -3,10 +3,6 @@ export interface Graph {
     edges: Edge[];
 }
 
-export interface LayoutedGraph extends Graph {
-    temperature: number;
-}
-
 export interface vector3 {
     x: number;
     y: number;
@@ -29,7 +25,9 @@ export class Node {
 		}
 		if (displacement != null) {
 			this.displacement = displacement;
-		}
+		} else {
+            this.displacement = {x: 0, y: 0, z: 0}
+        }
     }
 
     set constantDisplacement(displacement: number) {
@@ -38,14 +36,22 @@ export class Node {
 
     public getDistanceTo(nodeTo: Node): vector3 {
         return {
-            x: this.displacement.x - nodeTo.displacement.x,
-            y: this.displacement.y - nodeTo.displacement.y,
-			z: this.displacement.z - nodeTo.displacement.z,
+            x: this.position.x - nodeTo.position.x,
+            y: this.position.y - nodeTo.position.y,
+			z: this.position.z - nodeTo.position.z,
         };
     }
 
+    public getNormalizedDistanceTo(nodeTo: Node): vector3 {
+        const distance: vector3 = this.getDistanceTo(nodeTo);
+        const vectorLength: number = Math.sqrt(distance.x * distance.x + distance.y * distance.y + distance.z * distance.z);
+        if (vectorLength == 0)
+            return {x: 0, y: 0, z: 0};
+        return {x: distance.x / vectorLength, y: distance.y / vectorLength, z: distance.z / vectorLength};
+    }
+
     displaceNodeBy(nodeTo: Node, force: (v: number) => number) {
-		const distance: vector3 = this.getDistanceTo(nodeTo);
+		const distance: vector3 = this.getNormalizedDistanceTo(nodeTo);
 		this.displacement = {
 			x: (this.displacement.x += force(distance.x)),
 			y: (this.displacement.y += force(distance.y)),

@@ -13,13 +13,13 @@ export class GraphController {
 	}
 
     /** @method GET
-     * @path /graph/getGraph
+     * @path /graph/get
      * @returns nodes and edges of the created graph
      */
 	private static async fetchGraph(req: Request, res: Response<AppResponse<Graph>>, next: NextFunction) {
 		try {
 			const layoutedGraph: AppResponse<Graph> = LayouterController.layoutGraph(req);
-			res.send(layoutedGraph);
+			res.json(layoutedGraph);
 		} catch (exception) {
 			next(exception);
 		}
