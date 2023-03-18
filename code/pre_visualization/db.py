@@ -1,8 +1,8 @@
-from neomodel import StructuredNode, StringProperty, RelationshipTo, RelationshipFrom, config, JSONProperty
+from neomodel import StructuredNode, StringProperty, RelationshipTo, RelationshipFrom, config, JSONProperty, \
+    IntegerProperty, Relationship, ArrayProperty
+
 
 # config with your own database user and password and database name
-config.DATABASE_URL = 'bolt://neo4j:ajopajo@localhost:7687'
-
 
 # class Book(StructuredNode):
 #     title = StringProperty(unique_index=True)
@@ -20,18 +20,24 @@ config.DATABASE_URL = 'bolt://neo4j:ajopajo@localhost:7687'
 
 # Create class for directory and file
 class Directory(StructuredNode):
+    # id = IntegerProperty(unique_index=True)
     name = StringProperty()
     fullpath = StringProperty()
-    keywords = JSONProperty()
-    parent = RelationshipTo('Directory', 'CONTAINS')
-    files = RelationshipFrom('File', 'CONTAINS')
-    subdirectories = RelationshipFrom('Directory', 'CONTAINS')
-
+    metadata = JSONProperty()
+    keywords = ArrayProperty(StringProperty())
+    parent_directory = RelationshipTo('Directory', 'CONTAINS')
 
 class File(StructuredNode):
-    filename = StringProperty()
+    # id = IntegerProperty(unique_index=True)
+    name = StringProperty()
     fullpath = StringProperty()
-    keywords = JSONProperty()
+    metadata = JSONProperty()
+    keywords = ArrayProperty(StringProperty())
     parent = RelationshipTo('Directory', 'CONTAINS')
-    files = RelationshipFrom('File', 'CONTAINS')
+
+
+class Word(StructuredNode):
+    word = StringProperty(unique_index=True)
+    files = Relationship('File', 'REFERS_TO')
+    directories = Relationship('Directory', 'REFERS_TO')
 

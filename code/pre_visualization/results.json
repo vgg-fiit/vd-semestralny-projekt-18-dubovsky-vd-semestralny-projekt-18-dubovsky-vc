@@ -1,0 +1,2331 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Papers\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "papers"
+        ],
+        "fullpath": "Papers",
+        "name": "Papers"
+      }
+    },
+    {
+      "id": 2,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visualisation and Interaction in Mixed Reality\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "visualisation",
+          "interaction",
+          "mixed",
+          "reality"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality",
+        "name": "Visualisation and Interaction in Mixed Reality"
+      }
+    },
+    {
+      "id": 3,
+      "properties": {
+        "metadata": "{\"year\": [\"2000\"], \"filename\": \"lmmersive Graph Navigation Using Direct Manipulation and Gestures (2000).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "lmmersive",
+          "graph",
+          "navigation",
+          "using",
+          "direct",
+          "manipulation",
+          "gestures",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/lmmersive Graph Navigation Using Direct Manipulation and Gestures (2000).pdf",
+        "name": "lmmersive Graph Navigation Using Direct Manipulation and Gestures (2000).pdf"
+      }
+    },
+    {
+      "id": 4,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Yea Big, Yea High - A 3D User Interface for Surface Selection by progressive Refinement in Virtual Environments (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "yea",
+          "big",
+          "",
+          "yea",
+          "high",
+          "",
+          "d",
+          "user",
+          "interface",
+          "surface",
+          "selection",
+          "progressive",
+          "refinement",
+          "virtual",
+          "environments",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Yea Big, Yea High - A 3D User Interface for Surface Selection by progressive Refinement in Virtual Environments (2018).pdf",
+        "name": "Yea Big, Yea High - A 3D User Interface for Surface Selection by progressive Refinement in Virtual Environments (2018).pdf"
+      }
+    },
+    {
+      "id": 5,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"XRaSE - Towards Virtually Tangible Software using Augmented Reality (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "xrase",
+          "",
+          "towards",
+          "virtually",
+          "tangible",
+          "software",
+          "using",
+          "augmented",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/XRaSE - Towards Virtually Tangible Software using Augmented Reality (2019).pdf",
+        "name": "XRaSE - Towards Virtually Tangible Software using Augmented Reality (2019).pdf"
+      }
+    },
+    {
+      "id": 6,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"WebVR based Interactive Visualization of Open Health Data (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "webvr",
+          "based",
+          "interactive",
+          "visualization",
+          "open",
+          "health",
+          "data",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/WebVR based Interactive Visualization of Open Health Data (2018).pdf",
+        "name": "WebVR based Interactive Visualization of Open Health Data (2018).pdf"
+      }
+    },
+    {
+      "id": 7,
+      "properties": {
+        "metadata": "{\"year\": [\"2014\"], \"filename\": \"WeARHand - Head-Worn, RGB-D Camera-Based, Bare-Hand User Interface with Visually Enhanced Depth Perception (2014).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "wearhand",
+          "",
+          "headworn",
+          "",
+          "rgbd",
+          "camerabased",
+          "",
+          "barehand",
+          "user",
+          "interface",
+          "visually",
+          "enhanced",
+          "depth",
+          "perception",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/WeARHand - Head-Worn, RGB-D Camera-Based, Bare-Hand User Interface with Visually Enhanced Depth Perception (2014).pdf",
+        "name": "WeARHand - Head-Worn, RGB-D Camera-Based, Bare-Hand User Interface with Visually Enhanced Depth Perception (2014).pdf"
+      }
+    },
+    {
+      "id": 8,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"Visualising a Software System as a City Through Virtual Reality (2017).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visualising",
+          "software",
+          "system",
+          "city",
+          "virtual",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Visualising a Software System as a City Through Virtual Reality (2017).pdf",
+        "name": "Visualising a Software System as a City Through Virtual Reality (2017).pdf"
+      }
+    },
+    {
+      "id": 9,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"VirtualDesk - A Comfortable and Efficient Immersive Information Visualization Approach (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "virtualdesk",
+          "",
+          "comfortable",
+          "efficient",
+          "immersive",
+          "information",
+          "visualization",
+          "approach",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/VirtualDesk - A Comfortable and Efficient Immersive Information Visualization Approach (2018).pdf",
+        "name": "VirtualDesk - A Comfortable and Efficient Immersive Information Visualization Approach (2018).pdf"
+      }
+    },
+    {
+      "id": 10,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "virtual",
+          "reality",
+          "interfaces",
+          "interacting",
+          "threedimensional",
+          "graphspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.pdf",
+        "name": "Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs.pdf"
+      }
+    },
+    {
+      "id": 11,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs(2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "virtual",
+          "reality",
+          "interfaces",
+          "interacting",
+          "threedimensional",
+          "graphs",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs(2019).pdf",
+        "name": "Virtual Reality Interfaces for Interacting with Three-Dimensional Graphs(2019).pdf"
+      }
+    },
+    {
+      "id": 12,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"VRige - Exploring Social Network Interactions In Immersive Virtual Environments.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "vrige",
+          "",
+          "exploring",
+          "social",
+          "network",
+          "interactions",
+          "immersive",
+          "virtual",
+          "environmentspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/VRige - Exploring Social Network Interactions In Immersive Virtual Environments.pdf",
+        "name": "VRige - Exploring Social Network Interactions In Immersive Virtual Environments.pdf"
+      }
+    },
+    {
+      "id": 13,
+      "properties": {
+        "metadata": "{\"year\": [\"2003\"], \"filename\": \"Using Augmente Reality for Visualizing Complex Graphs in Three Dimensions (2003).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "using",
+          "augmente",
+          "reality",
+          "visualizing",
+          "complex",
+          "graphs",
+          "three",
+          "dimensions",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Using Augmente Reality for Visualizing Complex Graphs in Three Dimensions (2003).pdf",
+        "name": "Using Augmente Reality for Visualizing Complex Graphs in Three Dimensions (2003).pdf"
+      }
+    },
+    {
+      "id": 14,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Towards the Holodeck Fully Immersive Virtual Reality Visualisation of Scientific and Engineering Data.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "towards",
+          "holodeck",
+          "fully",
+          "immersive",
+          "virtual",
+          "reality",
+          "visualisation",
+          "scientific",
+          "engineering",
+          "datapdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Towards the Holodeck Fully Immersive Virtual Reality Visualisation of Scientific and Engineering Data.pdf",
+        "name": "Towards the Holodeck Fully Immersive Virtual Reality Visualisation of Scientific and Engineering Data.pdf"
+      }
+    },
+    {
+      "id": 15,
+      "properties": {
+        "metadata": "{\"year\": [\"2020\"], \"filename\": \"Towards Visualization of Evolution of Component-Based So ware Architectures in VR (2020).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "towards",
+          "visualization",
+          "evolution",
+          "componentbased",
+          "ware",
+          "architectures",
+          "vr",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Towards Visualization of Evolution of Component-Based So ware Architectures in VR (2020).pdf",
+        "name": "Towards Visualization of Evolution of Component-Based So ware Architectures in VR (2020).pdf"
+      }
+    },
+    {
+      "id": 16,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"The Hologram in My Hand - How Effective is Interactive Exploration of 3D Visualizations in Immersive Tangible Augmented Reality (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "hologram",
+          "hand",
+          "",
+          "effective",
+          "interactive",
+          "exploration",
+          "d",
+          "visualizations",
+          "immersive",
+          "tangible",
+          "augmented",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/The Hologram in My Hand - How Effective is Interactive Exploration of 3D Visualizations in Immersive Tangible Augmented Reality (2018).pdf",
+        "name": "The Hologram in My Hand - How Effective is Interactive Exploration of 3D Visualizations in Immersive Tangible Augmented Reality (2018).pdf"
+      }
+    },
+    {
+      "id": 17,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Take a Walk - Evaluating Movement Types for Data Visualization in Immersive Virtual Reality.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "take",
+          "walk",
+          "",
+          "evaluating",
+          "movement",
+          "types",
+          "data",
+          "visualization",
+          "immersive",
+          "virtual",
+          "realitypdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Take a Walk - Evaluating Movement Types for Data Visualization in Immersive Virtual Reality.pdf",
+        "name": "Take a Walk - Evaluating Movement Types for Data Visualization in Immersive Virtual Reality.pdf"
+      }
+    },
+    {
+      "id": 18,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Speak to your Software Visualization - Exploring Component-based Software Architectures in Augmented Reality with a Conversational Interface (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "speak",
+          "software",
+          "visualization",
+          "",
+          "exploring",
+          "componentbased",
+          "software",
+          "architectures",
+          "augmented",
+          "reality",
+          "conversational",
+          "interface",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Speak to your Software Visualization - Exploring Component-based Software Architectures in Augmented Reality with a Conversational Interface (2019).pdf",
+        "name": "Speak to your Software Visualization - Exploring Component-based Software Architectures in Augmented Reality with a Conversational Interface (2019).pdf"
+      }
+    },
+    {
+      "id": 19,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Spatial Analytic Interfaces - Spatial User Interfaces for In Situ Visual Analytics.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "spatial",
+          "analytic",
+          "interfaces",
+          "",
+          "spatial",
+          "user",
+          "interfaces",
+          "situ",
+          "visual",
+          "analyticspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Spatial Analytic Interfaces - Spatial User Interfaces for In Situ Visual Analytics.pdf",
+        "name": "Spatial Analytic Interfaces - Spatial User Interfaces for In Situ Visual Analytics.pdf"
+      }
+    },
+    {
+      "id": 20,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"PerfVis - Pervasive Visualization in Immersive Augmented Reality for Performance Awareness (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "perfvis",
+          "",
+          "pervasive",
+          "visualization",
+          "immersive",
+          "augmented",
+          "reality",
+          "performance",
+          "awareness",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/PerfVis - Pervasive Visualization in Immersive Augmented Reality for Performance Awareness (2019).pdf",
+        "name": "PerfVis - Pervasive Visualization in Immersive Augmented Reality for Performance Awareness (2019).pdf"
+      }
+    },
+    {
+      "id": 21,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "overcoming",
+          "issues",
+          "d",
+          "software",
+          "visualization",
+          "immersive",
+          "augmented",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality (2018).pdf",
+        "name": "Overcoming Issues of 3D Software Visualization through Immersive Augmented Reality (2018).pdf"
+      }
+    },
+    {
+      "id": 22,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"On the use of virtual reality in software visualization - The case of the city metaphor (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "use",
+          "virtual",
+          "reality",
+          "software",
+          "visualization",
+          "",
+          "case",
+          "city",
+          "metaphor",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/On the use of virtual reality in software visualization - The case of the city metaphor (2019).pdf",
+        "name": "On the use of virtual reality in software visualization - The case of the city metaphor (2019).pdf"
+      }
+    },
+    {
+      "id": 23,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Multidimensional Information Visualization Using Augmented Reality.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "multidimensional",
+          "information",
+          "visualization",
+          "using",
+          "augmented",
+          "realitypdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Multidimensional Information Visualization Using Augmented Reality.pdf",
+        "name": "Multidimensional Information Visualization Using Augmented Reality.pdf"
+      }
+    },
+    {
+      "id": 24,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Multidimensional Information Visualization Using Augmented Reality copy.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "multidimensional",
+          "information",
+          "visualization",
+          "using",
+          "augmented",
+          "reality",
+          "copypdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Multidimensional Information Visualization Using Augmented Reality copy.pdf",
+        "name": "Multidimensional Information Visualization Using Augmented Reality copy.pdf"
+      }
+    },
+    {
+      "id": 25,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Mining_the_human_genome_using_virtual_re.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "miningthehumangenomeusingvirtualrepdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Mining_the_human_genome_using_virtual_re.pdf",
+        "name": "Mining_the_human_genome_using_virtual_re.pdf"
+      }
+    },
+    {
+      "id": 26,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Menus on the Desk - System Control in DeskVR (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "menus",
+          "desk",
+          "",
+          "system",
+          "control",
+          "deskvr",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Menus on the Desk - System Control in DeskVR (2019).pdf",
+        "name": "Menus on the Desk - System Control in DeskVR (2019).pdf"
+      }
+    },
+    {
+      "id": 27,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"Interactive Visualization of Software Components with Virtual Reality Headsets (2017) copy.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "interactive",
+          "visualization",
+          "software",
+          "components",
+          "virtual",
+          "reality",
+          "headsets",
+          "",
+          "",
+          "",
+          "copypdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Interactive Visualization of Software Components with Virtual Reality Headsets (2017) copy.pdf",
+        "name": "Interactive Visualization of Software Components with Virtual Reality Headsets (2017) copy.pdf"
+      }
+    },
+    {
+      "id": 28,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Interaction Modes for Augmented Reality Visualization.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "interaction",
+          "modes",
+          "augmented",
+          "reality",
+          "visualizationpdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Interaction Modes for Augmented Reality Visualization.pdf",
+        "name": "Interaction Modes for Augmented Reality Visualization.pdf"
+      }
+    },
+    {
+      "id": 29,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Intelligent visualization of holographic biological networks using HoloLens.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "intelligent",
+          "visualization",
+          "holographic",
+          "biological",
+          "networks",
+          "using",
+          "hololenspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Intelligent visualization of holographic biological networks using HoloLens.pdf",
+        "name": "Intelligent visualization of holographic biological networks using HoloLens.pdf"
+      }
+    },
+    {
+      "id": 30,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Immersive Visualization of Abstract Information - An Evaluation on Dimensionally-Reduced Data Scatterplots (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "immersive",
+          "visualization",
+          "abstract",
+          "information",
+          "",
+          "evaluation",
+          "dimensionallyreduced",
+          "data",
+          "scatterplots",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Immersive Visualization of Abstract Information - An Evaluation on Dimensionally-Reduced Data Scatterplots (2018).pdf",
+        "name": "Immersive Visualization of Abstract Information - An Evaluation on Dimensionally-Reduced Data Scatterplots (2018).pdf"
+      }
+    },
+    {
+      "id": 31,
+      "properties": {
+        "metadata": "{\"year\": [\"2021\"], \"filename\": \"Immersive Pedigree Graph Visualisations (2021).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "immersive",
+          "pedigree",
+          "graph",
+          "visualisations",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Immersive Pedigree Graph Visualisations (2021).pdf",
+        "name": "Immersive Pedigree Graph Visualisations (2021).pdf"
+      }
+    },
+    {
+      "id": 32,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"How Effective is Interactive Exploration of 3D Visualizations(2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "effective",
+          "interactive",
+          "exploration",
+          "d",
+          "visualizations",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/How Effective is Interactive Exploration of 3D Visualizations(2018).pdf",
+        "name": "How Effective is Interactive Exploration of 3D Visualizations(2018).pdf"
+      }
+    },
+    {
+      "id": 33,
+      "properties": {
+        "metadata": "{\"year\": [\"2012\"], \"filename\": \"HoloDesk - direct 3d interactions with a situated see-through display (2012).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "holodesk",
+          "",
+          "direct",
+          "d",
+          "interactions",
+          "situated",
+          "seethrough",
+          "display",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/HoloDesk - direct 3d interactions with a situated see-through display (2012).pdf",
+        "name": "HoloDesk - direct 3d interactions with a situated see-through display (2012).pdf"
+      }
+    },
+    {
+      "id": 34,
+      "properties": {
+        "metadata": "{\"year\": [\"2014\"], \"filename\": \"Grasp-Shell vs gesture-speech - A comparison of direct and indirect natural interaction techniques in augmented reality (2014).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "graspshell",
+          "vs",
+          "gesturespeech",
+          "",
+          "comparison",
+          "direct",
+          "indirect",
+          "natural",
+          "interaction",
+          "techniques",
+          "augmented",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Grasp-Shell vs gesture-speech - A comparison of direct and indirect natural interaction techniques in augmented reality (2014).pdf",
+        "name": "Grasp-Shell vs gesture-speech - A comparison of direct and indirect natural interaction techniques in augmented reality (2014).pdf"
+      }
+    },
+    {
+      "id": 35,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Exploring the Effects of Scale in Augmented Reality-Empowered Visual Analytics (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "exploring",
+          "effects",
+          "scale",
+          "augmented",
+          "realityempowered",
+          "visual",
+          "analytics",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Exploring the Effects of Scale in Augmented Reality-Empowered Visual Analytics (2018).pdf",
+        "name": "Exploring the Effects of Scale in Augmented Reality-Empowered Visual Analytics (2018).pdf"
+      }
+    },
+    {
+      "id": 36,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Exploring Software Cities in Virtual Reality.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "exploring",
+          "software",
+          "cities",
+          "virtual",
+          "realitypdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Exploring Software Cities in Virtual Reality.pdf",
+        "name": "Exploring Software Cities in Virtual Reality.pdf"
+      }
+    },
+    {
+      "id": 37,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Exploring Data in Virtual Reality- Comparisons with 2D Data Visualizations.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "exploring",
+          "data",
+          "virtual",
+          "reality",
+          "comparisons",
+          "d",
+          "data",
+          "visualizationspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Exploring Data in Virtual Reality- Comparisons with 2D Data Visualizations.pdf",
+        "name": "Exploring Data in Virtual Reality- Comparisons with 2D Data Visualizations.pdf"
+      }
+    },
+    {
+      "id": 38,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"DebugAR - Mixed Dimensional Displays for Immersive Debugging of Distributed Systems (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "debugar",
+          "",
+          "mixed",
+          "dimensional",
+          "displays",
+          "immersive",
+          "debugging",
+          "distributed",
+          "systems",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/DebugAR - Mixed Dimensional Displays for Immersive Debugging of Distributed Systems (2018).pdf",
+        "name": "DebugAR - Mixed Dimensional Displays for Immersive Debugging of Distributed Systems (2018).pdf"
+      }
+    },
+    {
+      "id": 39,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"DXR A Toolkit for Building Immersive Data Visualizations.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "dxr",
+          "toolkit",
+          "building",
+          "immersive",
+          "data",
+          "visualizationspdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/DXR A Toolkit for Building Immersive Data Visualizations.pdf",
+        "name": "DXR A Toolkit for Building Immersive Data Visualizations.pdf"
+      }
+    },
+    {
+      "id": 40,
+      "properties": {
+        "metadata": "{\"year\": [\"2015\"], \"filename\": \"Collaborative Magic Lens Graph Exploration (2015).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "collaborative",
+          "magic",
+          "lens",
+          "graph",
+          "exploration",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Collaborative Magic Lens Graph Exploration (2015).pdf",
+        "name": "Collaborative Magic Lens Graph Exploration (2015).pdf"
+      }
+    },
+    {
+      "id": 41,
+      "properties": {
+        "metadata": "{\"year\": [\"2012\"], \"filename\": \"Collaborative Augmented Reality Application for Information Visualization Support (2012).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "collaborative",
+          "augmented",
+          "reality",
+          "application",
+          "information",
+          "visualization",
+          "support",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/Collaborative Augmented Reality Application for Information Visualization Support (2012).pdf",
+        "name": "Collaborative Augmented Reality Application for Information Visualization Support (2012).pdf"
+      }
+    },
+    {
+      "id": 42,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"CityVR - Gameful Software Visualization (2017).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "cityvr",
+          "",
+          "gameful",
+          "software",
+          "visualization",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/CityVR - Gameful Software Visualization (2017).pdf",
+        "name": "CityVR - Gameful Software Visualization (2017).pdf"
+      }
+    },
+    {
+      "id": 43,
+      "properties": {
+        "metadata": "{\"year\": [\"2020\"], \"filename\": \"A modern approach to supporting program visualization - from a 2D notation to 3D representations using augmented reality (2020).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "modern",
+          "approach",
+          "supporting",
+          "program",
+          "visualization",
+          "",
+          "d",
+          "notation",
+          "d",
+          "representations",
+          "using",
+          "augmented",
+          "reality",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/A modern approach to supporting program visualization - from a 2D notation to 3D representations using augmented reality (2020).pdf",
+        "name": "A modern approach to supporting program visualization - from a 2D notation to 3D representations using augmented reality (2020).pdf"
+      }
+    },
+    {
+      "id": 44,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"A gesture system for graph visualization in virtual reality environments (2017).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "gesture",
+          "system",
+          "graph",
+          "visualization",
+          "virtual",
+          "reality",
+          "environments",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/A gesture system for graph visualization in virtual reality environments (2017).pdf",
+        "name": "A gesture system for graph visualization in virtual reality environments (2017).pdf"
+      }
+    },
+    {
+      "id": 45,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "study",
+          "layout",
+          "",
+          "rendering",
+          "",
+          "interaction",
+          "methods",
+          "immersive",
+          "graph",
+          "visualizationpdf"
+        ],
+        "fullpath": "Papers/Visualisation and Interaction in Mixed Reality/A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization.pdf",
+        "name": "A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization.pdf"
+      }
+    },
+    {
+      "id": 46,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visual Saliency Research\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "saliency",
+          "research"
+        ],
+        "fullpath": "Papers/Visual Saliency Research",
+        "name": "Visual Saliency Research"
+      }
+    },
+    {
+      "id": 47,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visual Saliency\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "saliency"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency",
+        "name": "Visual Saliency"
+      }
+    },
+    {
+      "id": 48,
+      "properties": {
+        "metadata": "{\"year\": [\"2016\"], \"filename\": \"Where should saliency models look next (2016).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "saliency",
+          "models",
+          "look",
+          "next",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Where should saliency models look next (2016).pdf",
+        "name": "Where should saliency models look next (2016).pdf"
+      }
+    },
+    {
+      "id": 49,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"What do different evaluation metrics tell us about saliency models.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "different",
+          "evaluation",
+          "metrics",
+          "tell",
+          "us",
+          "saliency",
+          "modelspdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/What do different evaluation metrics tell us about saliency models.pdf",
+        "name": "What do different evaluation metrics tell us about saliency models.pdf"
+      }
+    },
+    {
+      "id": 50,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visualization\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "visualization"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization",
+        "name": "Visualization"
+      }
+    },
+    {
+      "id": 51,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"SciVis\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "scivis"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis",
+        "name": "SciVis"
+      }
+    },
+    {
+      "id": 52,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visibility-Weighted Saliency for Volume Visualization.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visibilityweighted",
+          "saliency",
+          "volume",
+          "visualizationpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Visibility-Weighted Saliency for Volume Visualization.pdf",
+        "name": "Visibility-Weighted Saliency for Volume Visualization.pdf"
+      }
+    },
+    {
+      "id": 53,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Important\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "important"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Important",
+        "name": "Important"
+      }
+    },
+    {
+      "id": 54,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "perception",
+          "mixedinitiative",
+          "interaction",
+          "assisted",
+          "visualization",
+          "designpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/Important/Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design.pdf",
+        "name": "Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design.pdf"
+      }
+    },
+    {
+      "id": 55,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"An Information-Theoretic Observation Channel for Volume Visualization.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "informationtheoretic",
+          "observation",
+          "channel",
+          "volume",
+          "visualizationpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/SciVis/An Information-Theoretic Observation Channel for Volume Visualization.pdf",
+        "name": "An Information-Theoretic Observation Channel for Volume Visualization.pdf"
+      }
+    },
+    {
+      "id": 56,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"InfoVis\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "infovis"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis",
+        "name": "InfoVis"
+      }
+    },
+    {
+      "id": 57,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"THEMATIC RELEVANCE AND PERCEPTUAL SALIENCE OF DYNAMIC GEOVISUALIZATION DISPLAYS.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "thematic",
+          "relevance",
+          "perceptual",
+          "salience",
+          "dynamic",
+          "geovisualization",
+          "displayspdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/THEMATIC RELEVANCE AND PERCEPTUAL SALIENCE OF DYNAMIC GEOVISUALIZATION DISPLAYS.pdf",
+        "name": "THEMATIC RELEVANCE AND PERCEPTUAL SALIENCE OF DYNAMIC GEOVISUALIZATION DISPLAYS.pdf"
+      }
+    },
+    {
+      "id": 58,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "learning",
+          "visual",
+          "importance",
+          "graphic",
+          "designs",
+          "data",
+          "visualizations",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf",
+        "name": "Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf"
+      }
+    },
+    {
+      "id": 59,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Analyzing the effect of different partial overlap sizes in perceiving visual variables (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "analyzing",
+          "effect",
+          "different",
+          "partial",
+          "overlap",
+          "sizes",
+          "perceiving",
+          "visual",
+          "variables",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Visualization/InfoVis/Analyzing the effect of different partial overlap sizes in perceiving visual variables (2019).pdf",
+        "name": "Analyzing the effect of different partial overlap sizes in perceiving visual variables (2019).pdf"
+      }
+    },
+    {
+      "id": 60,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Salliency models\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "salliency",
+          "models"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models",
+        "name": "Salliency models"
+      }
+    },
+    {
+      "id": 61,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"introducing a Bayesian model of selective attention based on active inference (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "introducing",
+          "bayesian",
+          "model",
+          "selective",
+          "attention",
+          "based",
+          "active",
+          "inference",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/introducing a Bayesian model of selective attention based on active inference (2019).pdf",
+        "name": "introducing a Bayesian model of selective attention based on active inference (2019).pdf"
+      }
+    },
+    {
+      "id": 62,
+      "properties": {
+        "metadata": "{\"year\": [\"2013\"], \"filename\": \"Visual saliency estimation by nonlinearly integrating features using region covariances (2013).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "saliency",
+          "estimation",
+          "nonlinearly",
+          "integrating",
+          "features",
+          "using",
+          "region",
+          "covariances",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual saliency estimation by nonlinearly integrating features using region covariances (2013).pdf",
+        "name": "Visual saliency estimation by nonlinearly integrating features using region covariances (2013).pdf"
+      }
+    },
+    {
+      "id": 63,
+      "properties": {
+        "metadata": "{\"year\": [\"2011\"], \"filename\": \"Visual Saliency Detection Based On Bayesian Model (2011).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "saliency",
+          "detection",
+          "based",
+          "bayesian",
+          "model",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual Saliency Detection Based On Bayesian Model (2011).pdf",
+        "name": "Visual Saliency Detection Based On Bayesian Model (2011).pdf"
+      }
+    },
+    {
+      "id": 64,
+      "properties": {
+        "metadata": "{\"year\": [\"2011\"], \"filename\": \"Visual Attention in Objective Image Quality Assessment_ Based on Eye-Tracking Data (2011).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "attention",
+          "objective",
+          "image",
+          "quality",
+          "assessment",
+          "based",
+          "eyetracking",
+          "data",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Visual Attention in Objective Image Quality Assessment_ Based on Eye-Tracking Data (2011).pdf",
+        "name": "Visual Attention in Objective Image Quality Assessment_ Based on Eye-Tracking Data (2011).pdf"
+      }
+    },
+    {
+      "id": 65,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Stereoscopic\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "stereoscopic"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Stereoscopic",
+        "name": "Stereoscopic"
+      }
+    },
+    {
+      "id": 66,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"A Computational Model for Stereoscopic Visual Saliency Prediction (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "computational",
+          "model",
+          "stereoscopic",
+          "visual",
+          "saliency",
+          "prediction",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Stereoscopic/A Computational Model for Stereoscopic Visual Saliency Prediction (2019).pdf",
+        "name": "A Computational Model for Stereoscopic Visual Saliency Prediction (2019).pdf"
+      }
+    },
+    {
+      "id": 67,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Semantic and Contrast-Aware Saliency (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "semantic",
+          "contrastaware",
+          "saliency",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Semantic and Contrast-Aware Saliency (2018).pdf",
+        "name": "Semantic and Contrast-Aware Saliency (2018).pdf"
+      }
+    },
+    {
+      "id": 68,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Salience Models - A Computational Cognitive Neuroscience Review (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "salience",
+          "models",
+          "",
+          "computational",
+          "cognitive",
+          "neuroscience",
+          "review",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Salience Models - A Computational Cognitive Neuroscience Review (2019).pdf",
+        "name": "Salience Models - A Computational Cognitive Neuroscience Review (2019).pdf"
+      }
+    },
+    {
+      "id": 69,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"SID4VAM - A Benchmark Dataset with Synthetic Images for Visual Attention Modeling.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "sidvam",
+          "",
+          "benchmark",
+          "dataset",
+          "synthetic",
+          "images",
+          "visual",
+          "attention",
+          "modelingpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/SID4VAM - A Benchmark Dataset with Synthetic Images for Visual Attention Modeling.pdf",
+        "name": "SID4VAM - A Benchmark Dataset with Synthetic Images for Visual Attention Modeling.pdf"
+      }
+    },
+    {
+      "id": 70,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"RARE a new bottom-up saliency model.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "rare",
+          "new",
+          "bottomup",
+          "saliency",
+          "modelpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/RARE a new bottom-up saliency model.pdf",
+        "name": "RARE a new bottom-up saliency model.pdf"
+      }
+    },
+    {
+      "id": 71,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Polatsek et al. - Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "polatsek",
+          "et",
+          "al",
+          "",
+          "",
+          "exploring",
+          "visual",
+          "attention",
+          "saliency",
+          "modeling",
+          "taskbased",
+          "visual",
+          "analysis",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Polatsek et al. - Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf",
+        "name": "Polatsek et al. - Exploring Visual Attention and Saliency Modeling for Task-Based Visual Analysis (2018).pdf"
+      }
+    },
+    {
+      "id": 72,
+      "properties": {
+        "metadata": "{\"year\": [\"2017\"], \"filename\": \"Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "learning",
+          "visual",
+          "importance",
+          "graphic",
+          "designs",
+          "data",
+          "visualizations",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf",
+        "name": "Learning Visual Importance for Graphic Designs and Data Visualizations (2017).pdf"
+      }
+    },
+    {
+      "id": 73,
+      "properties": {
+        "metadata": "{\"year\": [\"2009\"], \"filename\": \"Judd - Learning to predict where humans look (2009).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "judd",
+          "",
+          "learning",
+          "predict",
+          "humans",
+          "look",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Judd - Learning to predict where humans look (2009).pdf",
+        "name": "Judd - Learning to predict where humans look (2009).pdf"
+      }
+    },
+    {
+      "id": 74,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Evaluation\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "evaluation"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Evaluation",
+        "name": "Evaluation"
+      }
+    },
+    {
+      "id": 75,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"What Do Different Evaluation Metrics Tell Us About Saliency Models (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "different",
+          "evaluation",
+          "metrics",
+          "tell",
+          "us",
+          "saliency",
+          "models",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Evaluation/What Do Different Evaluation Metrics Tell Us About Saliency Models (2019).pdf",
+        "name": "What Do Different Evaluation Metrics Tell Us About Saliency Models (2019).pdf"
+      }
+    },
+    {
+      "id": 76,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Depth\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "depth"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth",
+        "name": "Depth"
+      }
+    },
+    {
+      "id": 77,
+      "properties": {
+        "metadata": "{\"year\": [\"2016\"], \"filename\": \"Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion (2016).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "saliency",
+          "detection",
+          "stereoscopic",
+          "images",
+          "based",
+          "depth",
+          "confidence",
+          "analysis",
+          "multiple",
+          "cues",
+          "fusion",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion (2016).pdf",
+        "name": "Saliency Detection for Stereoscopic Images Based on Depth Confidence Analysis and Multiple Cues Fusion (2016).pdf"
+      }
+    },
+    {
+      "id": 78,
+      "properties": {
+        "metadata": "{\"year\": [\"2012\"], \"filename\": \"Depth Matters Influence of Depth Cues on Visual Saliency (2012).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "depth",
+          "matters",
+          "influence",
+          "depth",
+          "cues",
+          "visual",
+          "saliency",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/Depth Matters Influence of Depth Cues on Visual Saliency (2012).pdf",
+        "name": "Depth Matters Influence of Depth Cues on Visual Saliency (2012).pdf"
+      }
+    },
+    {
+      "id": 79,
+      "properties": {
+        "metadata": "{\"year\": [\"2013\"], \"filename\": \"3D Attention_ Measurement of Visual Saliency Using Eye Tracking Glasses (2013).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "d",
+          "attention",
+          "measurement",
+          "visual",
+          "saliency",
+          "using",
+          "eye",
+          "tracking",
+          "glasses",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Depth/3D Attention_ Measurement of Visual Saliency Using Eye Tracking Glasses (2013).pdf",
+        "name": "3D Attention_ Measurement of Visual Saliency Using Eye Tracking Glasses (2013).pdf"
+      }
+    },
+    {
+      "id": 80,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Deep Saliency Models\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "deep",
+          "saliency",
+          "models"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models",
+        "name": "Deep Saliency Models"
+      }
+    },
+    {
+      "id": 81,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Visual Saliency Prediction using Deep learning Techniques.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "visual",
+          "saliency",
+          "prediction",
+          "using",
+          "deep",
+          "learning",
+          "techniquespdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Visual Saliency Prediction using Deep learning Techniques.pdf",
+        "name": "Visual Saliency Prediction using Deep learning Techniques.pdf"
+      }
+    },
+    {
+      "id": 82,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Understanding and Visualizing Deep Visual Saliency Models.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "understanding",
+          "visualizing",
+          "deep",
+          "visual",
+          "saliency",
+          "modelspdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Understanding and Visualizing Deep Visual Saliency Models.pdf",
+        "name": "Understanding and Visualizing Deep Visual Saliency Models.pdf"
+      }
+    },
+    {
+      "id": 83,
+      "properties": {
+        "metadata": "{\"year\": [\"2015\"], \"filename\": \"Saliency Detection by Multi-Context Deep Learning (2015).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "saliency",
+          "detection",
+          "multicontext",
+          "deep",
+          "learning",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Saliency Detection by Multi-Context Deep Learning (2015).pdf",
+        "name": "Saliency Detection by Multi-Context Deep Learning (2015).pdf"
+      }
+    },
+    {
+      "id": 84,
+      "properties": {
+        "metadata": "{\"year\": [\"2020\"], \"filename\": \"Learning to infer human attention in daily activities (2020).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "learning",
+          "infer",
+          "human",
+          "attention",
+          "daily",
+          "activities",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Learning to infer human attention in daily activities (2020).pdf",
+        "name": "Learning to infer human attention in daily activities (2020).pdf"
+      }
+    },
+    {
+      "id": 85,
+      "properties": {
+        "metadata": "{\"year\": [\"2016\"], \"filename\": \"DeepSaliency - Multi-Task Deep Neural Network Model for Salient Object Detection (2016).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "deepsaliency",
+          "",
+          "multitask",
+          "deep",
+          "neural",
+          "network",
+          "model",
+          "salient",
+          "object",
+          "detection",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/DeepSaliency - Multi-Task Deep Neural Network Model for Salient Object Detection (2016).pdf",
+        "name": "DeepSaliency - Multi-Task Deep Neural Network Model for Salient Object Detection (2016).pdf"
+      }
+    },
+    {
+      "id": 86,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"Deep Saliency Models - The Quest For The Loss Function (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "deep",
+          "saliency",
+          "models",
+          "",
+          "quest",
+          "loss",
+          "function",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Deep Saliency Models - The Quest For The Loss Function (2019).pdf",
+        "name": "Deep Saliency Models - The Quest For The Loss Function (2019).pdf"
+      }
+    },
+    {
+      "id": 87,
+      "properties": {
+        "metadata": "{\"year\": [\"2015\"], \"filename\": \"DISC - Deep Image Saliency Computing via Progressive Representation Learning (2015).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "disc",
+          "",
+          "deep",
+          "image",
+          "saliency",
+          "computing",
+          "via",
+          "progressive",
+          "representation",
+          "learning",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/DISC - Deep Image Saliency Computing via Progressive Representation Learning (2015).pdf",
+        "name": "DISC - Deep Image Saliency Computing via Progressive Representation Learning (2015).pdf"
+      }
+    },
+    {
+      "id": 88,
+      "properties": {
+        "metadata": "{\"year\": [\"2020\"], \"filename\": \"Contextual encoder-decoder network for visual saliency prediction (2020).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "contextual",
+          "encoderdecoder",
+          "network",
+          "visual",
+          "saliency",
+          "prediction",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/Contextual encoder-decoder network for visual saliency prediction (2020).pdf",
+        "name": "Contextual encoder-decoder network for visual saliency prediction (2020).pdf"
+      }
+    },
+    {
+      "id": 89,
+      "properties": {
+        "metadata": "{\"year\": [\"2020\"], \"filename\": \"A novel fully convolutional network for visual saliency prediction (2020).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "novel",
+          "fully",
+          "convolutional",
+          "network",
+          "visual",
+          "saliency",
+          "prediction",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Deep Saliency Models/A novel fully convolutional network for visual saliency prediction (2020).pdf",
+        "name": "A novel fully convolutional network for visual saliency prediction (2020).pdf"
+      }
+    },
+    {
+      "id": 90,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"DVS\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "dvs"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/DVS",
+        "name": "DVS"
+      }
+    },
+    {
+      "id": 91,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Data Visualization Saliency Model - A Tool for Evaluating Abstract Data Visualizations (2018).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "data",
+          "visualization",
+          "saliency",
+          "model",
+          "",
+          "tool",
+          "evaluating",
+          "abstract",
+          "data",
+          "visualizations",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/DVS/Data Visualization Saliency Model - A Tool for Evaluating Abstract Data Visualizations (2018).pdf",
+        "name": "Data Visualization Saliency Model - A Tool for Evaluating Abstract Data Visualizations (2018).pdf"
+      }
+    },
+    {
+      "id": 92,
+      "properties": {
+        "metadata": "{\"year\": [\"2012\"], \"filename\": \"Context-Aware Saliency Detection (2012).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "contextaware",
+          "saliency",
+          "detection",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Context-Aware Saliency Detection (2012).pdf",
+        "name": "Context-Aware Saliency Detection (2012).pdf"
+      }
+    },
+    {
+      "id": 93,
+      "properties": {
+        "metadata": "{\"year\": [], \"filename\": \"Basic Algos\", \"extension\": [], \"ISBN\": []}",
+        "keywords": [
+          "basic",
+          "algos"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos",
+        "name": "Basic Algos"
+      }
+    },
+    {
+      "id": 94,
+      "properties": {
+        "metadata": "{\"year\": [\"2014\"], \"filename\": \"eDN - Large-scale optimization of hierarchical features for saliency prediction in natural images (2014).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "edn",
+          "",
+          "largescale",
+          "optimization",
+          "hierarchical",
+          "features",
+          "saliency",
+          "prediction",
+          "natural",
+          "images",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/eDN - Large-scale optimization of hierarchical features for saliency prediction in natural images (2014).pdf",
+        "name": "eDN - Large-scale optimization of hierarchical features for saliency prediction in natural images (2014).pdf"
+      }
+    },
+    {
+      "id": 95,
+      "properties": {
+        "metadata": "{\"year\": [\"1998\"], \"filename\": \"Itti Koch Niebur - A model of saliency-based visual attention for rapid scene analysis (1998) D.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "itti",
+          "koch",
+          "niebur",
+          "",
+          "model",
+          "saliencybased",
+          "visual",
+          "attention",
+          "rapid",
+          "scene",
+          "analysis",
+          "",
+          "",
+          "",
+          "dpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/Itti Koch Niebur - A model of saliency-based visual attention for rapid scene analysis (1998) D.pdf",
+        "name": "Itti Koch Niebur - A model of saliency-based visual attention for rapid scene analysis (1998) D.pdf"
+      }
+    },
+    {
+      "id": 96,
+      "properties": {
+        "metadata": "{\"year\": [\"2018\"], \"filename\": \"Do Deep-Learning Saliency Models Really Model Saliency (2018) D.pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "deeplearning",
+          "saliency",
+          "models",
+          "really",
+          "model",
+          "saliency",
+          "",
+          "",
+          "",
+          "dpdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/Do Deep-Learning Saliency Models Really Model Saliency (2018) D.pdf",
+        "name": "Do Deep-Learning Saliency Models Really Model Saliency (2018) D.pdf"
+      }
+    },
+    {
+      "id": 97,
+      "properties": {
+        "metadata": "{\"year\": [\"2016\"], \"filename\": \"BMS - Exploiting surroundedness for saliency detection - A boolean map approach (2016).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "bms",
+          "",
+          "exploiting",
+          "surroundedness",
+          "saliency",
+          "detection",
+          "",
+          "boolean",
+          "map",
+          "approach",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/Basic Algos/BMS - Exploiting surroundedness for saliency detection - A boolean map approach (2016).pdf",
+        "name": "BMS - Exploiting surroundedness for saliency detection - A boolean map approach (2016).pdf"
+      }
+    },
+    {
+      "id": 98,
+      "properties": {
+        "metadata": "{\"year\": [\"1999\"], \"filename\": \"A simple saliency model predicts a number of motion popoutphenomena (1999).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "simple",
+          "saliency",
+          "model",
+          "predicts",
+          "number",
+          "motion",
+          "popoutphenomena",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A simple saliency model predicts a number of motion popoutphenomena (1999).pdf",
+        "name": "A simple saliency model predicts a number of motion popoutphenomena (1999).pdf"
+      }
+    },
+    {
+      "id": 99,
+      "properties": {
+        "metadata": "{\"year\": [\"2019\"], \"filename\": \"A Two-Stage Clustering Based 3D Visual Saliency Model for Dynamic Scenarios (2019).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "twostage",
+          "clustering",
+          "based",
+          "d",
+          "visual",
+          "saliency",
+          "model",
+          "dynamic",
+          "scenarios",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A Two-Stage Clustering Based 3D Visual Saliency Model for Dynamic Scenarios (2019).pdf",
+        "name": "A Two-Stage Clustering Based 3D Visual Saliency Model for Dynamic Scenarios (2019).pdf"
+      }
+    },
+    {
+      "id": 100,
+      "properties": {
+        "metadata": "{\"year\": [\"2016\"], \"filename\": \"A Multi-scale colour and Keypoint Density-based Approach for Visual Saliency Detection (2016).pdf\", \"extension\": [\".pdf\"], \"ISBN\": []}",
+        "keywords": [
+          "multiscale",
+          "colour",
+          "keypoint",
+          "densitybased",
+          "approach",
+          "visual",
+          "saliency",
+          "detection",
+          "",
+          "",
+          "",
+          "pdf"
+        ],
+        "fullpath": "Papers/Visual Saliency Research/Visual Saliency/Salliency models/A Multi-scale colour and Keypoint Density-based Approach for Visual Saliency Detection (2016).pdf",
+        "name": "A Multi-scale colour and Keypoint Density-based Approach for Visual Saliency Detection (2016).pdf"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start": 1,
+      "end": 0
+    },
+    {
+      "start": 2,
+      "end": 1
+    },
+    {
+      "start": 3,
+      "end": 2
+    },
+    {
+      "start": 4,
+      "end": 2
+    },
+    {
+      "start": 5,
+      "end": 2
+    },
+    {
+      "start": 6,
+      "end": 2
+    },
+    {
+      "start": 7,
+      "end": 2
+    },
+    {
+      "start": 8,
+      "end": 2
+    },
+    {
+      "start": 9,
+      "end": 2
+    },
+    {
+      "start": 10,
+      "end": 2
+    },
+    {
+      "start": 11,
+      "end": 2
+    },
+    {
+      "start": 12,
+      "end": 2
+    },
+    {
+      "start": 13,
+      "end": 2
+    },
+    {
+      "start": 14,
+      "end": 2
+    },
+    {
+      "start": 15,
+      "end": 2
+    },
+    {
+      "start": 16,
+      "end": 2
+    },
+    {
+      "start": 17,
+      "end": 2
+    },
+    {
+      "start": 18,
+      "end": 2
+    },
+    {
+      "start": 19,
+      "end": 2
+    },
+    {
+      "start": 20,
+      "end": 2
+    },
+    {
+      "start": 21,
+      "end": 2
+    },
+    {
+      "start": 22,
+      "end": 2
+    },
+    {
+      "start": 23,
+      "end": 2
+    },
+    {
+      "start": 24,
+      "end": 2
+    },
+    {
+      "start": 25,
+      "end": 2
+    },
+    {
+      "start": 26,
+      "end": 2
+    },
+    {
+      "start": 27,
+      "end": 2
+    },
+    {
+      "start": 28,
+      "end": 2
+    },
+    {
+      "start": 29,
+      "end": 2
+    },
+    {
+      "start": 30,
+      "end": 2
+    },
+    {
+      "start": 31,
+      "end": 2
+    },
+    {
+      "start": 32,
+      "end": 2
+    },
+    {
+      "start": 33,
+      "end": 2
+    },
+    {
+      "start": 34,
+      "end": 2
+    },
+    {
+      "start": 35,
+      "end": 2
+    },
+    {
+      "start": 36,
+      "end": 2
+    },
+    {
+      "start": 37,
+      "end": 2
+    },
+    {
+      "start": 38,
+      "end": 2
+    },
+    {
+      "start": 39,
+      "end": 2
+    },
+    {
+      "start": 40,
+      "end": 2
+    },
+    {
+      "start": 41,
+      "end": 2
+    },
+    {
+      "start": 42,
+      "end": 2
+    },
+    {
+      "start": 43,
+      "end": 2
+    },
+    {
+      "start": 44,
+      "end": 2
+    },
+    {
+      "start": 45,
+      "end": 2
+    },
+    {
+      "start": 46,
+      "end": 1
+    },
+    {
+      "start": 47,
+      "end": 46
+    },
+    {
+      "start": 48,
+      "end": 47
+    },
+    {
+      "start": 49,
+      "end": 47
+    },
+    {
+      "start": 50,
+      "end": 47
+    },
+    {
+      "start": 51,
+      "end": 50
+    },
+    {
+      "start": 52,
+      "end": 51
+    },
+    {
+      "start": 53,
+      "end": 51
+    },
+    {
+      "start": 54,
+      "end": 53
+    },
+    {
+      "start": 55,
+      "end": 51
+    },
+    {
+      "start": 56,
+      "end": 50
+    },
+    {
+      "start": 57,
+      "end": 56
+    },
+    {
+      "start": 58,
+      "end": 56
+    },
+    {
+      "start": 59,
+      "end": 56
+    },
+    {
+      "start": 60,
+      "end": 47
+    },
+    {
+      "start": 61,
+      "end": 60
+    },
+    {
+      "start": 62,
+      "end": 60
+    },
+    {
+      "start": 63,
+      "end": 60
+    },
+    {
+      "start": 64,
+      "end": 60
+    },
+    {
+      "start": 65,
+      "end": 60
+    },
+    {
+      "start": 66,
+      "end": 65
+    },
+    {
+      "start": 67,
+      "end": 60
+    },
+    {
+      "start": 68,
+      "end": 60
+    },
+    {
+      "start": 69,
+      "end": 60
+    },
+    {
+      "start": 70,
+      "end": 60
+    },
+    {
+      "start": 71,
+      "end": 60
+    },
+    {
+      "start": 72,
+      "end": 60
+    },
+    {
+      "start": 73,
+      "end": 60
+    },
+    {
+      "start": 74,
+      "end": 60
+    },
+    {
+      "start": 75,
+      "end": 74
+    },
+    {
+      "start": 76,
+      "end": 60
+    },
+    {
+      "start": 77,
+      "end": 76
+    },
+    {
+      "start": 78,
+      "end": 76
+    },
+    {
+      "start": 79,
+      "end": 76
+    },
+    {
+      "start": 80,
+      "end": 60
+    },
+    {
+      "start": 81,
+      "end": 80
+    },
+    {
+      "start": 82,
+      "end": 80
+    },
+    {
+      "start": 83,
+      "end": 80
+    },
+    {
+      "start": 84,
+      "end": 80
+    },
+    {
+      "start": 85,
+      "end": 80
+    },
+    {
+      "start": 86,
+      "end": 80
+    },
+    {
+      "start": 87,
+      "end": 80
+    },
+    {
+      "start": 88,
+      "end": 80
+    },
+    {
+      "start": 89,
+      "end": 80
+    },
+    {
+      "start": 90,
+      "end": 60
+    },
+    {
+      "start": 91,
+      "end": 90
+    },
+    {
+      "start": 92,
+      "end": 60
+    },
+    {
+      "start": 93,
+      "end": 60
+    },
+    {
+      "start": 94,
+      "end": 93
+    },
+    {
+      "start": 95,
+      "end": 93
+    },
+    {
+      "start": 96,
+      "end": 93
+    },
+    {
+      "start": 97,
+      "end": 93
+    },
+    {
+      "start": 98,
+      "end": 60
+    },
+    {
+      "start": 99,
+      "end": 60
+    },
+    {
+      "start": 100,
+      "end": 60
+    }
+  ]
+}
