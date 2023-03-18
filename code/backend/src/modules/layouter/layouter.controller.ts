@@ -51,7 +51,8 @@ export class LayouterController {
     public static layoutGraph(req: Request): AppResponse<Graph> {
 		// fetch graph with options
         // <<neo3j request here>>
-		let initTemp: number = 4, actualTemp: number = 4, whichTry: number = 0;
+		const initTemp = 4;
+		let actualTemp = 4, whichTry = 0;
 		while(actualTemp > 0.05) {
 			LayouterController.calculateRepulsiveForces(LayouterController.graph);
 			LayouterController.calculateAttractiveForces(LayouterController.graph);
