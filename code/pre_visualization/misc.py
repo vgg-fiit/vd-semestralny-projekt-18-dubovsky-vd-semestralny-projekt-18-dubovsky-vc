@@ -1,14 +1,55 @@
-import string
-
 import nltk
 import re
+from textblob import TextBlob
+from db import File, Directory
 
 
-def dfs_traverse(data):
+def connect(flat_list):
+    for e in flat_list:
+
+        parent = e['parent']
+        if e['type'] == 'directory' and parent['type'] == 'directory':
+            e['object'].parent_directory.connect(parent['object'])
+
+        if e['type'] == 'file' and parent['type'] == 'directory':
+            e['object'].parent.connect(parent['object'])
+
+# MATCH (n) DETACH DELETE n;
+
+
+def get_keywords(text):
+    tokens = nltk.word_tokenize(text)
+    # convert to lower case
+    words = [word.lower() for word in tokens]
+    # filter out stop words
+    stop_words = set(nltk.corpus.stopwords.words('english'))
+    words = [w for w in words if not w in stop_words]
+    # replace all not alphabetic characters with space
+    words = [re.sub(r'[^a-zA-Z]', '', w) for w in words]
+
+    return words
+
+
+def get_metadata(element):
+    filename = element['name'].split('/')[-1]
+
+    metadata = {
+        "year": re.findall(r'\((\d+)\)', filename),
+        # "size": element['size'],
+        "filename": filename,
+        "extension": re.findall(r'\.[a-zA-Z0-9]+$', filename),
+        "ISBN": re.findall(r'ISBN\s*([0-9]{10}|[0-9]{13})', element['name'], re.I),
+        # "lang": TextBlob(filename).detect_language(),
+    }
+
+    return metadata
+
+
+def dfs_traverse(data, last_id):
     flat_list = []
-    # With stack traverse data
-    root = {'type': 'folder', 'name': 'root', "depth": 0}
-    # Stack for dfs
+    wordlist = []
+    root = {'type': 'directory', 'name': 'root', "depth": 0}
+    root['object'] = Directory(name='root', fullpath='root', metadata={}, keywords=[]).save()
     stack = []
 
     # Add first element to stack
@@ -17,11 +58,32 @@ def dfs_traverse(data):
         d['depth'] = root['depth'] + 1
         stack.append(d)
 
-
-    # While stack is not empty
-
     while len(stack) > 0:
+
         element = stack.pop()
+
+        element['metadata'] = get_metadata(element)
+
+        keywords = get_keywords(element['name'].split('/')[-1])
+
+        for keyword in keywords:
+            if keyword not in wordlist:
+                wordlist.append(keyword)
+
+        if element['type'] == 'file':
+            element['object'] = File(name=element['name'].split('/')[-1], fullpath=element['name'],
+                                     metadata=element['metadata'], keywords=keywords).save()
+        if element['type'] == 'directory':
+            element['object'] = Directory(name=element['name'].split('/')[-1], fullpath=element['name'],
+                                          metadata=element['metadata'], keywords=keywords).save()
+
+        if element['object'].id is not None:
+            print("Node saved")
+
+        flat_list.append(element)
+
+        element['id'] = last_id
+        last_id += 1
 
         # If element is folder
         if "contents" in element:
@@ -29,50 +91,6 @@ def dfs_traverse(data):
             for e in element['contents']:
                 e['depth'] = element['depth'] + 1
                 e['parent'] = element
-                flat_list.append(e)
                 stack.append(e)
 
-        if element['type'] == 'directory':
-            print(element['parent']['name'], " -> ", element['name'])
-
-        # If element is file
-        if element['type'] == 'file':
-            print (element['parent']['name'] + ' -> ' + element['name'])
-
-    for element in flat_list:
-        # using nltk to tokenize the text into words
-
-
-        tokens = nltk.word_tokenize(element['name'].split('/')[-1])
-        # convert to lower case
-        words = []
-        if element['type'] == 'file':
-            for child in element['parent']['contents']:
-                if child['type'] == 'file':
-                    tokens = tokens + nltk.word_tokenize(child['name'].split('/')[-1])
-                    # Replace .pdf in tokens
-                    tokens = [re.sub(r'\.pdf', '', w) for w in tokens]
-                    tokens = [w.lower() for w in tokens]
-                    tokens = [w.lower() for w in tokens]
-                    # removing punctuation from each word
-                    table = str.maketrans('', '', string.punctuation)
-                    stripped = [w.translate(table) for w in tokens]
-                    # removing remaining tokens that are not alphabetic
-                    words = [word for word in stripped if word.isalpha()]
-
-
-            print(element['parent']['name'].split('/')[-1], words)
-
-        # filter out stop words
-
-        # using a regular expression to remove all tokens that are not alphabetic
-
-
-
-
-
-
-
-
-
-
+    return flat_list, last_id, wordlist
