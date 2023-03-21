@@ -1,8 +1,7 @@
 import { type Request } from 'express';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
-import { Edge, type Graph, type Node, type vector3 } from '../graph/interfaces/graph.interface';
+import { Edge, type Graph, type Node } from '../graph/interfaces/graph.interface';
 import { LayouterMock } from './mocks/layouter.mock';
-import { LoggerService } from '../../shared/services/logger.service';
 
 export class LayouterController {
 

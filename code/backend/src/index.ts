@@ -2,6 +2,7 @@ import path from 'path';
 import express, { type Express } from 'express';
 import { GraphController } from './modules/graph/graph.controller';
 import { applyErrorHandling } from './shared/services/validator.controller';
+import { ConnectionController } from './modules/connection/connection.controller';
 
 const port = 14444;
 const timeout = 300000; // 5 minutes
@@ -12,6 +13,7 @@ function createRoutes(app: Express = express()): Express {
     app.use(express.urlencoded({ extended: false }));
     app.use(express.static(path.join(__dirname, publicFolderUrl)));
     app.use(`${GraphController.pathPrefix}`, GraphController.getRoutes());
+    app.use(`${ConnectionController.pathPrefix}`, ConnectionController.ping);
     app.use(applyErrorHandling);
     return app;
 }
