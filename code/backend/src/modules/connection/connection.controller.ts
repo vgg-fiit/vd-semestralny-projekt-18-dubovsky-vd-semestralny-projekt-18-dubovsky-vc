@@ -6,7 +6,6 @@ export class ConnectionController {
     static readonly pathPrefix = '/connection';
 
     /** @method GET
-     * @path /ping
      * @returns neo4j service status
      */
 	static async ping(req: Request, res: Response<{}>, next: NextFunction) {
