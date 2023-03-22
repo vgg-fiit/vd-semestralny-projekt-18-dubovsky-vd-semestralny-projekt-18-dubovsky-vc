@@ -1,6 +1,7 @@
 import neo4j, { Record } from 'neo4j-driver'
-import { DBRecord } from '../interfaces/database.interface';
+import { DBRecord, NodeType } from '../interfaces/database.interface';
 import dotenv from 'dotenv';
+import { LoggerService } from './logger.service';
 
 export class DatabaseService {
     static config = dotenv.config();
@@ -39,7 +40,8 @@ export class DatabaseService {
     }
 
 
-    static async run(command: string) {
+    static async run(command: string): Promise<{}[]> {
+        LoggerService.log({runningQuery: command});
         const session = DatabaseService.driver.session();
         try {
           const result = await session.run(command);
@@ -49,4 +51,11 @@ export class DatabaseService {
           await session.close();
         }
     }     
+
+    static filter(nodeType: NodeType, relationship?: boolean, limit?: number): Promise<{}[]> {
+        const query = `MATCH (n:${nodeType})${relationship? '-[r]->(m)': ''}`
+        const returnParam = `RETURN n${relationship ? ',r, m': ''}`
+        const limitParam = limit ? `LIMIT ${limit}`: "";
+        return DatabaseService.run(`${query} ${returnParam} ${limitParam}`);
+	}
 }

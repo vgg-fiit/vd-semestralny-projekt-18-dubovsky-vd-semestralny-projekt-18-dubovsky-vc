@@ -1,5 +1,7 @@
 import { type Request } from 'express';
+import { NodeType } from '../../shared/interfaces/database.interface';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
+import { DatabaseService } from '../../shared/services/database.service';
 import { Edge, type Graph, type Node } from '../graph/interfaces/graph.interface';
 import { LayouterMock } from './mocks/layouter.mock';
 
