@@ -1,5 +1,5 @@
 import { type NextFunction, type Request, type Response } from 'express';
-import { NodeType } from '../../shared/interfaces/database.interface';
+import { Keywords, NodeType } from '../../shared/interfaces/database.interface';
 import { AppResponse } from '../../shared/interfaces/response.interface';
 import { DatabaseService } from '../../shared/services/database.service';
 
@@ -12,7 +12,7 @@ export class ConnectionController {
      */
 	static async ping(req: Request, res: Response<{}>, next: NextFunction) {
 		try {
-			res.json(await DatabaseService.filter(NodeType.Word, true, 20));
+			res.json(await DatabaseService.filter(NodeType.Directory, {key: Keywords.Extension, value: ".pdf"}, {to: 3}, true, 20));
 		} catch (exception) {
 			next(exception);
 		}
