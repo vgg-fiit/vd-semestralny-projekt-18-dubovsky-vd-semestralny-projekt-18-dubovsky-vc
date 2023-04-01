@@ -2,6 +2,7 @@ import neo4j, { Record } from 'neo4j-driver'
 import { DBRecord, Keywords, NodeType } from '../interfaces/database.interface';
 import dotenv from 'dotenv';
 import { LoggerService } from './logger.service';
+import { Request } from 'express';
 
 export class DatabaseService {
     static config = dotenv.config();
@@ -50,14 +51,43 @@ export class DatabaseService {
         } finally {
           await session.close();
         }
-    }     
+    }
+    
+    static build(request: Request) {
+        const body = request.body
+        const session = new DatabaseSession();
+        session.nodeType = body["nodeType"]
+        session.keyword = body["keyword"] ? {
+                key: body["keyword"]["key"],
+                value: body["keyword"]["value"]
+            }: undefined
+        session.range = body["range"] ? {
+                from: body["range"]["from"],
+                to: body["range"]["to"]
+            }: undefined
+        session.relationship = body["relationship"]
+        session.limit = body["limit"]
+        return session
+    }
 
-    static filter(nodeType: NodeType, keyword?: {key: Keywords, value: string}, range?: {from?: number, to?: number}, relationship?: boolean, limit?: number): Promise<{}[]> {
-        const containsRange = range? `:CONTAINS*${range.from? range.from: 0}${range.to? `..${range.to}`: ""}`: "";
-        const query = `MATCH (n:${nodeType} {name:'root'})${relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
-        const where = keyword ? `WHERE m.${keyword? `${keyword.key}='${keyword.value}'`: ""}`: ""
-        const returnParam = `RETURN n${relationship ? ',r,m': ''}`
-        const limitParam = limit ? `LIMIT ${limit}`: "";
+    static filter(session: DatabaseSession): Promise<{}[]> {
+        const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
+        const query = `MATCH (n:${session.nodeType} {name:'root'})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
+        const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
+        const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
+        const limitParam = session.limit ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${where} ${returnParam} ${limitParam}`);
 	}
+}
+
+export class DatabaseSession {
+    nodeType: NodeType;
+    keyword?: {key: Keywords, value: string};
+    range?: {from?: number, to?: number};
+    relationship?: boolean;
+    limit?: number
+
+    public async run(): Promise<{}[]> {
+        return DatabaseService.filter(this);
+    }
 }

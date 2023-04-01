@@ -1,6 +1,7 @@
 export interface Graph {
     nodes: Node[];
     edges: Edge[];
+    mapping: { [id: number]: number };
 }
 
 export interface vector3 {

@@ -1,8 +1,8 @@
 import { type Request } from 'express';
-import { NodeType } from '../../shared/interfaces/database.interface';
+import { Keywords, NodeType } from '../../shared/interfaces/database.interface';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
 import { DatabaseService } from '../../shared/services/database.service';
-import { Edge, type Graph, type Node } from '../graph/interfaces/graph.interface';
+import { Edge, Node, type Graph } from '../graph/interfaces/graph.interface';
 import { LayouterMock } from './mocks/layouter.mock';
 
 export class LayouterController {
@@ -49,9 +49,33 @@ export class LayouterController {
 		})
 	}
 
-    public static layoutGraph(req: Request): AppResponse<Graph> {
+	public static insertIntoGraph(graph: Graph, entry: any) {
+		if (!graph.mapping[entry.id]) {
+			graph.nodes.push(new Node(entry.properties.name, entry.id, 1));
+			graph.mapping[entry.id] = graph.nodes.length - 1; 
+		}
+	}
+
+	public static dataToGraph(data: any): Graph {
+		const graph: Graph = {
+			nodes: [],
+			edges: [],
+			mapping: {}
+		};
+		data.forEach((entry: any) => {
+			LayouterController.insertIntoGraph(graph, entry.n);
+			LayouterController.insertIntoGraph(graph, entry.m);
+			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id]));
+		});
+		return graph;
+	}
+
+    public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		// fetch graph with options
         // <<neo3j request here>>
+		const data = await DatabaseService.build(req).run();
+		const graph = LayouterController.dataToGraph(data);
+		LayouterController.setRandomPositions(graph);
 		const initTemp = 4;
 		let actualTemp = 4, whichTry = 0;
 		while(actualTemp > 0.05) {
@@ -61,6 +85,6 @@ export class LayouterController {
 			actualTemp = initTemp / Math.pow(Math.E, whichTry / 15);
 			whichTry++;
 		}
-		return {data: LayouterController.graph} as AppResponse<Graph>;
+		return {data: graph} as AppResponse<Graph>;
 	}
 }

@@ -11,6 +11,7 @@ export class LayouterMock {
                 new Node('play', 3, 2.5),
 			],
             edges: [new Edge(0, 1), new Edge(2, 3), new Edge(0, 3), new Edge(0, 2)],
+            mapping: {0: 0, 1: 1, 2: 2, 3: 3}
         };
         LayouterController.setRandomPositions(graph);
         return graph
