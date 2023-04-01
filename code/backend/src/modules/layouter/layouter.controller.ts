@@ -71,8 +71,6 @@ export class LayouterController {
 	}
 
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
-		// fetch graph with options
-        // <<neo3j request here>>
 		const data = await DatabaseService.build(req).run();
 		const graph = LayouterController.dataToGraph(data);
 		LayouterController.setRandomPositions(graph);
