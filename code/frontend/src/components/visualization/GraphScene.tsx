@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
-import THREE, { Mesh } from "three";
+import { Mesh } from "three";
+import * as three from "three";
 import axios from "axios";
 // create function componentt
 
@@ -20,12 +21,12 @@ const GraphScene: React.FC<GraphSceneProps> = ({ data }) => {
       }
     });
   });
-
+  
   return (
     <>
       <OrbitControls />
       <group>
-        {data.nodes.map((node: any, index: number) => (
+        {data && data.nodes ? data.nodes.map((node: any, index: number) => (
           <mesh
             key={node.uuId}
             ref={(mesh) => (nodesRef.current[index] = mesh as any)}
@@ -33,20 +34,21 @@ const GraphScene: React.FC<GraphSceneProps> = ({ data }) => {
             <sphereBufferGeometry args={[0.05, 16, 16]} />
             <meshStandardMaterial color="orange" />
           </mesh>
-        ))}
+        )): "Loading"}
 
-        {/* {data.edges.map((edge, index) => (
-        <line key={i}>
+      {data && data.edges ? data.edges.map((edge: any, index: number) => (
+        <line key={index}>
           <bufferGeometry
-            attach="geometry"
-            vertices={[
-              new THREE.Vector3(data.nodes.find(node => node.uuId === link.source)!.x, data.nodes.find(node => node.uuId === link.source)!.y, 0),
-              new THREE.Vector3(data.nodes.find(node => node.uuId === link.target)!.x, data.nodes.find(node => node.uuId === link.target)!.y, 0),
-            ]}
+            onUpdate={(geometry) => {
+              geometry.setFromPoints([
+                new three.Vector3(data.nodes[edge.fromIndex]!.position.x, data.nodes[edge.fromIndex]!.position.y, data.nodes[edge.fromIndex]!.position.z),
+                new three.Vector3(data.nodes[edge.toIndex]!.position.x, data.nodes[edge.toIndex]!.position.y, data.nodes[edge.toIndex]!.position.z)
+              ]);
+            }}
           />
           <lineBasicMaterial color="white" />
         </line>
-      ))} */}
+      )): "Loading"}
       </group>
     </>
   );

@@ -86,27 +86,18 @@ function DashboardContent() {
   };
 
   useEffect(() => {
-    // axios
-    //   .post("http://localhost:14444/graph/get", {
-    //     nodeType: "Directory",
-    //     relationship: "true",
-    //     limit: 20,
-    //     range: {
-    //       to: 3,
-    //     },
-    //   })
-    //   .then((res: any) => {
-    //     console.log(res.data);
-    //   })
-    //   .catch((err: any) => {
-    //     console.error(err);
-    //   });
-
     axios
-      .get("/data.json")
+      .post("http://localhost:14444/graph/get", {
+        nodeType: "Directory",
+        relationship: "true",
+        limit: 20,
+        range: {
+          to: 3,
+        },
+      })
       .then((res: any) => {
         setGraphData(res.data.data);
-        console.log("Graph data fetched");
+        console.log(res.data);
       })
       .catch((err: any) => {
         console.error(err);
