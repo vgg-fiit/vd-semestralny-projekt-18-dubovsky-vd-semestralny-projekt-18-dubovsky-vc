@@ -3,9 +3,16 @@ import React, { useState } from "react";
 import CategorySwitcher from "./CategorySwich";
 import DepthSlider from "./DepthSlider";
 import KeywordSearch from "./KeywordSearch";
+import Button from "@mui/material/Button";
+import axios from "axios";
 
-const GraphController: React.FC = () => {
+interface GraphControllerProps {
+  onDataChange: (newState: any) => void;
+}
+
+const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
   const [selectedDepth, setSelectedDepth] = useState<number>(0);
+  const [data, setData] = useState<any>([]);
 
   const handleDepthChange = (depth: number) => {
     setSelectedDepth(depth);
@@ -26,8 +33,43 @@ const GraphController: React.FC = () => {
     },
   ];
 
+  const handleFetch = () => {
+    axios
+      .post("http://localhost:14444/graph/get", {
+        nodeType: "Directory",
+        relationship: "true",
+        limit: 20,
+        range: {
+          to: 3,
+        },
+      })
+      .then((res: any) => {
+        console.log(res);
+        onDataChange(res.data.data);
+      })
+      .catch((err: any) => {
+        console.error(err);
+      });
+
+    // setData("test");
+  };
+
   return (
     <>
+      <Grid item xs={12} md={4} lg={3}>
+        <Paper
+          sx={{
+            p: 2,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Button onClick={handleFetch} variant="contained">
+            Fetch data from backend
+          </Button>
+          <Button variant="text">Text</Button>
+        </Paper>
+      </Grid>
       <Grid item xs={12} md={4} lg={3}>
         <Paper
           sx={{

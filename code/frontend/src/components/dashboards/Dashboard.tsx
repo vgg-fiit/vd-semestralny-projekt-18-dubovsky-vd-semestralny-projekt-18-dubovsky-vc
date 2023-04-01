@@ -80,34 +80,19 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
+
   const [graphData, setGraphData] = useState<any>([]);
   const toggleDrawer = () => {
     setOpen(!open);
   };
 
-  useEffect(() => {
-    axios
-      .post("http://localhost:14444/graph/get", {
-        nodeType: "Directory",
-        relationship: "true",
-        limit: 20,
-        range: {
-          to: 3,
-        },
-      })
-      .then((res: any) => {
-        const storedGraph = sessionStorage.getItem("graphData");
-        if (storedGraph) {
-          setGraphData(JSON.parse(storedGraph));
-        } else {
-          sessionStorage.setItem("graphData", JSON.stringify(res.data.data));
-          setGraphData(res.data.data);
-        }
-      })
-      .catch((err: any) => {
-        console.error(err);
-      });
-  }, []);
+  // Handles change of the data in GraphController component and updates the graph data in the state
+  const handleGraphChange = (data: any) => {
+    console.log(data);
+    console.log(graphData);
+
+    setGraphData({ nodes: data.nodes, edges: data.edges });
+  };
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -198,7 +183,9 @@ function DashboardContent() {
                 </Paper>
               </Grid>
 
-              <GraphController></GraphController>
+              <GraphController
+                onDataChange={handleGraphChange}
+              ></GraphController>
             </Grid>
           </Container>
         </Box>
