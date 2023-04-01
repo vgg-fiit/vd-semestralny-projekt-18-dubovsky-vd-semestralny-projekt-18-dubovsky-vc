@@ -19,27 +19,12 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
 import { Canvas } from "@react-three/fiber";
-import FlightScene from "../visualization/FlightScene";
+import FlightScene from "../visualization/GraphScene";
 import AspectRatio from "@mui/joy/AspectRatio";
 import GraphController from "./graphControls/GraphController";
-
-function Copyright(props: any) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+import { useEffect, useState } from "react";
+import axios from "axios";
+import GraphScene from "../visualization/GraphScene";
 
 const drawerWidth: number = 240;
 
@@ -95,9 +80,38 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
+  const [graphData, setGraphData] = useState<any>([]);
   const toggleDrawer = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    // axios
+    //   .post("http://localhost:14444/graph/get", {
+    //     nodeType: "Directory",
+    //     relationship: "true",
+    //     limit: 20,
+    //     range: {
+    //       to: 3,
+    //     },
+    //   })
+    //   .then((res: any) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err: any) => {
+    //     console.error(err);
+    //   });
+
+    axios
+      .get("/data.json")
+      .then((res: any) => {
+        setGraphData(res.data.data);
+        console.log("Graph data fetched");
+      })
+      .catch((err: any) => {
+        console.error(err);
+      });
+  }, []);
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -183,7 +197,7 @@ function DashboardContent() {
                     id="canvas"
                     style={{ width: "100%", aspectRatio: "16 / 9" }}
                   >
-                    <FlightScene />
+                    if (graphData) {<GraphScene data={graphData} />}
                   </Canvas>
                 </Paper>
               </Grid>
