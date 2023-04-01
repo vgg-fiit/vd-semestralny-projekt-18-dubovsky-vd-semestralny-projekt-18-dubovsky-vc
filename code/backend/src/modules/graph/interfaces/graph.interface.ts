@@ -64,9 +64,13 @@ export class Node {
 export class Edge {
     fromIndex: number;
     toIndex: number;
+    fromId: number;
+    toId: number;
 
-    constructor(fromId: number, toId: number) {
-		this.fromIndex = fromId;
-		this.toIndex = toId;
+    constructor(fromIndex: number, toIndex: number, fromId: number, toId: number) {
+		this.fromIndex = fromIndex;
+		this.toIndex = toIndex;
+        this.toId = toId;
+        this.fromId = fromId;
 	}
 }

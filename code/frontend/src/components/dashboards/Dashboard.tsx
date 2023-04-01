@@ -96,8 +96,13 @@ function DashboardContent() {
         },
       })
       .then((res: any) => {
-        setGraphData(res.data.data);
-        console.log(res.data);
+        const storedGraph = sessionStorage.getItem("graphData");
+        if (storedGraph) {
+          setGraphData(JSON.parse(storedGraph));
+        } else {
+          sessionStorage.setItem("graphData", JSON.stringify(res.data.data));
+          setGraphData(res.data.data);
+        }
       })
       .catch((err: any) => {
         console.error(err);

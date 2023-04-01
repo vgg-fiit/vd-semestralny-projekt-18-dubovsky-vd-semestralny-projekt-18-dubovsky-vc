@@ -10,7 +10,7 @@ export class LayouterController {
 	static graph: Graph = LayouterMock.getMock();
 
     private static calculateRepulsiveForces(graph: Graph) {
-		const k: number = graph.nodes.length > 1000 ? 1000 / graph.nodes.length : 1;
+		const k: number = graph.nodes.length > 100 ? 100 / graph.nodes.length : 1;
         const repulsiveForce = (force: number) => (Math.round(force / Math.abs(force)) * (Math.pow(force, 2) / k));
         graph.nodes.forEach((nodeFrom) => {
 			nodeFrom.constantDisplacement = 0;
@@ -22,7 +22,7 @@ export class LayouterController {
     }
 
 	private static calculateAttractiveForces(graph: Graph) {
-		const k: number = graph.nodes.length > 1000 ? 1000 / graph.nodes.length : 1;
+		const k: number = graph.nodes.length > 100 ? 100 / graph.nodes.length : 1;
 		const attractiveForce = (force: number, negative?: boolean) =>
 			((negative ? -1 : 1) * Math.round(force / Math.abs(force)) * (Math.pow(k, 2) / force));
 		graph.edges.forEach((edge: Edge) => {
@@ -66,7 +66,7 @@ export class LayouterController {
 			if (entry.n.id == entry.m.id) return;
 			LayouterController.insertIntoGraph(graph, entry.n);
 			LayouterController.insertIntoGraph(graph, entry.m);
-			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id]));
+			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
 		});
 		return graph;
 	}
@@ -84,6 +84,8 @@ export class LayouterController {
 			actualTemp = initTemp / Math.pow(Math.E, whichTry / 15);
 			whichTry++;
 		}
+		graph.nodes.forEach(n => n.position = {x: n.position.x * 10, y: n.position.y * 10, z: n.position.z * 10})
+		console.log(graph.nodes)
 		return {data: graph} as AppResponse<Graph>;
 	}
 }
