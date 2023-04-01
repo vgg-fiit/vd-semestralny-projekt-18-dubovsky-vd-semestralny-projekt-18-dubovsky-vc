@@ -50,7 +50,7 @@ export class LayouterController {
 	}
 
 	public static insertIntoGraph(graph: Graph, entry: any) {
-		if (!graph.mapping[entry.id]) {
+		if (graph.mapping[entry.id] == undefined) {
 			graph.nodes.push(new Node(entry.properties.name, entry.id, 1));
 			graph.mapping[entry.id] = graph.nodes.length - 1; 
 		}
@@ -63,6 +63,7 @@ export class LayouterController {
 			mapping: {}
 		};
 		data.forEach((entry: any) => {
+			if (entry.n.id == entry.m.id) return;
 			LayouterController.insertIntoGraph(graph, entry.n);
 			LayouterController.insertIntoGraph(graph, entry.m);
 			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id]));

@@ -62,4 +62,11 @@ export function applyValidationHandling(req: Request, res: Response<unknown>, ne
 	}
 }
 
+export function applyLocalCORS(req: Request, res: Response<AppResponse<any>>, next: NextFunction): void {
+	res.set('Access-Control-Allow-Origin', '*');
+	res.set('Access-Control-Allow-Methods', '*');
+	res.set('Access-Control-Allow-Headers', '*');
+	next();
+}
+
 export const commonRequestValidationChain = [];

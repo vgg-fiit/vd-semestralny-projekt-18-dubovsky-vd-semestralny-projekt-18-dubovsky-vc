@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/andrej-gazik/DV-publications#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
