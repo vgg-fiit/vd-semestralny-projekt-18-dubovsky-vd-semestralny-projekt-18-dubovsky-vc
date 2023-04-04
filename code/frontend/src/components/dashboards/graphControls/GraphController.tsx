@@ -38,7 +38,7 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
   const postOptions = {
     nodeType: "Directory",
     relationship: "true",
-    limit: 20,
+    limit: 50,
     range: {
       to: 3,
     }

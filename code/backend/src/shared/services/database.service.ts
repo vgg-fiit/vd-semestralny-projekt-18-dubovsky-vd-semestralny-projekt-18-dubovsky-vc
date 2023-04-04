@@ -65,14 +65,14 @@ export class DatabaseService {
                 from: body["range"]["from"],
                 to: body["range"]["to"]
             }: undefined
-        session.relationship = body["relationship"]
+        session.relationship = body["relationship"] == "true"
         session.limit = body["limit"]
         return session
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
-        const query = `MATCH (n:${session.nodeType} {name:'root'})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
+        const query = `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? "{name:'root'}": ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
         const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
         const limitParam = session.limit ? `LIMIT ${session.limit}`: "";

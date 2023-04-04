@@ -71,11 +71,15 @@ export class LayouterController {
 			edgesCount: 0
 		};
 		data.forEach((entry: any) => {
-			if (entry.n.id == entry.m.id) return;
+			if (entry.n && entry.m && entry.n.id == entry.m.id) return;
 			LayouterController.insertIntoGraph(graph, entry.n);
-			LayouterController.insertIntoGraph(graph, entry.m);
-			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
-			LayouterController.insertRelationshipIntoGraph(graph, entry.r);
+			if (entry.m) {
+				LayouterController.insertIntoGraph(graph, entry.m);
+				graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));	
+			}
+			if (entry.r) {
+				LayouterController.insertRelationshipIntoGraph(graph, entry.r);
+			}
 		});
 		graph.nodesCount = graph.nodes.length;
 		graph.edgesCount = graph.edges.length;
