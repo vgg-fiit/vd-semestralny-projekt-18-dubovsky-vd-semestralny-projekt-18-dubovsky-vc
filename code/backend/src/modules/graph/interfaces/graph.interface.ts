@@ -1,3 +1,5 @@
+import { NodeType } from "../../../shared/interfaces/database.interface";
+
 export interface Graph {
     nodes: Node[];
     edges: Edge[];
@@ -18,11 +20,15 @@ export class Node {
     position: vector3;
     displacement: vector3;
     name: string;
+    type: NodeType;
 
-    constructor(name: string, nodeId: number, size: number, position?: vector3, displacement?: vector3) {
+    constructor(name: string, nodeId: number, size: number, type?: NodeType, position?: vector3, displacement?: vector3) {
 		this.name = name;
 		this.uuId = nodeId;
 		this.size = size;
+        if (type != null) {
+            this.type = type;
+        }
 		if (position != null) {
 			this.position = position;
 		}

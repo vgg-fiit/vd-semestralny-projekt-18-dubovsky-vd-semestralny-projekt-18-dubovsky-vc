@@ -51,7 +51,7 @@ export class LayouterController {
 
 	public static insertIntoGraph(graph: Graph, entry: any) {
 		if (graph.mapping[entry.id] == undefined) {
-			graph.nodes.push(new Node(entry.properties.name, entry.id, 1));
+			graph.nodes.push(new Node(entry.properties.name, entry.id, 1, entry.labels[0]));
 			graph.mapping[entry.id] = graph.nodes.length - 1; 
 		}
 	}
