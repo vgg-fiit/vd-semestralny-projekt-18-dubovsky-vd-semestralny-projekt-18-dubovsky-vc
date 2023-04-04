@@ -99,6 +99,7 @@ export class LayouterController {
 			actualTemp = initTemp / Math.pow(Math.E, whichTry / 150);
 			whichTry++;
 		}
+		console.log(whichTry)
 		graph.nodes.forEach(n => n.position = {x: n.position.x * 10, y: n.position.y * 10, z: n.position.z * 10})
 		return {data: graph} as AppResponse<Graph>;
 	}
