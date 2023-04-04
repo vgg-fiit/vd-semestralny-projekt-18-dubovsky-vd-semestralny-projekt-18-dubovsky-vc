@@ -11,7 +11,7 @@ export class LayouterController {
 
     private static calculateRepulsiveForces(graph: Graph) {
 		const k: number = graph.nodes.length > 100 ? 100 / graph.nodes.length : 1;
-        const repulsiveForce = (force: number) => (Math.round(force / Math.abs(force)) * (Math.pow(force, 2) / k));
+		const repulsiveForce = (force: number) => (Math.round(force / Math.abs(force)) * (Math.pow(force, 2) / k));
         graph.nodes.forEach((nodeFrom) => {
 			nodeFrom.constantDisplacement = 0;
 			graph.nodes.forEach((nodeTo) => {
@@ -56,18 +56,29 @@ export class LayouterController {
 		}
 	}
 
+	public static insertRelationshipIntoGraph(graph: Graph, entry: []) {
+		entry.forEach((item: any) => {
+			graph.edges.push(new Edge(graph.mapping[item.start.low], graph.mapping[item.end.low], item.start.low, item.end.low));
+		})
+	}
+
 	public static dataToGraph(data: any): Graph {
 		const graph: Graph = {
 			nodes: [],
 			edges: [],
-			mapping: {}
+			mapping: {},
+			nodesCount: 0,
+			edgesCount: 0
 		};
 		data.forEach((entry: any) => {
 			if (entry.n.id == entry.m.id) return;
 			LayouterController.insertIntoGraph(graph, entry.n);
 			LayouterController.insertIntoGraph(graph, entry.m);
 			graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
+			LayouterController.insertRelationshipIntoGraph(graph, entry.r);
 		});
+		graph.nodesCount = graph.nodes.length;
+		graph.edgesCount = graph.edges.length;
 		return graph;
 	}
 
@@ -81,11 +92,10 @@ export class LayouterController {
 			LayouterController.calculateRepulsiveForces(LayouterController.graph);
 			LayouterController.calculateAttractiveForces(LayouterController.graph);
 			LayouterController.updatePosition(LayouterController.graph, actualTemp);
-			actualTemp = initTemp / Math.pow(Math.E, whichTry / 15);
+			actualTemp = initTemp / Math.pow(Math.E, whichTry / 150);
 			whichTry++;
 		}
 		graph.nodes.forEach(n => n.position = {x: n.position.x * 10, y: n.position.y * 10, z: n.position.z * 10})
-		console.log(graph.nodes)
 		return {data: graph} as AppResponse<Graph>;
 	}
 }
