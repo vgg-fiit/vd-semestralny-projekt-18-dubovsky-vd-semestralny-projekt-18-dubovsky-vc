@@ -65,14 +65,15 @@ export class DatabaseService {
                 from: body["range"]["from"],
                 to: body["range"]["to"]
             }: undefined
-        session.relationship = body["relationship"]
-        session.limit = body["limit"]
+        session.relationship = body["relationship"] == "true"
+        session.limit = body["limit"] ? parseInt(body["limit"]): undefined
+        session.name = body["name"] ? body["name"]: session.name
         return session
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
-        const query = `MATCH (n:${session.nodeType} {name:'root'})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
+        const query = `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
         const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
         const limitParam = session.limit ? `LIMIT ${session.limit}`: "";
@@ -85,7 +86,8 @@ export class DatabaseSession {
     keyword?: {key: Keywords, value: string};
     range?: {from?: number, to?: number};
     relationship?: boolean;
-    limit?: number
+    limit?: number;
+    name?: string = "root";
 
     public async run(): Promise<{}[]> {
         return DatabaseService.filter(this);

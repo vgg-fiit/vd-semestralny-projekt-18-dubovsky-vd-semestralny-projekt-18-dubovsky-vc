@@ -19,6 +19,8 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
   );
 
   const handleDepthChange = (depth: number) => {
+    postOptions.range.to = depth;
+    handleFetch();
     setSelectedDepth(depth);
   };
 
@@ -26,16 +28,18 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
     setView(viewType);
   };
 
+  const postOptions = {
+    nodeType: "Directory",
+    relationship: "true",
+    limit: 50,
+    range: {
+      to: 3,
+    }
+  }
+
   const handleFetch = () => {
     axios
-      .post("http://localhost:14444/graph/get", {
-        nodeType: "Directory",
-        relationship: "true",
-        limit: 20,
-        range: {
-          to: 3,
-        },
-      })
+      .post("http://localhost:14444/graph/get", postOptions)
       .then((res: any) => {
         console.log(res);
         onDataChange(res.data.data);
