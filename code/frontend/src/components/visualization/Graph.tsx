@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Vector3, BufferGeometry, LineBasicMaterial, Line } from "three";
 import { useThree, useFrame } from "@react-three/fiber";
 
 interface NodeProps {
   position: Vector3;
   color?: string;
+  selectedColor?: string;
+  onClick?: () => void;
 }
 
-export const Node: React.FC<NodeProps> = ({ position, color = "red" }) => {
+export const Node: React.FC<NodeProps> = ({
+  position,
+  color = "red",
+  selectedColor = "green",
+  onClick,
+}) => {
+  const [selected, setSelected] = useState(false);
+  const handleClick = () => {
+    setSelected(!selected);
+    if (onClick) onClick();
+  };
+
   return (
-    <mesh position={position}>
+    <mesh position={position} onClick={handleClick}>
       <sphereGeometry args={[0.1, 16, 16]} />
-      <meshStandardMaterial color={color} />
+      <meshStandardMaterial color={selected ? selectedColor : color} />
     </mesh>
   );
 };

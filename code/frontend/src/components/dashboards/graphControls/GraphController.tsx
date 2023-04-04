@@ -5,6 +5,7 @@ import DepthSlider from "./DepthSlider";
 import KeywordSearch from "./KeywordSearch";
 import Button from "@mui/material/Button";
 import axios from "axios";
+import ViewSwitch from "./ViewSwitch";
 
 interface GraphControllerProps {
   onDataChange: (newState: any) => void;
@@ -13,25 +14,17 @@ interface GraphControllerProps {
 const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
   const [selectedDepth, setSelectedDepth] = useState<number>(0);
   const [data, setData] = useState<any>([]);
+  const [view, setView] = useState<"classic" | "explorer" | "searcher">(
+    "classic"
+  );
 
   const handleDepthChange = (depth: number) => {
     setSelectedDepth(depth);
   };
 
-  const categories = [
-    {
-      name: "Category 1",
-      content: <div>Category 1 content goes here</div>,
-    },
-    {
-      name: "Category 2",
-      content: <div>Category 2 content goes here</div>,
-    },
-    {
-      name: "Category 3",
-      content: <div>Category 3 content goes here</div>,
-    },
-  ];
+  const handleViewChange = (viewType: "classic" | "explorer" | "searcher") => {
+    setView(viewType);
+  };
 
   const handleFetch = () => {
     axios
@@ -64,10 +57,20 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
             flexDirection: "column",
           }}
         >
+          <ViewSwitch onViewTypeChange={handleViewChange} />
+        </Paper>
+      </Grid>
+      <Grid item xs={12} md={4} lg={3}>
+        <Paper
+          sx={{
+            p: 2,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           <Button onClick={handleFetch} variant="contained">
             Fetch data from backend
           </Button>
-          <Button variant="text">Text</Button>
         </Paper>
       </Grid>
       <Grid item xs={12} md={4} lg={3}>
@@ -92,18 +95,6 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
           }}
         >
           <KeywordSearch />
-        </Paper>
-      </Grid>
-
-      <Grid item xs={12} md={8} lg={4}>
-        <Paper
-          sx={{
-            p: 2,
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <CategorySwitcher categories={categories} />
         </Paper>
       </Grid>
     </>

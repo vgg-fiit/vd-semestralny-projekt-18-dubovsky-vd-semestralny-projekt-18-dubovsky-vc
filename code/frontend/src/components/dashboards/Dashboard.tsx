@@ -25,6 +25,7 @@ import GraphController from "./graphControls/GraphController";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import GraphScene from "../visualization/GraphScene";
+import { SelectedListItems } from "./SelectedListItems";
 
 const drawerWidth: number = 240;
 
@@ -80,7 +81,7 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
-
+  const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
   const [graphData, setGraphData] = useState<any>([]);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -92,6 +93,18 @@ function DashboardContent() {
     console.log(graphData);
 
     setGraphData({ nodes: data.nodes, edges: data.edges });
+  };
+
+  const handleNodeSelection = (nodesUuIds: number[]) => {
+    if (graphData && graphData.nodes) {
+      // filter the nodes by the uuids
+
+      const filteredList = graphData.nodes.filter(
+        (node: any) => !!nodesUuIds.find((nodeUuId) => node.uuId === nodeUuId)
+      );
+      setSelectedNodes(filteredList);
+    }
+    // console.log(graphData.nodes);
   };
 
   return (
@@ -147,9 +160,10 @@ function DashboardContent() {
           </Toolbar>
           <Divider />
           <List component="nav">
-            {mainListItems}
-            <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
+            {open && <SelectedListItems data={selectedNodes} />}
+            {/* Add  */}
+            {/* <Divider sx={{ my: 1 }} />
+            {secondaryListItems} */}
           </List>
         </Drawer>
         <Box
@@ -167,18 +181,19 @@ function DashboardContent() {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
-              {/* Chart */}
-
-              {/* Recent Deposits */}
-
-              {/* Canvas */}
               <Grid item xs={12}>
                 <Paper>
                   <Canvas
                     id="canvas"
                     style={{ width: "100%", aspectRatio: "16 / 9" }}
                   >
-                    if (graphData) {<GraphScene data={graphData} />}
+                    if (graphData){" "}
+                    {
+                      <GraphScene
+                        data={graphData}
+                        handleNodeSelection={handleNodeSelection}
+                      />
+                    }
                   </Canvas>
                 </Paper>
               </Grid>

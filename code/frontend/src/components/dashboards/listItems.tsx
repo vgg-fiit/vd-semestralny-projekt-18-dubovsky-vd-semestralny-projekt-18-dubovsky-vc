@@ -11,7 +11,7 @@ import LayersIcon from "@mui/icons-material/Layers";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 
 export const mainListItems = (
-  <React.Fragment>
+  <>
     <ListItemButton>
       <ListItemIcon>
         <DashboardIcon />
@@ -42,7 +42,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Integrations" />
     </ListItemButton>
-  </React.Fragment>
+  </>
 );
 
 export const secondaryListItems = (

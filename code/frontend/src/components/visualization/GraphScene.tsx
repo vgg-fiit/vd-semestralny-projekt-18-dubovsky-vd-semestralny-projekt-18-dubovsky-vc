@@ -8,11 +8,34 @@ import { Node, Edge } from "./Graph";
 
 interface GraphSceneProps {
   data: any;
+  handleNodeSelection: (selected: any) => void;
 }
 
-const GraphScene: React.FC<GraphSceneProps> = ({ data }) => {
+const GraphScene: React.FC<GraphSceneProps> = ({
+  data,
+  handleNodeSelection,
+}) => {
+  const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
+
+  const handleNodeClick = (index: number) => {
+    setSelectedNodes((prevSelectedNodes) => {
+      if (prevSelectedNodes.includes(index)) {
+        // Deselect the node by removing its index from the selectedNodes array
+        return prevSelectedNodes.filter((i) => i !== index);
+      } else {
+        // Select the node by adding its index to the selectedNodes array
+        return [...prevSelectedNodes, index];
+      }
+    });
+  };
+
+  useEffect(() => {
+    handleNodeSelection(selectedNodes);
+  }, [selectedNodes]);
+
   return (
     <>
+      <pointLight position={[10, 10, 10]} />
       <OrbitControls />
       <group>
         {data && data.nodes
@@ -28,6 +51,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({ data }) => {
                     )
                   }
                   color="blue"
+                  onClick={() => handleNodeClick(node.uuId)}
                 />
               );
             })
