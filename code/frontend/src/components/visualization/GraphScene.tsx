@@ -36,7 +36,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
   return (
     <>
       <pointLight position={[10, 10, 10]} />
-      <OrbitControls />
+      <OrbitControls target={[0, 0, 0]} />
       <group>
         {data && data.nodes
           ? data.nodes.map((node: any) => {
