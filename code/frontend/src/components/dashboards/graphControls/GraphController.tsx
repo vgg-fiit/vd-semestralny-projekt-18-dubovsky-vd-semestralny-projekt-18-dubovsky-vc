@@ -9,9 +9,13 @@ import ViewSwitch from "./ViewSwitch";
 
 interface GraphControllerProps {
   onDataChange: (newState: any) => void;
+  onSceneChange: (newState: any) => void;
 }
 
-const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
+const GraphController: React.FC<GraphControllerProps> = ({
+  onDataChange,
+  onSceneChange,
+}) => {
   const [selectedDepth, setSelectedDepth] = useState<number>(0);
   const [data, setData] = useState<any>([]);
   const [view, setView] = useState<"classic" | "explorer" | "searcher">(
@@ -26,6 +30,7 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
 
   const handleViewChange = (viewType: "classic" | "explorer" | "searcher") => {
     setView(viewType);
+    onSceneChange(viewType);
   };
 
   const postOptions = {
@@ -34,8 +39,8 @@ const GraphController: React.FC<GraphControllerProps> = ({ onDataChange }) => {
     limit: 50,
     range: {
       to: 3,
-    }
-  }
+    },
+  };
 
   const handleFetch = () => {
     axios

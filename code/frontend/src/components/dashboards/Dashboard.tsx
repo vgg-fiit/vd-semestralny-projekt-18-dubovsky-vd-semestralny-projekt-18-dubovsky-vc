@@ -17,7 +17,6 @@ import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import { mainListItems, secondaryListItems } from "./listItems";
 import { Canvas } from "@react-three/fiber";
 import FlightScene from "../visualization/GraphScene";
 import AspectRatio from "@mui/joy/AspectRatio";
@@ -26,6 +25,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import GraphScene from "../visualization/GraphScene";
 import { SelectedListItems } from "./SelectedListItems";
+import ExplorerScene from "../visualization/ExplorerScene";
 
 const drawerWidth: number = 240;
 
@@ -83,16 +83,23 @@ function DashboardContent() {
   const [open, setOpen] = React.useState(true);
   const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
   const [graphData, setGraphData] = useState<any>([]);
+  const [selectedScene, setSelectedScene] = useState<
+    "classic" | "explorer" | "searcher"
+  >("classic");
   const toggleDrawer = () => {
     setOpen(!open);
   };
 
   // Handles change of the data in GraphController component and updates the graph data in the state
-  const handleGraphChange = (data: any) => {
-    console.log(data);
-    console.log(graphData);
+  const handleGraphDataChange = (data: any) => {
+    // console.log(data);
+    // console.log(graphData);
 
     setGraphData({ nodes: data.nodes, edges: data.edges });
+  };
+
+  const handleSceneChange = (data: any) => {
+    setSelectedScene(data);
   };
 
   const handleNodeSelection = (nodesUuIds: number[]) => {
@@ -187,19 +194,25 @@ function DashboardContent() {
                     id="canvas"
                     style={{ width: "100%", aspectRatio: "16 / 9" }}
                   >
-                    if (graphData){" "}
-                    {
+                    {selectedScene === "classic" && (
                       <GraphScene
                         data={graphData}
                         handleNodeSelection={handleNodeSelection}
                       />
-                    }
+                    )}
+                    {selectedScene === "explorer" && (
+                      <ExplorerScene
+                        data={graphData}
+                        handleNodeSelection={handleNodeSelection}
+                      />
+                    )}
                   </Canvas>
                 </Paper>
               </Grid>
 
               <GraphController
-                onDataChange={handleGraphChange}
+                onDataChange={handleGraphDataChange}
+                onSceneChange={handleSceneChange}
               ></GraphController>
             </Grid>
           </Container>
