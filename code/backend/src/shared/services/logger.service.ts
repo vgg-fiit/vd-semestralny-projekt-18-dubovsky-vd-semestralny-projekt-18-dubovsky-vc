@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 export class LoggerService {
 
     public static log(what: object) {
@@ -7,6 +9,10 @@ export class LoggerService {
         } catch(e: any) {
             console.log(JSON.stringify(what))
         }
+    }
+
+    public static printToFile(what: object) {
+        fs.appendFileSync('log.txt', JSON.stringify(what) + '\n');
     }
 
     public static warn(what: object) {

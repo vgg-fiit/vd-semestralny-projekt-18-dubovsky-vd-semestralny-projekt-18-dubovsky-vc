@@ -8,21 +8,56 @@ export interface Graph {
     edgesCount: number;
 }
 
-export interface vector3 {
+export class Vector3 {
     x: number;
     y: number;
     z: number;
+
+    constructor(x: number, y: number, z: number) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    add(v: Vector3): void {
+        this.x += v.x;
+        this.y += v.y;
+        this.z += v.z;
+    }
+
+    subtractBy(v: Vector3): Vector3 {
+        return new Vector3(this.x - v.x, this.y - v.y, this.z - v.z);
+    }
+
+    multiplyBy(scalar: number): void {
+        this.x *= scalar;
+        this.y *= scalar;
+        this.z *= scalar;
+    }
+
+    getMagnitude(): number {
+        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+    }
+
+    normalize(): void {
+        const magnitude = this.getMagnitude();
+        if (magnitude === 0) return;
+        this.x /= magnitude;
+        this.y /= magnitude;
+        this.z /= magnitude;
+    }
 }
 
 export class Node {
     uuId: number;
     size: number;
-    position: vector3;
-    displacement: vector3;
+    position: Vector3;
+    displacement: Vector3;
     name: string;
     type: NodeType;
+    fixed: boolean;
 
-    constructor(name: string, nodeId: number, size: number, type?: NodeType, position?: vector3, displacement?: vector3) {
+    constructor(name: string, nodeId: number, size: number, type?: NodeType, position?: Vector3, displacement?: Vector3) {
 		this.name = name;
 		this.uuId = nodeId;
 		this.size = size;
@@ -35,38 +70,43 @@ export class Node {
 		if (displacement != null) {
 			this.displacement = displacement;
 		} else {
-            this.displacement = {x: 0, y: 0, z: 0}
+            this.displacement = new Vector3(0, 0, 0);
         }
     }
 
     set constantDisplacement(displacement: number) {
-		this.displacement = { x: displacement, y: displacement, z: displacement };
-	}
+        this.displacement = new Vector3(displacement, displacement, displacement);
+    }
+    
+    repulse(n: Node, k: number): Vector3 {
+        const distance = this.position.subtractBy(n.position);
+        const normalized = distance.getMagnitude();
+        const minDistance = (this.size + n.size) / 2;
+        const adjustedDistance = Math.max(normalized, minDistance);
+        const force = (k * k) / adjustedDistance;
 
-    public getDistanceTo(nodeTo: Node): vector3 {
-        return {
-            x: this.position.x - nodeTo.position.x,
-            y: this.position.y - nodeTo.position.y,
-			z: this.position.z - nodeTo.position.z,
-        };
+        if (normalized > 0) {
+            distance.normalize();
+        }
+        distance.multiplyBy(force);
+        distance.multiplyBy(1.5);
+        return distance;
     }
 
-    public getNormalizedDistanceTo(nodeTo: Node): vector3 {
-        const distance: vector3 = this.getDistanceTo(nodeTo);
-        const vectorLength: number = Math.sqrt(distance.x * distance.x + distance.y * distance.y + distance.z * distance.z);
-        if (vectorLength == 0)
-            return {x: 0, y: 0, z: 0};
-        return {x: distance.x / vectorLength, y: distance.y / vectorLength, z: distance.z / vectorLength};
+    attract(n: Node, k: number): Vector3 {
+        const distance = this.position.subtractBy(n.position);
+        const normalized = distance.getMagnitude();
+        const sizeFactor = (this.size + n.size) / 2;
+        const force = (normalized * normalized) / (k * sizeFactor);
+
+        if (normalized > 0) {
+            distance.normalize();
+        }
+        distance.multiplyBy(force);
+        return distance;
     }
 
-    displaceNodeBy(nodeTo: Node, force: (v: number) => number) {
-		const distance: vector3 = this.getNormalizedDistanceTo(nodeTo);
-		this.displacement = {
-			x: (this.displacement.x += force(distance.x)),
-			y: (this.displacement.y += force(distance.y)),
-			z: (this.displacement.z += force(distance.z)),
-        };
-    }
+    
 }
 
 export class Edge {
@@ -75,10 +115,10 @@ export class Edge {
     fromId: number;
     toId: number;
 
-    constructor(fromIndex: number, toIndex: number, fromId: number, toId: number) {
+    constructor(fromIndex: number, toIndex: number, fromId?: number, toId?: number, rel?: boolean) {
 		this.fromIndex = fromIndex;
 		this.toIndex = toIndex;
-        this.toId = toId;
-        this.fromId = fromId;
+        this.toId = toId ? toId : toIndex;
+        this.fromId = fromId ? fromId : fromIndex;
 	}
 }
