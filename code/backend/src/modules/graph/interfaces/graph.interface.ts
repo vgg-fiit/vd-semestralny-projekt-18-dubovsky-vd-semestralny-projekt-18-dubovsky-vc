@@ -89,7 +89,6 @@ export class Node {
             distance.normalize();
         }
         distance.multiplyBy(force);
-        distance.multiplyBy(1.5);
         return distance;
     }
 
