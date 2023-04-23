@@ -2,9 +2,8 @@ import { type Request } from 'express';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
 import { DatabaseService } from '../../shared/services/database.service';
 import { Edge, Node, type Graph, Vector3 } from '../graph/interfaces/graph.interface';
-import { LayouterMock } from './mocks/layouter.mock';
 import { LoggerService } from '../../shared/services/logger.service';
-import { it } from 'node:test';
+import { HistogramItem } from '../graph/interfaces/histogram.interface';
 
 export class LayouterController {
 
@@ -155,11 +154,21 @@ export class LayouterController {
 		fixedNode.fixed = true;
 		fixedNode.position = new Vector3(0, 0, 0);
 	}
+
+	public static formatHistogram(data: {}[]): HistogramItem[] {
+		const histogramItems: HistogramItem[] = [];
+		data.forEach((item: any) => {
+			histogramItems.push({text: item.word, value: item.aggregatedWordCount.low})
+		})
+		return histogramItems;
+	}
 	
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
+		const dataHistogram = await DatabaseService.build(req).getHistogram();
 		//const graph = LayouterMock.getMock();
 		const graph = LayouterController.dataToGraph(data);
+		graph.histogram = LayouterController.formatHistogram(dataHistogram);
 		//LayouterController.setFixedPosition("root", graph);
 		LayouterController.setRandomPositions(graph);
 		LayouterController.run(graph);

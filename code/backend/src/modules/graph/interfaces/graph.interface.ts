@@ -1,6 +1,8 @@
 import { NodeType } from "../../../shared/interfaces/database.interface";
+import { HistogramItem } from "./histogram.interface";
 
 export interface Graph {
+    histogram?: HistogramItem[];
     nodes: Node[];
     edges: Edge[];
     mapping: { [id: number]: number };
