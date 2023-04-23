@@ -13,20 +13,17 @@ import Badge from "@mui/material/Badge";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Canvas } from "@react-three/fiber";
-import FlightScene from "../visualization/GraphScene";
-import AspectRatio from "@mui/joy/AspectRatio";
 import GraphController from "./graphControls/GraphController";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 import GraphScene from "../visualization/GraphScene";
 import { SelectedListItems } from "./SelectedListItems";
 import ExplorerScene from "../visualization/ExplorerScene";
 import WordGraphs from "../visualization/WordGraphs";
+import TreeMap from "../visualization/TreeMap";
 
 const drawerWidth: number = 240;
 
@@ -217,6 +214,9 @@ function DashboardContent() {
 
               {graphData.histogram ? (
                 <WordGraphs wordData={graphData.histogram} />
+              ) : null}
+              {graphData.histogram ? (
+                <TreeMap wordData={graphData.histogram} />
               ) : null}
 
               <GraphController

@@ -1,8 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Box, OrbitControls } from "@react-three/drei";
+import React, { useState, useEffect } from "react";
+import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
-import axios from "axios";
 // create function componentt
 import { Node, Edge } from "./Graph";
 
@@ -50,7 +48,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                       node.position.z
                     )
                   }
-                  color="blue"
+                  color={node.name == "root" ? "red" : "blue"}
                   onClick={() => handleNodeClick(node.uuId)}
                 />
               );

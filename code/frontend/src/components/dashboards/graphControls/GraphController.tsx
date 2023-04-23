@@ -1,6 +1,5 @@
 import { Grid, Paper } from "@mui/material";
 import React, { useState } from "react";
-import CategorySwitcher from "./CategorySwich";
 import DepthSlider from "./DepthSlider";
 import KeywordSearch from "./KeywordSearch";
 import Button from "@mui/material/Button";
