@@ -89,7 +89,7 @@ export class LayouterController {
 			graph.nodes.forEach((to) => {
 				from.constantDisplacement = 0;
 				if (from.uuId === to.uuId) return;
-				from.displacement = from.repulse(to, k);
+				from.displacement.subtractBy(from.repulse(to, k));
 			}),
 		);
 	}
@@ -158,6 +158,7 @@ export class LayouterController {
 	
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
+		//const graph = LayouterMock.getMock();
 		const graph = LayouterController.dataToGraph(data);
 		//LayouterController.setFixedPosition("root", graph);
 		LayouterController.setRandomPositions(graph);
