@@ -21,6 +21,9 @@ const GraphScene: React.FC<GraphSceneProps> = ({
   // Camera and Animation
   const defaultCameraPosition = new Vector3(0, 0, 10);
   const defaultCameraTarget = new Vector3(0, 0, 0);
+  const [cameraTarget, setCameraTarget] = useState<Vector3 | null>(
+    new Vector3(0, 0, 0)
+  );
   const [isAnimating, setIsAnimating] = useState(false);
   const { camera } = useThree();
   const animationDuration = 1000; // 1000 milliseconds = 1 second
@@ -43,14 +46,21 @@ const GraphScene: React.FC<GraphSceneProps> = ({
 
     console.log(index, selectedNodePosition);
 
-    targetNode.current = new Vector3(
+    const targetVector = new Vector3(
       selectedNodePosition.x,
       selectedNodePosition.y,
       selectedNodePosition.z
     );
 
+    const direction = new Vector3()
+      .subVectors(targetVector, camera.position)
+      .normalize();
+
+    targetNode.current = targetVector.clone().add(direction.multiplyScalar(-5));
+
     // const targetPosition = targetNode.current.clone().add(new Vector3(0, 0, 5));
     setIsAnimating(true);
+    setCameraTarget(targetVector);
     animationStartTime.current = performance.now();
 
     const payLoad = {
@@ -126,7 +136,9 @@ const GraphScene: React.FC<GraphSceneProps> = ({
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
 
-      <OrbitControls target={[0, 0, 0]} />
+      <OrbitControls
+        target={cameraTarget ? cameraTarget : defaultCameraTarget}
+      />
       <group>
         {data && data.nodes
           ? data.nodes.map((node: any) => {
@@ -140,6 +152,10 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                       node.position.z
                     )
                   }
+                  data={{
+                    name: node.name,
+                    uuId: node.uuID,
+                  }}
                   color="blue"
                   onClick={() => handleNodeClick(node.uuId)}
                 />

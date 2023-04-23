@@ -26,6 +26,7 @@ import axios from "axios";
 import GraphScene from "../visualization/GraphScene";
 import { SelectedListItems } from "./SelectedListItems";
 import ExplorerScene from "../visualization/ExplorerScene";
+import WordGraphs from "../visualization/WordGraphs";
 
 const drawerWidth: number = 240;
 
@@ -95,7 +96,11 @@ function DashboardContent() {
     // console.log(data);
     // console.log(graphData);
 
-    setGraphData({ nodes: data.nodes, edges: data.edges });
+    setGraphData({
+      nodes: data.nodes,
+      edges: data.edges,
+      histogram: data.histogram,
+    });
   };
 
   const handleSceneChange = (data: any) => {
@@ -209,6 +214,10 @@ function DashboardContent() {
                   </Canvas>
                 </Paper>
               </Grid>
+
+              {graphData.histogram ? (
+                <WordGraphs wordData={graphData.histogram} />
+              ) : null}
 
               <GraphController
                 onDataChange={handleGraphDataChange}
