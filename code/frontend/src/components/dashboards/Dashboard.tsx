@@ -24,6 +24,7 @@ import { SelectedListItems } from "./SelectedListItems";
 import ExplorerScene from "../visualization/ExplorerScene";
 import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
+import TreeGraph from "../visualization/TreeGraph";
 
 const drawerWidth: number = 240;
 
@@ -97,6 +98,7 @@ function DashboardContent() {
       nodes: data.nodes,
       edges: data.edges,
       histogram: data.histogram,
+      tree: data.tree
     });
   };
 
@@ -217,6 +219,9 @@ function DashboardContent() {
               ) : null}
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
+              ) : null}
+              {graphData.tree ? (
+                <TreeGraph tree={graphData.tree} />
               ) : null}
 
               <GraphController

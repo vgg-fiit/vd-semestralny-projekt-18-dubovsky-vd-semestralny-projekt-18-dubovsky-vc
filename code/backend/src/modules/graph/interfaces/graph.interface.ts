@@ -3,11 +3,18 @@ import { HistogramItem } from "./histogram.interface";
 
 export interface Graph {
     histogram?: HistogramItem[];
+    tree?: Tree;
     nodes: Node[];
     edges: Edge[];
     mapping: { [id: number]: number };
     nodesCount: number;
     edgesCount: number;
+}
+
+export interface Tree {
+    name: string;
+    uuId: number;
+    children: Tree[];
 }
 
 export class Vector3 {

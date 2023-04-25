@@ -1,7 +1,7 @@
 import { type Request } from 'express';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
 import { DatabaseService } from '../../shared/services/database.service';
-import { Edge, Node, type Graph, Vector3 } from '../graph/interfaces/graph.interface';
+import { Edge, Node, type Graph, Vector3, Tree } from '../graph/interfaces/graph.interface';
 import { LoggerService } from '../../shared/services/logger.service';
 import { HistogramItem } from '../graph/interfaces/histogram.interface';
 
@@ -51,7 +51,6 @@ export class LayouterController {
 				}
 				if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)]) {
 					graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
-					LoggerService.printToFile({insertedEdge: {from: entry.n.id, to: entry.m.id}})
 					existingEdges[getId(entry.n.id, entry.m.id)] = true;
 				}
 				LayouterController.insertRelationshipIntoGraph(graph, entry.r, existingEdges);
@@ -65,14 +64,12 @@ export class LayouterController {
 					filtered.forEach((item: any) => {
 						if (!existingEdges[getId(item.start.low, item.end.low)] && !existingEdges[getId(item.end.low, item.start.low)]) {
 							graph.edges.push(new Edge(graph.mapping[item.start.low], graph.mapping[item.end.low], item.start.low, item.end.low, true));
-							LoggerService.printToFile({insertedEdge: {from: item.start.low, to: item.end.low}})
 							existingEdges[getId(item.start.low, item.end.low)] = true;
 						}
 					});
 				} else {
 					if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)]) {
 						graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
-						LoggerService.printToFile({insertedEdge: {from: entry.n.id, to: entry.m.id}})
 						existingEdges[getId(entry.n.id, entry.m.id)] = true;
 					}
 				}
@@ -162,6 +159,30 @@ export class LayouterController {
 		})
 		return histogramItems;
 	}
+
+	public static formatAsTree(graph: Graph): Tree {
+		graph.edges.forEach(e => {
+			if (e.fromId > e.toId) {
+				const temp = e.fromId;
+				e.fromId = e.toId;
+				e.toId = temp;
+				const tempIndex = e.fromIndex;
+				e.fromIndex = e.toIndex;
+				e.toIndex = tempIndex;
+			}
+		})
+		graph.edges.sort((e, f) => e.fromId - f.fromId )
+		const map: Map<number, Tree> = new Map();
+		graph.nodes.forEach(node => {
+			map.set(node.uuId, {name: node.name, uuId: node.uuId, children: []});
+		});
+		graph.edges.forEach(edge => {
+			const parent = map.get(edge.fromId);
+			const child = map.get(edge.toId);
+			(parent as Tree).children.push(child as Tree);
+		});
+		return map.get(graph.nodes[0].uuId) as Tree;
+	}
 	
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
@@ -173,6 +194,7 @@ export class LayouterController {
 		LayouterController.setRandomPositions(graph);
 		LayouterController.run(graph);
 		LayouterController.normalizePositions(graph);
+		graph.tree = LayouterController.formatAsTree(graph);
 		return {data: graph} as AppResponse<Graph>;
 	}
 }

@@ -42,7 +42,6 @@ export class DatabaseService {
 
 
     static async run(command: string): Promise<{}[]> {
-        LoggerService.log({runningQuery: command});
         const session = DatabaseService.driver.session();
         try {
           const result = await session.run(command);
