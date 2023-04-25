@@ -26,7 +26,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
     return (
         <Container>
             <svg width={width} height={height}>
-                <rect width={width} height={height} fill="#1976d2" />
+                <rect width={width} height={height} fill="white" />
                 <Tree<GraphTreeData> root={root} size={[width - 100, height - 100]}>
                     {(tree) => (
                         <Group top={50} left={50}>
@@ -50,7 +50,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                         {isHovered && (
                                             <circle
                                                 r={25}
-                                                fill="#ffffff"
+                                                fill="#1976d2"
                                                 stroke="#9c27b0"
                                                 strokeWidth={2}
                                             />
@@ -58,7 +58,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                         {!isHovered && (
                                             <circle
                                                 r={15}
-                                                fill="#ffffff"
+                                                fill="#1976d2"
                                                 stroke="#374469"
                                                 strokeWidth={2}
                                             />
@@ -66,11 +66,11 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                         {isHovered && (
                                             <text
                                                 dy="-40px"
-                                                fontSize={12}
+                                                fontSize={13}
                                                 fontWeight="bold"
                                                 fontFamily="Arial"
                                                 textAnchor="middle"
-                                                fill="white"
+                                                fill="black"
                                             >
                                                 {node.data.name}
                                             </text>
@@ -82,7 +82,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                                 fontFamily="Arial"
                                                 fontWeight="bold"
                                                 textAnchor="middle"
-                                                fill="#9c27b0"
+                                                fill="white"
                                             >
                                                 {node.data.uuId}
                                             </text>
@@ -94,7 +94,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                                 fontSize={9}
                                                 fontFamily="Arial"
                                                 textAnchor="middle"
-                                                fill="#9c27b0"
+                                                fill="white"
                                             >
                                                 {node.data.uuId}
                                             </text>

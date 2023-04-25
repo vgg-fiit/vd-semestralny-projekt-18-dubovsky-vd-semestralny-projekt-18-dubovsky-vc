@@ -1,6 +1,6 @@
 import * as React from "react";
 import Paper from "@mui/material/Paper";
-import { Tooltip, Treemap } from "recharts";
+import { ResponsiveContainer, Tooltip, Treemap } from "recharts";
 import { Container } from "@mui/material";
 import { CSSProperties} from "react";
 
@@ -12,6 +12,7 @@ const formattedData = (data: any) => {
     return data.map((item: any) => ({
         name: item.text,
         size: item.value,
+        fill: getColorByCount(item.value)
     }));
 }
 
@@ -41,23 +42,33 @@ const TreeMapTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
     return null;
 };
 
+const getColorByCount = (count: number) => {
+    if (count <= 1) {
+        return '#97b579';
+    } else if (count < 3) {
+        return '#b4b579';
+    } else if (count < 5) {
+        return '#b59279';
+    } else {
+        return '#b57979';
+    }
+};
+
 const TreeMap: React.FC<TreeMapProps> = ({ wordData }) => {
     const formatted = formattedData(wordData);
     return (
     <Container>
-        <Paper>
+        <ResponsiveContainer width="100%" height={400}>
         <Treemap
-            width={1150}
-            height={200}
             data={formatted}
             aspectRatio={16/9}
             dataKey="size"
             stroke="#fff"
-            fill="#1976d2"
+            fill="white"
         >
         <Tooltip content={<TreeMapTooltip active={true} payload={formatted} />} cursor={{ fill: "transparent" }} />
         </Treemap>
-        </Paper>
+        </ResponsiveContainer>
     </Container>
     );
 };
