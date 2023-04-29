@@ -25,6 +25,7 @@ import ExplorerScene from "../visualization/ExplorerScene";
 import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
+import ChordDiagram from "../visualization/Chords";
 
 const drawerWidth: number = 240;
 
@@ -98,7 +99,9 @@ function DashboardContent() {
       nodes: data.nodes,
       edges: data.edges,
       histogram: data.histogram,
-      tree: data.tree
+      tree: data.tree,
+      buckets: data.buckets,
+      filesCount: data.filesCount
     });
   };
 
@@ -222,6 +225,9 @@ function DashboardContent() {
               ) : null}
               {graphData.tree ? (
                 <TreeGraph tree={graphData.tree} />
+              ) : null}
+              {graphData.buckets ? (
+                <ChordDiagram buckets={graphData.buckets} filesCount={graphData.filesCount} />
               ) : null}
 
               <GraphController

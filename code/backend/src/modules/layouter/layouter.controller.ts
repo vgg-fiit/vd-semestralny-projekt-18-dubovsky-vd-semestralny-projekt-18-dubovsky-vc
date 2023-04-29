@@ -1,7 +1,7 @@
 import { type Request } from 'express';
 import { type AppResponse } from '../../shared/interfaces/response.interface';
 import { DatabaseService } from '../../shared/services/database.service';
-import { Edge, Node, type Graph, Vector3, Tree } from '../graph/interfaces/graph.interface';
+import { Edge, Node, File, type Graph, Vector3, Tree, Bucket } from '../graph/interfaces/graph.interface';
 import { LoggerService } from '../../shared/services/logger.service';
 import { HistogramItem } from '../graph/interfaces/histogram.interface';
 
@@ -183,13 +183,43 @@ export class LayouterController {
 		});
 		return map.get(graph.nodes[0].uuId) as Tree;
 	}
-	
+
+	public static formatToFile(data: {}[]): File[] {
+		const files: File[] = [];
+		data.forEach((item: any, index: number) => {
+			files.push({name: item.n.properties.name, id: item.n.id, index: index, size: item.n.properties.size.low})
+		})
+		files.sort((e, f) => e.size - f.size)
+		return files;
+	}
+
+	public static createBuckets(data: {}[], numBuckets: number) {
+		const files = LayouterController.formatToFile(data);
+		const minSize = files[0].size;
+		const maxSize = files[files.length - 1].size;
+		console.log(minSize, maxSize)
+		
+		const bucketRange = (maxSize - minSize) / numBuckets;
+		const buckets: Bucket[] = [];
+		for (let i = 0; i < numBuckets; i++) {
+			const rangeStart = minSize + i * bucketRange;
+			const rangeEnd = rangeStart + bucketRange;
+			buckets.push({ id: i, range: "size from " + rangeStart.toFixed(0) + ' bytes to ' + rangeEnd.toFixed(0) + ' bytes', nodes: files.filter(f => f.size >= rangeStart && f.size < rangeEnd)});
+		}
+		
+		return buckets;
+	}
+	  
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
 		const dataHistogram = await DatabaseService.build(req).getHistogram();
+		const dataFiles = await DatabaseService.build(req).getFiles() as any;
 		//const graph = LayouterMock.getMock();
 		const graph = LayouterController.dataToGraph(data);
 		graph.histogram = LayouterController.formatHistogram(dataHistogram);
+		graph.buckets = LayouterController.createBuckets(dataFiles, 4);
+		graph.filesCount = dataFiles.length;
+		console.log(graph)
 		//LayouterController.setFixedPosition("root", graph);
 		LayouterController.setRandomPositions(graph);
 		LayouterController.run(graph);

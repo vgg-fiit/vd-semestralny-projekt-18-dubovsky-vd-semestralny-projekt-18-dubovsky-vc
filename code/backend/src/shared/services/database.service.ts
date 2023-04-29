@@ -79,6 +79,12 @@ export class DatabaseService {
         return DatabaseService.run(`${query} ${aggregate} ${limit}`);
     }    
 
+    static getFiles(session: DatabaseSession): Promise<{}[]> {
+        const query = `MATCH (n: File) RETURN n`
+        const limit = session.limit ? `LIMIT ${session.limit}`: "";
+        return DatabaseService.run(`${query} ${limit}`);
+    }
+
     static filter(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query =
@@ -107,5 +113,9 @@ export class DatabaseSession {
 
     public async getHistogram(): Promise<{}[]> {
         return DatabaseService.getHistogram(this);
+    }
+
+    public async getFiles(): Promise<{}[]> {
+        return DatabaseService.getFiles(this);
     }
 }

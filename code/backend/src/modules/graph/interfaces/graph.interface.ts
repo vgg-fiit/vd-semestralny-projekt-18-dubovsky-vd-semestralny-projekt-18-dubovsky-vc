@@ -2,13 +2,28 @@ import { NodeType } from "../../../shared/interfaces/database.interface";
 import { HistogramItem } from "./histogram.interface";
 
 export interface Graph {
+	buckets?: Bucket[];
     histogram?: HistogramItem[];
     tree?: Tree;
     nodes: Node[];
     edges: Edge[];
     mapping: { [id: number]: number };
     nodesCount: number;
+    filesCount?: number;
     edgesCount: number;
+}
+
+export interface Bucket {
+    id: number;
+    range: string;
+    nodes: File[];
+}
+
+export interface File {
+    id: number;
+    size: number;
+    name: string;
+    index: number;
 }
 
 export interface Tree {
@@ -113,8 +128,6 @@ export class Node {
         distance.multiplyBy(force);
         return distance;
     }
-
-    
 }
 
 export class Edge {
