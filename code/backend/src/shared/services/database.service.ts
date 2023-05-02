@@ -74,7 +74,10 @@ export class DatabaseService {
 
     static getHistogram(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
-        const query = `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`;
+        const query = 
+            session.id != undefined ? 
+                `MATCH (n:${session.nodeType}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''} WHERE ID(n)=${session.id}`:
+                `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`
         const aggregate = `UNWIND m.keywords as word WITH word, count(word) as wordCount RETURN word, sum(wordCount) as aggregatedWordCount`;
         const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${aggregate} ${limit}`);
