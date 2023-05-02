@@ -28,11 +28,11 @@ export const Node: React.FC<NodeProps> = ({
     if (onClick) onClick();
   };
 
-  const handleTextSync = (self: any) => {
-    const box = new Box3().setFromObject(self);
-    const boxCenter = box.getCenter(new Vector3());
-    textPosition.current.add(boxCenter);
-  };
+  // const handleTextSync = (self: any) => {
+  //   const box = new Box3().setFromObject(self);
+  //   const boxCenter = box.getCenter(new Vector3());
+  //   textPosition.current.add(boxCenter);
+  // };
 
   useFrame(() => {
     if (textRef.current) {
@@ -49,27 +49,31 @@ export const Node: React.FC<NodeProps> = ({
   });
 
   return (
-    <mesh position={position} onClick={handleClick}>
-      <sphereGeometry args={[0.1, 16, 16]} />
-      <meshStandardMaterial color={selected ? selectedColor : color} />
+    <>
+      <mesh position={position} onContextMenu={handleClick}>
+        <sphereGeometry args={[0.1, 16, 16]} />
+        <meshStandardMaterial color={selected ? selectedColor : color} />
+      </mesh>
+
       {data ? (
         <>
-          <Text
-            ref={textRef}
-            position={[position.x, position.y, position.z]}
-            fontSize={0.3}
-            color="black"
-            anchorX="center"
-            anchorY="middle"
-          >
-            {JSON.stringify(data)}
-          </Text>
-          <Edge start={position} end={textPosition.current} />
+          <mesh position={[position.x, position.y, position.z]}>
+            <Text
+              ref={textRef}
+              fontSize={0.3}
+              color="black"
+              anchorX="center"
+              anchorY="bottom-baseline"
+            >
+              {JSON.stringify(data)}
+            </Text>
+            /* <Edge start={position} end={textPosition.current} /> */
+          </mesh>
         </>
       ) : (
         ""
       )}
-    </mesh>
+    </>
   );
 };
 

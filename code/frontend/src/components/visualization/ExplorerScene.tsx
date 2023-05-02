@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
+import { Raycaster, Vector2 } from "three";
 import axios from "axios";
 // create function componentt
 import { Node, Edge } from "./Graph";
@@ -16,7 +17,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
   handleNodeSelection,
 }) => {
   const [graph, setGraph] = useState<any>([]);
-  const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
+  const [selectedNode, setSelectedNode] = useState<number>(-1);
   const targetNode = useRef<Vector3 | null>(null);
   // Camera and Animation
   const defaultCameraPosition = new Vector3(0, 0, 10);
@@ -30,27 +31,28 @@ const GraphScene: React.FC<GraphSceneProps> = ({
   const animationStartTime = useRef<number | null>(null);
 
   const handleNodeClick = (index: number) => {
-    setSelectedNodes((prevSelectedNodes) => {
-      if (prevSelectedNodes.includes(index)) {
-        // Deselect the node by removing its index from the selectedNodes array
-        return prevSelectedNodes.filter((i) => i !== index);
-      } else {
-        // Select the node by adding its index to the selectedNodes array
-        return [...prevSelectedNodes, index];
-      }
-    });
+    // console.log("clicked", index);
+    if (selectedNode === index) {
+      setSelectedNode(-1);
+    } else {
+      setSelectedNode(index);
+    }
 
     const selectedNodePosition = data.nodes.filter(
       (node: any) => node.uuId === index
     )[0].position;
 
-    console.log(index, selectedNodePosition);
+    // console.log(index, selectedNodePosition);
 
-    const targetVector = new Vector3(
+    var targetVector = new Vector3(
       selectedNodePosition.x,
       selectedNodePosition.y,
       selectedNodePosition.z
     );
+
+    if (selectedNode === index) {
+      targetVector = defaultCameraTarget;
+    }
 
     const direction = new Vector3()
       .subVectors(targetVector, camera.position)
@@ -62,26 +64,6 @@ const GraphScene: React.FC<GraphSceneProps> = ({
     setIsAnimating(true);
     setCameraTarget(targetVector);
     animationStartTime.current = performance.now();
-
-    const payLoad = {
-      nodeType: "Directory",
-      relationship: "true",
-      limit: 50,
-      range: {
-        from: 0,
-        to: 3,
-      },
-    };
-
-    axios
-      .post("http://localhost:14444/graph/get", payLoad)
-      .then((res: any) => {
-        console.log(res);
-        setGraph(res.data.data);
-      })
-      .catch((err: any) => {
-        console.error(err);
-      });
   };
 
   useFrame(() => {
@@ -91,9 +73,9 @@ const GraphScene: React.FC<GraphSceneProps> = ({
 
       if (t < 1) {
         camera.position.lerp(targetNode.current, t);
-        if (selectedNodes.length > 0) {
+        if (selectedNode !== -1) {
           const node = data.nodes.filter(
-            (node: any) => node.uuId === selectedNodes[0]
+            (node: any) => node.uuId === selectedNode
           )[0];
 
           const nodePosition = new Vector3(
@@ -106,10 +88,10 @@ const GraphScene: React.FC<GraphSceneProps> = ({
           camera.lookAt(lookAtTarget);
         }
       } else {
-        camera.position.copy(targetNode.current);
-        if (selectedNodes.length > 0) {
+        camera.position.lerp(targetNode.current, t);
+        if (selectedNode !== -1) {
           const node = data.nodes.filter(
-            (node: any) => node.uuId === selectedNodes[0]
+            (node: any) => node.uuId === selectedNode
           )[0];
 
           const nodePosition = new Vector3(
@@ -128,8 +110,8 @@ const GraphScene: React.FC<GraphSceneProps> = ({
   });
 
   useEffect(() => {
-    handleNodeSelection(selectedNodes);
-  }, [selectedNodes]);
+    handleNodeSelection(selectedNode);
+  }, [selectedNode]);
 
   return (
     <>
