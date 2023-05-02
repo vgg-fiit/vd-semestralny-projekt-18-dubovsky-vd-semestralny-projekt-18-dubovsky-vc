@@ -197,7 +197,7 @@ export class LayouterController {
 		const files = LayouterController.formatToFile(data);
 		const minSize = files[0].size;
 		const maxSize = files[files.length - 1].size;
-		console.log(minSize, maxSize)
+		//console.log(minSize, maxSize)
 		
 		const bucketRange = (maxSize - minSize) / numBuckets;
 		const buckets: Bucket[] = [];
@@ -219,7 +219,7 @@ export class LayouterController {
 		graph.histogram = LayouterController.formatHistogram(dataHistogram);
 		graph.buckets = LayouterController.createBuckets(dataFiles, 4);
 		graph.filesCount = dataFiles.length;
-		console.log(graph)
+		//console.log(graph)
 		//LayouterController.setFixedPosition("root", graph);
 		LayouterController.setRandomPositions(graph);
 		LayouterController.run(graph);

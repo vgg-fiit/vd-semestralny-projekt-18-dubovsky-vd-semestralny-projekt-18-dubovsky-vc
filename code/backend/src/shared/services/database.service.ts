@@ -42,6 +42,7 @@ export class DatabaseService {
 
 
     static async run(command: string): Promise<{}[]> {
+        LoggerService.log({runningQuery: command});
         const session = DatabaseService.driver.session();
         try {
           const result = await session.run(command);
@@ -65,9 +66,9 @@ export class DatabaseService {
                 to: body["range"]["to"]
             }: undefined
         session.relationship = body["relationship"] == "true"
-        session.limit = body["limit"] ? parseInt(body["limit"]): undefined
+        session.limit = body["limit"] != undefined ? parseInt(body["limit"]): undefined
         session.name = body["name"] ? body["name"]: session.name
-        session.id = body["id"] ? parseInt(body["id"]): undefined
+        session.id = body["id"] != undefined ? parseInt(body["id"]): undefined
         return session
     }
 
@@ -75,25 +76,25 @@ export class DatabaseService {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query = `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`;
         const aggregate = `UNWIND m.keywords as word WITH word, count(word) as wordCount RETURN word, sum(wordCount) as aggregatedWordCount`;
-        const limit = session.limit ? `LIMIT ${session.limit}`: "";
+        const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${aggregate} ${limit}`);
     }    
 
     static getFiles(session: DatabaseSession): Promise<{}[]> {
         const query = `MATCH (n: File) RETURN n`
-        const limit = session.limit ? `LIMIT ${session.limit}`: "";
+        const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${limit}`);
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query =
-            session.id ? 
+            session.id != undefined ? 
                 `MATCH (n:${session.nodeType}) WHERE ID(n)=${session.id} ${session.relationship ? `OPTIONAL MATCH (n) <-[r${containsRange? containsRange: ""}]-(m)`: ''}`: 
                 `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
         const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
-        const limitParam = session.limit ? `LIMIT ${session.limit}`: "";
+        const limitParam = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${where} ${returnParam} ${limitParam}`);
 	}
 }
