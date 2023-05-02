@@ -7,11 +7,14 @@ import axios from "axios";
 import ViewSwitch from "./ViewSwitch";
 import Search from "./Search";
 import ColorPickerComponent from "./ColorPicker";
-
+import { IconButton, Box } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import SearchNavigation from "./SearchNavigation";
 interface GraphControllerProps {
   onDataChange: (newState: any) => void;
   onSceneChange: (newState: any) => void;
-  getSelectedNode: () => void;
+  getSelectedNode: () => any;
 }
 
 const GraphController: React.FC<GraphControllerProps> = ({
@@ -29,6 +32,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   const [rootUuId, setRootUuId] = useState<number>(0);
   const [depth, setDepth] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>("");
+
   const [colors, setColors] = useState<any>({
     nodeColor: "#000000",
     edgeColor: "#000000",
@@ -84,7 +88,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   const handleSearchFetch = (keywords: string[]) => {
     const payLoad = {};
     axios
-      .post("http://localhost:14444/graph/search", payLoad)
+      .post("http://localhost:14444/graph/get", payLoad)
       .then((res: any) => {
         console.log(res);
         onDataChange(res.data.data);
@@ -95,20 +99,36 @@ const GraphController: React.FC<GraphControllerProps> = ({
   };
 
   const handleExploreFetch = (rootUuId: number) => {
-    const payLoad = {};
+    const payLoad = {
+      nodeType: "Directory",
+      relationship: "true",
+      limit: 50,
+      range: {
+        to: depth === 0 ? 1 : depth,
+      },
+      id: rootUuId,
+    };
+
     axios
-      .post("http://localhost:14444/graph/explorer", payLoad)
+      .post("http://localhost:14444/graph/get", payLoad)
       .then((res: any) => {
         console.log(res);
-        onDataChange(res.data.data);
+
+        // onDataChange(res.data.data);
       })
       .catch((err: any) => {
         console.error(err);
       });
   };
 
-  const printSelected = () => {
-    console.log("SselectedUuId: " + getSelectedNode());
+  const onBackwardClick = () => {};
+
+  const onForwardClick = () => {
+    const selectedNode = getSelectedNode();
+    if (selectedNode) {
+      handleExploreFetch(selectedNode.uuId);
+      console.log(selectedNode);
+    }
   };
 
   return (
@@ -170,6 +190,10 @@ const GraphController: React.FC<GraphControllerProps> = ({
             >
               Current depth: {selectedDepth}
             </Paper>
+            <SearchNavigation
+              onBackwardClick={onBackwardClick}
+              onForwardClick={onForwardClick}
+            />
           </Grid>
         </>
       )}
