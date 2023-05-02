@@ -20,14 +20,14 @@ import { Canvas } from "@react-three/fiber";
 import GraphController from "./graphControls/GraphController";
 import { useState } from "react";
 import GraphScene from "../visualization/GraphScene";
-import { SelectedListItems } from "./SelectedListItems";
+import Stack from "@mui/material/Stack";
 import ExplorerScene from "../visualization/ExplorerScene";
 import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
 
-const drawerWidth: number = 240;
+const drawerWidth: number = 300;
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -82,12 +82,21 @@ const mdTheme = createTheme();
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
   const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
+  const [selectedNode, setSelectedNode] = useState<number>(-1); // Stores the selected node in the graph
   const [graphData, setGraphData] = useState<any>([]);
   const [selectedScene, setSelectedScene] = useState<
     "classic" | "explorer" | "searcher"
   >("classic");
+
   const toggleDrawer = () => {
     setOpen(!open);
+  };
+
+  const getSelectedNode = () => {
+    if (selectedNode === -1) {
+      return null;
+    }
+    return selectedNode;
   };
 
   // Handles change of the data in GraphController component and updates the graph data in the state
@@ -101,7 +110,7 @@ function DashboardContent() {
       histogram: data.histogram,
       tree: data.tree,
       buckets: data.buckets,
-      filesCount: data.filesCount
+      filesCount: data.filesCount,
     });
   };
 
@@ -109,7 +118,7 @@ function DashboardContent() {
     setSelectedScene(data);
   };
 
-  const handleNodeSelection = (nodesUuIds: number[]) => {
+  const handleNodesSelection = (nodesUuIds: number[]) => {
     if (graphData && graphData.nodes) {
       // filter the nodes by the uuids
 
@@ -117,6 +126,24 @@ function DashboardContent() {
         (node: any) => !!nodesUuIds.find((nodeUuId) => node.uuId === nodeUuId)
       );
       setSelectedNodes(filteredList);
+    }
+    // console.log(graphData.nodes);
+  };
+
+  const handleNodeSelection = (nodeUuId: number) => {
+    if (graphData && graphData.nodes) {
+      // filter the nodes by the uuids
+
+      const filteredList = graphData.nodes.filter(
+        (node: any) => node.uuId === nodeUuId
+      );
+
+      if (filteredList.length > 0) {
+        setSelectedNode(filteredList[0]);
+        console.log(filteredList[0]);
+      } else {
+        setSelectedNode(-1);
+      }
     }
     // console.log(graphData.nodes);
   };
@@ -152,11 +179,6 @@ function DashboardContent() {
             >
               Visualization
             </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
@@ -172,13 +194,17 @@ function DashboardContent() {
               <ChevronLeftIcon />
             </IconButton>
           </Toolbar>
-          <Divider />
-          <List component="nav">
-            {open && <SelectedListItems data={selectedNodes} />}
-            {/* Add  */}
-            {/* <Divider sx={{ my: 1 }} />
-            {secondaryListItems} */}
-          </List>
+          <Stack
+            spacing={2}
+            sx={{ p: 2, ...(!open && { display: "none" }) }}
+            direction="column"
+          >
+            <GraphController
+              onDataChange={handleGraphDataChange}
+              onSceneChange={handleSceneChange}
+              getSelectedNode={getSelectedNode}
+            />
+          </Stack>
         </Drawer>
         <Box
           component="main"
@@ -204,7 +230,7 @@ function DashboardContent() {
                     {selectedScene === "classic" && (
                       <GraphScene
                         data={graphData}
-                        handleNodeSelection={handleNodeSelection}
+                        handleNodeSelection={handleNodesSelection}
                       />
                     )}
                     {selectedScene === "explorer" && (
@@ -223,17 +249,13 @@ function DashboardContent() {
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
               ) : null}
-              {graphData.tree ? (
-                <TreeGraph tree={graphData.tree} />
-              ) : null}
+              {graphData.tree ? <TreeGraph tree={graphData.tree} /> : null}
               {graphData.buckets ? (
-                <ChordDiagram buckets={graphData.buckets} filesCount={graphData.filesCount} />
+                <ChordDiagram
+                  buckets={graphData.buckets}
+                  filesCount={graphData.filesCount}
+                />
               ) : null}
-
-              <GraphController
-                onDataChange={handleGraphDataChange}
-                onSceneChange={handleSceneChange}
-              ></GraphController>
             </Grid>
           </Container>
         </Box>

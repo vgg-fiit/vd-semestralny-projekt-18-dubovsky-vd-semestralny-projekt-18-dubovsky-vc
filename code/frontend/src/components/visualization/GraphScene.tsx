@@ -33,6 +33,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
 
   return (
     <>
+      <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <OrbitControls target={[0, 0, 0]} />
       <group>
