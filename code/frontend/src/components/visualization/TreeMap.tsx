@@ -56,6 +56,7 @@ const getColorByCount = (count: number) => {
 
 const TreeMap: React.FC<TreeMapProps> = ({ wordData }) => {
   const formatted = formattedData(wordData);
+
   return (
     <Container>
       <ResponsiveContainer width="100%" height={400}>

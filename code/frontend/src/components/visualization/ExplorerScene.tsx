@@ -34,8 +34,10 @@ const GraphScene: React.FC<GraphSceneProps> = ({
     // console.log("clicked", index);
     if (selectedNode === index) {
       setSelectedNode(-1);
+      handleNodeSelection(-1);
     } else {
       setSelectedNode(index);
+      handleNodeSelection(index);
     }
 
     const selectedNodePosition = data.nodes.filter(
@@ -109,9 +111,9 @@ const GraphScene: React.FC<GraphSceneProps> = ({
     }
   });
 
-  useEffect(() => {
-    handleNodeSelection(selectedNode);
-  }, [selectedNode]);
+  // useEffect(() => {
+  //   console.log("selected node", selectedNode);
+  // }, [selectedNode]);
 
   return (
     <>

@@ -114,7 +114,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       .then((res: any) => {
         console.log(res);
 
-        // onDataChange(res.data.data);
+        onDataChange(res.data.data);
       })
       .catch((err: any) => {
         console.error(err);
@@ -125,9 +125,10 @@ const GraphController: React.FC<GraphControllerProps> = ({
 
   const onForwardClick = () => {
     const selectedNode = getSelectedNode();
+    console.log(selectedNode);
+
     if (selectedNode) {
       handleExploreFetch(selectedNode.uuId);
-      console.log(selectedNode);
     }
   };
 

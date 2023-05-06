@@ -131,20 +131,7 @@ function DashboardContent() {
   };
 
   const handleNodeSelection = (nodeUuId: number) => {
-    if (graphData && graphData.nodes) {
-      // filter the nodes by the uuids
-
-      const filteredList = graphData.nodes.filter(
-        (node: any) => node.uuId === nodeUuId
-      );
-
-      if (filteredList.length > 0) {
-        setSelectedNode(filteredList[0]);
-        console.log(filteredList[0]);
-      } else {
-        setSelectedNode(-1);
-      }
-    }
+    setSelectedNode(nodeUuId);
     // console.log(graphData.nodes);
   };
 
@@ -243,7 +230,7 @@ function DashboardContent() {
                 </Paper>
               </Grid>
 
-              {graphData.histogram ? (
+              {/* {graphData.histogram ? (
                 <WordGraphs wordData={graphData.histogram} />
               ) : null}
               {graphData.histogram ? (
@@ -255,7 +242,7 @@ function DashboardContent() {
                   buckets={graphData.buckets}
                   filesCount={graphData.filesCount}
                 />
-              ) : null}
+              ) : null} */}
             </Grid>
           </Container>
         </Box>
