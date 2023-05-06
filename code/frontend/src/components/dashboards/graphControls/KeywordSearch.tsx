@@ -19,17 +19,21 @@ type Inputs = {
   keyword: string;
 };
 
-const GraphController: React.FC = () => {
+interface KeywordSearchProps {
+  sendToParent: (newState: {key: string, value: string}[]) => void;
+}
+
+const GraphController: React.FC<KeywordSearchProps> = ({sendToParent}) => {
   // Add useState for list of strings keywords (use empty array as initial value)
-  const [names, setNames] = useState<string[]>([]);
+  const [names, setNames] = useState<{key: string, value: string}[]>([]);
   const [textValue, setTextValue] = useState<string>("");
 
   const onTextChange = (e: any) => setTextValue(e.target.value);
 
-  const handleClick = () => {
-    if (textValue === "") return;
+  const handleClick = (text: string) => {
+    if (text === "") return;
 
-    if (names.includes(textValue)) {
+    if (names.find((name) => name.value === text)) {
       return;
     }
 
@@ -41,9 +45,9 @@ const GraphController: React.FC = () => {
       return;
     }
 
-    setNames([...names, textValue]);
+    sendToParent([...names, {key: "name", value: text}]);
+    setNames([...names, {key: "name", value: text}]);
     setTextValue("");
-    console.log(names);
   };
 
   const handleDelete = (index: number) => {
@@ -60,7 +64,7 @@ const GraphController: React.FC = () => {
         value={textValue}
         onChange={onTextChange}
       />
-      <Button variant="contained" onClick={handleClick}>
+      <Button variant="contained" onClick={_ => {handleClick(textValue)}}>
         Add Keyword
       </Button>
 
@@ -69,7 +73,7 @@ const GraphController: React.FC = () => {
           <Chip
             key={index}
             icon={<TagFacesIcon />}
-            label={name}
+            label={name.value}
             onDelete={handleDelete}
           />
         </ListItem>

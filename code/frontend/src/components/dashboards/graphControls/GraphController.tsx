@@ -28,7 +28,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
     "classic"
   );
 
-  const [keywords, setKeywords] = useState<string[]>([]);
+  const [keywords, setKeywords] = useState<{key: string, value: string}[]>([]);
   const [rootUuId, setRootUuId] = useState<number>(0);
   const [depth, setDepth] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -72,6 +72,9 @@ const GraphController: React.FC<GraphControllerProps> = ({
       range: {
         to: depth === 0 ? 3 : depth,
       },
+      filter: {
+        keywords: keywords
+      }
     };
 
     axios
@@ -132,6 +135,10 @@ const GraphController: React.FC<GraphControllerProps> = ({
     }
   };
 
+  const sendToParent = (keywords: {key: string, value: string}[]) => {
+    setKeywords(keywords);
+  }
+
   return (
     <>
       <Grid item xs={12} md={4} lg={3}>
@@ -161,7 +168,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
               flexDirection: "column",
             }}
           >
-            <KeywordSearch />
+            <KeywordSearch sendToParent={sendToParent} />
             <Button onClick={handleClassicFetch} variant="contained">
               Fetch data from backend
             </Button>

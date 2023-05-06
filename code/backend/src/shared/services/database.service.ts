@@ -56,19 +56,22 @@ export class DatabaseService {
     static build(request: Request) {
         const body = request.body
         const session = new DatabaseSession();
-        session.nodeType = body["nodeType"]
-        session.keyword = body["keyword"] ? {
-                key: body["keyword"]["key"],
-                value: body["keyword"]["value"]
+        session.nodeType = body.nodeType
+        if (body.filter?.keywords?.length != 0) {
+            session.keywords = body.filter.keywords? body.filter.keywords: undefined
+        } 
+        session.keyword = body.keyword ? {
+            key: body.keyword.key,
+            value: body.keyword.value
+        }: undefined
+        session.range = body.range ? {
+                from: body.range.from,
+                to: body.range.to
             }: undefined
-        session.range = body["range"] ? {
-                from: body["range"]["from"],
-                to: body["range"]["to"]
-            }: undefined
-        session.relationship = body["relationship"] == "true"
-        session.limit = body["limit"] != undefined ? parseInt(body["limit"]): undefined
-        session.name = body["name"] ? body["name"]: session.name
-        session.id = body["id"] != undefined ? parseInt(body["id"]): undefined
+        session.relationship = body.relationship == "true"
+        session.limit = body.limit != undefined ? parseInt(body.limit): undefined
+        session.name = body.name ? body.name: session.name
+        session.id = body.id != undefined ? parseInt(body.id): undefined
         return session
     }
 
@@ -90,12 +93,23 @@ export class DatabaseService {
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
+        const combineKeywords = (keywords: {key: Keywords, value: string}[]) => {
+            let query = '(';
+            for (const keyword of keywords) {
+                query += `m.${keyword.key}='${keyword.value}'`
+                if (keyword != keywords[keywords.length - 1]) query += ' AND '
+            }
+            query += ')'
+            return query
+        }
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query =
             session.id != undefined ? 
                 `MATCH (n:${session.nodeType}) WHERE ID(n)=${session.id} ${session.relationship ? `OPTIONAL MATCH (n) <-[r${containsRange? containsRange: ""}]-(m)`: ''}`: 
                 `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
-        const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
+        const where = session.keywords ?
+            `WHERE ${combineKeywords(session.keywords)}`:
+            session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
         const limitParam = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${where} ${returnParam} ${limitParam}`);
@@ -105,6 +119,7 @@ export class DatabaseService {
 export class DatabaseSession {
     nodeType: NodeType;
     keyword?: {key: Keywords, value: string};
+    keywords?: {key: Keywords, value: string}[];
     range?: {from?: number, to?: number};
     relationship?: boolean;
     limit?: number;
