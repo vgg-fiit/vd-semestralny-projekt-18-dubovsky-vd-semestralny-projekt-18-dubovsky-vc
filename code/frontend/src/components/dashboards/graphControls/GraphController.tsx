@@ -22,7 +22,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   onSceneChange,
   getSelectedNode,
 }) => {
-  const [selectedDepth, setSelectedDepth] = useState<number>(0);
+  const [selectedDepth, setSelectedDepth] = useState<number>(3);
   const [data, setData] = useState<any>([]);
   const [view, setView] = useState<"classic" | "explorer" | "searcher">(
     "classic"
@@ -30,7 +30,6 @@ const GraphController: React.FC<GraphControllerProps> = ({
 
   const [keywords, setKeywords] = useState<{key: string, value: string}[]>([]);
   const [rootUuId, setRootUuId] = useState<number>(0);
-  const [depth, setDepth] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const [colors, setColors] = useState<any>({
@@ -70,7 +69,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       relationship: "true",
       limit: 50,
       range: {
-        to: depth === 0 ? 3 : depth,
+        to: selectedDepth,
       }
     };
 
@@ -91,7 +90,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       relationship: "true",
       limit: 50,
       range: {
-        to: depth === 0 ? 3 : depth,
+        to: selectedDepth,
       },
       filter: {
         keywords: keywords
@@ -114,7 +113,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       relationship: "true",
       limit: 50,
       range: {
-        to: depth === 0 ? 1 : depth,
+        to: selectedDepth,
       },
       id: rootUuId,
     };

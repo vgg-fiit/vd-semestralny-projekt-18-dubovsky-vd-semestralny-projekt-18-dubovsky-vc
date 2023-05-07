@@ -236,7 +236,7 @@ function DashboardContent() {
                 </Paper>
               </Grid>
 
-              {/* {graphData.histogram ? (
+              {graphData.histogram ? (
                 <WordGraphs wordData={graphData.histogram} />
               ) : null}
               {graphData.histogram ? (
@@ -248,7 +248,7 @@ function DashboardContent() {
                   buckets={graphData.buckets}
                   filesCount={graphData.filesCount}
                 />
-              ) : null} */}
+              ) : null}
             </Grid>
           </Container>
         </Box>
