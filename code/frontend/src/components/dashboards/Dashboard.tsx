@@ -226,6 +226,12 @@ function DashboardContent() {
                         handleNodeSelection={handleNodeSelection}
                       />
                     )}
+                    {selectedScene === "searcher" && (
+                      <GraphScene
+                        data={graphData}
+                        handleNodeSelection={handleNodesSelection}
+                      />
+                    )}
                   </Canvas>
                 </Paper>
               </Grid>

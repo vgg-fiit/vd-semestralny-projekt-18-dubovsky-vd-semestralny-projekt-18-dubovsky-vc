@@ -57,9 +57,9 @@ export class DatabaseService {
         const body = request.body
         const session = new DatabaseSession();
         session.nodeType = body.nodeType
-        if (body.filter?.keywords?.length != 0) {
+        if (body.filter?.keywords?.length) {
             session.keywords = body.filter.keywords? body.filter.keywords: undefined
-        } 
+        }
         session.keyword = body.keyword ? {
             key: body.keyword.key,
             value: body.keyword.value
@@ -75,15 +75,27 @@ export class DatabaseService {
         return session
     }
 
+    static combineKeywords = (keywords: {key: Keywords, value: string}[]) => {
+        let output: string = "[";
+        keywords.forEach((keyword) => {
+            output += `'${keyword.value}'${keywords.indexOf(keyword) != keywords.length - 1? ",": ""}`
+        })
+        output += "]";
+        return output;
+    }
+
     static getHistogram(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query = 
             session.id != undefined ? 
                 `MATCH (n:${session.nodeType}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''} WHERE ID(n)=${session.id}`:
-                `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`
+                `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`      
+        const where = session.keywords ?
+            `WHERE any(substring IN ${DatabaseService.combineKeywords(session.keywords)} WHERE m.name CONTAINS substring)`:
+            session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const aggregate = `UNWIND m.keywords as word WITH word, count(word) as wordCount RETURN word, sum(wordCount) as aggregatedWordCount`;
         const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
-        return DatabaseService.run(`${query} ${aggregate} ${limit}`);
+        return DatabaseService.run(`${query} ${where} ${aggregate} ${limit}`);
     }    
 
     static getFiles(session: DatabaseSession): Promise<{}[]> {
@@ -93,22 +105,13 @@ export class DatabaseService {
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
-        const combineKeywords = (keywords: {key: Keywords, value: string}[]) => {
-            let query = '(';
-            for (const keyword of keywords) {
-                query += `m.${keyword.key}='${keyword.value}'`
-                if (keyword != keywords[keywords.length - 1]) query += ' AND '
-            }
-            query += ')'
-            return query
-        }
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
         const query =
             session.id != undefined ? 
                 `MATCH (n:${session.nodeType}) WHERE ID(n)=${session.id} ${session.relationship ? `OPTIONAL MATCH (n) <-[r${containsRange? containsRange: ""}]-(m)`: ''}`: 
                 `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
         const where = session.keywords ?
-            `WHERE ${combineKeywords(session.keywords)}`:
+            `WHERE any(substring IN ${DatabaseService.combineKeywords(session.keywords)} WHERE m.name CONTAINS substring)`:
             session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
         const limitParam = session.limit != undefined ? `LIMIT ${session.limit}`: "";

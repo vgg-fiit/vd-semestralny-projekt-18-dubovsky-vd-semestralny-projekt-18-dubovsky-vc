@@ -212,6 +212,16 @@ export class LayouterController {
 	  
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
+		if (data.length == 0) {
+			const graph: Graph = {
+				nodes: [],
+				edges: [],
+				mapping: {},
+				nodesCount: 0,
+				edgesCount: 0
+			};
+			return {data: graph} as AppResponse<Graph>;
+		}
 		const dataHistogram = await DatabaseService.build(req).getHistogram();
 		const dataFiles = await DatabaseService.build(req).getFiles() as any;
 		//const graph = LayouterMock.getMock();

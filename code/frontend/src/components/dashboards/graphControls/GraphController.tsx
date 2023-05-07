@@ -71,9 +71,6 @@ const GraphController: React.FC<GraphControllerProps> = ({
       limit: 50,
       range: {
         to: depth === 0 ? 3 : depth,
-      },
-      filter: {
-        keywords: keywords
       }
     };
 
@@ -88,8 +85,18 @@ const GraphController: React.FC<GraphControllerProps> = ({
       });
   };
 
-  const handleSearchFetch = (keywords: string[]) => {
-    const payLoad = {};
+  const handleSearchFetch = () => {
+    const payLoad = {
+      nodeType: "Directory",
+      relationship: "true",
+      limit: 50,
+      range: {
+        to: depth === 0 ? 3 : depth,
+      },
+      filter: {
+        keywords: keywords
+      }
+    };
     axios
       .post("http://localhost:14444/graph/get", payLoad)
       .then((res: any) => {
@@ -169,7 +176,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
             }}
           >
             <KeywordSearch sendToParent={sendToParent} />
-            <Button onClick={handleClassicFetch} variant="contained">
+            <Button onClick={handleSearchFetch} variant="contained">
               Fetch data from backend
             </Button>
           </Paper>
