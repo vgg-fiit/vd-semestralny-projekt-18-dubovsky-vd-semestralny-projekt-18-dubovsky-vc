@@ -34,8 +34,8 @@ const TreeMapTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
           } as CSSProperties
         }
       >
-        <p>{`Word: ${payload[0].payload.name}`}</p>
-        <p>{`Count: ${payload[0].payload.size}`}</p>
+        <p>{payload[0] ? `Word: ${payload[0].payload.name}`: null}</p>
+        <p>{payload[0] ? `Count: ${payload[0].payload.size}`: null}</p>
       </div>
     );
   }
