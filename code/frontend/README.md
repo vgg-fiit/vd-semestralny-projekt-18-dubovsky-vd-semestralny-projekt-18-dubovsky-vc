@@ -1,6 +1,6 @@
 # TO-DO
 
-- On hover na uzlom zobrazí detaily uzla (MAREK??)
+- On hover na uzlom zobrazí detaily uzla (hotovo)
 - Vyriešiť filtrovanie podľa keywordov (hotovo)
     - na BE spraviť AND nad WHERE v query
     - na FE zobraziť filtrovaný graf(keywords sú ako array)
