@@ -187,7 +187,7 @@ export class LayouterController {
 	public static formatToFile(data: {}[]): File[] {
 		const files: File[] = [];
 		data.forEach((item: any, index: number) => {
-			files.push({name: item.n.properties.name, id: item.n.id, index: index, size: item.n.properties.size.low})
+			files.push({name: item.n.properties.name, id: item.n.id, index: index, size: item.n.properties.size.low, keywords: item.n.properties.keywords})
 		})
 		files.sort((e, f) => e.size - f.size)
 		return files;

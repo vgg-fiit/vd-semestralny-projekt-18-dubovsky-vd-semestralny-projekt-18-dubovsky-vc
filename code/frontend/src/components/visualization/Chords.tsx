@@ -7,6 +7,7 @@ interface File {
   id: number;
   index: number;
   size: number;
+  keywords: string[];
 }
 
 interface ChordsData {
@@ -58,6 +59,10 @@ function formatName(name: string) {
 }
 
 const ChordDiagram: React.FC<ChordsProps> = ({ buckets, filesCount }) => {
+  buckets.forEach((bucket) => {
+    bucket.nodes.sort((a, b) => a.name.localeCompare(b.name));
+  });
+  
   const matrix = createMatrix(buckets, filesCount);
   const labels = [...buckets.flatMap(b => b.nodes).map((file) => formatName(file.name)), ...buckets.map((bucket) => bucket.range)];
   const fullLabels = [...buckets.flatMap(b => b.nodes).map((file) => file.name), ...buckets.map((bucket) => bucket.range)];
@@ -74,6 +79,7 @@ const ChordDiagram: React.FC<ChordsProps> = ({ buckets, filesCount }) => {
       }
     });
   });
+  console.log(matrix)
 
   const data = [
     {

@@ -22,7 +22,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   onSceneChange,
   getSelectedNode,
 }) => {
-  let selectedDepth = 0;
+  let selectedDepth = 1;
   const [data, setData] = useState<any>([]);
   const [view, setView] = useState<"classic" | "explorer" | "searcher">(
     "classic"

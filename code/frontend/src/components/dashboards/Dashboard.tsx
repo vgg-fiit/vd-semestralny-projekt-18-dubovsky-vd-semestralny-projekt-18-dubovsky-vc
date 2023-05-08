@@ -44,6 +44,7 @@ interface File {
   size: number;
   name: string;
   index: number;
+  keywords: string[];
 }
 
 interface Tree {
