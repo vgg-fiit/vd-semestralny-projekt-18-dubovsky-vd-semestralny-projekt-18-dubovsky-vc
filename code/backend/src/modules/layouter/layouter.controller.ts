@@ -235,6 +235,6 @@ export class LayouterController {
 		LayouterController.run(graph);
 		LayouterController.normalizePositions(graph);
 		graph.tree = LayouterController.formatAsTree(graph);
-		return {data: graph} as AppResponse<Graph>;
+		return {data: graph, requestBody: req.body} as AppResponse<Graph>;
 	}
 }

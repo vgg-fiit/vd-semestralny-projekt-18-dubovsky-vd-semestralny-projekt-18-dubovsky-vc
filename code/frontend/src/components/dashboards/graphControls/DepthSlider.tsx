@@ -57,7 +57,7 @@ const DepthSlider: React.FC<DepthSliderProps> = ({
       />
       <p>Selected depth: {selectedDepth}</p>
       <Button variant="contained" onClick={() => onChange(selectedDepth)}>
-        Apply Depth
+        {selectedDepth}
       </Button>
     </Stack>
   );

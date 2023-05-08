@@ -22,7 +22,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   onSceneChange,
   getSelectedNode,
 }) => {
-  const [selectedDepth, setSelectedDepth] = useState<number>(3);
+  let selectedDepth = 0;
   const [data, setData] = useState<any>([]);
   const [view, setView] = useState<"classic" | "explorer" | "searcher">(
     "classic"
@@ -54,8 +54,8 @@ const GraphController: React.FC<GraphControllerProps> = ({
   };
 
   const handleDepthChange = (depth: number) => {
+    selectedDepth = depth;
     handleClassicFetch();
-    setSelectedDepth(depth);
   };
 
   const handleViewChange = (viewType: "classic" | "explorer" | "searcher") => {
@@ -77,7 +77,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       .post("http://localhost:14444/graph/get", payLoad)
       .then((res: any) => {
         console.log(res);
-        onDataChange(res.data.data);
+        onDataChange(res.data);
       })
       .catch((err: any) => {
         console.error(err);
@@ -100,7 +100,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       .post("http://localhost:14444/graph/get", payLoad)
       .then((res: any) => {
         console.log(res);
-        onDataChange(res.data.data);
+        onDataChange(res.data);
       })
       .catch((err: any) => {
         console.error(err);
@@ -123,7 +123,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       .then((res: any) => {
         console.log(res);
 
-        onDataChange(res.data.data);
+        onDataChange(res.data);
       })
       .catch((err: any) => {
         console.error(err);

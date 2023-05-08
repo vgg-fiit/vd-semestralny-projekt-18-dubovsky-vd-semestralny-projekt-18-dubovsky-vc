@@ -33,6 +33,72 @@ interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
 }
 
+interface Bucket {
+  id: number;
+  range: string;
+  nodes: File[];
+}
+
+interface File {
+  id: number;
+  size: number;
+  name: string;
+  index: number;
+}
+
+interface Tree {
+  name: string;
+  uuId: number;
+  children: Tree[];
+}
+
+interface HistogramItem {
+  text: string,
+  value: number
+}
+
+interface Edge {
+  fromIndex: number;
+  toIndex: number;
+  fromId: number;
+  toId: number;
+}
+
+interface Vector3 {
+  x: number;
+  y: number;
+  z: number;
+}
+
+enum NodeType {
+  Directory = "Directory",
+  File = "File", 
+  Word = "Word", 
+  Size = "Size"
+}
+
+interface Node {
+  uuId: number;
+  size: number;
+  position: Vector3;
+  displacement: Vector3;
+  name: string;
+  type: NodeType;
+  fixed: boolean;
+}
+
+interface Graph {
+	  buckets?: Bucket[];
+    histogram?: HistogramItem[];
+    tree?: Tree;
+    nodes: Node[];
+    edges: Edge[];
+    mapping: { [id: number]: number };
+    nodesCount: number;
+    filesCount?: number;
+    edgesCount: number;
+}
+
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })<AppBarProps>(({ theme, open }) => ({
@@ -101,16 +167,16 @@ function DashboardContent() {
 
   // Handles change of the data in GraphController component and updates the graph data in the state
   const handleGraphDataChange = (data: any) => {
-    // console.log(data);
-    // console.log(graphData);
-
+    const graph: Graph = data.data;
+    const request: any = data.request;
     setGraphData({
-      nodes: data.nodes,
-      edges: data.edges,
-      histogram: data.histogram,
-      tree: data.tree,
-      buckets: data.buckets,
-      filesCount: data.filesCount,
+      nodes: graph.nodes,
+      edges: graph.edges,
+      histogram: graph.histogram,
+      tree: graph.tree,
+      buckets: graph.buckets,
+      filesCount: graph.filesCount,
+      request: request
     });
   };
 
