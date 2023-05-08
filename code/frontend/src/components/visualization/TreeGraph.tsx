@@ -4,8 +4,6 @@ import { Group } from '@visx/group';
 import { Tree } from '@visx/hierarchy';
 import { LinkVertical } from '@visx/shape';
 import { hierarchy } from 'd3-hierarchy';
-import { LinearGradient } from '@visx/gradient';
-import { Tooltip, TooltipWithBounds, defaultStyles } from '@visx/tooltip';
 import { HierarchyPointNode } from "@visx/hierarchy/lib/types";
 
 export interface GraphTreeData {
@@ -22,6 +20,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
     const root = hierarchy(tree);
     const width = 1150;
     const height = 400;
+    const [hoveredNode, setHoveredNode] = React.useState<Number | null>(null);
 
     return (
         <Container>
@@ -38,16 +37,15 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                     fill="none"
                                 />
                             ))}
-                            {tree.descendants().map((node, _) => {
-                                const [isHovered, setIsHovered] = React.useState(false);
+                            {tree.descendants().map((node, i) => {
                                 return (
                                     <Group
                                         top={node.y}
                                         left={node.x}
-                                        onMouseEnter={() => setIsHovered(true)}
-                                        onMouseLeave={() => setIsHovered(false)}
+                                        onMouseEnter={() => setHoveredNode(i)}
+                                        onMouseLeave={() => setHoveredNode(null)}
                                     >
-                                        {isHovered && (
+                                        {hoveredNode == i && (
                                             <circle
                                                 r={25}
                                                 fill="#1976d2"
@@ -55,7 +53,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                                 strokeWidth={2}
                                             />
                                         )}
-                                        {!isHovered && (
+                                        {hoveredNode != i && (
                                             <circle
                                                 r={15}
                                                 fill="#1976d2"
@@ -63,7 +61,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                                 strokeWidth={2}
                                             />
                                         )}
-                                        {isHovered && (
+                                        {hoveredNode == i && (
                                             <text
                                                 dy="-40px"
                                                 fontSize={13}
@@ -75,7 +73,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                                 {node.data.name}
                                             </text>
                                         )}
-                                        {isHovered && (
+                                        {hoveredNode == i && (
                                             <text
                                                 dy=".33em"
                                                 fontSize={9}
@@ -88,7 +86,7 @@ const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
                                             </text>
                                         )
                                         }
-                                        {!isHovered && (
+                                        {hoveredNode != i && (
                                             <text
                                                 dy=".33em"
                                                 fontSize={9}
