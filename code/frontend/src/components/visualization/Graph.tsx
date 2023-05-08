@@ -9,6 +9,7 @@ interface NodeProps {
   data?: any;
   selectedColor?: string;
   onClick?: () => void;
+  onHover?: () => void;
 }
 
 export const Node: React.FC<NodeProps> = ({
@@ -17,6 +18,7 @@ export const Node: React.FC<NodeProps> = ({
   data = null,
   selectedColor = "green",
   onClick,
+  onHover
 }) => {
   const [selected, setSelected] = useState(false);
   const textRef = useRef<THREE.Object3D>(null);
@@ -26,6 +28,10 @@ export const Node: React.FC<NodeProps> = ({
   const handleClick = () => {
     setSelected(!selected);
     if (onClick) onClick();
+  };
+
+  const handleHover = () => {
+    if (onHover) onHover();
   };
 
   // const handleTextSync = (self: any) => {
@@ -50,7 +56,7 @@ export const Node: React.FC<NodeProps> = ({
 
   return (
     <>
-      <mesh position={position} onContextMenu={handleClick}>
+      <mesh position={position} onContextMenu={handleClick} onPointerEnter={handleHover}>
         <sphereGeometry args={[0.1, 16, 16]} />
         <meshStandardMaterial color={selected ? selectedColor : color} />
       </mesh>

@@ -3,17 +3,23 @@ import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
 // create function componentt
 import { Node, Edge } from "./Graph";
+import { index } from "d3";
+import { Container } from "@mui/material";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 interface GraphSceneProps {
   data: any;
   handleNodeSelection: (selected: any) => void;
+  handleHoveredNode: (hovered: any) => void;
 }
 
 const GraphScene: React.FC<GraphSceneProps> = ({
   data,
   handleNodeSelection,
+  handleHoveredNode
 }) => {
   const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
+  const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
 
   const handleNodeClick = (index: number) => {
     setSelectedNodes((prevSelectedNodes) => {
@@ -27,8 +33,13 @@ const GraphScene: React.FC<GraphSceneProps> = ({
     });
   };
 
+  const handleNodeHover = (node: Node) => {
+    handleHoveredNode(node);
+  }
+
   useEffect(() => {
     handleNodeSelection(selectedNodes);
+    handleHoveredNode(hoveredNode);
   }, [selectedNodes]);
 
   return (
@@ -51,6 +62,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                   }
                   color={node.name == "root" ? "red" : "blue"}
                   onClick={() => handleNodeClick(node.uuId)}
+                  onHover={() => handleNodeHover(node)}
                 />
               );
             })

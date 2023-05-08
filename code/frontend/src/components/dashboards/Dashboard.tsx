@@ -26,6 +26,7 @@ import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
+import { Alert, Snackbar } from "@mui/material";
 
 const drawerWidth: number = 300;
 
@@ -179,6 +180,7 @@ function DashboardContent() {
       filesCount: graph.filesCount,
       request: request
     });
+    (document.getElementById("graphState") as HTMLElement).innerHTML = `Graph successfully loaded!`;
   };
 
   const handleSceneChange = (data: any) => {
@@ -196,6 +198,11 @@ function DashboardContent() {
     }
     // console.log(graphData.nodes);
   };
+
+  const handleHoveredNode = (node: Node) => {
+    if (node != null)
+      (document.getElementById("graphState") as HTMLElement).innerHTML = `Hovered node ${node.name} of type ${node.type}`;
+  }
 
   const handleNodeSelection = (nodeUuId: number) => {
     setSelectedNode(nodeUuId);
@@ -285,6 +292,7 @@ function DashboardContent() {
                       <GraphScene
                         data={graphData}
                         handleNodeSelection={handleNodesSelection}
+                        handleHoveredNode={handleHoveredNode}
                       />
                     )}
                     {selectedScene === "explorer" && (
@@ -297,9 +305,11 @@ function DashboardContent() {
                       <GraphScene
                         data={graphData}
                         handleNodeSelection={handleNodesSelection}
+                        handleHoveredNode={handleHoveredNode}
                       />
                     )}
                   </Canvas>
+                  <Alert severity="info"><span id="graphState">Graph not loaded.</span></Alert>
                 </Paper>
               </Grid>
 

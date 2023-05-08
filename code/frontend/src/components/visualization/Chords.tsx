@@ -1,6 +1,7 @@
 import * as React from "react";
 import Plotly, { Data, Layout } from 'plotly.js';
 import { useEffect, useRef } from "react";
+import Plot from 'react-plotly.js';
 
 interface File {
   name: string;
@@ -39,7 +40,7 @@ function createMatrix(buckets: ChordsData[], filesCount: number) {
   return matrix;
 }
 
-const Plot: React.FC<PlotProps> = ({ data, layout }) => {
+/*const Plot: React.FC<PlotProps> = ({ data, layout }) => {
   const plotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -49,7 +50,7 @@ const Plot: React.FC<PlotProps> = ({ data, layout }) => {
   }, [data, layout]);
 
   return <div ref={plotRef} style={{ width: "100%", height: "100%" }} />;
-};
+};*/
 
 function formatName(name: string) {
   if (name.length > 30) {
@@ -79,7 +80,6 @@ const ChordDiagram: React.FC<ChordsProps> = ({ buckets, filesCount }) => {
       }
     });
   });
-  console.log(matrix)
 
   const data = [
     {
@@ -112,7 +112,7 @@ const ChordDiagram: React.FC<ChordsProps> = ({ buckets, filesCount }) => {
     autosize: true
   };
 
-  return <Plot data={data as any} layout={layout as any} />;
+  return <Plot data={data as any} layout={layout as any} style={{ width: '100%', height: '100%' }} />;
 };
 
 export default ChordDiagram;
