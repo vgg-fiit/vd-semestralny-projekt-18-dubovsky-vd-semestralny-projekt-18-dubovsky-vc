@@ -55,8 +55,8 @@ interface Tree {
 }
 
 interface HistogramItem {
-  text: string,
-  value: number
+  text: string;
+  value: number;
 }
 
 interface Edge {
@@ -74,9 +74,9 @@ interface Vector3 {
 
 enum NodeType {
   Directory = "Directory",
-  File = "File", 
-  Word = "Word", 
-  Size = "Size"
+  File = "File",
+  Word = "Word",
+  Size = "Size",
 }
 
 interface Node {
@@ -90,15 +90,15 @@ interface Node {
 }
 
 interface Graph {
-	  buckets?: Bucket[];
-    histogram?: HistogramItem[];
-    tree?: Tree;
-    nodes: Node[];
-    edges: Edge[];
-    mapping: { [id: number]: number };
-    nodesCount: number;
-    filesCount?: number;
-    edgesCount: number;
+  buckets?: Bucket[];
+  histogram?: HistogramItem[];
+  tree?: Tree;
+  nodes: Node[];
+  edges: Edge[];
+  mapping: { [id: number]: number };
+  nodesCount: number;
+  filesCount?: number;
+  edgesCount: number;
 }
 
 const AppBar = styled(MuiAppBar, {
@@ -149,6 +149,11 @@ const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
+  const [graphColors, setGraphColors] = useState<any>({
+    nodeColor: "#000000",
+    edgeColor: "#000000",
+    selectedNodeColor: "#000000",
+  }); // Stores the colors of the nodes in the graph
   const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
   const [selectedNode, setSelectedNode] = useState<number>(-1); // Stores the selected node in the graph
   const [graphData, setGraphData] = useState<any>([]);
@@ -178,13 +183,19 @@ function DashboardContent() {
       tree: graph.tree,
       buckets: graph.buckets,
       filesCount: graph.filesCount,
-      request: request
+      request: request,
     });
-    (document.getElementById("graphState") as HTMLElement).innerHTML = `Graph successfully loaded!`;
+    (
+      document.getElementById("graphState") as HTMLElement
+    ).innerHTML = `Graph successfully loaded!`;
   };
 
   const handleSceneChange = (data: any) => {
     setSelectedScene(data);
+  };
+
+  const handleColorChange = (data: any) => {
+    setGraphColors(data);
   };
 
   const handleNodesSelection = (nodesUuIds: number[]) => {
@@ -201,8 +212,10 @@ function DashboardContent() {
 
   const handleHoveredNode = (node: Node) => {
     if (node != null)
-      (document.getElementById("graphState") as HTMLElement).innerHTML = `Hovered node ${node.name} of type ${node.type}`;
-  }
+      (
+        document.getElementById("graphState") as HTMLElement
+      ).innerHTML = `Hovered node ${node.name} of type ${node.type}`;
+  };
 
   const handleNodeSelection = (nodeUuId: number) => {
     setSelectedNode(nodeUuId);
@@ -264,6 +277,7 @@ function DashboardContent() {
               onDataChange={handleGraphDataChange}
               onSceneChange={handleSceneChange}
               getSelectedNode={getSelectedNode}
+              onColorChange={handleColorChange}
             />
           </Stack>
         </Drawer>
@@ -299,6 +313,7 @@ function DashboardContent() {
                       <ExplorerScene
                         data={graphData}
                         handleNodeSelection={handleNodeSelection}
+                        colors={graphColors}
                       />
                     )}
                     {selectedScene === "searcher" && (
@@ -309,7 +324,9 @@ function DashboardContent() {
                       />
                     )}
                   </Canvas>
-                  <Alert severity="info"><span id="graphState">Graph not loaded.</span></Alert>
+                  <Alert severity="info">
+                    <span id="graphState">Graph not loaded.</span>
+                  </Alert>
                 </Paper>
               </Grid>
 

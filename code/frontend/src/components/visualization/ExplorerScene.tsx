@@ -10,11 +10,17 @@ import { Node, Edge } from "./Graph";
 interface GraphSceneProps {
   data: any;
   handleNodeSelection: (selected: any) => void;
+  colors: {
+    nodeColor: string;
+    edgeColor: string;
+    selectedNodeColor: string;
+  };
 }
 
 const GraphScene: React.FC<GraphSceneProps> = ({
   data,
   handleNodeSelection,
+  colors,
 }) => {
   const [graph, setGraph] = useState<any>([]);
   const [selectedNode, setSelectedNode] = useState<number>(-1);
@@ -140,7 +146,8 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                     name: node.name,
                     uuId: node.uuID,
                   }}
-                  color="blue"
+                  color={colors.nodeColor}
+                  selectedColor={colors.selectedNodeColor}
                   onClick={() => handleNodeClick(node.uuId)}
                 />
               );
@@ -155,7 +162,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                   key={index}
                   start={new Vector3(from.x, from.y, from.z)}
                   end={new Vector3(to.x, to.y, to.z)}
-                  color="black"
+                  color={colors.edgeColor}
                 />
               );
             })

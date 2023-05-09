@@ -1,5 +1,5 @@
 import { Grid, Paper } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DepthSlider from "./DepthSlider";
 import KeywordSearch from "./KeywordSearch";
 import Button from "@mui/material/Button";
@@ -11,9 +11,11 @@ import { IconButton, Box } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import SearchNavigation from "./SearchNavigation";
+
 interface GraphControllerProps {
   onDataChange: (newState: any) => void;
   onSceneChange: (newState: any) => void;
+  onColorChange: (newState: any) => any;
   getSelectedNode: () => any;
 }
 
@@ -21,6 +23,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   onDataChange,
   onSceneChange,
   getSelectedNode,
+  onColorChange,
 }) => {
   let selectedDepth = 1;
   const [data, setData] = useState<any>([]);
@@ -28,7 +31,9 @@ const GraphController: React.FC<GraphControllerProps> = ({
     "classic"
   );
 
-  const [keywords, setKeywords] = useState<{key: string, value: string}[]>([]);
+  const [keywords, setKeywords] = useState<{ key: string; value: string }[]>(
+    []
+  );
   const [rootUuId, setRootUuId] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
@@ -70,7 +75,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       limit: 50,
       range: {
         to: selectedDepth,
-      }
+      },
     };
 
     axios
@@ -93,8 +98,8 @@ const GraphController: React.FC<GraphControllerProps> = ({
         to: selectedDepth,
       },
       filter: {
-        keywords: keywords
-      }
+        keywords: keywords,
+      },
     };
     axios
       .post("http://localhost:14444/graph/get", payLoad)
@@ -141,9 +146,13 @@ const GraphController: React.FC<GraphControllerProps> = ({
     }
   };
 
-  const sendToParent = (keywords: {key: string, value: string}[]) => {
+  const sendToParent = (keywords: { key: string; value: string }[]) => {
     setKeywords(keywords);
-  }
+  };
+
+  useEffect(() => {
+    onColorChange(colors);
+  }, [colors]);
 
   return (
     <>
@@ -187,6 +196,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
             }}
           >
             <Search onSearch={setSearchTerm}></Search>
+            <Button variant="contained">Highlight</Button>
           </Paper>
         </>
       )}

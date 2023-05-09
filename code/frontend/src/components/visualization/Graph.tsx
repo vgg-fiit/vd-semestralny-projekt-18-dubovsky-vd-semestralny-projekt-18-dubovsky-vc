@@ -18,7 +18,7 @@ export const Node: React.FC<NodeProps> = ({
   data = null,
   selectedColor = "green",
   onClick,
-  onHover
+  onHover,
 }) => {
   const [selected, setSelected] = useState(false);
   const textRef = useRef<THREE.Object3D>(null);
@@ -56,7 +56,11 @@ export const Node: React.FC<NodeProps> = ({
 
   return (
     <>
-      <mesh position={position} onContextMenu={handleClick} onPointerEnter={handleHover}>
+      <mesh
+        position={position}
+        onContextMenu={handleClick}
+        onPointerEnter={handleHover}
+      >
         <sphereGeometry args={[0.1, 16, 16]} />
         <meshStandardMaterial color={selected ? selectedColor : color} />
       </mesh>
