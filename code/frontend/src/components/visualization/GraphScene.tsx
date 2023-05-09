@@ -3,9 +3,6 @@ import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
 // create function componentt
 import { Node, Edge } from "./Graph";
-import { index } from "d3";
-import { Container } from "@mui/material";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 interface GraphSceneProps {
   data: any;
