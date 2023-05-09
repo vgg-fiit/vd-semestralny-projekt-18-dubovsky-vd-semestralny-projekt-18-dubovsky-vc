@@ -222,11 +222,17 @@ function DashboardContent() {
   };
 
   const handleWordClick = (word: string) => {
-    const newSelectionState = (graphData.nodes as Node[]).filter(n => n.name.toLowerCase().includes(word.toLowerCase()))
-    if (newSelectionState.length != 0) {
-      setSelectedWords(newSelectionState)
+    if (graphData && graphData.nodes) {
+      console.log(word);
+      const newSelectionState = (graphData.nodes as Node[]).filter((n) =>
+        n.name.toLowerCase().includes(word.toLowerCase())
+      );
+      if (newSelectionState.length != 0) {
+        console.log(newSelectionState);
+        setSelectedWords(newSelectionState);
+      }
     }
-  }
+  };
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -284,6 +290,7 @@ function DashboardContent() {
               onSceneChange={handleSceneChange}
               getSelectedNode={getSelectedNode}
               onColorChange={handleColorChange}
+              onHighlightChange={handleWordClick}
             />
           </Stack>
         </Drawer>
@@ -337,7 +344,10 @@ function DashboardContent() {
               </Grid>
 
               {graphData.histogram ? (
-                <WordGraphs wordData={graphData.histogram} selectedWord={handleWordClick} />
+                <WordGraphs
+                  wordData={graphData.histogram}
+                  selectedWord={handleWordClick}
+                />
               ) : null}
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />

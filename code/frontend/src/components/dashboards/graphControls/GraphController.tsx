@@ -16,6 +16,7 @@ interface GraphControllerProps {
   onDataChange: (newState: any) => void;
   onSceneChange: (newState: any) => void;
   onColorChange: (newState: any) => any;
+  onHighlightChange: (newState: any) => any;
   getSelectedNode: () => any;
 }
 
@@ -24,6 +25,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   onSceneChange,
   getSelectedNode,
   onColorChange,
+  onHighlightChange,
 }) => {
   let selectedDepth = 1;
   const [data, setData] = useState<any>([]);
@@ -150,6 +152,8 @@ const GraphController: React.FC<GraphControllerProps> = ({
     setKeywords(keywords);
   };
 
+  const handleHighlight = () => {};
+
   useEffect(() => {
     onColorChange(colors);
   }, [colors]);
@@ -196,7 +200,12 @@ const GraphController: React.FC<GraphControllerProps> = ({
             }}
           >
             <Search onSearch={setSearchTerm}></Search>
-            <Button variant="contained">Highlight</Button>
+            <Button
+              onClick={() => onHighlightChange(searchTerm)}
+              variant="contained"
+            >
+              Highlight
+            </Button>
           </Paper>
         </>
       )}
