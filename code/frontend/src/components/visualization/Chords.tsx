@@ -33,24 +33,11 @@ function createMatrix(buckets: ChordsData[], filesCount: number) {
   buckets.forEach((bucket, j) => {
     bucket.nodes.forEach((file) => {
       matrix[file.index][filesCount + j - 1] = 1;
-      matrix[filesCount + j - 1][file.index] = 1;
     });
   });
 
   return matrix;
 }
-
-/*const Plot: React.FC<PlotProps> = ({ data, layout }) => {
-  const plotRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (plotRef.current) {
-      Plotly.newPlot(plotRef.current, data, layout);
-    }
-  }, [data, layout]);
-
-  return <div ref={plotRef} style={{ width: "100%", height: "100%" }} />;
-};*/
 
 function formatName(name: string) {
   if (name.length > 30) {

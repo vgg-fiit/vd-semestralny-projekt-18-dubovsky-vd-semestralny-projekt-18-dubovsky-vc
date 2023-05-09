@@ -90,6 +90,7 @@ export interface Node {
 }
 
 interface Graph {
+<<<<<<< HEAD
   buckets?: Bucket[];
   histogram?: HistogramItem[];
   tree?: Tree;
@@ -99,6 +100,19 @@ interface Graph {
   nodesCount: number;
   filesCount?: number;
   edgesCount: number;
+=======
+	  buckets?: Bucket[];
+    bucketsByYear?: Bucket[];
+    histogram?: HistogramItem[];
+    tree?: Tree;
+    nodes: Node[];
+    edges: Edge[];
+    mapping: { [id: number]: number };
+    nodesCount: number;
+    filesCount?: number;
+    edgesCount: number;
+    filesCountByYear?: number;
+>>>>>>> 3f69b0f80f1ffc351090c0844acad2c05ade0e64
 }
 
 const AppBar = styled(MuiAppBar, {
@@ -183,8 +197,14 @@ function DashboardContent() {
       histogram: graph.histogram,
       tree: graph.tree,
       buckets: graph.buckets,
+      bucketsByYear: graph.bucketsByYear,
       filesCount: graph.filesCount,
+<<<<<<< HEAD
       request: request,
+=======
+      filesCountByYear: graph.filesCountByYear,
+      request: request
+>>>>>>> 3f69b0f80f1ffc351090c0844acad2c05ade0e64
     });
     (
       document.getElementById("graphState") as HTMLElement
@@ -357,6 +377,12 @@ function DashboardContent() {
                 <ChordDiagram
                   buckets={graphData.buckets}
                   filesCount={graphData.filesCount}
+                />
+              ) : null}
+              {graphData.bucketsByYear ? (
+                <ChordDiagram
+                  buckets={graphData.bucketsByYear}
+                  filesCount={graphData.filesCountByYear}
                 />
               ) : null}
             </Grid>

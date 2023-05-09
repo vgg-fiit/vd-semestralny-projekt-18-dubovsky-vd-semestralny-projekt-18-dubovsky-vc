@@ -2,7 +2,9 @@ import { NodeType } from "../../../shared/interfaces/database.interface";
 import { HistogramItem } from "./histogram.interface";
 
 export interface Graph {
+	filesCountByYear?: number;
 	buckets?: Bucket[];
+    bucketsByYear?: Bucket[];
     histogram?: HistogramItem[];
     tree?: Tree;
     nodes: Node[];
