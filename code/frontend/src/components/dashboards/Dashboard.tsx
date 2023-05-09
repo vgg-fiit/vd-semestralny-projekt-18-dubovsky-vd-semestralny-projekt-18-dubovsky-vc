@@ -91,6 +91,7 @@ export interface Node {
 
 interface Graph {
 	  buckets?: Bucket[];
+    bucketsByYear?: Bucket[];
     histogram?: HistogramItem[];
     tree?: Tree;
     nodes: Node[];
@@ -99,6 +100,7 @@ interface Graph {
     nodesCount: number;
     filesCount?: number;
     edgesCount: number;
+    filesCountByYear?: number;
 }
 
 const AppBar = styled(MuiAppBar, {
@@ -178,7 +180,9 @@ function DashboardContent() {
       histogram: graph.histogram,
       tree: graph.tree,
       buckets: graph.buckets,
+      bucketsByYear: graph.bucketsByYear,
       filesCount: graph.filesCount,
+      filesCountByYear: graph.filesCountByYear,
       request: request
     });
     (document.getElementById("graphState") as HTMLElement).innerHTML = `Graph successfully loaded!`;
@@ -330,6 +334,12 @@ function DashboardContent() {
                 <ChordDiagram
                   buckets={graphData.buckets}
                   filesCount={graphData.filesCount}
+                />
+              ) : null}
+              {graphData.bucketsByYear ? (
+                <ChordDiagram
+                  buckets={graphData.bucketsByYear}
+                  filesCount={graphData.filesCountByYear}
                 />
               ) : null}
             </Grid>

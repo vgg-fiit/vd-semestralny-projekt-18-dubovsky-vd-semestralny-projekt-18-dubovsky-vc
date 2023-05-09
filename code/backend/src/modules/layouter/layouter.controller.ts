@@ -193,8 +193,7 @@ export class LayouterController {
 		return files;
 	}
 
-	public static createBuckets(data: {}[], numBuckets: number) {
-		const files = LayouterController.formatToFile(data);
+	public static createBuckets(files: File[], numBuckets: number) {
 		const minSize = files[0].size;
 		const maxSize = files[files.length - 1].size;
 		//console.log(minSize, maxSize)
@@ -208,6 +207,29 @@ export class LayouterController {
 		}
 		
 		return buckets;
+	}
+
+	public static createBucketsByYear(files: File[]): {buckets: Bucket[], count: number} {
+		const regex: RegExp = /\s*\(\s*(\d{4})\s*\)\s*/;
+		const buckets: Bucket[] = [];
+		let count = 0;
+		for (const file of files) {
+			const year: string | undefined = file.name.match(regex)?.[1];
+			if (year) {
+				const parsedYear = parseInt(year);
+				const bucket = buckets.find(b => b.id == parsedYear);
+				if (bucket) {
+					bucket.nodes.push(file);
+				} else {
+					buckets.push({ id: parsedYear, range: year, nodes: [file]});
+				}
+				count++;
+			}
+		}
+		count = 0;
+		buckets.sort((a, b) => parseInt(a.range) - parseInt(b.range))
+		buckets.forEach((b) => b.nodes.forEach((n) => {n.index = count; count++;}))
+		return {buckets: buckets, count: count + 1};
 	}
 	  
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
@@ -227,7 +249,10 @@ export class LayouterController {
 		//const graph = LayouterMock.getMock();
 		const graph = LayouterController.dataToGraph(data);
 		graph.histogram = LayouterController.formatHistogram(dataHistogram);
-		graph.buckets = LayouterController.createBuckets(dataFiles, 4);
+		graph.buckets = LayouterController.createBuckets(LayouterController.formatToFile(dataFiles), 4);
+		const bucketsByYear = LayouterController.createBucketsByYear(LayouterController.formatToFile(dataFiles));
+		graph.bucketsByYear = bucketsByYear.buckets;
+		graph.filesCountByYear = bucketsByYear.count;
 		graph.filesCount = dataFiles.length;
 		//console.log(graph)
 		//LayouterController.setFixedPosition("root", graph);
