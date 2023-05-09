@@ -79,7 +79,7 @@ enum NodeType {
   Size = "Size"
 }
 
-interface Node {
+export interface Node {
   uuId: number;
   size: number;
   position: Vector3;
@@ -151,6 +151,7 @@ function DashboardContent() {
   const [open, setOpen] = React.useState(true);
   const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
   const [selectedNode, setSelectedNode] = useState<number>(-1); // Stores the selected node in the graph
+  const [wordsSelected, setSelectedWords] = useState<any[]>([]);
   const [graphData, setGraphData] = useState<any>([]);
   const [selectedScene, setSelectedScene] = useState<
     "classic" | "explorer" | "searcher"
@@ -196,7 +197,6 @@ function DashboardContent() {
       );
       setSelectedNodes(filteredList);
     }
-    // console.log(graphData.nodes);
   };
 
   const handleHoveredNode = (node: Node) => {
@@ -206,8 +206,14 @@ function DashboardContent() {
 
   const handleNodeSelection = (nodeUuId: number) => {
     setSelectedNode(nodeUuId);
-    // console.log(graphData.nodes);
   };
+
+  const handleWordClick = (word: string) => {
+    const newSelectionState = (graphData.nodes as Node[]).filter(n => n.name.toLowerCase().includes(word.toLowerCase()))
+    if (newSelectionState.length != 0) {
+      setSelectedWords(newSelectionState)
+    }
+  }
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -314,7 +320,7 @@ function DashboardContent() {
               </Grid>
 
               {graphData.histogram ? (
-                <WordGraphs wordData={graphData.histogram} />
+                <WordGraphs wordData={graphData.histogram} selectedWord={handleWordClick} />
               ) : null}
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
