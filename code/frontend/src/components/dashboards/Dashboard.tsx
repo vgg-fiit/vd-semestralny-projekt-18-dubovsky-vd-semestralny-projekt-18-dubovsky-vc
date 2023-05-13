@@ -28,6 +28,7 @@ import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
 import { Alert, Button, ButtonGroup, Snackbar } from "@mui/material";
 import { View } from "@react-three/drei";
+import { ParentSize } from "@visx/responsive";
 
 const drawerWidth: number = 300;
 
@@ -379,7 +380,17 @@ function DashboardContent() {
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
               ) : null}
-              {graphData.tree ? <TreeGraph tree={graphData.tree} /> : null}
+              {graphData.tree ?
+                <Grid item xs={12}>
+                  <Paper>
+                    <ParentSize>
+                      {({ width, height }) => (
+                        <TreeGraph tree={graphData.tree} width={width - 24} height={400} />
+                      )}
+                    </ParentSize>
+                  </Paper>
+                </Grid> : null
+              }
 
               {graphData.bucketsByYear ? (
                 <Grid item xs={12}>

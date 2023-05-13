@@ -14,12 +14,12 @@ export interface GraphTreeData {
 
 export interface TreeGraphProps {
     tree: GraphTreeData;
+    width: number;
+    height: number;
 }
 
-const TreeGraph: React.FC<TreeGraphProps> = ({ tree }) => {
+const TreeGraph: React.FC<TreeGraphProps> = ({ tree, width, height }) => {
     const root = hierarchy(tree);
-    const width = 1150;
-    const height = 400;
     const [hoveredNode, setHoveredNode] = React.useState<Number | null>(null);
 
     return (
