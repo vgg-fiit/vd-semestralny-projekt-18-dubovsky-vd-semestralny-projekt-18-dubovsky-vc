@@ -13,6 +13,11 @@ interface SearcherScene {
   handleHoveredNode: (hovered: any) => void;
   highlightPhrase?: string;
   highlightNodes?: any;
+  colors: {
+    nodeColor: string;
+    edgeColor: string;
+    selectedNodeColor: string;
+  };
 }
 
 const SearcherScene: React.FC<SearcherScene> = ({
@@ -21,6 +26,7 @@ const SearcherScene: React.FC<SearcherScene> = ({
   handleHoveredNode,
   highlightPhrase = "",
   highlightNodes = [],
+  colors,
 }) => {
   const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
@@ -49,9 +55,8 @@ const SearcherScene: React.FC<SearcherScene> = ({
   useEffect(() => {
     if (highlightNodes) {
       setSelectedNodes(highlightNodes.map((item: any) => item.uuId));
-      console.log("Hello World");
-      if (this) this.forceUpdate();
-    }
+      console.log(highlightNodes);
+    } else setSelectedNodes([]);
   }, [highlightNodes]);
 
   return (
@@ -65,6 +70,8 @@ const SearcherScene: React.FC<SearcherScene> = ({
               return (
                 <Node
                   key={node.uuId}
+                  staticData={node.name}
+                  hoverData={node.keywords}
                   position={
                     new Vector3(
                       node.position.x,
@@ -72,12 +79,13 @@ const SearcherScene: React.FC<SearcherScene> = ({
                       node.position.z
                     )
                   }
-                  color={node.name == "root" ? "red" : "blue"}
+                  color={colors.nodeColor}
+                  selectedColor={colors.selectedNodeColor}
                   onClick={() => handleNodeClick(node.uuId)}
                   onHover={() => {
                     handleNodeHover(node);
-                    console.log(highlightNodes);
                   }}
+                  isSelected={selectedNodes.includes(node.uuId)}
                 />
               );
             })
@@ -91,7 +99,7 @@ const SearcherScene: React.FC<SearcherScene> = ({
                   key={index}
                   start={new Vector3(from.x, from.y, from.z)}
                   end={new Vector3(to.x, to.y, to.z)}
-                  color="black"
+                  color={colors.edgeColor}
                 />
               );
             })

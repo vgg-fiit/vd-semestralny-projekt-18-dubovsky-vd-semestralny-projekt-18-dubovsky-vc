@@ -8,12 +8,18 @@ interface GraphSceneProps {
   data: any;
   handleNodeSelection: (selected: any) => void;
   handleHoveredNode: (hovered: any) => void;
+  colors: {
+    nodeColor: string;
+    edgeColor: string;
+    selectedNodeColor: string;
+  };
 }
 
 const GraphScene: React.FC<GraphSceneProps> = ({
   data,
   handleNodeSelection,
-  handleHoveredNode
+  handleHoveredNode,
+  colors,
 }) => {
   const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
@@ -32,7 +38,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
 
   const handleNodeHover = (node: Node) => {
     handleHoveredNode(node);
-  }
+  };
 
   useEffect(() => {
     handleNodeSelection(selectedNodes);
@@ -57,7 +63,8 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                       node.position.z
                     )
                   }
-                  color={node.name == "root" ? "red" : "blue"}
+                  color={colors.nodeColor}
+                  selectedColor={colors.selectedNodeColor}
                   onClick={() => handleNodeClick(node.uuId)}
                   onHover={() => handleNodeHover(node)}
                 />
@@ -73,7 +80,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                   key={index}
                   start={new Vector3(from.x, from.y, from.z)}
                   end={new Vector3(to.x, to.y, to.z)}
-                  color="black"
+                  color={colors.edgeColor}
                 />
               );
             })

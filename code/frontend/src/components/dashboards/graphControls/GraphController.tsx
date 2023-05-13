@@ -97,7 +97,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       relationship: "true",
       limit: 50,
       range: {
-        to: selectedDepth,
+        to: 3,
       },
       filter: {
         keywords: keywords,
@@ -175,6 +175,19 @@ const GraphController: React.FC<GraphControllerProps> = ({
       {view === "classic" && (
         <>
           <DepthSlider onChange={handleDepthChange} depthOptions={[1, 7]} />
+          <Grid item xs={12} md={4} lg={3}>
+            <Paper
+              sx={{
+                p: 2,
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Button onClick={handleClassicFetch} variant="contained">
+                Fetch data from backend
+              </Button>
+            </Paper>
+          </Grid>
         </>
       )}
 
@@ -206,6 +219,13 @@ const GraphController: React.FC<GraphControllerProps> = ({
             >
               Highlight
             </Button>
+            <Button
+              color="secondary"
+              onClick={() => onHighlightChange("")}
+              variant="contained"
+            >
+              Reset
+            </Button>
           </Paper>
         </>
       )}
@@ -228,22 +248,22 @@ const GraphController: React.FC<GraphControllerProps> = ({
               onForwardClick={onForwardClick}
             />
           </Grid>
+
+          <Grid item xs={12} md={4} lg={3}>
+            <Paper
+              sx={{
+                p: 2,
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Button onClick={handleClassicFetch} variant="contained">
+                Fetch data from backend
+              </Button>
+            </Paper>
+          </Grid>
         </>
       )}
-
-      <Grid item xs={12} md={4} lg={3}>
-        <Paper
-          sx={{
-            p: 2,
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Button onClick={handleClassicFetch} variant="contained">
-            Fetch data from backend
-          </Button>
-        </Paper>
-      </Grid>
 
       <ColorPickerComponent
         handleColorChange={handleColorChange}

@@ -1,12 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Box3, Vector3, BufferGeometry, LineBasicMaterial, Line } from "three";
 import { useThree, useFrame } from "@react-three/fiber";
-import { Text } from "@react-three/drei";
+import { Plane, Text } from "@react-three/drei";
 
 interface NodeProps {
   position: Vector3;
   color?: string;
-  data?: any;
+  hoverData?: any;
+  staticData?: any;
   selectedColor?: string;
   isSelected?: boolean;
   onClick?: () => void;
@@ -16,19 +17,26 @@ interface NodeProps {
 export const Node: React.FC<NodeProps> = ({
   position,
   color = "red",
-  data = null,
+  hoverData = null,
+  staticData = null,
   selectedColor = "green",
   isSelected = false,
   onClick,
   onHover,
 }) => {
   const [selected, setSelected] = useState(isSelected);
+  const [isHovered, setIsHovered] = useState(false);
+
   const textRef = useRef<THREE.Object3D>(null);
   const { camera } = useThree();
   const textPosition = useRef<Vector3>(new Vector3());
 
+  const textOffset = new Vector3(0, 0.3, 0);
+
+  // console.log(position, upperTextPosition, bottomTextPosition);
+
   const handleClick = () => {
-    setSelected(!selected);
+    // setSelected(!selected);
     if (onClick) onClick();
   };
 
@@ -36,52 +44,76 @@ export const Node: React.FC<NodeProps> = ({
     if (onHover) onHover();
   };
 
-  // const handleTextSync = (self: any) => {
-  //   const box = new Box3().setFromObject(self);
-  //   const boxCenter = box.getCenter(new Vector3());
-  //   textPosition.current.add(boxCenter);
-  // };
+  const handleTextSync = (self: any) => {
+    const box = new Box3().setFromObject(self);
+
+    const boxCenter = box.getCenter(new Vector3());
+    textPosition.current.add(boxCenter);
+  };
+
+  const handlePointerEnter = () => {
+    setIsHovered(true);
+    if (onHover) {
+      onHover();
+    }
+  };
+
+  const handlePointerLeave = () => {
+    setIsHovered(false);
+  };
 
   useFrame(() => {
     if (textRef.current) {
       textRef.current.lookAt(camera.position);
-      // Calculate the direction from the camera to the node.
-      const direction = new Vector3()
-        .subVectors(position, position)
-        .normalize();
 
-      // Move the text slightly in front of the node along the direction vector.
-      const textOffset = direction.clone().multiplyScalar(0.3);
       textRef.current.position.copy(position.clone().add(textOffset));
     }
   });
+
+  useEffect(() => {
+    setSelected(isSelected);
+  }, [isSelected]);
 
   return (
     <>
       <mesh
         position={position}
         onContextMenu={handleClick}
-        onPointerEnter={handleHover}
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
       >
-        <sphereGeometry args={[0.1, 16, 16]} />
+        <sphereGeometry args={[0.3, 16, 16]} />
         <meshStandardMaterial color={selected ? selectedColor : color} />
       </mesh>
 
-      {data ? (
-        <>
-          <mesh position={[position.x, position.y, position.z]}>
-            <Text
-              ref={textRef}
-              fontSize={0.3}
-              color="black"
-              anchorX="center"
-              anchorY="bottom-baseline"
-            >
-              {JSON.stringify(data)}
-            </Text>
-            /* <Edge start={position} end={textPosition.current} /> */
-          </mesh>
-        </>
+      {staticData && !isHovered ? (
+        <Text
+          position={position}
+          ref={textRef}
+          fontSize={0.3}
+          color="black"
+          anchorX="center"
+          anchorY="bottom"
+        >
+          {JSON.stringify(staticData, null, 2)}
+        </Text>
+      ) : (
+        ""
+      )}
+
+      {hoverData && isHovered ? (
+        <group>
+          <Text
+            position={position}
+            ref={textRef}
+            fontSize={0.3}
+            color="black"
+            anchorX="center"
+            anchorY="bottom"
+          >
+            {JSON.stringify(hoverData, null, 2)}
+          </Text>
+        </group>
       ) : (
         ""
       )}

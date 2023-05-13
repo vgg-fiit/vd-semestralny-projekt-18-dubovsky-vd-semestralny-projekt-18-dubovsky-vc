@@ -142,7 +142,8 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                       node.position.z
                     )
                   }
-                  data={{
+                  staticData={node.name}
+                  hoverData={{
                     name: node.name,
                     uuId: node.uuID,
                     keywords: node.keywords,

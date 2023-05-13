@@ -1,7 +1,7 @@
 import * as React from "react";
 import Paper from "@mui/material/Paper";
 import { ResponsiveContainer, Tooltip, Treemap } from "recharts";
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { CSSProperties } from "react";
 
 export interface TreeMapProps {
@@ -34,8 +34,8 @@ const TreeMapTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
           } as CSSProperties
         }
       >
-        <p>{payload[0] ? `Word: ${payload[0].payload.name}`: null}</p>
-        <p>{payload[0] ? `Count: ${payload[0].payload.size}`: null}</p>
+        <p>{payload[0] ? `Word: ${payload[0].payload.name}` : null}</p>
+        <p>{payload[0] ? `Count: ${payload[0].payload.size}` : null}</p>
       </div>
     );
   }
@@ -58,22 +58,24 @@ const TreeMap: React.FC<TreeMapProps> = ({ wordData }) => {
   const formatted = formattedData(wordData);
 
   return (
-    <Container>
-      <ResponsiveContainer width="100%" height={400}>
-        <Treemap
-          data={formatted}
-          aspectRatio={16 / 9}
-          dataKey="size"
-          stroke="#fff"
-          fill="white"
-        >
-          <Tooltip
-            content={<TreeMapTooltip active={true} payload={formatted} />}
-            cursor={{ fill: "transparent" }}
-          />
-        </Treemap>
-      </ResponsiveContainer>
-    </Container>
+    <Grid item xs={12}>
+      <Paper>
+        <ResponsiveContainer width="100%" height={400}>
+          <Treemap
+            data={formatted}
+            aspectRatio={16 / 9}
+            dataKey="size"
+            stroke="#fff"
+            fill="white"
+          >
+            <Tooltip
+              content={<TreeMapTooltip active={true} payload={formatted} />}
+              cursor={{ fill: "transparent" }}
+            />
+          </Treemap>
+        </ResponsiveContainer>
+      </Paper>
+    </Grid>
   );
 };
 

@@ -22,12 +22,14 @@ import { useState } from "react";
 import GraphScene from "../visualization/GraphScene";
 import Stack from "@mui/material/Stack";
 import ExplorerScene from "../visualization/ExplorerScene";
+import SearcherScene from "../visualization/SearcherScene";
 import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
-import { Alert, Snackbar } from "@mui/material";
-import SearcherScene from "../visualization/SearcherScene";
+import { Alert, Button, ButtonGroup, Snackbar } from "@mui/material";
+import { View } from "@react-three/drei";
+import { ParentSize } from "@visx/responsive";
 
 const drawerWidth: number = 300;
 
@@ -94,6 +96,7 @@ export interface Node {
 interface Graph {
   buckets?: Bucket[];
   bucketsByYear?: Bucket[];
+  bucketsByFileEnding?: Bucket[];
   histogram?: HistogramItem[];
   tree?: Tree;
   nodes: Node[];
@@ -103,6 +106,13 @@ interface Graph {
   filesCount?: number;
   edgesCount: number;
   filesCountByYear?: number;
+  filesCountByFileEnding?: number;
+}
+
+enum ViewType {
+  FileEnding = "bucketsByFileEnding",
+  Year = "bucketsByYear",
+  Size = "buckets",
 }
 
 const AppBar = styled(MuiAppBar, {
@@ -161,6 +171,9 @@ function DashboardContent() {
   const [selectedNodes, setSelectedNodes] = useState<any>([]); // Stores the selected nodes in the graph
   const [selectedNode, setSelectedNode] = useState<number>(-1); // Stores the selected node in the graph
   const [wordsSelected, setSelectedWords] = useState<any[]>([]);
+  const [selectedViewType, setSelectedViewType] = useState<ViewType>(
+    ViewType.Year
+  );
   const [graphData, setGraphData] = useState<any>([]);
   const [selectedScene, setSelectedScene] = useState<
     "classic" | "explorer" | "searcher"
@@ -186,15 +199,29 @@ function DashboardContent() {
       edges: graph.edges,
       histogram: graph.histogram,
       tree: graph.tree,
-      buckets: graph.buckets,
-      bucketsByYear: graph.bucketsByYear,
-      filesCount: graph.filesCount,
-      filesCountByYear: graph.filesCountByYear,
+      buckets: { size: graph.filesCount, data: graph.buckets },
+      bucketsByYear: {
+        size: graph.filesCountByYear,
+        data: graph.bucketsByYear,
+      },
+      bucketsByFileEnding: {
+        size: graph.filesCountByFileEnding,
+        data: graph.bucketsByFileEnding,
+      },
       request: request,
     });
-    (
-      document.getElementById("graphState") as HTMLElement
-    ).innerHTML = `Graph successfully loaded!`;
+    if (graph && graph.nodes && graph.nodes.length > 0)
+      (
+        document.getElementById("graphState") as HTMLElement
+      ).innerHTML = `Graph successfully loaded!`;
+    else if (graph && graph.nodes && graph.nodes.length === 0)
+      (
+        document.getElementById("graphState") as HTMLElement
+      ).innerHTML = `No graph data for selected filter!`;
+    else
+      (
+        document.getElementById("graphState") as HTMLElement
+      ).innerHTML = `Graph not loaded!`;
   };
 
   const handleSceneChange = (data: any) => {
@@ -230,6 +257,10 @@ function DashboardContent() {
   const handleWordClick = (word: string) => {
     if (graphData && graphData.nodes) {
       console.log(word);
+      if (word.length === 0) {
+        setSelectedWords([]);
+        return;
+      }
       const newSelectionState = (graphData.nodes as Node[]).filter(
         (n: Node) => {
           const name = n.name.toLowerCase().includes(word.toLowerCase());
@@ -245,6 +276,10 @@ function DashboardContent() {
         setSelectedWords(newSelectionState);
       }
     }
+  };
+
+  const handleChordsGraphChange = (filteringType: ViewType) => {
+    setSelectedViewType(filteringType);
   };
 
   return (
@@ -333,6 +368,7 @@ function DashboardContent() {
                         data={graphData}
                         handleNodeSelection={handleNodesSelection}
                         handleHoveredNode={handleHoveredNode}
+                        colors={graphColors}
                       />
                     )}
                     {selectedScene === "explorer" && (
@@ -348,6 +384,7 @@ function DashboardContent() {
                         handleNodeSelection={handleNodesSelection}
                         handleHoveredNode={handleHoveredNode}
                         highlightNodes={wordsSelected}
+                        colors={graphColors}
                       />
                     )}
                   </Canvas>
@@ -363,21 +400,73 @@ function DashboardContent() {
                   selectedWord={handleWordClick}
                 />
               ) : null}
+
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
               ) : null}
-              {graphData.tree ? <TreeGraph tree={graphData.tree} /> : null}
-              {graphData.buckets ? (
-                <ChordDiagram
-                  buckets={graphData.buckets}
-                  filesCount={graphData.filesCount}
-                />
+              {graphData.tree ? (
+                <Grid item xs={12}>
+                  <Paper>
+                    <ParentSize>
+                      {({ width, height }) => (
+                        <TreeGraph
+                          tree={graphData.tree}
+                          width={width - 24}
+                          height={400}
+                        />
+                      )}
+                    </ParentSize>
+                  </Paper>
+                </Grid>
               ) : null}
+
               {graphData.bucketsByYear ? (
-                <ChordDiagram
-                  buckets={graphData.bucketsByYear}
-                  filesCount={graphData.filesCountByYear}
-                />
+                <Grid item xs={12}>
+                  <Paper>
+                    <ButtonGroup variant="contained">
+                      <Button
+                        color={
+                          selectedViewType === ViewType.Year
+                            ? "primary"
+                            : "secondary"
+                        }
+                        onClick={() => handleChordsGraphChange(ViewType.Year)}
+                      >
+                        By Year
+                      </Button>
+                      <Button
+                        color={
+                          selectedViewType === ViewType.FileEnding
+                            ? "primary"
+                            : "secondary"
+                        }
+                        onClick={() =>
+                          handleChordsGraphChange(ViewType.FileEnding)
+                        }
+                      >
+                        By File Ending
+                      </Button>
+                      <Button
+                        color={
+                          selectedViewType === ViewType.Size
+                            ? "primary"
+                            : "secondary"
+                        }
+                        onClick={() => handleChordsGraphChange(ViewType.Size)}
+                      >
+                        By File Size
+                      </Button>
+                    </ButtonGroup>
+                    <Divider />
+                    {graphData[selectedViewType] &&
+                    graphData[selectedViewType].data ? (
+                      <ChordDiagram
+                        buckets={graphData[selectedViewType].data}
+                        filesCount={graphData[selectedViewType].size}
+                      />
+                    ) : null}
+                  </Paper>
+                </Grid>
               ) : null}
             </Grid>
           </Container>

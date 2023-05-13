@@ -53,6 +53,7 @@ const GraphController: React.FC<KeywordSearchProps> = ({sendToParent}) => {
   const handleDelete = (index: number) => {
     const newNames = [...names];
     newNames.splice(index, 1);
+    sendToParent(newNames);
     setNames(newNames);
   };
   return (

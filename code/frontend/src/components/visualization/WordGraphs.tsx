@@ -2,6 +2,7 @@ import * as React from "react";
 import ReactWordcloud from "react-wordcloud";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import { Divider } from "@mui/material";
 
 export interface WordGraphsProps {
   wordData: any;
@@ -10,9 +11,9 @@ export interface WordGraphsProps {
 
 const WordGraphs: React.FC<WordGraphsProps> = ({ wordData, selectedWord }) => {
   return (
-    <Grid item xs={12} md={4} lg={3}>
+    <Grid item xs={12}>
       <Paper>
-        <ReactWordcloud words={wordData} callbacks={{onWordClick: w => selectedWord(w.text)}}/>
+        <ReactWordcloud size={undefined} words={wordData} callbacks={{onWordClick: w => selectedWord(w.text)}}/>
       </Paper>
     </Grid>
   );

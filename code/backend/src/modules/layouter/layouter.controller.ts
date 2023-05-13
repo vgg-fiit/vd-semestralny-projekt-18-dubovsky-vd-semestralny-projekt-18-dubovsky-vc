@@ -49,17 +49,17 @@ export class LayouterController {
 				if (graph.mapping[entry.m.id] == undefined) {
 					LayouterController.insertIntoGraph(graph, entry.m);
 				}
-				if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)]) {
+				/*if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)]) {
 					graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
 					existingEdges[getId(entry.n.id, entry.m.id)] = true;
 				}
-				LayouterController.insertRelationshipIntoGraph(graph, entry.r, existingEdges);
+				LayouterController.insertRelationshipIntoGraph(graph, entry.r, existingEdges);*/
 			} else {
 				LayouterController.insertIntoGraph(graph, entry.n);
 				if (graph.mapping[entry.m.id] == undefined) {
 					LayouterController.insertIntoGraph(graph, entry.m);
 				}
-				const filtered: any[] = entry.r.filter((item: any) => item.start.low == entry.m.id)
+				/*const filtered: any[] = entry.r.filter((item: any) => item.start.low == entry.m.id)
 				if (filtered.length > 0) {
 					filtered.forEach((item: any) => {
 						if (!existingEdges[getId(item.start.low, item.end.low)] && !existingEdges[getId(item.end.low, item.start.low)]) {
@@ -69,6 +69,33 @@ export class LayouterController {
 					});
 				} else {
 					if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)]) {
+						graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
+						existingEdges[getId(entry.n.id, entry.m.id)] = true;
+					}
+				}*/
+			}
+		});
+		data.forEach((entry: any) => {
+			if (entry.n && entry.m && entry.n.id == entry.m.id) {
+				return;
+			}
+			if (graph.mapping[entry.n.id] == undefined) {
+				if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)] && graph.mapping[entry.m.id] != undefined && graph.mapping[entry.n.id] != undefined) {
+					graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
+					existingEdges[getId(entry.n.id, entry.m.id)] = true;
+				}
+				LayouterController.insertRelationshipIntoGraph(graph, entry.r, existingEdges);
+			} else {
+				const filtered: any[] = entry.r.filter((item: any) => item.start.low == entry.m.id)
+				if (filtered.length > 0) {
+					filtered.forEach((item: any) => {
+						if (!existingEdges[getId(item.start.low, item.end.low)] && !existingEdges[getId(item.end.low, item.start.low)] && graph.mapping[item.start.low] != undefined && graph.mapping[item.end.low] != undefined) {
+							graph.edges.push(new Edge(graph.mapping[item.start.low], graph.mapping[item.end.low], item.start.low, item.end.low, true));
+							existingEdges[getId(item.start.low, item.end.low)] = true;
+						}
+					});
+				} else {
+					if (!existingEdges[getId(entry.m.id, entry.n.id)] && !existingEdges[getId(entry.n.id, entry.m.id)] && graph.mapping[entry.m.id] != undefined && graph.mapping[entry.n.id] != undefined) {
 						graph.edges.push(new Edge(graph.mapping[entry.n.id], graph.mapping[entry.m.id], entry.n.id, entry.m.id));
 						existingEdges[getId(entry.n.id, entry.m.id)] = true;
 					}
@@ -181,6 +208,9 @@ export class LayouterController {
 			const child = map.get(edge.toId);
 			(parent as Tree).children.push(child as Tree);
 		});
+		if (map.get(graph.nodes[0].uuId)?.children.length === 0) {
+			return map.get(graph.edges[0].fromId) as Tree;
+		}
 		return map.get(graph.nodes[0].uuId) as Tree;
 	}
 
@@ -205,6 +235,9 @@ export class LayouterController {
 			const rangeEnd = rangeStart + bucketRange;
 			buckets.push({ id: i, range: "size from " + rangeStart.toFixed(0) + ' bytes to ' + rangeEnd.toFixed(0) + ' bytes', nodes: files.filter(f => f.size >= rangeStart && f.size < rangeEnd)});
 		}
+
+		let count = 0;
+		buckets.forEach((b) => b.nodes.forEach((n) => {n.index = count; count++;}))
 		
 		return buckets;
 	}
@@ -223,7 +256,6 @@ export class LayouterController {
 				} else {
 					buckets.push({ id: parsedYear, range: year, nodes: [file]});
 				}
-				count++;
 			}
 		}
 		count = 0;
@@ -231,19 +263,29 @@ export class LayouterController {
 		buckets.forEach((b) => b.nodes.forEach((n) => {n.index = count; count++;}))
 		return {buckets: buckets, count: count + 1};
 	}
+
+	public static createBucketsByFileEnding(files: File[]): {buckets: Bucket[], count: number} {
+		const buckets: Bucket[] = [];
+		let count = 0;
+		for (const file of files) {
+			const fileEnding: string | undefined = file.name.split('.').pop();
+			if (fileEnding) {
+				const bucket = buckets.find(b => b.range == fileEnding);
+				if (bucket) {
+					bucket.nodes.push(file);
+				} else {
+					buckets.push({ id: count, range: fileEnding, nodes: [file]});
+				}
+			}
+		}
+		count = 0;
+		buckets.sort((a, b) => a.range.localeCompare(b.range))
+		buckets.forEach((b) => b.nodes.forEach((n) => {n.index = count; count++;}))
+		return {buckets: buckets, count: count + 1};
+	}
 	  
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
 		const data = await DatabaseService.build(req).run();
-		if (data.length == 0) {
-			const graph: Graph = {
-				nodes: [],
-				edges: [],
-				mapping: {},
-				nodesCount: 0,
-				edgesCount: 0
-			};
-			return {data: graph} as AppResponse<Graph>;
-		}
 		const dataHistogram = await DatabaseService.build(req).getHistogram();
 		const dataFiles = await DatabaseService.build(req).getFiles() as any;
 		//const graph = LayouterMock.getMock();
@@ -251,15 +293,21 @@ export class LayouterController {
 		graph.histogram = LayouterController.formatHistogram(dataHistogram);
 		graph.buckets = LayouterController.createBuckets(LayouterController.formatToFile(dataFiles), 4);
 		const bucketsByYear = LayouterController.createBucketsByYear(LayouterController.formatToFile(dataFiles));
+		const bucketsByFileEnding = LayouterController.createBucketsByFileEnding(LayouterController.formatToFile(dataFiles));
 		graph.bucketsByYear = bucketsByYear.buckets;
 		graph.filesCountByYear = bucketsByYear.count;
+		graph.filesCountByFileEnding = bucketsByFileEnding.count;
 		graph.filesCount = dataFiles.length;
-		//console.log(graph)
-		//LayouterController.setFixedPosition("root", graph);
+		graph.bucketsByFileEnding = bucketsByFileEnding.buckets;
 		LayouterController.setRandomPositions(graph);
 		LayouterController.run(graph);
 		LayouterController.normalizePositions(graph);
-		graph.tree = LayouterController.formatAsTree(graph);
+		if (data.length == 0) {
+			graph.tree = undefined;
+		} else {
+			console.log(graph)
+			graph.tree = LayouterController.formatAsTree(graph);
+		}
 		return {data: graph, requestBody: req.body} as AppResponse<Graph>;
 	}
 }
