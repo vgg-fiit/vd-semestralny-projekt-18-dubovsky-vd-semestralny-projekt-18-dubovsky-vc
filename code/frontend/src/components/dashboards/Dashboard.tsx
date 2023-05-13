@@ -90,8 +90,8 @@ export interface Node {
 }
 
 interface Graph {
-<<<<<<< HEAD
   buckets?: Bucket[];
+  bucketsByYear?: Bucket[];
   histogram?: HistogramItem[];
   tree?: Tree;
   nodes: Node[];
@@ -100,19 +100,7 @@ interface Graph {
   nodesCount: number;
   filesCount?: number;
   edgesCount: number;
-=======
-	  buckets?: Bucket[];
-    bucketsByYear?: Bucket[];
-    histogram?: HistogramItem[];
-    tree?: Tree;
-    nodes: Node[];
-    edges: Edge[];
-    mapping: { [id: number]: number };
-    nodesCount: number;
-    filesCount?: number;
-    edgesCount: number;
-    filesCountByYear?: number;
->>>>>>> 3f69b0f80f1ffc351090c0844acad2c05ade0e64
+  filesCountByYear?: number;
 }
 
 const AppBar = styled(MuiAppBar, {
@@ -199,12 +187,8 @@ function DashboardContent() {
       buckets: graph.buckets,
       bucketsByYear: graph.bucketsByYear,
       filesCount: graph.filesCount,
-<<<<<<< HEAD
-      request: request,
-=======
       filesCountByYear: graph.filesCountByYear,
-      request: request
->>>>>>> 3f69b0f80f1ffc351090c0844acad2c05ade0e64
+      request: request,
     });
     (
       document.getElementById("graphState") as HTMLElement
