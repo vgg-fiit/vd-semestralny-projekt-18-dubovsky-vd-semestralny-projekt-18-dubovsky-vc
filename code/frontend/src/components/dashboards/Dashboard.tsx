@@ -377,6 +377,7 @@ function DashboardContent() {
                   selectedWord={handleWordClick}
                 />
               ) : null}
+
               {graphData.histogram ? (
                 <TreeMap wordData={graphData.histogram} />
               ) : null}
