@@ -87,6 +87,7 @@ export interface Node {
   name: string;
   type: NodeType;
   fixed: boolean;
+  keywords: string[];
 }
 
 interface Graph {

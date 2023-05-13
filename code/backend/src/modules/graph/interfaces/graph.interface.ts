@@ -83,11 +83,13 @@ export class Node {
     name: string;
     type: NodeType;
     fixed: boolean;
+    keywords: string[];
 
-    constructor(name: string, nodeId: number, size: number, type?: NodeType, position?: Vector3, displacement?: Vector3) {
+    constructor(name: string, nodeId: number, size: number, keywords?: string[], type?: NodeType, position?: Vector3, displacement?: Vector3) {
 		this.name = name;
 		this.uuId = nodeId;
 		this.size = size;
+        this.keywords = keywords ? keywords : [];
         if (type != null) {
             this.type = type;
         }
