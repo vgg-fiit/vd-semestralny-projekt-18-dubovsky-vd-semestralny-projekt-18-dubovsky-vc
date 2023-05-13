@@ -97,7 +97,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       relationship: "true",
       limit: 50,
       range: {
-        to: selectedDepth,
+        to: 3,
       },
       filter: {
         keywords: keywords,

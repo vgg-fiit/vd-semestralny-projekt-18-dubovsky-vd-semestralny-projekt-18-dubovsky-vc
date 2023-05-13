@@ -3,8 +3,10 @@ import { HistogramItem } from "./histogram.interface";
 
 export interface Graph {
 	filesCountByYear?: number;
+    filesCountByFileEnding?: number;
 	buckets?: Bucket[];
     bucketsByYear?: Bucket[];
+    bucketsByFileEnding?: Bucket[];
     histogram?: HistogramItem[];
     tree?: Tree;
     nodes: Node[];

@@ -78,7 +78,7 @@ export class DatabaseService {
     static combineKeywords = (keywords: {key: Keywords, value: string}[]) => {
         let output: string = "[";
         keywords.forEach((keyword) => {
-            output += `'${keyword.value}'${keywords.indexOf(keyword) != keywords.length - 1? ",": ""}`
+            output += `'${keyword.value.toLowerCase()}'${keywords.indexOf(keyword) != keywords.length - 1? ",": ""}`
         })
         output += "]";
         return output;
@@ -99,9 +99,11 @@ export class DatabaseService {
     }    
 
     static getFiles(session: DatabaseSession): Promise<{}[]> {
-        const query = `MATCH (n: File) RETURN n`
+        const query = `MATCH (n: File)`
         const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
-        return DatabaseService.run(`${query} ${limit}`);
+        const where = session.keywords ?
+            `WHERE any(keyword IN n.keywords WHERE keyword IN ${DatabaseService.combineKeywords(session.keywords)})`: "";
+        return DatabaseService.run(`${query} ${where} RETURN n ${limit}`);
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
@@ -111,7 +113,7 @@ export class DatabaseService {
                 `MATCH (n:${session.nodeType}) WHERE ID(n)=${session.id} ${session.relationship ? `OPTIONAL MATCH (n) <-[r${containsRange? containsRange: ""}]-(m)`: ''}`: 
                 `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
         const where = session.keywords ?
-            `WHERE any(substring IN ${DatabaseService.combineKeywords(session.keywords)} WHERE m.name CONTAINS substring)`:
+            `WHERE any(keyword IN m.keywords WHERE keyword IN ${DatabaseService.combineKeywords(session.keywords)})`:
             session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
         const limitParam = session.limit != undefined ? `LIMIT ${session.limit}`: "";
