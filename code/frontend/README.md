@@ -51,21 +51,36 @@ Hrany znamenajú v grafe prepojenie adresárov so súbormi. Uzly grafu reprezent
 
 Pre tento účel slúži graf Chords - nachádza sa v aplikácii ako posledný graf na spodnej časti stránky.
 
-- Používateľ zaklikne v ľavom paneli mód zobrazenia grafu Chords "By year"
-- Posledný graf na spodnej časti aplikácie zobrazí skrátené názvy dokumentov zoradené podľa roku vydania
+- Používateľ zaklikne na spodnej časti Dashboard tlačidlo "By year"
+- Posledný graf aplikácie zobrazí skrátené názvy dokumentov zoradené podľa roku vydania
 - Používateľ môže prechádzať ponad názvy dokumentov, čím sa zobrazí celý názov dokumentov
+
 
 4. ?? (Doplnit scenar)
 
 5. Preskumat stromovu strukturu zloziek a suborov na zaklade klucovych slov
 
-- 
+- Používateľ zaklikne Searcher mód
+- V ľavom paneli môže pridávať kľúčové slová, následne klikne Fetch data from backend
+- Na backende sa vyhľadá, či niektoré adresáre alebo súbory obsahujú niektoré z kľúčových slov(nie nutne ich kombináciu)
+- Zoznam uzlov a hrán sa vráti späť do rozhrania
 
 
 own:
 
 1. Pouzivatel chce z mnoziny dat urcit velkost suborov
 
-2. Pouziıvatel’ si chce zobrazit’ dokumenty, ktor ́e maj  ́u
-rovnak  ́u koncovku s  ́ubor
-	
+- Pre tento účel slúži posledný graf - Chords
+- Používateľ zaklikne v ľavom paneli - Fetch data from backend
+- Používateľ zaklikne vyhľadávanie By file size
+- Prekreslí sa graf, zobrazí sa rozdelenie súborov do vedierok - podľa rozsahu veľkosti
+- Používateľ nemá možnosť zistiť presnú veľkosť súboru iba približnú, podľa veľkosti vedierka
+- Používateľ môže aplikovať kľúčové slová nad vyhľadávaním a to v Searcher móde
+
+2. Používateľ si chce zobraziť dokumenty, ktoré majú rovnakú koncovku súboru
+
+- Pre tento účel použije rovnaký graf ako v predošlom scenári - Chords
+- Používateľ zaklikne v ľavom paneli - Fetch data from backend
+- Používateľ zaklikne vyhľadávanie By file ending
+- Zobrazí sa rozdelenie súborov do vedierok - podľa koncovky súboru
+- Používateľ môže aplikovať kľúčové slová nad vyhľadávaním a to v Searcher móde
