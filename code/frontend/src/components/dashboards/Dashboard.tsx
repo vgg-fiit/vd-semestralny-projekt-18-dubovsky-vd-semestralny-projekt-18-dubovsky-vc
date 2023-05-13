@@ -27,6 +27,7 @@ import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
 import { Alert, Snackbar } from "@mui/material";
+import SearcherScene from "../visualization/SearcherScene";
 
 const drawerWidth: number = 300;
 
@@ -229,8 +230,15 @@ function DashboardContent() {
   const handleWordClick = (word: string) => {
     if (graphData && graphData.nodes) {
       console.log(word);
-      const newSelectionState = (graphData.nodes as Node[]).filter((n) =>
-        n.name.toLowerCase().includes(word.toLowerCase())
+      const newSelectionState = (graphData.nodes as Node[]).filter(
+        (n: Node) => {
+          const name = n.name.toLowerCase().includes(word.toLowerCase());
+          if (name) return true;
+          const match = n.keywords.find((v) =>
+            v.toLowerCase().includes(word.toLowerCase())
+          );
+          return match != undefined ? true : false;
+        }
       );
       if (newSelectionState.length != 0) {
         console.log(newSelectionState);
@@ -335,10 +343,11 @@ function DashboardContent() {
                       />
                     )}
                     {selectedScene === "searcher" && (
-                      <GraphScene
+                      <SearcherScene
                         data={graphData}
                         handleNodeSelection={handleNodesSelection}
                         handleHoveredNode={handleHoveredNode}
+                        highlightNodes={wordsSelected}
                       />
                     )}
                   </Canvas>

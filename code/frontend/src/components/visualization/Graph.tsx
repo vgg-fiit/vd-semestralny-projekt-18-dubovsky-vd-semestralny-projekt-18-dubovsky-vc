@@ -8,6 +8,7 @@ interface NodeProps {
   color?: string;
   data?: any;
   selectedColor?: string;
+  isSelected?: boolean;
   onClick?: () => void;
   onHover?: () => void;
 }
@@ -17,10 +18,11 @@ export const Node: React.FC<NodeProps> = ({
   color = "red",
   data = null,
   selectedColor = "green",
+  isSelected = false,
   onClick,
   onHover,
 }) => {
-  const [selected, setSelected] = useState(false);
+  const [selected, setSelected] = useState(isSelected);
   const textRef = useRef<THREE.Object3D>(null);
   const { camera } = useThree();
   const textPosition = useRef<Vector3>(new Vector3());

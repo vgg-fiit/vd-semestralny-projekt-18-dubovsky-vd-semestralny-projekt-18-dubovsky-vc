@@ -145,6 +145,7 @@ const GraphScene: React.FC<GraphSceneProps> = ({
                   data={{
                     name: node.name,
                     uuId: node.uuID,
+                    keywords: node.keywords,
                   }}
                   color={colors.nodeColor}
                   selectedColor={colors.selectedNodeColor}

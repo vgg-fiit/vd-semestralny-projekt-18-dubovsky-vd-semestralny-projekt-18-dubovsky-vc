@@ -12,6 +12,7 @@ interface SearcherScene {
   handleNodeSelection: (selected: any) => void;
   handleHoveredNode: (hovered: any) => void;
   highlightPhrase?: string;
+  highlightNodes?: any;
 }
 
 const SearcherScene: React.FC<SearcherScene> = ({
@@ -19,6 +20,7 @@ const SearcherScene: React.FC<SearcherScene> = ({
   handleNodeSelection,
   handleHoveredNode,
   highlightPhrase = "",
+  highlightNodes = [],
 }) => {
   const [selectedNodes, setSelectedNodes] = useState<number[]>([]);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
@@ -44,6 +46,14 @@ const SearcherScene: React.FC<SearcherScene> = ({
     handleHoveredNode(hoveredNode);
   }, [selectedNodes]);
 
+  useEffect(() => {
+    if (highlightNodes) {
+      setSelectedNodes(highlightNodes.map((item: any) => item.uuId));
+      console.log("Hello World");
+      if (this) this.forceUpdate();
+    }
+  }, [highlightNodes]);
+
   return (
     <>
       <ambientLight />
@@ -64,7 +74,10 @@ const SearcherScene: React.FC<SearcherScene> = ({
                   }
                   color={node.name == "root" ? "red" : "blue"}
                   onClick={() => handleNodeClick(node.uuId)}
-                  onHover={() => handleNodeHover(node)}
+                  onHover={() => {
+                    handleNodeHover(node);
+                    console.log(highlightNodes);
+                  }}
                 />
               );
             })
