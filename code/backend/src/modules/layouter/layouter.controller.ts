@@ -285,7 +285,6 @@ export class LayouterController {
 	}
 	  
     public static async layoutGraph(req: Request): Promise<AppResponse<Graph>> {
-		LoggerService.log(req.body)
 		const data = await DatabaseService.build(req).run();
 		const dataHistogram = await DatabaseService.build(req).getHistogram();
 		const dataFiles = await DatabaseService.build(req).getFiles() as any;
