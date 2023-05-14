@@ -10,8 +10,10 @@ export class LayouterMock {
 				new Node('cow', 2, 3.5),
                 new Node('play', 3, 2.5),
 			],
-            edges: [new Edge(0, 1), new Edge(2, 3), new Edge(0, 3), new Edge(0, 2)],
-            mapping: {0: 0, 1: 1, 2: 2, 3: 3}
+            edges: [new Edge(0, 1), new Edge(1, 2), new Edge(2, 3), new Edge(3, 0)],
+            mapping: {0: 0, 1: 1, 2: 2, 3: 3},
+            nodesCount: 4,
+            edgesCount: 4   
         };
         LayouterController.setRandomPositions(graph);
         return graph

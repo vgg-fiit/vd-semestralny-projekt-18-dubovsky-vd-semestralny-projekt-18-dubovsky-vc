@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Autocomplete, AutocompleteRenderInputParams } from "@material-ui/lab";
 import React, { useState } from "react";
 import { Button } from "@mui/material";
+import Stack from "@mui/material/Stack";
 
 const useStyles = makeStyles({
   root: {
@@ -44,7 +45,7 @@ const DepthSlider: React.FC<DepthSliderProps> = ({
   };
 
   return (
-    <div className={classes.root}>
+    <Stack spacing={2} direction="column" sx={{ mb: 1 }} alignItems="center">
       <Slider
         value={selectedDepth}
         onChange={handleSliderChange}
@@ -56,9 +57,9 @@ const DepthSlider: React.FC<DepthSliderProps> = ({
       />
       <p>Selected depth: {selectedDepth}</p>
       <Button variant="contained" onClick={() => onChange(selectedDepth)}>
-        Apply Depth
+        {"Set depth"}
       </Button>
-    </div>
+    </Stack>
   );
 };
 

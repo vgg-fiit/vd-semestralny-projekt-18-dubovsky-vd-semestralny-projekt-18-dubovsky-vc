@@ -23,7 +23,7 @@ class Directory(StructuredNode):
     # id = IntegerProperty(unique_index=True)
     name = StringProperty()
     fullpath = StringProperty()
-    metadata = JSONProperty()
+    # metadata = JSONProperty()
     keywords = ArrayProperty(StringProperty())
     parent_directory = RelationshipTo('Directory', 'CONTAINS')
 
@@ -31,7 +31,10 @@ class File(StructuredNode):
     # id = IntegerProperty(unique_index=True)
     name = StringProperty()
     fullpath = StringProperty()
-    metadata = JSONProperty()
+    # metadata = JSONProperty()
+    extension = StringProperty()
+    size = IntegerProperty()
+    isbn = IntegerProperty()
     keywords = ArrayProperty(StringProperty())
     parent = RelationshipTo('Directory', 'CONTAINS')
 

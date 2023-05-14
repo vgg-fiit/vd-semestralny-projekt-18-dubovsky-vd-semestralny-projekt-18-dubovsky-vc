@@ -1,0 +1,10 @@
+- [ ] Color property selection for graph
+- [ ] Onclick selection of edges
+- [ ] Graph category selection
+- [ ] Fetch graph data from backend (currently hardcoded)
+- [ ] API query builder for graph data from specs
+- [ ] Switch to explorer view for graph data - always show graph to depth 1 and on click move to node and view its children (if any) you can undo remembrance of the path by clicking the node again
+- [ ] SEARCH VIEW
+- [ ] EXPLORER VIEW 
+- [ ] Histograms for data - find a way to show the data in a histogram
+- [ ] 

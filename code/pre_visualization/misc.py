@@ -1,8 +1,27 @@
 import nltk
 import re
 from textblob import TextBlob
-from db import File, Directory
+from db import File, Directory, Word
 
+
+def insert_word_list(word_list, flat_list):
+
+    objects = {}
+
+    for word in word_list:
+        objects[word] = Word(word=word).save()
+
+    for idx, e in enumerate(flat_list):
+        if e['type'] == 'file':
+            for word in word_list:
+                if word in e['object'].keywords:
+                    objects[word].files.connect(e['object'])
+        if e['type'] == 'directory':
+            for word in word_list:
+                if word in e['object'].keywords:
+                    objects[word].directories.connect(e['object'])
+
+        print("Inserted word list for element {} of {}".format(idx, len(flat_list)))
 
 def connect(flat_list):
     for e in flat_list:
@@ -26,6 +45,13 @@ def get_keywords(text):
     words = [w for w in words if not w in stop_words]
     # replace all not alphabetic characters with space
     words = [re.sub(r'[^a-zA-Z]', '', w) for w in words]
+    # remove empty strings
+    words = [w for w in words if w]
+    # stemming
+    # stemmer = nltk.stem.PorterStemmer()
+    # words = [stemmer.stem(w) for w in words]
+    # remove duplicates
+    words = list(set(words))
 
     return words
 
@@ -45,11 +71,12 @@ def get_metadata(element):
     return metadata
 
 
-def dfs_traverse(data, last_id):
+def dfs_traverse(data, root_element, filename):
     flat_list = []
     wordlist = []
-    root = {'type': 'directory', 'name': 'root', "depth": 0}
-    root['object'] = Directory(name='root', fullpath='root', metadata={}, keywords=[]).save()
+    root = {'type': 'directory', 'name': filename, "depth": 0}
+    root['object'] = Directory(name=filename, fullpath=filename, keywords=[]).save()
+    root['object'].parent_directory.connect(root_element)
     stack = []
 
     # Add first element to stack
@@ -71,19 +98,29 @@ def dfs_traverse(data, last_id):
                 wordlist.append(keyword)
 
         if element['type'] == 'file':
-            element['object'] = File(name=element['name'].split('/')[-1], fullpath=element['name'],
-                                     metadata=element['metadata'], keywords=keywords).save()
-        if element['type'] == 'directory':
-            element['object'] = Directory(name=element['name'].split('/')[-1], fullpath=element['name'],
-                                          metadata=element['metadata'], keywords=keywords).save()
+            element['object'] = File(
+                name=element['name'].split('/')[-1],
+                fullpath=element['name'],
+                # metadata=element['metadata'],
+                isbn=element['metadata']['ISBN'][0] if len(element['metadata']['ISBN']) > 0 else None,
+                year=element['metadata']['year'][0] if len(element['metadata']['year']) > 0 else None,
+                size=element['size'],
+                extension=element['metadata']['extension'][0] if len(element['metadata']['extension']) > 0 else None,
+                keywords=keywords
+            ).save()
 
-        if element['object'].id is not None:
-            print("Node saved")
+        if element['type'] == 'directory':
+            element['object'] = Directory(
+                name=element['name'].split('/')[-1],
+                fullpath=element['name'],
+                # metadata=element['metadata'],
+                keywords=keywords
+            ).save()
+
+        # if element['object'].id is not None:
+        #     print("Node saved")
 
         flat_list.append(element)
-
-        element['id'] = last_id
-        last_id += 1
 
         # If element is folder
         if "contents" in element:
@@ -93,4 +130,4 @@ def dfs_traverse(data, last_id):
                 e['parent'] = element
                 stack.append(e)
 
-    return flat_list, last_id, wordlist
+    return flat_list, wordlist

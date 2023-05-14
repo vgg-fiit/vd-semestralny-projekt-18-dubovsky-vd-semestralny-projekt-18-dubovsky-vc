@@ -56,26 +56,69 @@ export class DatabaseService {
     static build(request: Request) {
         const body = request.body
         const session = new DatabaseSession();
-        session.nodeType = body["nodeType"]
-        session.keyword = body["keyword"] ? {
-                key: body["keyword"]["key"],
-                value: body["keyword"]["value"]
+        session.nodeType = body.nodeType
+        if (body.filter?.keywords?.length) {
+            session.keywords = body.filter.keywords? body.filter.keywords: undefined
+        }
+        session.keyword = body.keyword ? {
+            key: body.keyword.key,
+            value: body.keyword.value
+        }: undefined
+        session.range = body.range ? {
+                from: body.range.from,
+                to: body.range.to
             }: undefined
-        session.range = body["range"] ? {
-                from: body["range"]["from"],
-                to: body["range"]["to"]
-            }: undefined
-        session.relationship = body["relationship"]
-        session.limit = body["limit"]
+        session.relationship = body.relationship == "true"
+        session.limit = body.limit != undefined ? parseInt(body.limit): undefined
+        session.name = body.name ? body.name: session.name
+        session.id = body.id != undefined ? parseInt(body.id): undefined
+        session.isbn = body.isbn != undefined ? body.isbn: false
         return session
+    }
+
+    static combineKeywords = (keywords: {key: Keywords, value: string}[]) => {
+        let output: string = "[";
+        keywords.forEach((keyword) => {
+            output += `'${keyword.value.toLowerCase()}'${keywords.indexOf(keyword) != keywords.length - 1? ",": ""}`
+        })
+        output += "]";
+        return output;
+    }
+
+    static getHistogram(session: DatabaseSession): Promise<{}[]> {
+        const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
+        const query = 
+            session.id != undefined ? 
+                `MATCH (n:${session.nodeType}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''} WHERE ID(n)=${session.id}`:
+                `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""}) ${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m:${session.nodeType})`: ''}`      
+        const where = session.keywords ?
+            `WHERE any(substring IN ${DatabaseService.combineKeywords(session.keywords)} WHERE m.name CONTAINS substring)`:
+            session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
+        const aggregate = `UNWIND m.keywords as word WITH word, count(word) as wordCount RETURN word, sum(wordCount) as aggregatedWordCount`;
+        const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
+        return DatabaseService.run(`${query} ${where} ${aggregate} ${limit}`);
+    }    
+
+    static getFiles(session: DatabaseSession): Promise<{}[]> {
+        const query = `MATCH (n: File)`
+        const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
+        const where = session.keywords ?
+            `WHERE any(keyword IN n.keywords WHERE keyword IN ${DatabaseService.combineKeywords(session.keywords)})`: "";
+        const isbn = session.isbn? `${session.keywords ? " AND ": ""} WHERE (n.isbn) IS NOT NULL`: "";
+        return DatabaseService.run(`${query} ${where} ${isbn} RETURN n ${limit}`);
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
         const containsRange = session.range? `:CONTAINS*${session.range.from? session.range.from: 0}${session.range.to? `..${session.range.to}`: ""}`: "";
-        const query = `MATCH (n:${session.nodeType} {name:'root'})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
-        const where = session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
+        const query =
+            session.id != undefined ? 
+                `MATCH (n:${session.nodeType}) WHERE ID(n)=${session.id} ${session.relationship ? `OPTIONAL MATCH (n) <-[r${containsRange? containsRange: ""}]-(m)`: ''}`: 
+                `MATCH (n:${session.nodeType} ${session.nodeType == NodeType.Directory || session.nodeType == NodeType.File ? `{name:'${session.name}'}`: ""})${session.relationship? `<-[r${containsRange? containsRange: ""}]-(m)`: ''}`
+        const where = session.keywords ?
+            `WHERE any(keyword IN m.keywords WHERE keyword IN ${DatabaseService.combineKeywords(session.keywords)})`:
+            session.keyword ? `WHERE m.${session.keyword? `${session.keyword.key}='${session.keyword.value}'`: ""}`: ""
         const returnParam = `RETURN n${session.relationship ? ',r,m': ''}`
-        const limitParam = session.limit ? `LIMIT ${session.limit}`: "";
+        const limitParam = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         return DatabaseService.run(`${query} ${where} ${returnParam} ${limitParam}`);
 	}
 }
@@ -83,11 +126,23 @@ export class DatabaseService {
 export class DatabaseSession {
     nodeType: NodeType;
     keyword?: {key: Keywords, value: string};
+    keywords?: {key: Keywords, value: string}[];
     range?: {from?: number, to?: number};
     relationship?: boolean;
-    limit?: number
+    isbn?: boolean;
+    limit?: number;
+    name?: string = "root";
+    id?: number;
 
     public async run(): Promise<{}[]> {
         return DatabaseService.filter(this);
+    }
+
+    public async getHistogram(): Promise<{}[]> {
+        return DatabaseService.getHistogram(this);
+    }
+
+    public async getFiles(): Promise<{}[]> {
+        return DatabaseService.getFiles(this);
     }
 }
