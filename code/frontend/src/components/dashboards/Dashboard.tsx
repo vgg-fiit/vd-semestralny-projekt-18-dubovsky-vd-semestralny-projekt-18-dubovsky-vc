@@ -176,6 +176,7 @@ function DashboardContent() {
   );
   const [graphData, setGraphData] = useState<any>([]);
   const [isbn, setIsbn] = useState<boolean>(false);
+  const [refreshFiles, setRefreshFiles] = useState<boolean>(false);
   const [selectedScene, setSelectedScene] = useState<
     "classic" | "explorer" | "searcher"
   >("classic");
@@ -223,6 +224,27 @@ function DashboardContent() {
       (
         document.getElementById("graphState") as HTMLElement
       ).innerHTML = `Graph not loaded!`;
+  };
+
+  const handleFilesChange = (data: any) => {
+    const graph: Graph = data.data;
+    const request: any = data.request;
+    setGraphData({
+      nodes: graphData.nodes,
+      edges: graphData.edges,
+      histogram: graphData.histogram,
+      tree: graphData.tree,
+      buckets: { size: graph.filesCount, data: graph.buckets },
+      bucketsByYear: {
+        size: graph.filesCountByYear,
+        data: graph.bucketsByYear,
+      },
+      bucketsByFileEnding: {
+        size: graph.filesCountByFileEnding,
+        data: graph.bucketsByFileEnding,
+      },
+      request: request,
+    });
   };
 
   const handleSceneChange = (data: any) => {
@@ -334,11 +356,13 @@ function DashboardContent() {
           >
             <GraphController
               onDataChange={handleGraphDataChange}
+              onFilesChange={handleFilesChange}
               onSceneChange={handleSceneChange}
               getSelectedNode={getSelectedNode}
               onColorChange={handleColorChange}
               onHighlightChange={handleWordClick}
               isbnEnabled={isbn}
+              refreshFiles={refreshFiles}
             />
           </Stack>
         </Drawer>
@@ -458,7 +482,8 @@ function DashboardContent() {
                       </Button>
                     </ButtonGroup>
                     <FormGroup>
-                      <FormControlLabel onChange={(e, value) => {setIsbn(value)}} control={<Switch />} label="ISBN" />
+                      <Button color="primary" onClick={() => {setRefreshFiles(true)}}>Fetch chart data from backend ⟳</Button>
+                      <FormControlLabel onChange={(_, value) => {setIsbn(value); setRefreshFiles(false);}} control={<Switch />} label="ISBN" />
                     </FormGroup>
                     <Divider />
                     {graphData[selectedViewType] &&

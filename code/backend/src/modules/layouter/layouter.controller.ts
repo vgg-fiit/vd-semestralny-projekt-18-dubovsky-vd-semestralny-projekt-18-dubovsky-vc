@@ -307,4 +307,18 @@ export class LayouterController {
 		}
 		return {data: graph, requestBody: req.body} as AppResponse<Graph>;
 	}
+
+	public static async getFiles(req: Request): Promise<AppResponse<Graph>> {
+		const dataFiles = await DatabaseService.build(req).getFiles() as any;
+		const graph = {} as Graph;
+		graph.buckets = LayouterController.createBuckets(LayouterController.formatToFile(dataFiles), 4);
+		const bucketsByYear = LayouterController.createBucketsByYear(LayouterController.formatToFile(dataFiles));
+		const bucketsByFileEnding = LayouterController.createBucketsByFileEnding(LayouterController.formatToFile(dataFiles));
+		graph.bucketsByYear = bucketsByYear.buckets;
+		graph.filesCountByYear = bucketsByYear.count;
+		graph.filesCountByFileEnding = bucketsByFileEnding.count;
+		graph.filesCount = dataFiles.length;
+		graph.bucketsByFileEnding = bucketsByFileEnding.buckets;
+		return {data: graph, requestBody: req.body} as AppResponse<Graph>;
+	}
 }

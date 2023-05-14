@@ -14,20 +14,24 @@ import SearchNavigation from "./SearchNavigation";
 
 interface GraphControllerProps {
   onDataChange: (newState: any) => void;
+  onFilesChange: (newState: any) => void;
   onSceneChange: (newState: any) => void;
   onColorChange: (newState: any) => any;
   onHighlightChange: (newState: any) => any;
   getSelectedNode: () => any;
   isbnEnabled: boolean;
+  refreshFiles: boolean;
 }
 
 const GraphController: React.FC<GraphControllerProps> = ({
   onDataChange,
+  onFilesChange,
   onSceneChange,
   getSelectedNode,
   onColorChange,
   onHighlightChange,
-  isbnEnabled
+  isbnEnabled = false,
+  refreshFiles = false
 }) => {
   let selectedDepth = 1;
   const [data, setData] = useState<any>([]);
@@ -88,6 +92,29 @@ const GraphController: React.FC<GraphControllerProps> = ({
       .then((res: any) => {
         console.log(res);
         onDataChange(res.data);
+      })
+      .catch((err: any) => {
+        console.error(err);
+      });
+  };
+
+  const handleFilesFetch = () => {
+    console.log("Refetching files")
+    const payLoad = {
+      nodeType: "Directory",
+      relationship: "true",
+      limit: 50,
+      range: {
+        to: selectedDepth,
+      },
+      isbn: isbnEnabled
+    };
+
+    axios
+      .post("http://localhost:14444/graph/getFiles", payLoad)
+      .then((res: any) => {
+        console.log(res);
+        onFilesChange(res.data);
       })
       .catch((err: any) => {
         console.error(err);
@@ -161,6 +188,12 @@ const GraphController: React.FC<GraphControllerProps> = ({
   useEffect(() => {
     onColorChange(colors);
   }, [colors]);
+
+  useEffect(() => {
+    if (refreshFiles) {
+      handleFilesFetch();
+    }
+  }, [refreshFiles]);
 
   return (
     <>
