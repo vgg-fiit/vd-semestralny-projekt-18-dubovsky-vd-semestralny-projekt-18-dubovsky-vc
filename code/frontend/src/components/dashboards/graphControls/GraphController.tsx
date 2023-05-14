@@ -18,6 +18,7 @@ interface GraphControllerProps {
   onColorChange: (newState: any) => any;
   onHighlightChange: (newState: any) => any;
   getSelectedNode: () => any;
+  isbnEnabled: boolean;
 }
 
 const GraphController: React.FC<GraphControllerProps> = ({
@@ -26,6 +27,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
   getSelectedNode,
   onColorChange,
   onHighlightChange,
+  isbnEnabled
 }) => {
   let selectedDepth = 1;
   const [data, setData] = useState<any>([]);
@@ -78,6 +80,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       range: {
         to: selectedDepth,
       },
+      isbn: isbnEnabled
     };
 
     axios
@@ -102,6 +105,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
       filter: {
         keywords: keywords,
       },
+      isbn: isbnEnabled
     };
     axios
       .post("http://localhost:14444/graph/get", payLoad)
@@ -123,6 +127,7 @@ const GraphController: React.FC<GraphControllerProps> = ({
         to: selectedDepth,
       },
       id: rootUuId,
+      isbn: isbnEnabled
     };
 
     axios
@@ -141,7 +146,6 @@ const GraphController: React.FC<GraphControllerProps> = ({
 
   const onForwardClick = () => {
     const selectedNode = getSelectedNode();
-    console.log(selectedNode);
 
     if (selectedNode) {
       handleExploreFetch(selectedNode.uuId);

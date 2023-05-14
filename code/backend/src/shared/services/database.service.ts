@@ -72,6 +72,7 @@ export class DatabaseService {
         session.limit = body.limit != undefined ? parseInt(body.limit): undefined
         session.name = body.name ? body.name: session.name
         session.id = body.id != undefined ? parseInt(body.id): undefined
+        session.isbn = body.isbn != undefined ? body.isbn: false
         return session
     }
 
@@ -103,7 +104,8 @@ export class DatabaseService {
         const limit = session.limit != undefined ? `LIMIT ${session.limit}`: "";
         const where = session.keywords ?
             `WHERE any(keyword IN n.keywords WHERE keyword IN ${DatabaseService.combineKeywords(session.keywords)})`: "";
-        return DatabaseService.run(`${query} ${where} RETURN n ${limit}`);
+        const isbn = session.isbn? `${session.keywords ? " AND ": ""} WHERE (n.isbn) IS NOT NULL`: "";
+        return DatabaseService.run(`${query} ${where} ${isbn} RETURN n ${limit}`);
     }
 
     static filter(session: DatabaseSession): Promise<{}[]> {
@@ -127,6 +129,7 @@ export class DatabaseSession {
     keywords?: {key: Keywords, value: string}[];
     range?: {from?: number, to?: number};
     relationship?: boolean;
+    isbn?: boolean;
     limit?: number;
     name?: string = "root";
     id?: number;

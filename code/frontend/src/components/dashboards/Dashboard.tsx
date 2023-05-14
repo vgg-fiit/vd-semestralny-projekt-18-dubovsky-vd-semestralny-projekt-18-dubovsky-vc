@@ -27,7 +27,7 @@ import WordGraphs from "../visualization/WordGraphs";
 import TreeMap from "../visualization/TreeMap";
 import TreeGraph from "../visualization/TreeGraph";
 import ChordDiagram from "../visualization/Chords";
-import { Alert, Button, ButtonGroup, Snackbar } from "@mui/material";
+import { Alert, Button, ButtonGroup, FormControlLabel, FormGroup, Snackbar, Switch } from "@mui/material";
 import { View } from "@react-three/drei";
 import { ParentSize } from "@visx/responsive";
 
@@ -175,6 +175,7 @@ function DashboardContent() {
     ViewType.Year
   );
   const [graphData, setGraphData] = useState<any>([]);
+  const [isbn, setIsbn] = useState<boolean>(false);
   const [selectedScene, setSelectedScene] = useState<
     "classic" | "explorer" | "searcher"
   >("classic");
@@ -256,7 +257,6 @@ function DashboardContent() {
 
   const handleWordClick = (word: string) => {
     if (graphData && graphData.nodes) {
-      console.log(word);
       if (word.length === 0) {
         setSelectedWords([]);
         return;
@@ -272,7 +272,6 @@ function DashboardContent() {
         }
       );
       if (newSelectionState.length != 0) {
-        console.log(newSelectionState);
         setSelectedWords(newSelectionState);
       }
     }
@@ -339,6 +338,7 @@ function DashboardContent() {
               getSelectedNode={getSelectedNode}
               onColorChange={handleColorChange}
               onHighlightChange={handleWordClick}
+              isbnEnabled={isbn}
             />
           </Stack>
         </Drawer>
@@ -457,9 +457,12 @@ function DashboardContent() {
                         By File Size
                       </Button>
                     </ButtonGroup>
+                    <FormGroup>
+                      <FormControlLabel onChange={(e, value) => {setIsbn(value)}} control={<Switch />} label="ISBN" />
+                    </FormGroup>
                     <Divider />
                     {graphData[selectedViewType] &&
-                    graphData[selectedViewType].data ? (
+                      graphData[selectedViewType].data ? (
                       <ChordDiagram
                         buckets={graphData[selectedViewType].data}
                         filesCount={graphData[selectedViewType].size}

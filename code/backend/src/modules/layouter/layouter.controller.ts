@@ -226,7 +226,6 @@ export class LayouterController {
 	public static createBuckets(files: File[], numBuckets: number) {
 		const minSize = files[0].size;
 		const maxSize = files[files.length - 1].size;
-		//console.log(minSize, maxSize)
 		
 		const bucketRange = (maxSize - minSize) / numBuckets;
 		const buckets: Bucket[] = [];
@@ -288,7 +287,6 @@ export class LayouterController {
 		const data = await DatabaseService.build(req).run();
 		const dataHistogram = await DatabaseService.build(req).getHistogram();
 		const dataFiles = await DatabaseService.build(req).getFiles() as any;
-		//const graph = LayouterMock.getMock();
 		const graph = LayouterController.dataToGraph(data);
 		graph.histogram = LayouterController.formatHistogram(dataHistogram);
 		graph.buckets = LayouterController.createBuckets(LayouterController.formatToFile(dataFiles), 4);
@@ -305,7 +303,6 @@ export class LayouterController {
 		if (data.length == 0) {
 			graph.tree = undefined;
 		} else {
-			console.log(graph)
 			graph.tree = LayouterController.formatAsTree(graph);
 		}
 		return {data: graph, requestBody: req.body} as AppResponse<Graph>;
